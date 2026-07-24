@@ -88,7 +88,7 @@ export default function ImportsPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Подключение данных"
+        eyebrow="Загрузка файла"
         title="Импорт событий"
         description="Загрузите историю запросов в формате JSON или JSONL. Анализ запустится в фоне."
         action={
@@ -138,10 +138,6 @@ export default function ImportsPage() {
               <ErrorState message={errorMessage(upload.error)} />
             ) : null}
             <div className="form-footer">
-              <p>
-                Файл отправляется как <code>multipart/form-data</code>, поле{" "}
-                <code>file</code>.
-              </p>
               <button
                 className="button primary"
                 type="submit"

@@ -176,6 +176,24 @@ export function formatDate(value: string | null): string {
   }).format(new Date(value));
 }
 
+export function formatCount(
+  value: number,
+  forms: readonly [string, string, string],
+): string {
+  const absolute = Math.abs(value) % 100;
+  const lastDigit = absolute % 10;
+  const form =
+    absolute > 10 && absolute < 20
+      ? forms[2]
+      : lastDigit === 1
+        ? forms[0]
+        : lastDigit >= 2 && lastDigit <= 4
+          ? forms[1]
+          : forms[2];
+
+  return `${value.toLocaleString("ru-RU")} ${form}`;
+}
+
 export function errorMessage(error: unknown): string {
   return error instanceof Error ? error.message : "Неизвестная ошибка";
 }

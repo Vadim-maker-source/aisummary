@@ -26,7 +26,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           <span className="brand-mark">К</span>
           <span>
             <strong>Контур</strong>
-            <small>AI request intelligence</small>
+            <small>Аналитика запросов</small>
           </span>
         </Link>
 
