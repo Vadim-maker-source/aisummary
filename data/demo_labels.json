@@ -1,2046 +1,2906 @@
 {
-  "demo-00000": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_meeting_slot"
-  },
-  "demo-00001": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_meeting_slot"
-  },
-  "demo-00002": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_meeting_slot"
-  },
-  "demo-00003": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_meeting_slot"
-  },
-  "demo-00004": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_meeting_slot"
-  },
-  "demo-00005": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_meeting_slot"
-  },
-  "demo-00006": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_meeting_slot"
-  },
-  "demo-00007": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_meeting_slot"
-  },
-  "demo-00008": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_meeting_slot"
-  },
-  "demo-00009": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_meeting_slot"
-  },
-  "demo-00010": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_meeting_slot"
-  },
-  "demo-00011": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_meeting_slot"
-  },
-  "demo-00012": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_meeting_slot"
-  },
-  "demo-00013": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_meeting_slot"
-  },
-  "demo-00014": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_meeting_slot"
-  },
-  "demo-00015": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_meeting_slot"
-  },
-  "demo-00016": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reschedule"
-  },
-  "demo-00017": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reschedule"
-  },
-  "demo-00018": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reschedule"
-  },
-  "demo-00019": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reschedule"
-  },
-  "demo-00020": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reschedule"
-  },
-  "demo-00021": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reschedule"
-  },
-  "demo-00022": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reschedule"
-  },
-  "demo-00023": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reschedule"
-  },
-  "demo-00024": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reschedule"
-  },
-  "demo-00025": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reschedule"
-  },
-  "demo-00026": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reschedule"
-  },
-  "demo-00027": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reschedule"
-  },
-  "demo-00028": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reschedule"
-  },
-  "demo-00029": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reschedule"
-  },
-  "demo-00030": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reschedule"
-  },
-  "demo-00031": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reschedule"
-  },
-  "demo-00032": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reminder"
-  },
-  "demo-00033": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reminder"
-  },
-  "demo-00034": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reminder"
-  },
-  "demo-00035": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reminder"
-  },
-  "demo-00036": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reminder"
-  },
-  "demo-00037": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reminder"
-  },
-  "demo-00038": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reminder"
-  },
-  "demo-00039": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reminder"
-  },
-  "demo-00040": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reminder"
-  },
-  "demo-00041": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reminder"
-  },
-  "demo-00042": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reminder"
-  },
-  "demo-00043": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reminder"
-  },
-  "demo-00044": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reminder"
-  },
-  "demo-00045": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reminder"
-  },
-  "demo-00046": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reminder"
-  },
-  "demo-00047": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reminder"
-  },
-  "demo-00048": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_email"
-  },
-  "demo-00049": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_email"
-  },
-  "demo-00050": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_email"
-  },
-  "demo-00051": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_email"
-  },
-  "demo-00052": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_email"
-  },
-  "demo-00053": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_email"
-  },
-  "demo-00054": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_email"
-  },
-  "demo-00055": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_email"
-  },
-  "demo-00056": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_email"
-  },
-  "demo-00057": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_email"
-  },
-  "demo-00058": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_email"
-  },
-  "demo-00059": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_email"
-  },
-  "demo-00060": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_email"
-  },
-  "demo-00061": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_email"
-  },
-  "demo-00062": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_email"
-  },
-  "demo-00063": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_email"
-  },
-  "demo-00064": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_price"
-  },
-  "demo-00065": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_price"
-  },
-  "demo-00066": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_price"
-  },
-  "demo-00067": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_price"
-  },
-  "demo-00068": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_price"
-  },
-  "demo-00069": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_price"
-  },
-  "demo-00070": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_price"
-  },
-  "demo-00071": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_price"
-  },
-  "demo-00072": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_price"
-  },
-  "demo-00073": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_price"
-  },
-  "demo-00074": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_price"
-  },
-  "demo-00075": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_price"
-  },
-  "demo-00076": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_price"
-  },
-  "demo-00077": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_price"
-  },
-  "demo-00078": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_price"
-  },
-  "demo-00079": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_price"
-  },
-  "demo-00080": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_deadline"
-  },
-  "demo-00081": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_deadline"
-  },
-  "demo-00082": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_deadline"
-  },
-  "demo-00083": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_deadline"
-  },
-  "demo-00084": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_deadline"
-  },
-  "demo-00085": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_deadline"
-  },
-  "demo-00086": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_deadline"
-  },
-  "demo-00087": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_deadline"
-  },
-  "demo-00088": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_deadline"
-  },
-  "demo-00089": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_deadline"
-  },
-  "demo-00090": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_deadline"
-  },
-  "demo-00091": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_deadline"
-  },
-  "demo-00092": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_deadline"
-  },
-  "demo-00093": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_deadline"
-  },
-  "demo-00094": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_deadline"
-  },
-  "demo-00095": {
-    "category": "monitoring_automation",
-    "scenario_label": "mon_deadline"
-  },
-  "demo-00096": {
-    "category": "task_management",
-    "scenario_label": "task_jira"
-  },
-  "demo-00097": {
-    "category": "task_management",
-    "scenario_label": "task_jira"
-  },
-  "demo-00098": {
-    "category": "task_management",
-    "scenario_label": "task_jira"
-  },
-  "demo-00099": {
-    "category": "task_management",
-    "scenario_label": "task_jira"
-  },
-  "demo-00100": {
-    "category": "task_management",
-    "scenario_label": "task_jira"
-  },
-  "demo-00101": {
-    "category": "task_management",
-    "scenario_label": "task_jira"
-  },
-  "demo-00102": {
-    "category": "task_management",
-    "scenario_label": "task_jira"
-  },
-  "demo-00103": {
-    "category": "task_management",
-    "scenario_label": "task_jira"
-  },
-  "demo-00104": {
-    "category": "task_management",
-    "scenario_label": "task_jira"
-  },
-  "demo-00105": {
-    "category": "task_management",
-    "scenario_label": "task_jira"
-  },
-  "demo-00106": {
-    "category": "task_management",
-    "scenario_label": "task_jira"
-  },
-  "demo-00107": {
-    "category": "task_management",
-    "scenario_label": "task_jira"
-  },
-  "demo-00108": {
-    "category": "task_management",
-    "scenario_label": "task_jira"
-  },
-  "demo-00109": {
-    "category": "task_management",
-    "scenario_label": "task_jira"
-  },
-  "demo-00110": {
-    "category": "task_management",
-    "scenario_label": "task_jira"
-  },
-  "demo-00111": {
-    "category": "task_management",
-    "scenario_label": "task_jira"
-  },
-  "demo-00112": {
-    "category": "task_management",
-    "scenario_label": "task_ticket"
-  },
-  "demo-00113": {
-    "category": "task_management",
-    "scenario_label": "task_ticket"
-  },
-  "demo-00114": {
-    "category": "task_management",
-    "scenario_label": "task_ticket"
-  },
-  "demo-00115": {
-    "category": "task_management",
-    "scenario_label": "task_ticket"
-  },
-  "demo-00116": {
-    "category": "task_management",
-    "scenario_label": "task_ticket"
-  },
-  "demo-00117": {
-    "category": "task_management",
-    "scenario_label": "task_ticket"
-  },
-  "demo-00118": {
-    "category": "task_management",
-    "scenario_label": "task_ticket"
-  },
-  "demo-00119": {
-    "category": "task_management",
-    "scenario_label": "task_ticket"
-  },
-  "demo-00120": {
-    "category": "task_management",
-    "scenario_label": "task_ticket"
-  },
-  "demo-00121": {
-    "category": "task_management",
-    "scenario_label": "task_ticket"
-  },
-  "demo-00122": {
-    "category": "task_management",
-    "scenario_label": "task_ticket"
-  },
-  "demo-00123": {
-    "category": "task_management",
-    "scenario_label": "task_ticket"
-  },
-  "demo-00124": {
-    "category": "task_management",
-    "scenario_label": "task_ticket"
-  },
-  "demo-00125": {
-    "category": "task_management",
-    "scenario_label": "task_ticket"
-  },
-  "demo-00126": {
-    "category": "task_management",
-    "scenario_label": "task_ticket"
-  },
-  "demo-00127": {
-    "category": "task_management",
-    "scenario_label": "task_ticket"
-  },
-  "demo-00128": {
-    "category": "task_management",
-    "scenario_label": "task_project"
-  },
-  "demo-00129": {
-    "category": "task_management",
-    "scenario_label": "task_project"
-  },
-  "demo-00130": {
-    "category": "task_management",
-    "scenario_label": "task_project"
-  },
-  "demo-00131": {
-    "category": "task_management",
-    "scenario_label": "task_project"
-  },
-  "demo-00132": {
-    "category": "task_management",
-    "scenario_label": "task_project"
-  },
-  "demo-00133": {
-    "category": "task_management",
-    "scenario_label": "task_project"
-  },
-  "demo-00134": {
-    "category": "task_management",
-    "scenario_label": "task_project"
-  },
-  "demo-00135": {
-    "category": "task_management",
-    "scenario_label": "task_project"
-  },
-  "demo-00136": {
-    "category": "task_management",
-    "scenario_label": "task_project"
-  },
-  "demo-00137": {
-    "category": "task_management",
-    "scenario_label": "task_project"
-  },
-  "demo-00138": {
-    "category": "task_management",
-    "scenario_label": "task_project"
-  },
-  "demo-00139": {
-    "category": "task_management",
-    "scenario_label": "task_project"
-  },
-  "demo-00140": {
-    "category": "task_management",
-    "scenario_label": "task_project"
-  },
-  "demo-00141": {
-    "category": "task_management",
-    "scenario_label": "task_project"
-  },
-  "demo-00142": {
-    "category": "task_management",
-    "scenario_label": "task_project"
-  },
-  "demo-00143": {
-    "category": "task_management",
-    "scenario_label": "task_project"
-  },
-  "demo-00144": {
-    "category": "reporting_export",
-    "scenario_label": "rep_excel_sales"
-  },
-  "demo-00145": {
-    "category": "reporting_export",
-    "scenario_label": "rep_excel_sales"
-  },
-  "demo-00146": {
-    "category": "reporting_export",
-    "scenario_label": "rep_excel_sales"
-  },
-  "demo-00147": {
-    "category": "reporting_export",
-    "scenario_label": "rep_excel_sales"
-  },
-  "demo-00148": {
-    "category": "reporting_export",
-    "scenario_label": "rep_excel_sales"
-  },
-  "demo-00149": {
-    "category": "reporting_export",
-    "scenario_label": "rep_excel_sales"
-  },
-  "demo-00150": {
-    "category": "reporting_export",
-    "scenario_label": "rep_excel_sales"
-  },
-  "demo-00151": {
-    "category": "reporting_export",
-    "scenario_label": "rep_excel_sales"
-  },
-  "demo-00152": {
-    "category": "reporting_export",
-    "scenario_label": "rep_excel_sales"
-  },
-  "demo-00153": {
-    "category": "reporting_export",
-    "scenario_label": "rep_excel_sales"
-  },
-  "demo-00154": {
-    "category": "reporting_export",
-    "scenario_label": "rep_excel_sales"
-  },
-  "demo-00155": {
-    "category": "reporting_export",
-    "scenario_label": "rep_excel_sales"
-  },
-  "demo-00156": {
-    "category": "reporting_export",
-    "scenario_label": "rep_excel_sales"
-  },
-  "demo-00157": {
-    "category": "reporting_export",
-    "scenario_label": "rep_excel_sales"
-  },
-  "demo-00158": {
-    "category": "reporting_export",
-    "scenario_label": "rep_excel_sales"
-  },
-  "demo-00159": {
-    "category": "reporting_export",
-    "scenario_label": "rep_excel_sales"
-  },
-  "demo-00160": {
-    "category": "reporting_export",
-    "scenario_label": "rep_pdf_summary"
-  },
-  "demo-00161": {
-    "category": "reporting_export",
-    "scenario_label": "rep_pdf_summary"
-  },
-  "demo-00162": {
-    "category": "reporting_export",
-    "scenario_label": "rep_pdf_summary"
-  },
-  "demo-00163": {
-    "category": "reporting_export",
-    "scenario_label": "rep_pdf_summary"
-  },
-  "demo-00164": {
-    "category": "reporting_export",
-    "scenario_label": "rep_pdf_summary"
-  },
-  "demo-00165": {
-    "category": "reporting_export",
-    "scenario_label": "rep_pdf_summary"
-  },
-  "demo-00166": {
-    "category": "reporting_export",
-    "scenario_label": "rep_pdf_summary"
-  },
-  "demo-00167": {
-    "category": "reporting_export",
-    "scenario_label": "rep_pdf_summary"
-  },
-  "demo-00168": {
-    "category": "reporting_export",
-    "scenario_label": "rep_pdf_summary"
-  },
-  "demo-00169": {
-    "category": "reporting_export",
-    "scenario_label": "rep_pdf_summary"
-  },
-  "demo-00170": {
-    "category": "reporting_export",
-    "scenario_label": "rep_pdf_summary"
-  },
-  "demo-00171": {
-    "category": "reporting_export",
-    "scenario_label": "rep_pdf_summary"
-  },
-  "demo-00172": {
-    "category": "reporting_export",
-    "scenario_label": "rep_pdf_summary"
-  },
-  "demo-00173": {
-    "category": "reporting_export",
-    "scenario_label": "rep_pdf_summary"
-  },
-  "demo-00174": {
-    "category": "reporting_export",
-    "scenario_label": "rep_pdf_summary"
-  },
-  "demo-00175": {
-    "category": "reporting_export",
-    "scenario_label": "rep_pdf_summary"
-  },
-  "demo-00176": {
-    "category": "reporting_export",
-    "scenario_label": "rep_csv_export"
-  },
-  "demo-00177": {
-    "category": "reporting_export",
-    "scenario_label": "rep_csv_export"
-  },
-  "demo-00178": {
-    "category": "reporting_export",
-    "scenario_label": "rep_csv_export"
-  },
-  "demo-00179": {
-    "category": "reporting_export",
-    "scenario_label": "rep_csv_export"
-  },
-  "demo-00180": {
-    "category": "reporting_export",
-    "scenario_label": "rep_csv_export"
-  },
-  "demo-00181": {
-    "category": "reporting_export",
-    "scenario_label": "rep_csv_export"
-  },
-  "demo-00182": {
-    "category": "reporting_export",
-    "scenario_label": "rep_csv_export"
-  },
-  "demo-00183": {
-    "category": "reporting_export",
-    "scenario_label": "rep_csv_export"
-  },
-  "demo-00184": {
-    "category": "reporting_export",
-    "scenario_label": "rep_csv_export"
-  },
-  "demo-00185": {
-    "category": "reporting_export",
-    "scenario_label": "rep_csv_export"
-  },
-  "demo-00186": {
-    "category": "reporting_export",
-    "scenario_label": "rep_csv_export"
-  },
-  "demo-00187": {
-    "category": "reporting_export",
-    "scenario_label": "rep_csv_export"
-  },
-  "demo-00188": {
-    "category": "reporting_export",
-    "scenario_label": "rep_csv_export"
-  },
-  "demo-00189": {
-    "category": "reporting_export",
-    "scenario_label": "rep_csv_export"
-  },
-  "demo-00190": {
-    "category": "reporting_export",
-    "scenario_label": "rep_csv_export"
-  },
-  "demo-00191": {
-    "category": "reporting_export",
-    "scenario_label": "rep_csv_export"
-  },
-  "demo-00192": {
+  "krok-daily_mail_digest-000": {
     "category": "summarization",
-    "scenario_label": "sum_document"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00193": {
+  "krok-daily_mail_digest-001": {
     "category": "summarization",
-    "scenario_label": "sum_document"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00194": {
+  "krok-daily_mail_digest-002": {
     "category": "summarization",
-    "scenario_label": "sum_document"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00195": {
+  "krok-daily_mail_digest-003": {
     "category": "summarization",
-    "scenario_label": "sum_document"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00196": {
+  "krok-daily_mail_digest-004": {
     "category": "summarization",
-    "scenario_label": "sum_document"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00197": {
+  "krok-daily_mail_digest-005": {
     "category": "summarization",
-    "scenario_label": "sum_document"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00198": {
+  "krok-daily_mail_digest-006": {
     "category": "summarization",
-    "scenario_label": "sum_document"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00199": {
+  "krok-daily_mail_digest-007": {
     "category": "summarization",
-    "scenario_label": "sum_document"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00200": {
+  "krok-daily_mail_digest-008": {
     "category": "summarization",
-    "scenario_label": "sum_document"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00201": {
+  "krok-daily_mail_digest-009": {
     "category": "summarization",
-    "scenario_label": "sum_document"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00202": {
+  "krok-daily_mail_digest-010": {
     "category": "summarization",
-    "scenario_label": "sum_document"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00203": {
+  "krok-daily_mail_digest-011": {
     "category": "summarization",
-    "scenario_label": "sum_document"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00204": {
+  "krok-daily_mail_digest-012": {
     "category": "summarization",
-    "scenario_label": "sum_document"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00205": {
+  "krok-daily_mail_digest-013": {
     "category": "summarization",
-    "scenario_label": "sum_document"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00206": {
+  "krok-daily_mail_digest-014": {
     "category": "summarization",
-    "scenario_label": "sum_document"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00207": {
+  "krok-daily_mail_digest-015": {
     "category": "summarization",
-    "scenario_label": "sum_document"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00208": {
+  "krok-daily_mail_digest-016": {
     "category": "summarization",
-    "scenario_label": "sum_meeting_notes"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00209": {
+  "krok-daily_mail_digest-017": {
     "category": "summarization",
-    "scenario_label": "sum_meeting_notes"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00210": {
+  "krok-daily_mail_digest-018": {
     "category": "summarization",
-    "scenario_label": "sum_meeting_notes"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00211": {
+  "krok-daily_mail_digest-019": {
     "category": "summarization",
-    "scenario_label": "sum_meeting_notes"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00212": {
+  "krok-daily_mail_digest-020": {
     "category": "summarization",
-    "scenario_label": "sum_meeting_notes"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00213": {
+  "krok-daily_mail_digest-021": {
     "category": "summarization",
-    "scenario_label": "sum_meeting_notes"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00214": {
+  "krok-daily_mail_digest-022": {
     "category": "summarization",
-    "scenario_label": "sum_meeting_notes"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00215": {
+  "krok-daily_mail_digest-023": {
     "category": "summarization",
-    "scenario_label": "sum_meeting_notes"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00216": {
+  "krok-daily_mail_digest-024": {
     "category": "summarization",
-    "scenario_label": "sum_meeting_notes"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00217": {
+  "krok-daily_mail_digest-025": {
     "category": "summarization",
-    "scenario_label": "sum_meeting_notes"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00218": {
+  "krok-daily_mail_digest-026": {
     "category": "summarization",
-    "scenario_label": "sum_meeting_notes"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00219": {
+  "krok-daily_mail_digest-027": {
     "category": "summarization",
-    "scenario_label": "sum_meeting_notes"
+    "scenario_label": "daily_mail_digest"
   },
-  "demo-00220": {
-    "category": "summarization",
-    "scenario_label": "sum_meeting_notes"
-  },
-  "demo-00221": {
-    "category": "summarization",
-    "scenario_label": "sum_meeting_notes"
-  },
-  "demo-00222": {
-    "category": "summarization",
-    "scenario_label": "sum_meeting_notes"
-  },
-  "demo-00223": {
-    "category": "summarization",
-    "scenario_label": "sum_meeting_notes"
-  },
-  "demo-00224": {
-    "category": "summarization",
-    "scenario_label": "sum_emails"
-  },
-  "demo-00225": {
-    "category": "summarization",
-    "scenario_label": "sum_emails"
-  },
-  "demo-00226": {
-    "category": "summarization",
-    "scenario_label": "sum_emails"
-  },
-  "demo-00227": {
-    "category": "summarization",
-    "scenario_label": "sum_emails"
-  },
-  "demo-00228": {
-    "category": "summarization",
-    "scenario_label": "sum_emails"
-  },
-  "demo-00229": {
-    "category": "summarization",
-    "scenario_label": "sum_emails"
-  },
-  "demo-00230": {
-    "category": "summarization",
-    "scenario_label": "sum_emails"
-  },
-  "demo-00231": {
-    "category": "summarization",
-    "scenario_label": "sum_emails"
-  },
-  "demo-00232": {
-    "category": "summarization",
-    "scenario_label": "sum_emails"
-  },
-  "demo-00233": {
-    "category": "summarization",
-    "scenario_label": "sum_emails"
-  },
-  "demo-00234": {
-    "category": "summarization",
-    "scenario_label": "sum_emails"
-  },
-  "demo-00235": {
-    "category": "summarization",
-    "scenario_label": "sum_emails"
-  },
-  "demo-00236": {
-    "category": "summarization",
-    "scenario_label": "sum_emails"
-  },
-  "demo-00237": {
-    "category": "summarization",
-    "scenario_label": "sum_emails"
-  },
-  "demo-00238": {
-    "category": "summarization",
-    "scenario_label": "sum_emails"
-  },
-  "demo-00239": {
-    "category": "summarization",
-    "scenario_label": "sum_emails"
-  },
-  "demo-00240": {
+  "krok-client_group_research-000": {
     "category": "information_search",
-    "scenario_label": "info_contacts"
+    "scenario_label": "client_group_research"
   },
-  "demo-00241": {
+  "krok-client_group_research-001": {
     "category": "information_search",
-    "scenario_label": "info_contacts"
+    "scenario_label": "client_group_research"
   },
-  "demo-00242": {
+  "krok-client_group_research-002": {
     "category": "information_search",
-    "scenario_label": "info_contacts"
+    "scenario_label": "client_group_research"
   },
-  "demo-00243": {
+  "krok-client_group_research-003": {
     "category": "information_search",
-    "scenario_label": "info_contacts"
+    "scenario_label": "client_group_research"
   },
-  "demo-00244": {
+  "krok-client_group_research-004": {
     "category": "information_search",
-    "scenario_label": "info_contacts"
+    "scenario_label": "client_group_research"
   },
-  "demo-00245": {
+  "krok-client_group_research-005": {
     "category": "information_search",
-    "scenario_label": "info_contacts"
+    "scenario_label": "client_group_research"
   },
-  "demo-00246": {
+  "krok-client_group_research-006": {
     "category": "information_search",
-    "scenario_label": "info_contacts"
+    "scenario_label": "client_group_research"
   },
-  "demo-00247": {
+  "krok-client_group_research-007": {
     "category": "information_search",
-    "scenario_label": "info_contacts"
+    "scenario_label": "client_group_research"
   },
-  "demo-00248": {
+  "krok-client_group_research-008": {
     "category": "information_search",
-    "scenario_label": "info_contacts"
+    "scenario_label": "client_group_research"
   },
-  "demo-00249": {
+  "krok-client_group_research-009": {
     "category": "information_search",
-    "scenario_label": "info_contacts"
+    "scenario_label": "client_group_research"
   },
-  "demo-00250": {
+  "krok-client_group_research-010": {
     "category": "information_search",
-    "scenario_label": "info_contacts"
+    "scenario_label": "client_group_research"
   },
-  "demo-00251": {
+  "krok-client_group_research-011": {
     "category": "information_search",
-    "scenario_label": "info_contacts"
+    "scenario_label": "client_group_research"
   },
-  "demo-00252": {
+  "krok-client_group_research-012": {
     "category": "information_search",
-    "scenario_label": "info_contacts"
+    "scenario_label": "client_group_research"
   },
-  "demo-00253": {
+  "krok-client_group_research-013": {
     "category": "information_search",
-    "scenario_label": "info_contacts"
+    "scenario_label": "client_group_research"
   },
-  "demo-00254": {
-    "category": "information_search",
-    "scenario_label": "info_contacts"
-  },
-  "demo-00255": {
-    "category": "information_search",
-    "scenario_label": "info_contacts"
-  },
-  "demo-00256": {
-    "category": "information_search",
-    "scenario_label": "info_company"
-  },
-  "demo-00257": {
-    "category": "information_search",
-    "scenario_label": "info_company"
-  },
-  "demo-00258": {
-    "category": "information_search",
-    "scenario_label": "info_company"
-  },
-  "demo-00259": {
-    "category": "information_search",
-    "scenario_label": "info_company"
-  },
-  "demo-00260": {
-    "category": "information_search",
-    "scenario_label": "info_company"
-  },
-  "demo-00261": {
-    "category": "information_search",
-    "scenario_label": "info_company"
-  },
-  "demo-00262": {
-    "category": "information_search",
-    "scenario_label": "info_company"
-  },
-  "demo-00263": {
-    "category": "information_search",
-    "scenario_label": "info_company"
-  },
-  "demo-00264": {
-    "category": "information_search",
-    "scenario_label": "info_company"
-  },
-  "demo-00265": {
-    "category": "information_search",
-    "scenario_label": "info_company"
-  },
-  "demo-00266": {
-    "category": "information_search",
-    "scenario_label": "info_company"
-  },
-  "demo-00267": {
-    "category": "information_search",
-    "scenario_label": "info_company"
-  },
-  "demo-00268": {
-    "category": "information_search",
-    "scenario_label": "info_company"
-  },
-  "demo-00269": {
-    "category": "information_search",
-    "scenario_label": "info_company"
-  },
-  "demo-00270": {
-    "category": "information_search",
-    "scenario_label": "info_company"
-  },
-  "demo-00271": {
-    "category": "information_search",
-    "scenario_label": "info_company"
-  },
-  "demo-00272": {
-    "category": "information_search",
-    "scenario_label": "info_docs"
-  },
-  "demo-00273": {
-    "category": "information_search",
-    "scenario_label": "info_docs"
-  },
-  "demo-00274": {
-    "category": "information_search",
-    "scenario_label": "info_docs"
-  },
-  "demo-00275": {
-    "category": "information_search",
-    "scenario_label": "info_docs"
-  },
-  "demo-00276": {
-    "category": "information_search",
-    "scenario_label": "info_docs"
-  },
-  "demo-00277": {
-    "category": "information_search",
-    "scenario_label": "info_docs"
-  },
-  "demo-00278": {
-    "category": "information_search",
-    "scenario_label": "info_docs"
-  },
-  "demo-00279": {
-    "category": "information_search",
-    "scenario_label": "info_docs"
-  },
-  "demo-00280": {
-    "category": "information_search",
-    "scenario_label": "info_docs"
-  },
-  "demo-00281": {
-    "category": "information_search",
-    "scenario_label": "info_docs"
-  },
-  "demo-00282": {
-    "category": "information_search",
-    "scenario_label": "info_docs"
-  },
-  "demo-00283": {
-    "category": "information_search",
-    "scenario_label": "info_docs"
-  },
-  "demo-00284": {
-    "category": "information_search",
-    "scenario_label": "info_docs"
-  },
-  "demo-00285": {
-    "category": "information_search",
-    "scenario_label": "info_docs"
-  },
-  "demo-00286": {
-    "category": "information_search",
-    "scenario_label": "info_docs"
-  },
-  "demo-00287": {
-    "category": "information_search",
-    "scenario_label": "info_docs"
-  },
-  "demo-00288": {
-    "category": "data_analysis",
-    "scenario_label": "data_sql"
-  },
-  "demo-00289": {
-    "category": "data_analysis",
-    "scenario_label": "data_sql"
-  },
-  "demo-00290": {
-    "category": "data_analysis",
-    "scenario_label": "data_sql"
-  },
-  "demo-00291": {
-    "category": "data_analysis",
-    "scenario_label": "data_sql"
-  },
-  "demo-00292": {
-    "category": "data_analysis",
-    "scenario_label": "data_sql"
-  },
-  "demo-00293": {
-    "category": "data_analysis",
-    "scenario_label": "data_sql"
-  },
-  "demo-00294": {
-    "category": "data_analysis",
-    "scenario_label": "data_sql"
-  },
-  "demo-00295": {
-    "category": "data_analysis",
-    "scenario_label": "data_sql"
-  },
-  "demo-00296": {
-    "category": "data_analysis",
-    "scenario_label": "data_sql"
-  },
-  "demo-00297": {
-    "category": "data_analysis",
-    "scenario_label": "data_sql"
-  },
-  "demo-00298": {
-    "category": "data_analysis",
-    "scenario_label": "data_sql"
-  },
-  "demo-00299": {
-    "category": "data_analysis",
-    "scenario_label": "data_sql"
-  },
-  "demo-00300": {
-    "category": "data_analysis",
-    "scenario_label": "data_sql"
-  },
-  "demo-00301": {
-    "category": "data_analysis",
-    "scenario_label": "data_sql"
-  },
-  "demo-00302": {
-    "category": "data_analysis",
-    "scenario_label": "data_sql"
-  },
-  "demo-00303": {
-    "category": "data_analysis",
-    "scenario_label": "data_sql"
-  },
-  "demo-00304": {
-    "category": "data_analysis",
-    "scenario_label": "data_metrics"
-  },
-  "demo-00305": {
-    "category": "data_analysis",
-    "scenario_label": "data_metrics"
-  },
-  "demo-00306": {
-    "category": "data_analysis",
-    "scenario_label": "data_metrics"
-  },
-  "demo-00307": {
-    "category": "data_analysis",
-    "scenario_label": "data_metrics"
-  },
-  "demo-00308": {
-    "category": "data_analysis",
-    "scenario_label": "data_metrics"
-  },
-  "demo-00309": {
-    "category": "data_analysis",
-    "scenario_label": "data_metrics"
-  },
-  "demo-00310": {
-    "category": "data_analysis",
-    "scenario_label": "data_metrics"
-  },
-  "demo-00311": {
-    "category": "data_analysis",
-    "scenario_label": "data_metrics"
-  },
-  "demo-00312": {
-    "category": "data_analysis",
-    "scenario_label": "data_metrics"
-  },
-  "demo-00313": {
-    "category": "data_analysis",
-    "scenario_label": "data_metrics"
-  },
-  "demo-00314": {
-    "category": "data_analysis",
-    "scenario_label": "data_metrics"
-  },
-  "demo-00315": {
-    "category": "data_analysis",
-    "scenario_label": "data_metrics"
-  },
-  "demo-00316": {
-    "category": "data_analysis",
-    "scenario_label": "data_metrics"
-  },
-  "demo-00317": {
-    "category": "data_analysis",
-    "scenario_label": "data_metrics"
-  },
-  "demo-00318": {
-    "category": "data_analysis",
-    "scenario_label": "data_metrics"
-  },
-  "demo-00319": {
-    "category": "data_analysis",
-    "scenario_label": "data_metrics"
-  },
-  "demo-00320": {
-    "category": "data_analysis",
-    "scenario_label": "data_table"
-  },
-  "demo-00321": {
-    "category": "data_analysis",
-    "scenario_label": "data_table"
-  },
-  "demo-00322": {
-    "category": "data_analysis",
-    "scenario_label": "data_table"
-  },
-  "demo-00323": {
-    "category": "data_analysis",
-    "scenario_label": "data_table"
-  },
-  "demo-00324": {
-    "category": "data_analysis",
-    "scenario_label": "data_table"
-  },
-  "demo-00325": {
-    "category": "data_analysis",
-    "scenario_label": "data_table"
-  },
-  "demo-00326": {
-    "category": "data_analysis",
-    "scenario_label": "data_table"
-  },
-  "demo-00327": {
-    "category": "data_analysis",
-    "scenario_label": "data_table"
-  },
-  "demo-00328": {
-    "category": "data_analysis",
-    "scenario_label": "data_table"
-  },
-  "demo-00329": {
-    "category": "data_analysis",
-    "scenario_label": "data_table"
-  },
-  "demo-00330": {
-    "category": "data_analysis",
-    "scenario_label": "data_table"
-  },
-  "demo-00331": {
-    "category": "data_analysis",
-    "scenario_label": "data_table"
-  },
-  "demo-00332": {
-    "category": "data_analysis",
-    "scenario_label": "data_table"
-  },
-  "demo-00333": {
-    "category": "data_analysis",
-    "scenario_label": "data_table"
-  },
-  "demo-00334": {
-    "category": "data_analysis",
-    "scenario_label": "data_table"
-  },
-  "demo-00335": {
-    "category": "data_analysis",
-    "scenario_label": "data_table"
-  },
-  "demo-00336": {
-    "category": "text_generation",
-    "scenario_label": "text_letter"
-  },
-  "demo-00337": {
-    "category": "text_generation",
-    "scenario_label": "text_letter"
-  },
-  "demo-00338": {
-    "category": "text_generation",
-    "scenario_label": "text_letter"
-  },
-  "demo-00339": {
-    "category": "text_generation",
-    "scenario_label": "text_letter"
-  },
-  "demo-00340": {
-    "category": "text_generation",
-    "scenario_label": "text_letter"
-  },
-  "demo-00341": {
-    "category": "text_generation",
-    "scenario_label": "text_letter"
-  },
-  "demo-00342": {
-    "category": "text_generation",
-    "scenario_label": "text_letter"
-  },
-  "demo-00343": {
-    "category": "text_generation",
-    "scenario_label": "text_letter"
-  },
-  "demo-00344": {
-    "category": "text_generation",
-    "scenario_label": "text_letter"
-  },
-  "demo-00345": {
-    "category": "text_generation",
-    "scenario_label": "text_letter"
-  },
-  "demo-00346": {
-    "category": "text_generation",
-    "scenario_label": "text_letter"
-  },
-  "demo-00347": {
-    "category": "text_generation",
-    "scenario_label": "text_letter"
-  },
-  "demo-00348": {
-    "category": "text_generation",
-    "scenario_label": "text_letter"
-  },
-  "demo-00349": {
-    "category": "text_generation",
-    "scenario_label": "text_letter"
-  },
-  "demo-00350": {
-    "category": "text_generation",
-    "scenario_label": "text_letter"
-  },
-  "demo-00351": {
-    "category": "text_generation",
-    "scenario_label": "text_letter"
-  },
-  "demo-00352": {
-    "category": "text_generation",
-    "scenario_label": "text_reply"
-  },
-  "demo-00353": {
-    "category": "text_generation",
-    "scenario_label": "text_reply"
-  },
-  "demo-00354": {
-    "category": "text_generation",
-    "scenario_label": "text_reply"
-  },
-  "demo-00355": {
-    "category": "text_generation",
-    "scenario_label": "text_reply"
-  },
-  "demo-00356": {
-    "category": "text_generation",
-    "scenario_label": "text_reply"
-  },
-  "demo-00357": {
-    "category": "text_generation",
-    "scenario_label": "text_reply"
-  },
-  "demo-00358": {
-    "category": "text_generation",
-    "scenario_label": "text_reply"
-  },
-  "demo-00359": {
-    "category": "text_generation",
-    "scenario_label": "text_reply"
-  },
-  "demo-00360": {
-    "category": "text_generation",
-    "scenario_label": "text_reply"
-  },
-  "demo-00361": {
-    "category": "text_generation",
-    "scenario_label": "text_reply"
-  },
-  "demo-00362": {
-    "category": "text_generation",
-    "scenario_label": "text_reply"
-  },
-  "demo-00363": {
-    "category": "text_generation",
-    "scenario_label": "text_reply"
-  },
-  "demo-00364": {
-    "category": "text_generation",
-    "scenario_label": "text_reply"
-  },
-  "demo-00365": {
-    "category": "text_generation",
-    "scenario_label": "text_reply"
-  },
-  "demo-00366": {
-    "category": "text_generation",
-    "scenario_label": "text_reply"
-  },
-  "demo-00367": {
-    "category": "text_generation",
-    "scenario_label": "text_reply"
-  },
-  "demo-00368": {
-    "category": "text_generation",
-    "scenario_label": "text_review"
-  },
-  "demo-00369": {
-    "category": "text_generation",
-    "scenario_label": "text_review"
-  },
-  "demo-00370": {
-    "category": "text_generation",
-    "scenario_label": "text_review"
-  },
-  "demo-00371": {
-    "category": "text_generation",
-    "scenario_label": "text_review"
-  },
-  "demo-00372": {
-    "category": "text_generation",
-    "scenario_label": "text_review"
-  },
-  "demo-00373": {
-    "category": "text_generation",
-    "scenario_label": "text_review"
-  },
-  "demo-00374": {
-    "category": "text_generation",
-    "scenario_label": "text_review"
-  },
-  "demo-00375": {
-    "category": "text_generation",
-    "scenario_label": "text_review"
-  },
-  "demo-00376": {
-    "category": "text_generation",
-    "scenario_label": "text_review"
-  },
-  "demo-00377": {
-    "category": "text_generation",
-    "scenario_label": "text_review"
-  },
-  "demo-00378": {
-    "category": "text_generation",
-    "scenario_label": "text_review"
-  },
-  "demo-00379": {
-    "category": "text_generation",
-    "scenario_label": "text_review"
-  },
-  "demo-00380": {
-    "category": "text_generation",
-    "scenario_label": "text_review"
-  },
-  "demo-00381": {
-    "category": "text_generation",
-    "scenario_label": "text_review"
-  },
-  "demo-00382": {
-    "category": "text_generation",
-    "scenario_label": "text_review"
-  },
-  "demo-00383": {
-    "category": "text_generation",
-    "scenario_label": "text_review"
-  },
-  "demo-00384": {
-    "category": "text_generation",
-    "scenario_label": "text_post"
-  },
-  "demo-00385": {
-    "category": "text_generation",
-    "scenario_label": "text_post"
-  },
-  "demo-00386": {
-    "category": "text_generation",
-    "scenario_label": "text_post"
-  },
-  "demo-00387": {
-    "category": "text_generation",
-    "scenario_label": "text_post"
-  },
-  "demo-00388": {
-    "category": "text_generation",
-    "scenario_label": "text_post"
-  },
-  "demo-00389": {
-    "category": "text_generation",
-    "scenario_label": "text_post"
-  },
-  "demo-00390": {
-    "category": "text_generation",
-    "scenario_label": "text_post"
-  },
-  "demo-00391": {
-    "category": "text_generation",
-    "scenario_label": "text_post"
-  },
-  "demo-00392": {
-    "category": "text_generation",
-    "scenario_label": "text_post"
-  },
-  "demo-00393": {
-    "category": "text_generation",
-    "scenario_label": "text_post"
-  },
-  "demo-00394": {
-    "category": "text_generation",
-    "scenario_label": "text_post"
-  },
-  "demo-00395": {
-    "category": "text_generation",
-    "scenario_label": "text_post"
-  },
-  "demo-00396": {
-    "category": "text_generation",
-    "scenario_label": "text_post"
-  },
-  "demo-00397": {
-    "category": "text_generation",
-    "scenario_label": "text_post"
-  },
-  "demo-00398": {
-    "category": "text_generation",
-    "scenario_label": "text_post"
-  },
-  "demo-00399": {
-    "category": "text_generation",
-    "scenario_label": "text_post"
-  },
-  "demo-00400": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_why"
-  },
-  "demo-00401": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_why"
-  },
-  "demo-00402": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_why"
-  },
-  "demo-00403": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_why"
-  },
-  "demo-00404": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_why"
-  },
-  "demo-00405": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_why"
-  },
-  "demo-00406": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_why"
-  },
-  "demo-00407": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_why"
-  },
-  "demo-00408": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_why"
-  },
-  "demo-00409": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_why"
-  },
-  "demo-00410": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_why"
-  },
-  "demo-00411": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_why"
-  },
-  "demo-00412": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_why"
-  },
-  "demo-00413": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_why"
-  },
-  "demo-00414": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_why"
-  },
-  "demo-00415": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_why"
-  },
-  "demo-00416": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_what"
-  },
-  "demo-00417": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_what"
-  },
-  "demo-00418": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_what"
-  },
-  "demo-00419": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_what"
-  },
-  "demo-00420": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_what"
-  },
-  "demo-00421": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_what"
-  },
-  "demo-00422": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_what"
-  },
-  "demo-00423": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_what"
-  },
-  "demo-00424": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_what"
-  },
-  "demo-00425": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_what"
-  },
-  "demo-00426": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_what"
-  },
-  "demo-00427": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_what"
-  },
-  "demo-00428": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_what"
-  },
-  "demo-00429": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_what"
-  },
-  "demo-00430": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_what"
-  },
-  "demo-00431": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_what"
-  },
-  "demo-00432": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_how"
-  },
-  "demo-00433": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_how"
-  },
-  "demo-00434": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_how"
-  },
-  "demo-00435": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_how"
-  },
-  "demo-00436": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_how"
-  },
-  "demo-00437": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_how"
-  },
-  "demo-00438": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_how"
-  },
-  "demo-00439": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_how"
-  },
-  "demo-00440": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_how"
-  },
-  "demo-00441": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_how"
-  },
-  "demo-00442": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_how"
-  },
-  "demo-00443": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_how"
-  },
-  "demo-00444": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_how"
-  },
-  "demo-00445": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_how"
-  },
-  "demo-00446": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_how"
-  },
-  "demo-00447": {
-    "category": "knowledge_explanation",
-    "scenario_label": "kn_how"
-  },
-  "demo-00448": {
-    "category": "other",
-    "scenario_label": "other_chitchat"
-  },
-  "demo-00449": {
-    "category": "other",
-    "scenario_label": "other_chitchat"
-  },
-  "demo-00450": {
-    "category": "other",
-    "scenario_label": "other_chitchat"
-  },
-  "demo-00451": {
-    "category": "other",
-    "scenario_label": "other_chitchat"
-  },
-  "demo-00452": {
-    "category": "other",
-    "scenario_label": "other_chitchat"
-  },
-  "demo-00453": {
-    "category": "other",
-    "scenario_label": "other_chitchat"
-  },
-  "demo-00454": {
-    "category": "other",
-    "scenario_label": "other_chitchat"
-  },
-  "demo-00455": {
-    "category": "other",
-    "scenario_label": "other_chitchat"
-  },
-  "demo-00456": {
-    "category": "other",
-    "scenario_label": "other_chitchat"
-  },
-  "demo-00457": {
-    "category": "other",
-    "scenario_label": "other_chitchat"
-  },
-  "demo-00458": {
-    "category": "other",
-    "scenario_label": "other_chitchat"
-  },
-  "demo-00459": {
-    "category": "other",
-    "scenario_label": "other_chitchat"
-  },
-  "demo-00460": {
-    "category": "other",
-    "scenario_label": "other_chitchat"
-  },
-  "demo-00461": {
-    "category": "other",
-    "scenario_label": "other_chitchat"
-  },
-  "demo-00462": {
-    "category": "other",
-    "scenario_label": "other_chitchat"
-  },
-  "demo-00463": {
-    "category": "other",
-    "scenario_label": "other_chitchat"
-  },
-  "demo-00464": {
-    "category": "other",
-    "scenario_label": "other_multi_intent"
-  },
-  "demo-00465": {
-    "category": "other",
-    "scenario_label": "other_multi_intent"
-  },
-  "demo-00466": {
-    "category": "other",
-    "scenario_label": "other_multi_intent"
-  },
-  "demo-00467": {
-    "category": "other",
-    "scenario_label": "other_multi_intent"
-  },
-  "demo-00468": {
-    "category": "other",
-    "scenario_label": "other_multi_intent"
-  },
-  "demo-00469": {
-    "category": "other",
-    "scenario_label": "other_multi_intent"
-  },
-  "demo-00470": {
-    "category": "other",
-    "scenario_label": "other_multi_intent"
-  },
-  "demo-00471": {
-    "category": "other",
-    "scenario_label": "other_multi_intent"
-  },
-  "demo-00472": {
-    "category": "other",
-    "scenario_label": "other_multi_intent"
-  },
-  "demo-00473": {
-    "category": "other",
-    "scenario_label": "other_multi_intent"
-  },
-  "demo-00474": {
-    "category": "other",
-    "scenario_label": "other_multi_intent"
-  },
-  "demo-00475": {
-    "category": "other",
-    "scenario_label": "other_multi_intent"
-  },
-  "demo-00476": {
-    "category": "other",
-    "scenario_label": "other_multi_intent"
-  },
-  "demo-00477": {
-    "category": "other",
-    "scenario_label": "other_multi_intent"
-  },
-  "demo-00478": {
-    "category": "other",
-    "scenario_label": "other_multi_intent"
-  },
-  "demo-00479": {
-    "category": "other",
-    "scenario_label": "other_multi_intent"
-  },
-  "demo-00480": {
-    "category": "other",
-    "scenario_label": "other_vague"
-  },
-  "demo-00481": {
-    "category": "other",
-    "scenario_label": "other_vague"
-  },
-  "demo-00482": {
-    "category": "other",
-    "scenario_label": "other_vague"
-  },
-  "demo-00483": {
-    "category": "other",
-    "scenario_label": "other_vague"
-  },
-  "demo-00484": {
-    "category": "other",
-    "scenario_label": "other_vague"
-  },
-  "demo-00485": {
-    "category": "other",
-    "scenario_label": "other_vague"
-  },
-  "demo-00486": {
-    "category": "other",
-    "scenario_label": "other_vague"
-  },
-  "demo-00487": {
-    "category": "other",
-    "scenario_label": "other_vague"
-  },
-  "demo-00488": {
-    "category": "other",
-    "scenario_label": "other_vague"
-  },
-  "demo-00489": {
-    "category": "other",
-    "scenario_label": "other_vague"
-  },
-  "demo-00490": {
-    "category": "other",
-    "scenario_label": "other_vague"
-  },
-  "demo-00491": {
-    "category": "other",
-    "scenario_label": "other_vague"
-  },
-  "demo-00492": {
-    "category": "other",
-    "scenario_label": "other_vague"
-  },
-  "demo-00493": {
-    "category": "other",
-    "scenario_label": "other_vague"
-  },
-  "demo-00494": {
-    "category": "other",
-    "scenario_label": "other_vague"
-  },
-  "demo-00495": {
-    "category": "other",
-    "scenario_label": "other_vague"
-  },
-  "demo-00496": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_meeting_slot"
-  },
-  "demo-00497": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reschedule"
-  },
-  "demo-00498": {
-    "category": "calendar_planning",
-    "scenario_label": "cal_reminder"
-  },
-  "demo-00499": {
+  "krok-unanswered_price_requests-000": {
     "category": "monitoring_automation",
-    "scenario_label": "mon_email"
+    "scenario_label": "unanswered_price_requests"
   },
-  "demo-00500": {
+  "krok-unanswered_price_requests-001": {
     "category": "monitoring_automation",
-    "scenario_label": "mon_price"
+    "scenario_label": "unanswered_price_requests"
   },
-  "demo-00501": {
+  "krok-unanswered_price_requests-002": {
     "category": "monitoring_automation",
-    "scenario_label": "mon_deadline"
+    "scenario_label": "unanswered_price_requests"
   },
-  "demo-00502": {
-    "category": "task_management",
-    "scenario_label": "task_jira"
+  "krok-unanswered_price_requests-003": {
+    "category": "monitoring_automation",
+    "scenario_label": "unanswered_price_requests"
   },
-  "demo-00503": {
-    "category": "task_management",
-    "scenario_label": "task_ticket"
+  "krok-unanswered_price_requests-004": {
+    "category": "monitoring_automation",
+    "scenario_label": "unanswered_price_requests"
   },
-  "demo-00504": {
-    "category": "task_management",
-    "scenario_label": "task_project"
+  "krok-unanswered_price_requests-005": {
+    "category": "monitoring_automation",
+    "scenario_label": "unanswered_price_requests"
   },
-  "demo-00505": {
+  "krok-unanswered_price_requests-006": {
+    "category": "monitoring_automation",
+    "scenario_label": "unanswered_price_requests"
+  },
+  "krok-unanswered_price_requests-007": {
+    "category": "monitoring_automation",
+    "scenario_label": "unanswered_price_requests"
+  },
+  "krok-unanswered_price_requests-008": {
+    "category": "monitoring_automation",
+    "scenario_label": "unanswered_price_requests"
+  },
+  "krok-unanswered_price_requests-009": {
+    "category": "monitoring_automation",
+    "scenario_label": "unanswered_price_requests"
+  },
+  "krok-unanswered_price_requests-010": {
+    "category": "monitoring_automation",
+    "scenario_label": "unanswered_price_requests"
+  },
+  "krok-unanswered_price_requests-011": {
+    "category": "monitoring_automation",
+    "scenario_label": "unanswered_price_requests"
+  },
+  "krok-unanswered_price_requests-012": {
+    "category": "monitoring_automation",
+    "scenario_label": "unanswered_price_requests"
+  },
+  "krok-unanswered_price_requests-013": {
+    "category": "monitoring_automation",
+    "scenario_label": "unanswered_price_requests"
+  },
+  "krok-unanswered_price_requests-014": {
+    "category": "monitoring_automation",
+    "scenario_label": "unanswered_price_requests"
+  },
+  "krok-unanswered_price_requests-015": {
+    "category": "monitoring_automation",
+    "scenario_label": "unanswered_price_requests"
+  },
+  "krok-unanswered_price_requests-016": {
+    "category": "monitoring_automation",
+    "scenario_label": "unanswered_price_requests"
+  },
+  "krok-unanswered_price_requests-017": {
+    "category": "monitoring_automation",
+    "scenario_label": "unanswered_price_requests"
+  },
+  "krok-unanswered_price_requests-018": {
+    "category": "monitoring_automation",
+    "scenario_label": "unanswered_price_requests"
+  },
+  "krok-unanswered_price_requests-019": {
+    "category": "monitoring_automation",
+    "scenario_label": "unanswered_price_requests"
+  },
+  "krok-unanswered_price_requests-020": {
+    "category": "monitoring_automation",
+    "scenario_label": "unanswered_price_requests"
+  },
+  "krok-unanswered_price_requests-021": {
+    "category": "monitoring_automation",
+    "scenario_label": "unanswered_price_requests"
+  },
+  "krok-unanswered_price_requests-022": {
+    "category": "monitoring_automation",
+    "scenario_label": "unanswered_price_requests"
+  },
+  "krok-unanswered_price_requests-023": {
+    "category": "monitoring_automation",
+    "scenario_label": "unanswered_price_requests"
+  },
+  "krok-unanswered_price_requests-024": {
+    "category": "monitoring_automation",
+    "scenario_label": "unanswered_price_requests"
+  },
+  "krok-mail_monitoring_rules-000": {
+    "category": "monitoring_automation",
+    "scenario_label": "mail_monitoring_rules"
+  },
+  "krok-mail_monitoring_rules-001": {
+    "category": "monitoring_automation",
+    "scenario_label": "mail_monitoring_rules"
+  },
+  "krok-mail_monitoring_rules-002": {
+    "category": "monitoring_automation",
+    "scenario_label": "mail_monitoring_rules"
+  },
+  "krok-mail_monitoring_rules-003": {
+    "category": "monitoring_automation",
+    "scenario_label": "mail_monitoring_rules"
+  },
+  "krok-mail_monitoring_rules-004": {
+    "category": "monitoring_automation",
+    "scenario_label": "mail_monitoring_rules"
+  },
+  "krok-mail_monitoring_rules-005": {
+    "category": "monitoring_automation",
+    "scenario_label": "mail_monitoring_rules"
+  },
+  "krok-mail_monitoring_rules-006": {
+    "category": "monitoring_automation",
+    "scenario_label": "mail_monitoring_rules"
+  },
+  "krok-mail_monitoring_rules-007": {
+    "category": "monitoring_automation",
+    "scenario_label": "mail_monitoring_rules"
+  },
+  "krok-mail_monitoring_rules-008": {
+    "category": "monitoring_automation",
+    "scenario_label": "mail_monitoring_rules"
+  },
+  "krok-mail_monitoring_rules-009": {
+    "category": "monitoring_automation",
+    "scenario_label": "mail_monitoring_rules"
+  },
+  "krok-mail_monitoring_rules-010": {
+    "category": "monitoring_automation",
+    "scenario_label": "mail_monitoring_rules"
+  },
+  "krok-mail_monitoring_rules-011": {
+    "category": "monitoring_automation",
+    "scenario_label": "mail_monitoring_rules"
+  },
+  "krok-mail_monitoring_rules-012": {
+    "category": "monitoring_automation",
+    "scenario_label": "mail_monitoring_rules"
+  },
+  "krok-mail_monitoring_rules-013": {
+    "category": "monitoring_automation",
+    "scenario_label": "mail_monitoring_rules"
+  },
+  "krok-mail_monitoring_rules-014": {
+    "category": "monitoring_automation",
+    "scenario_label": "mail_monitoring_rules"
+  },
+  "krok-mail_monitoring_rules-015": {
+    "category": "monitoring_automation",
+    "scenario_label": "mail_monitoring_rules"
+  },
+  "krok-mail_monitoring_rules-016": {
+    "category": "monitoring_automation",
+    "scenario_label": "mail_monitoring_rules"
+  },
+  "krok-mail_monitoring_rules-017": {
+    "category": "monitoring_automation",
+    "scenario_label": "mail_monitoring_rules"
+  },
+  "krok-mail_monitoring_rules-018": {
+    "category": "monitoring_automation",
+    "scenario_label": "mail_monitoring_rules"
+  },
+  "krok-mail_monitoring_rules-019": {
+    "category": "monitoring_automation",
+    "scenario_label": "mail_monitoring_rules"
+  },
+  "krok-won_tenders_notifications-000": {
+    "category": "monitoring_automation",
+    "scenario_label": "won_tenders_notifications"
+  },
+  "krok-won_tenders_notifications-001": {
+    "category": "monitoring_automation",
+    "scenario_label": "won_tenders_notifications"
+  },
+  "krok-won_tenders_notifications-002": {
+    "category": "monitoring_automation",
+    "scenario_label": "won_tenders_notifications"
+  },
+  "krok-won_tenders_notifications-003": {
+    "category": "monitoring_automation",
+    "scenario_label": "won_tenders_notifications"
+  },
+  "krok-won_tenders_notifications-004": {
+    "category": "monitoring_automation",
+    "scenario_label": "won_tenders_notifications"
+  },
+  "krok-won_tenders_notifications-005": {
+    "category": "monitoring_automation",
+    "scenario_label": "won_tenders_notifications"
+  },
+  "krok-won_tenders_notifications-006": {
+    "category": "monitoring_automation",
+    "scenario_label": "won_tenders_notifications"
+  },
+  "krok-won_tenders_notifications-007": {
+    "category": "monitoring_automation",
+    "scenario_label": "won_tenders_notifications"
+  },
+  "krok-won_tenders_notifications-008": {
+    "category": "monitoring_automation",
+    "scenario_label": "won_tenders_notifications"
+  },
+  "krok-won_tenders_notifications-009": {
+    "category": "monitoring_automation",
+    "scenario_label": "won_tenders_notifications"
+  },
+  "krok-won_tenders_notifications-010": {
+    "category": "monitoring_automation",
+    "scenario_label": "won_tenders_notifications"
+  },
+  "krok-won_tenders_notifications-011": {
+    "category": "monitoring_automation",
+    "scenario_label": "won_tenders_notifications"
+  },
+  "krok-won_tenders_notifications-012": {
+    "category": "monitoring_automation",
+    "scenario_label": "won_tenders_notifications"
+  },
+  "krok-won_tenders_notifications-013": {
+    "category": "monitoring_automation",
+    "scenario_label": "won_tenders_notifications"
+  },
+  "krok-won_tenders_notifications-014": {
+    "category": "monitoring_automation",
+    "scenario_label": "won_tenders_notifications"
+  },
+  "krok-won_tenders_notifications-015": {
+    "category": "monitoring_automation",
+    "scenario_label": "won_tenders_notifications"
+  },
+  "krok-won_tenders_notifications-016": {
+    "category": "monitoring_automation",
+    "scenario_label": "won_tenders_notifications"
+  },
+  "krok-won_tenders_notifications-017": {
+    "category": "monitoring_automation",
+    "scenario_label": "won_tenders_notifications"
+  },
+  "krok-crm_digest_to_email-000": {
+    "category": "monitoring_automation",
+    "scenario_label": "crm_digest_to_email"
+  },
+  "krok-crm_digest_to_email-001": {
+    "category": "monitoring_automation",
+    "scenario_label": "crm_digest_to_email"
+  },
+  "krok-crm_digest_to_email-002": {
+    "category": "monitoring_automation",
+    "scenario_label": "crm_digest_to_email"
+  },
+  "krok-crm_digest_to_email-003": {
+    "category": "monitoring_automation",
+    "scenario_label": "crm_digest_to_email"
+  },
+  "krok-crm_digest_to_email-004": {
+    "category": "monitoring_automation",
+    "scenario_label": "crm_digest_to_email"
+  },
+  "krok-crm_digest_to_email-005": {
+    "category": "monitoring_automation",
+    "scenario_label": "crm_digest_to_email"
+  },
+  "krok-crm_digest_to_email-006": {
+    "category": "monitoring_automation",
+    "scenario_label": "crm_digest_to_email"
+  },
+  "krok-crm_digest_to_email-007": {
+    "category": "monitoring_automation",
+    "scenario_label": "crm_digest_to_email"
+  },
+  "krok-crm_digest_to_email-008": {
+    "category": "monitoring_automation",
+    "scenario_label": "crm_digest_to_email"
+  },
+  "krok-crm_digest_to_email-009": {
+    "category": "monitoring_automation",
+    "scenario_label": "crm_digest_to_email"
+  },
+  "krok-crm_digest_to_email-010": {
+    "category": "monitoring_automation",
+    "scenario_label": "crm_digest_to_email"
+  },
+  "krok-crm_digest_to_email-011": {
+    "category": "monitoring_automation",
+    "scenario_label": "crm_digest_to_email"
+  },
+  "krok-crm_digest_to_email-012": {
+    "category": "monitoring_automation",
+    "scenario_label": "crm_digest_to_email"
+  },
+  "krok-crm_digest_to_email-013": {
+    "category": "monitoring_automation",
+    "scenario_label": "crm_digest_to_email"
+  },
+  "krok-crm_digest_to_email-014": {
+    "category": "monitoring_automation",
+    "scenario_label": "crm_digest_to_email"
+  },
+  "krok-crm_digest_to_email-015": {
+    "category": "monitoring_automation",
+    "scenario_label": "crm_digest_to_email"
+  },
+  "krok-crm_digest_to_email-016": {
+    "category": "monitoring_automation",
+    "scenario_label": "crm_digest_to_email"
+  },
+  "krok-crm_digest_to_email-017": {
+    "category": "monitoring_automation",
+    "scenario_label": "crm_digest_to_email"
+  },
+  "krok-crm_digest_to_email-018": {
+    "category": "monitoring_automation",
+    "scenario_label": "crm_digest_to_email"
+  },
+  "krok-crm_digest_to_email-019": {
+    "category": "monitoring_automation",
+    "scenario_label": "crm_digest_to_email"
+  },
+  "krok-crm_digest_to_email-020": {
+    "category": "monitoring_automation",
+    "scenario_label": "crm_digest_to_email"
+  },
+  "krok-crm_digest_to_email-021": {
+    "category": "monitoring_automation",
+    "scenario_label": "crm_digest_to_email"
+  },
+  "krok-project_team_vendor_owner-000": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "krok-project_team_vendor_owner-001": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "krok-project_team_vendor_owner-002": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "krok-project_team_vendor_owner-003": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "krok-project_team_vendor_owner-004": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "krok-project_team_vendor_owner-005": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "krok-project_team_vendor_owner-006": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "krok-project_team_vendor_owner-007": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "krok-project_team_vendor_owner-008": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "krok-project_team_vendor_owner-009": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "krok-project_team_vendor_owner-010": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "krok-project_team_vendor_owner-011": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "krok-project_team_vendor_owner-012": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "krok-crm_criteria_search-000": {
+    "category": "information_search",
+    "scenario_label": "crm_criteria_search"
+  },
+  "krok-crm_criteria_search-001": {
+    "category": "information_search",
+    "scenario_label": "crm_criteria_search"
+  },
+  "krok-crm_criteria_search-002": {
+    "category": "information_search",
+    "scenario_label": "crm_criteria_search"
+  },
+  "krok-crm_criteria_search-003": {
+    "category": "information_search",
+    "scenario_label": "crm_criteria_search"
+  },
+  "krok-crm_criteria_search-004": {
+    "category": "information_search",
+    "scenario_label": "crm_criteria_search"
+  },
+  "krok-crm_criteria_search-005": {
+    "category": "information_search",
+    "scenario_label": "crm_criteria_search"
+  },
+  "krok-crm_criteria_search-006": {
+    "category": "information_search",
+    "scenario_label": "crm_criteria_search"
+  },
+  "krok-crm_criteria_search-007": {
+    "category": "information_search",
+    "scenario_label": "crm_criteria_search"
+  },
+  "krok-crm_criteria_search-008": {
+    "category": "information_search",
+    "scenario_label": "crm_criteria_search"
+  },
+  "krok-crm_criteria_search-009": {
+    "category": "information_search",
+    "scenario_label": "crm_criteria_search"
+  },
+  "krok-crm_criteria_search-010": {
+    "category": "information_search",
+    "scenario_label": "crm_criteria_search"
+  },
+  "krok-crm_criteria_search-011": {
+    "category": "information_search",
+    "scenario_label": "crm_criteria_search"
+  },
+  "krok-crm_criteria_search-012": {
+    "category": "information_search",
+    "scenario_label": "crm_criteria_search"
+  },
+  "krok-crm_criteria_search-013": {
+    "category": "information_search",
+    "scenario_label": "crm_criteria_search"
+  },
+  "krok-crm_criteria_search-014": {
+    "category": "information_search",
+    "scenario_label": "crm_criteria_search"
+  },
+  "krok-crm_criteria_search-015": {
+    "category": "information_search",
+    "scenario_label": "crm_criteria_search"
+  },
+  "krok-crm_criteria_search-016": {
+    "category": "information_search",
+    "scenario_label": "crm_criteria_search"
+  },
+  "krok-crm_criteria_search-017": {
+    "category": "information_search",
+    "scenario_label": "crm_criteria_search"
+  },
+  "krok-crm_criteria_search-018": {
+    "category": "information_search",
+    "scenario_label": "crm_criteria_search"
+  },
+  "krok-crm_criteria_search-019": {
+    "category": "information_search",
+    "scenario_label": "crm_criteria_search"
+  },
+  "krok-crm_criteria_search-020": {
+    "category": "information_search",
+    "scenario_label": "crm_criteria_search"
+  },
+  "krok-crm_criteria_search-021": {
+    "category": "information_search",
+    "scenario_label": "crm_criteria_search"
+  },
+  "krok-crm_criteria_search-022": {
+    "category": "information_search",
+    "scenario_label": "crm_criteria_search"
+  },
+  "krok-crm_criteria_search-023": {
+    "category": "information_search",
+    "scenario_label": "crm_criteria_search"
+  },
+  "krok-company_open_source_summary-000": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_summary"
+  },
+  "krok-company_open_source_summary-001": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_summary"
+  },
+  "krok-company_open_source_summary-002": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_summary"
+  },
+  "krok-company_open_source_summary-003": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_summary"
+  },
+  "krok-company_open_source_summary-004": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_summary"
+  },
+  "krok-company_open_source_summary-005": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_summary"
+  },
+  "krok-company_open_source_summary-006": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_summary"
+  },
+  "krok-company_open_source_summary-007": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_summary"
+  },
+  "krok-company_open_source_summary-008": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_summary"
+  },
+  "krok-company_open_source_summary-009": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_summary"
+  },
+  "krok-company_open_source_summary-010": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_summary"
+  },
+  "krok-company_open_source_summary-011": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_summary"
+  },
+  "krok-company_open_source_summary-012": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_summary"
+  },
+  "krok-company_open_source_summary-013": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_summary"
+  },
+  "krok-company_open_source_summary-014": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_summary"
+  },
+  "krok-company_open_source_summary-015": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_summary"
+  },
+  "krok-company_open_source_summary-016": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_summary"
+  },
+  "krok-company_open_source_summary-017": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_summary"
+  },
+  "krok-company_open_source_summary-018": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_summary"
+  },
+  "krok-company_open_source_summary-019": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_summary"
+  },
+  "krok-company_open_source_summary-020": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_summary"
+  },
+  "krok-company_open_source_summary-021": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_summary"
+  },
+  "krok-company_open_source_summary-022": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_summary"
+  },
+  "krok-company_open_source_summary-023": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_summary"
+  },
+  "krok-company_open_source_summary-024": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_summary"
+  },
+  "krok-company_open_source_summary-025": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_summary"
+  },
+  "krok-company_open_source_summary-026": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_summary"
+  },
+  "krok-client_excel_report-000": {
     "category": "reporting_export",
-    "scenario_label": "rep_excel_sales"
+    "scenario_label": "client_excel_report"
   },
-  "demo-00506": {
+  "krok-client_excel_report-001": {
     "category": "reporting_export",
-    "scenario_label": "rep_pdf_summary"
+    "scenario_label": "client_excel_report"
   },
-  "demo-00507": {
+  "krok-client_excel_report-002": {
     "category": "reporting_export",
-    "scenario_label": "rep_csv_export"
+    "scenario_label": "client_excel_report"
   },
-  "demo-00508": {
-    "category": "summarization",
-    "scenario_label": "sum_document"
+  "krok-client_excel_report-003": {
+    "category": "reporting_export",
+    "scenario_label": "client_excel_report"
   },
-  "demo-00509": {
-    "category": "summarization",
-    "scenario_label": "sum_meeting_notes"
+  "krok-client_excel_report-004": {
+    "category": "reporting_export",
+    "scenario_label": "client_excel_report"
   },
-  "demo-00510": {
+  "krok-client_excel_report-005": {
+    "category": "reporting_export",
+    "scenario_label": "client_excel_report"
+  },
+  "krok-client_excel_report-006": {
+    "category": "reporting_export",
+    "scenario_label": "client_excel_report"
+  },
+  "krok-client_excel_report-007": {
+    "category": "reporting_export",
+    "scenario_label": "client_excel_report"
+  },
+  "krok-client_excel_report-008": {
+    "category": "reporting_export",
+    "scenario_label": "client_excel_report"
+  },
+  "krok-client_excel_report-009": {
+    "category": "reporting_export",
+    "scenario_label": "client_excel_report"
+  },
+  "krok-client_excel_report-010": {
+    "category": "reporting_export",
+    "scenario_label": "client_excel_report"
+  },
+  "krok-client_excel_report-011": {
+    "category": "reporting_export",
+    "scenario_label": "client_excel_report"
+  },
+  "krok-client_excel_report-012": {
+    "category": "reporting_export",
+    "scenario_label": "client_excel_report"
+  },
+  "krok-client_excel_report-013": {
+    "category": "reporting_export",
+    "scenario_label": "client_excel_report"
+  },
+  "krok-client_excel_report-014": {
+    "category": "reporting_export",
+    "scenario_label": "client_excel_report"
+  },
+  "krok-client_excel_report-015": {
+    "category": "reporting_export",
+    "scenario_label": "client_excel_report"
+  },
+  "krok-client_excel_report-016": {
+    "category": "reporting_export",
+    "scenario_label": "client_excel_report"
+  },
+  "krok-client_excel_report-017": {
+    "category": "reporting_export",
+    "scenario_label": "client_excel_report"
+  },
+  "krok-client_excel_report-018": {
+    "category": "reporting_export",
+    "scenario_label": "client_excel_report"
+  },
+  "krok-crm_fields_to_excel-000": {
+    "category": "reporting_export",
+    "scenario_label": "crm_fields_to_excel"
+  },
+  "krok-crm_fields_to_excel-001": {
+    "category": "reporting_export",
+    "scenario_label": "crm_fields_to_excel"
+  },
+  "krok-crm_fields_to_excel-002": {
+    "category": "reporting_export",
+    "scenario_label": "crm_fields_to_excel"
+  },
+  "krok-crm_fields_to_excel-003": {
+    "category": "reporting_export",
+    "scenario_label": "crm_fields_to_excel"
+  },
+  "krok-crm_fields_to_excel-004": {
+    "category": "reporting_export",
+    "scenario_label": "crm_fields_to_excel"
+  },
+  "krok-crm_fields_to_excel-005": {
+    "category": "reporting_export",
+    "scenario_label": "crm_fields_to_excel"
+  },
+  "krok-crm_fields_to_excel-006": {
+    "category": "reporting_export",
+    "scenario_label": "crm_fields_to_excel"
+  },
+  "krok-crm_fields_to_excel-007": {
+    "category": "reporting_export",
+    "scenario_label": "crm_fields_to_excel"
+  },
+  "krok-crm_fields_to_excel-008": {
+    "category": "reporting_export",
+    "scenario_label": "crm_fields_to_excel"
+  },
+  "krok-crm_fields_to_excel-009": {
+    "category": "reporting_export",
+    "scenario_label": "crm_fields_to_excel"
+  },
+  "krok-crm_fields_to_excel-010": {
+    "category": "reporting_export",
+    "scenario_label": "crm_fields_to_excel"
+  },
+  "krok-crm_fields_to_excel-011": {
+    "category": "reporting_export",
+    "scenario_label": "crm_fields_to_excel"
+  },
+  "krok-crm_fields_to_excel-012": {
+    "category": "reporting_export",
+    "scenario_label": "crm_fields_to_excel"
+  },
+  "krok-crm_fields_to_excel-013": {
+    "category": "reporting_export",
+    "scenario_label": "crm_fields_to_excel"
+  },
+  "krok-crm_fields_to_excel-014": {
+    "category": "reporting_export",
+    "scenario_label": "crm_fields_to_excel"
+  },
+  "krok-crm_fields_to_excel-015": {
+    "category": "reporting_export",
+    "scenario_label": "crm_fields_to_excel"
+  },
+  "krok-crm_fields_to_excel-016": {
+    "category": "reporting_export",
+    "scenario_label": "crm_fields_to_excel"
+  },
+  "krok-crm_fields_to_excel-017": {
+    "category": "reporting_export",
+    "scenario_label": "crm_fields_to_excel"
+  },
+  "krok-crm_fields_to_excel-018": {
+    "category": "reporting_export",
+    "scenario_label": "crm_fields_to_excel"
+  },
+  "krok-crm_fields_to_excel-019": {
+    "category": "reporting_export",
+    "scenario_label": "crm_fields_to_excel"
+  },
+  "krok-crm_fields_to_excel-020": {
+    "category": "reporting_export",
+    "scenario_label": "crm_fields_to_excel"
+  },
+  "krok-crm_fields_to_excel-021": {
+    "category": "reporting_export",
+    "scenario_label": "crm_fields_to_excel"
+  },
+  "krok-crm_fields_to_excel-022": {
+    "category": "reporting_export",
+    "scenario_label": "crm_fields_to_excel"
+  },
+  "krok-crm_fields_to_excel-023": {
+    "category": "reporting_export",
+    "scenario_label": "crm_fields_to_excel"
+  },
+  "krok-crm_fields_to_excel-024": {
+    "category": "reporting_export",
+    "scenario_label": "crm_fields_to_excel"
+  },
+  "krok-crm_fields_to_excel-025": {
+    "category": "reporting_export",
+    "scenario_label": "crm_fields_to_excel"
+  },
+  "krok-coolfeedback_manager_review-000": {
+    "category": "text_generation",
+    "scenario_label": "coolfeedback_manager_review"
+  },
+  "krok-coolfeedback_manager_review-001": {
+    "category": "text_generation",
+    "scenario_label": "coolfeedback_manager_review"
+  },
+  "krok-coolfeedback_manager_review-002": {
+    "category": "text_generation",
+    "scenario_label": "coolfeedback_manager_review"
+  },
+  "krok-coolfeedback_manager_review-003": {
+    "category": "text_generation",
+    "scenario_label": "coolfeedback_manager_review"
+  },
+  "krok-coolfeedback_manager_review-004": {
+    "category": "text_generation",
+    "scenario_label": "coolfeedback_manager_review"
+  },
+  "krok-coolfeedback_manager_review-005": {
+    "category": "text_generation",
+    "scenario_label": "coolfeedback_manager_review"
+  },
+  "krok-coolfeedback_manager_review-006": {
+    "category": "text_generation",
+    "scenario_label": "coolfeedback_manager_review"
+  },
+  "krok-coolfeedback_manager_review-007": {
+    "category": "text_generation",
+    "scenario_label": "coolfeedback_manager_review"
+  },
+  "krok-coolfeedback_manager_review-008": {
+    "category": "text_generation",
+    "scenario_label": "coolfeedback_manager_review"
+  },
+  "krok-coolfeedback_manager_review-009": {
+    "category": "text_generation",
+    "scenario_label": "coolfeedback_manager_review"
+  },
+  "krok-coolfeedback_manager_review-010": {
+    "category": "text_generation",
+    "scenario_label": "coolfeedback_manager_review"
+  },
+  "krok-coolfeedback_manager_review-011": {
+    "category": "text_generation",
+    "scenario_label": "coolfeedback_manager_review"
+  },
+  "krok-pre_monitoring_note-000": {
+    "category": "task_management",
+    "scenario_label": "pre_monitoring_note"
+  },
+  "krok-pre_monitoring_note-001": {
+    "category": "task_management",
+    "scenario_label": "pre_monitoring_note"
+  },
+  "krok-pre_monitoring_note-002": {
+    "category": "task_management",
+    "scenario_label": "pre_monitoring_note"
+  },
+  "krok-pre_monitoring_note-003": {
+    "category": "task_management",
+    "scenario_label": "pre_monitoring_note"
+  },
+  "krok-pre_monitoring_note-004": {
+    "category": "task_management",
+    "scenario_label": "pre_monitoring_note"
+  },
+  "krok-pre_monitoring_note-005": {
+    "category": "task_management",
+    "scenario_label": "pre_monitoring_note"
+  },
+  "krok-pre_monitoring_note-006": {
+    "category": "task_management",
+    "scenario_label": "pre_monitoring_note"
+  },
+  "krok-pre_monitoring_note-007": {
+    "category": "task_management",
+    "scenario_label": "pre_monitoring_note"
+  },
+  "krok-pre_monitoring_note-008": {
+    "category": "task_management",
+    "scenario_label": "pre_monitoring_note"
+  },
+  "krok-pre_monitoring_note-009": {
+    "category": "task_management",
+    "scenario_label": "pre_monitoring_note"
+  },
+  "krok-isup_ticket_edit-000": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_edit"
+  },
+  "krok-isup_ticket_edit-001": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_edit"
+  },
+  "krok-isup_ticket_edit-002": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_edit"
+  },
+  "krok-isup_ticket_edit-003": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_edit"
+  },
+  "krok-isup_ticket_edit-004": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_edit"
+  },
+  "krok-isup_ticket_edit-005": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_edit"
+  },
+  "krok-isup_ticket_edit-006": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_edit"
+  },
+  "krok-isup_ticket_edit-007": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_edit"
+  },
+  "krok-isup_ticket_edit-008": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_edit"
+  },
+  "krok-isup_ticket_edit-009": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_edit"
+  },
+  "krok-isup_ticket_edit-010": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_edit"
+  },
+  "krok-isup_ticket_edit-011": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_edit"
+  },
+  "krok-isup_ticket_edit-012": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_edit"
+  },
+  "krok-isup_ticket_edit-013": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_edit"
+  },
+  "krok-isup_ticket_edit-014": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_edit"
+  },
+  "krok-isup_ticket_edit-015": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_edit"
+  },
+  "krok-isup_ticket_edit-016": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_edit"
+  },
+  "krok-isup_ticket_edit-017": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_edit"
+  },
+  "krok-isup_ticket_edit-018": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_edit"
+  },
+  "krok-isup_ticket_edit-019": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_edit"
+  },
+  "krok-isup_ticket_edit-020": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_edit"
+  },
+  "krok-weekly_tender_report-000": {
+    "category": "reporting_export",
+    "scenario_label": "weekly_tender_report"
+  },
+  "krok-weekly_tender_report-001": {
+    "category": "reporting_export",
+    "scenario_label": "weekly_tender_report"
+  },
+  "krok-weekly_tender_report-002": {
+    "category": "reporting_export",
+    "scenario_label": "weekly_tender_report"
+  },
+  "krok-weekly_tender_report-003": {
+    "category": "reporting_export",
+    "scenario_label": "weekly_tender_report"
+  },
+  "krok-weekly_tender_report-004": {
+    "category": "reporting_export",
+    "scenario_label": "weekly_tender_report"
+  },
+  "krok-weekly_tender_report-005": {
+    "category": "reporting_export",
+    "scenario_label": "weekly_tender_report"
+  },
+  "krok-weekly_tender_report-006": {
+    "category": "reporting_export",
+    "scenario_label": "weekly_tender_report"
+  },
+  "krok-weekly_tender_report-007": {
+    "category": "reporting_export",
+    "scenario_label": "weekly_tender_report"
+  },
+  "krok-weekly_tender_report-008": {
+    "category": "reporting_export",
+    "scenario_label": "weekly_tender_report"
+  },
+  "krok-weekly_tender_report-009": {
+    "category": "reporting_export",
+    "scenario_label": "weekly_tender_report"
+  },
+  "krok-weekly_tender_report-010": {
+    "category": "reporting_export",
+    "scenario_label": "weekly_tender_report"
+  },
+  "krok-weekly_tender_report-011": {
+    "category": "reporting_export",
+    "scenario_label": "weekly_tender_report"
+  },
+  "krok-weekly_tender_report-012": {
+    "category": "reporting_export",
+    "scenario_label": "weekly_tender_report"
+  },
+  "krok-weekly_tender_report-013": {
+    "category": "reporting_export",
+    "scenario_label": "weekly_tender_report"
+  },
+  "krok-weekly_tender_report-014": {
+    "category": "reporting_export",
+    "scenario_label": "weekly_tender_report"
+  },
+  "krok-weekly_tender_report-015": {
+    "category": "reporting_export",
+    "scenario_label": "weekly_tender_report"
+  },
+  "krok-weekly_tender_report-016": {
+    "category": "reporting_export",
+    "scenario_label": "weekly_tender_report"
+  },
+  "krok-weekly_tender_report-017": {
+    "category": "reporting_export",
+    "scenario_label": "weekly_tender_report"
+  },
+  "krok-weekly_tender_report-018": {
+    "category": "reporting_export",
+    "scenario_label": "weekly_tender_report"
+  },
+  "krok-weekly_tender_report-019": {
+    "category": "reporting_export",
+    "scenario_label": "weekly_tender_report"
+  },
+  "krok-weekly_tender_report-020": {
+    "category": "reporting_export",
+    "scenario_label": "weekly_tender_report"
+  },
+  "krok-weekly_tender_report-021": {
+    "category": "reporting_export",
+    "scenario_label": "weekly_tender_report"
+  },
+  "krok-weekly_tender_report-022": {
+    "category": "reporting_export",
+    "scenario_label": "weekly_tender_report"
+  },
+  "krok-jira_assigned_tasks-000": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-001": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-002": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-003": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-004": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-005": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-006": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-007": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-008": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-009": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-010": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-011": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-012": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-013": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-014": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-015": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-016": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-017": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-018": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-019": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-020": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-021": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-022": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-023": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-024": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-025": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-026": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-027": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-028": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_assigned_tasks-029": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "krok-jira_priority_tasks-000": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "krok-jira_priority_tasks-001": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "krok-jira_priority_tasks-002": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "krok-jira_priority_tasks-003": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "krok-jira_priority_tasks-004": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "krok-jira_priority_tasks-005": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "krok-jira_priority_tasks-006": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "krok-jira_priority_tasks-007": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "krok-jira_priority_tasks-008": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "krok-jira_priority_tasks-009": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "krok-jira_priority_tasks-010": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "krok-jira_priority_tasks-011": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "krok-jira_priority_tasks-012": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "krok-jira_priority_tasks-013": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "krok-jira_priority_tasks-014": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "krok-jira_priority_tasks-015": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "krok-jira_priority_tasks-016": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "krok-manager_observations-000": {
+    "category": "task_management",
+    "scenario_label": "manager_observations"
+  },
+  "krok-manager_observations-001": {
+    "category": "task_management",
+    "scenario_label": "manager_observations"
+  },
+  "krok-manager_observations-002": {
+    "category": "task_management",
+    "scenario_label": "manager_observations"
+  },
+  "krok-manager_observations-003": {
+    "category": "task_management",
+    "scenario_label": "manager_observations"
+  },
+  "krok-manager_observations-004": {
+    "category": "task_management",
+    "scenario_label": "manager_observations"
+  },
+  "krok-manager_observations-005": {
+    "category": "task_management",
+    "scenario_label": "manager_observations"
+  },
+  "krok-manager_observations-006": {
+    "category": "task_management",
+    "scenario_label": "manager_observations"
+  },
+  "krok-manager_observations-007": {
+    "category": "task_management",
+    "scenario_label": "manager_observations"
+  },
+  "krok-manager_observations-008": {
+    "category": "task_management",
+    "scenario_label": "manager_observations"
+  },
+  "krok-manager_observations-009": {
+    "category": "task_management",
+    "scenario_label": "manager_observations"
+  },
+  "krok-manager_observations-010": {
+    "category": "task_management",
+    "scenario_label": "manager_observations"
+  },
+  "krok-analysis_export_excel-000": {
+    "category": "reporting_export",
+    "scenario_label": "analysis_export_excel"
+  },
+  "krok-analysis_export_excel-001": {
+    "category": "reporting_export",
+    "scenario_label": "analysis_export_excel"
+  },
+  "krok-analysis_export_excel-002": {
+    "category": "reporting_export",
+    "scenario_label": "analysis_export_excel"
+  },
+  "krok-analysis_export_excel-003": {
+    "category": "reporting_export",
+    "scenario_label": "analysis_export_excel"
+  },
+  "krok-analysis_export_excel-004": {
+    "category": "reporting_export",
+    "scenario_label": "analysis_export_excel"
+  },
+  "krok-analysis_export_excel-005": {
+    "category": "reporting_export",
+    "scenario_label": "analysis_export_excel"
+  },
+  "krok-analysis_export_excel-006": {
+    "category": "reporting_export",
+    "scenario_label": "analysis_export_excel"
+  },
+  "krok-analysis_export_excel-007": {
+    "category": "reporting_export",
+    "scenario_label": "analysis_export_excel"
+  },
+  "krok-analysis_export_excel-008": {
+    "category": "reporting_export",
+    "scenario_label": "analysis_export_excel"
+  },
+  "krok-analysis_export_excel-009": {
+    "category": "reporting_export",
+    "scenario_label": "analysis_export_excel"
+  },
+  "krok-analysis_export_excel-010": {
+    "category": "reporting_export",
+    "scenario_label": "analysis_export_excel"
+  },
+  "krok-analysis_export_excel-011": {
+    "category": "reporting_export",
+    "scenario_label": "analysis_export_excel"
+  },
+  "krok-analysis_export_excel-012": {
+    "category": "reporting_export",
+    "scenario_label": "analysis_export_excel"
+  },
+  "krok-analysis_export_excel-013": {
+    "category": "reporting_export",
+    "scenario_label": "analysis_export_excel"
+  },
+  "krok-analysis_export_excel-014": {
+    "category": "reporting_export",
+    "scenario_label": "analysis_export_excel"
+  },
+  "krok-analysis_export_excel-015": {
+    "category": "reporting_export",
+    "scenario_label": "analysis_export_excel"
+  },
+  "krok-analysis_export_excel-016": {
+    "category": "reporting_export",
+    "scenario_label": "analysis_export_excel"
+  },
+  "krok-analysis_export_excel-017": {
+    "category": "reporting_export",
+    "scenario_label": "analysis_export_excel"
+  },
+  "krok-generic_excel_export-000": {
+    "category": "reporting_export",
+    "scenario_label": "generic_excel_export"
+  },
+  "krok-generic_excel_export-001": {
+    "category": "reporting_export",
+    "scenario_label": "generic_excel_export"
+  },
+  "krok-generic_excel_export-002": {
+    "category": "reporting_export",
+    "scenario_label": "generic_excel_export"
+  },
+  "krok-generic_excel_export-003": {
+    "category": "reporting_export",
+    "scenario_label": "generic_excel_export"
+  },
+  "krok-generic_excel_export-004": {
+    "category": "reporting_export",
+    "scenario_label": "generic_excel_export"
+  },
+  "krok-generic_excel_export-005": {
+    "category": "reporting_export",
+    "scenario_label": "generic_excel_export"
+  },
+  "krok-generic_excel_export-006": {
+    "category": "reporting_export",
+    "scenario_label": "generic_excel_export"
+  },
+  "krok-generic_excel_export-007": {
+    "category": "reporting_export",
+    "scenario_label": "generic_excel_export"
+  },
+  "krok-generic_excel_export-008": {
+    "category": "reporting_export",
+    "scenario_label": "generic_excel_export"
+  },
+  "krok-generic_excel_export-009": {
+    "category": "reporting_export",
+    "scenario_label": "generic_excel_export"
+  },
+  "krok-generic_excel_export-010": {
+    "category": "reporting_export",
+    "scenario_label": "generic_excel_export"
+  },
+  "krok-generic_excel_export-011": {
+    "category": "reporting_export",
+    "scenario_label": "generic_excel_export"
+  },
+  "krok-generic_excel_export-012": {
+    "category": "reporting_export",
+    "scenario_label": "generic_excel_export"
+  },
+  "krok-generic_excel_export-013": {
+    "category": "reporting_export",
+    "scenario_label": "generic_excel_export"
+  },
+  "krok-generic_excel_export-014": {
+    "category": "reporting_export",
+    "scenario_label": "generic_excel_export"
+  },
+  "krok-generic_excel_export-015": {
+    "category": "reporting_export",
+    "scenario_label": "generic_excel_export"
+  },
+  "krok-generic_excel_export-016": {
+    "category": "reporting_export",
+    "scenario_label": "generic_excel_export"
+  },
+  "krok-generic_excel_export-017": {
+    "category": "reporting_export",
+    "scenario_label": "generic_excel_export"
+  },
+  "krok-generic_excel_export-018": {
+    "category": "reporting_export",
+    "scenario_label": "generic_excel_export"
+  },
+  "krok-generic_excel_export-019": {
+    "category": "reporting_export",
+    "scenario_label": "generic_excel_export"
+  },
+  "krok-supplier_blog_search-000": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "krok-supplier_blog_search-001": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "krok-supplier_blog_search-002": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "krok-supplier_blog_search-003": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "krok-supplier_blog_search-004": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "krok-supplier_blog_search-005": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "krok-supplier_blog_search-006": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "krok-supplier_blog_search-007": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "krok-supplier_blog_search-008": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "krok-confluence_process_search-000": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-001": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-002": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-003": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-004": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-005": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-006": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-007": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-008": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-009": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-010": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-011": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-012": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-013": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-014": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-015": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-016": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-017": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-018": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-019": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-020": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-021": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-022": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-023": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-024": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-025": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-026": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-027": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-confluence_process_search-028": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "krok-leader_calendar_slot-000": {
+    "category": "calendar_planning",
+    "scenario_label": "leader_calendar_slot"
+  },
+  "krok-leader_calendar_slot-001": {
+    "category": "calendar_planning",
+    "scenario_label": "leader_calendar_slot"
+  },
+  "krok-leader_calendar_slot-002": {
+    "category": "calendar_planning",
+    "scenario_label": "leader_calendar_slot"
+  },
+  "krok-leader_calendar_slot-003": {
+    "category": "calendar_planning",
+    "scenario_label": "leader_calendar_slot"
+  },
+  "krok-leader_calendar_slot-004": {
+    "category": "calendar_planning",
+    "scenario_label": "leader_calendar_slot"
+  },
+  "krok-leader_calendar_slot-005": {
+    "category": "calendar_planning",
+    "scenario_label": "leader_calendar_slot"
+  },
+  "krok-leader_calendar_slot-006": {
+    "category": "calendar_planning",
+    "scenario_label": "leader_calendar_slot"
+  },
+  "krok-leader_calendar_slot-007": {
+    "category": "calendar_planning",
+    "scenario_label": "leader_calendar_slot"
+  },
+  "krok-leader_calendar_slot-008": {
+    "category": "calendar_planning",
+    "scenario_label": "leader_calendar_slot"
+  },
+  "krok-leader_calendar_slot-009": {
+    "category": "calendar_planning",
+    "scenario_label": "leader_calendar_slot"
+  },
+  "krok-leader_calendar_slot-010": {
+    "category": "calendar_planning",
+    "scenario_label": "leader_calendar_slot"
+  },
+  "krok-leader_calendar_slot-011": {
+    "category": "calendar_planning",
+    "scenario_label": "leader_calendar_slot"
+  },
+  "krok-leader_calendar_slot-012": {
+    "category": "calendar_planning",
+    "scenario_label": "leader_calendar_slot"
+  },
+  "krok-leader_calendar_slot-013": {
+    "category": "calendar_planning",
+    "scenario_label": "leader_calendar_slot"
+  },
+  "krok-leader_calendar_slot-014": {
+    "category": "calendar_planning",
+    "scenario_label": "leader_calendar_slot"
+  },
+  "krok-leader_calendar_slot-015": {
+    "category": "calendar_planning",
+    "scenario_label": "leader_calendar_slot"
+  },
+  "krok-leader_calendar_slot-016": {
+    "category": "calendar_planning",
+    "scenario_label": "leader_calendar_slot"
+  },
+  "krok-leader_calendar_slot-017": {
+    "category": "calendar_planning",
+    "scenario_label": "leader_calendar_slot"
+  },
+  "krok-leader_calendar_slot-018": {
+    "category": "calendar_planning",
+    "scenario_label": "leader_calendar_slot"
+  },
+  "krok-leader_calendar_slot-019": {
+    "category": "calendar_planning",
+    "scenario_label": "leader_calendar_slot"
+  },
+  "krok-leader_calendar_slot-020": {
+    "category": "calendar_planning",
+    "scenario_label": "leader_calendar_slot"
+  },
+  "krok-leader_calendar_slot-021": {
+    "category": "calendar_planning",
+    "scenario_label": "leader_calendar_slot"
+  },
+  "krok-leader_calendar_slot-022": {
+    "category": "calendar_planning",
+    "scenario_label": "leader_calendar_slot"
+  },
+  "krok-leader_calendar_slot-023": {
+    "category": "calendar_planning",
+    "scenario_label": "leader_calendar_slot"
+  },
+  "krok-confirm_task_completion-000": {
+    "category": "task_management",
+    "scenario_label": "confirm_task_completion"
+  },
+  "krok-confirm_task_completion-001": {
+    "category": "task_management",
+    "scenario_label": "confirm_task_completion"
+  },
+  "krok-confirm_task_completion-002": {
+    "category": "task_management",
+    "scenario_label": "confirm_task_completion"
+  },
+  "krok-confirm_task_completion-003": {
+    "category": "task_management",
+    "scenario_label": "confirm_task_completion"
+  },
+  "krok-confirm_task_completion-004": {
+    "category": "task_management",
+    "scenario_label": "confirm_task_completion"
+  },
+  "krok-confirm_task_completion-005": {
+    "category": "task_management",
+    "scenario_label": "confirm_task_completion"
+  },
+  "krok-confirm_task_completion-006": {
+    "category": "task_management",
+    "scenario_label": "confirm_task_completion"
+  },
+  "krok-confirm_task_completion-007": {
+    "category": "task_management",
+    "scenario_label": "confirm_task_completion"
+  },
+  "krok-confirm_task_completion-008": {
+    "category": "task_management",
+    "scenario_label": "confirm_task_completion"
+  },
+  "krok-confirm_task_completion-009": {
+    "category": "task_management",
+    "scenario_label": "confirm_task_completion"
+  },
+  "krok-confirm_task_completion-010": {
+    "category": "task_management",
+    "scenario_label": "confirm_task_completion"
+  },
+  "krok-confirm_task_completion-011": {
+    "category": "task_management",
+    "scenario_label": "confirm_task_completion"
+  },
+  "krok-confirm_task_completion-012": {
+    "category": "task_management",
+    "scenario_label": "confirm_task_completion"
+  },
+  "krok-confirm_task_completion-013": {
+    "category": "task_management",
+    "scenario_label": "confirm_task_completion"
+  },
+  "krok-confirm_task_completion-014": {
+    "category": "task_management",
+    "scenario_label": "confirm_task_completion"
+  },
+  "krok-task_history_completion-000": {
+    "category": "task_management",
+    "scenario_label": "task_history_completion"
+  },
+  "krok-task_history_completion-001": {
+    "category": "task_management",
+    "scenario_label": "task_history_completion"
+  },
+  "krok-task_history_completion-002": {
+    "category": "task_management",
+    "scenario_label": "task_history_completion"
+  },
+  "krok-task_history_completion-003": {
+    "category": "task_management",
+    "scenario_label": "task_history_completion"
+  },
+  "krok-task_history_completion-004": {
+    "category": "task_management",
+    "scenario_label": "task_history_completion"
+  },
+  "krok-task_history_completion-005": {
+    "category": "task_management",
+    "scenario_label": "task_history_completion"
+  },
+  "krok-task_history_completion-006": {
+    "category": "task_management",
+    "scenario_label": "task_history_completion"
+  },
+  "krok-task_history_completion-007": {
+    "category": "task_management",
+    "scenario_label": "task_history_completion"
+  },
+  "krok-task_history_completion-008": {
+    "category": "task_management",
+    "scenario_label": "task_history_completion"
+  },
+  "krok-task_history_completion-009": {
+    "category": "task_management",
+    "scenario_label": "task_history_completion"
+  },
+  "krok-task_history_completion-010": {
+    "category": "task_management",
+    "scenario_label": "task_history_completion"
+  },
+  "krok-task_history_completion-011": {
+    "category": "task_management",
+    "scenario_label": "task_history_completion"
+  },
+  "krok-task_history_completion-012": {
+    "category": "task_management",
+    "scenario_label": "task_history_completion"
+  },
+  "krok-task_history_completion-013": {
+    "category": "task_management",
+    "scenario_label": "task_history_completion"
+  },
+  "krok-large_meeting_room-000": {
+    "category": "calendar_planning",
+    "scenario_label": "large_meeting_room"
+  },
+  "krok-large_meeting_room-001": {
+    "category": "calendar_planning",
+    "scenario_label": "large_meeting_room"
+  },
+  "krok-large_meeting_room-002": {
+    "category": "calendar_planning",
+    "scenario_label": "large_meeting_room"
+  },
+  "krok-large_meeting_room-003": {
+    "category": "calendar_planning",
+    "scenario_label": "large_meeting_room"
+  },
+  "krok-large_meeting_room-004": {
+    "category": "calendar_planning",
+    "scenario_label": "large_meeting_room"
+  },
+  "krok-large_meeting_room-005": {
+    "category": "calendar_planning",
+    "scenario_label": "large_meeting_room"
+  },
+  "krok-large_meeting_room-006": {
+    "category": "calendar_planning",
+    "scenario_label": "large_meeting_room"
+  },
+  "krok-large_meeting_room-007": {
+    "category": "calendar_planning",
+    "scenario_label": "large_meeting_room"
+  },
+  "krok-large_meeting_room-008": {
+    "category": "calendar_planning",
+    "scenario_label": "large_meeting_room"
+  },
+  "krok-large_meeting_room-009": {
+    "category": "calendar_planning",
+    "scenario_label": "large_meeting_room"
+  },
+  "krok-large_meeting_room-010": {
+    "category": "calendar_planning",
+    "scenario_label": "large_meeting_room"
+  },
+  "krok-large_meeting_room-011": {
+    "category": "calendar_planning",
+    "scenario_label": "large_meeting_room"
+  },
+  "krok-large_meeting_room-012": {
+    "category": "calendar_planning",
+    "scenario_label": "large_meeting_room"
+  },
+  "krok-large_meeting_room-013": {
+    "category": "calendar_planning",
+    "scenario_label": "large_meeting_room"
+  },
+  "krok-large_meeting_room-014": {
+    "category": "calendar_planning",
+    "scenario_label": "large_meeting_room"
+  },
+  "krok-large_meeting_room-015": {
+    "category": "calendar_planning",
+    "scenario_label": "large_meeting_room"
+  },
+  "krok-client_thread_reply-000": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-001": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-002": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-003": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-004": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-005": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-006": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-007": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-008": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-009": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-010": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-011": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-012": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-013": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-014": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-015": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-016": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-017": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-018": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-019": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-020": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-021": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-022": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-023": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-024": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-025": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-026": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-027": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-028": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-029": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-client_thread_reply-030": {
+    "category": "text_generation",
+    "scenario_label": "client_thread_reply"
+  },
+  "krok-discussion_notes-000": {
     "category": "summarization",
-    "scenario_label": "sum_emails"
+    "scenario_label": "discussion_notes"
+  },
+  "krok-discussion_notes-001": {
+    "category": "summarization",
+    "scenario_label": "discussion_notes"
+  },
+  "krok-discussion_notes-002": {
+    "category": "summarization",
+    "scenario_label": "discussion_notes"
+  },
+  "krok-discussion_notes-003": {
+    "category": "summarization",
+    "scenario_label": "discussion_notes"
+  },
+  "krok-discussion_notes-004": {
+    "category": "summarization",
+    "scenario_label": "discussion_notes"
+  },
+  "krok-discussion_notes-005": {
+    "category": "summarization",
+    "scenario_label": "discussion_notes"
+  },
+  "krok-discussion_notes-006": {
+    "category": "summarization",
+    "scenario_label": "discussion_notes"
+  },
+  "krok-discussion_notes-007": {
+    "category": "summarization",
+    "scenario_label": "discussion_notes"
+  },
+  "krok-discussion_notes-008": {
+    "category": "summarization",
+    "scenario_label": "discussion_notes"
+  },
+  "krok-discussion_notes-009": {
+    "category": "summarization",
+    "scenario_label": "discussion_notes"
+  },
+  "krok-discussion_notes-010": {
+    "category": "summarization",
+    "scenario_label": "discussion_notes"
+  },
+  "krok-discussion_notes-011": {
+    "category": "summarization",
+    "scenario_label": "discussion_notes"
+  },
+  "krok-discussion_notes-012": {
+    "category": "summarization",
+    "scenario_label": "discussion_notes"
+  },
+  "krok-discussion_notes-013": {
+    "category": "summarization",
+    "scenario_label": "discussion_notes"
+  },
+  "krok-discussion_notes-014": {
+    "category": "summarization",
+    "scenario_label": "discussion_notes"
+  },
+  "krok-discussion_notes-015": {
+    "category": "summarization",
+    "scenario_label": "discussion_notes"
+  },
+  "krok-discussion_notes-016": {
+    "category": "summarization",
+    "scenario_label": "discussion_notes"
+  },
+  "krok-discussion_notes-017": {
+    "category": "summarization",
+    "scenario_label": "discussion_notes"
+  },
+  "krok-discussion_notes-018": {
+    "category": "summarization",
+    "scenario_label": "discussion_notes"
+  },
+  "krok-discussion_notes-019": {
+    "category": "summarization",
+    "scenario_label": "discussion_notes"
+  },
+  "krok-discussion_notes-020": {
+    "category": "summarization",
+    "scenario_label": "discussion_notes"
+  },
+  "krok-discussion_notes-021": {
+    "category": "summarization",
+    "scenario_label": "discussion_notes"
+  },
+  "krok-client_contacts-000": {
+    "category": "information_search",
+    "scenario_label": "client_contacts"
+  },
+  "krok-client_contacts-001": {
+    "category": "information_search",
+    "scenario_label": "client_contacts"
+  },
+  "krok-client_contacts-002": {
+    "category": "information_search",
+    "scenario_label": "client_contacts"
+  },
+  "krok-client_contacts-003": {
+    "category": "information_search",
+    "scenario_label": "client_contacts"
+  },
+  "krok-client_contacts-004": {
+    "category": "information_search",
+    "scenario_label": "client_contacts"
+  },
+  "krok-client_contacts-005": {
+    "category": "information_search",
+    "scenario_label": "client_contacts"
+  },
+  "krok-client_contacts-006": {
+    "category": "information_search",
+    "scenario_label": "client_contacts"
+  },
+  "krok-client_contacts-007": {
+    "category": "information_search",
+    "scenario_label": "client_contacts"
+  },
+  "krok-client_contacts-008": {
+    "category": "information_search",
+    "scenario_label": "client_contacts"
+  },
+  "krok-client_contacts-009": {
+    "category": "information_search",
+    "scenario_label": "client_contacts"
+  },
+  "krok-client_contacts-010": {
+    "category": "information_search",
+    "scenario_label": "client_contacts"
+  },
+  "krok-client_contacts-011": {
+    "category": "information_search",
+    "scenario_label": "client_contacts"
+  },
+  "krok-client_contacts-012": {
+    "category": "information_search",
+    "scenario_label": "client_contacts"
+  },
+  "krok-client_contacts-013": {
+    "category": "information_search",
+    "scenario_label": "client_contacts"
+  },
+  "krok-client_contacts-014": {
+    "category": "information_search",
+    "scenario_label": "client_contacts"
+  },
+  "krok-client_contacts-015": {
+    "category": "information_search",
+    "scenario_label": "client_contacts"
+  },
+  "krok-client_contacts-016": {
+    "category": "information_search",
+    "scenario_label": "client_contacts"
+  },
+  "krok-client_contacts-017": {
+    "category": "information_search",
+    "scenario_label": "client_contacts"
+  },
+  "krok-client_contacts-018": {
+    "category": "information_search",
+    "scenario_label": "client_contacts"
+  },
+  "krok-client_contacts-019": {
+    "category": "information_search",
+    "scenario_label": "client_contacts"
+  },
+  "krok-large_group_meeting-000": {
+    "category": "calendar_planning",
+    "scenario_label": "large_group_meeting"
+  },
+  "krok-large_group_meeting-001": {
+    "category": "calendar_planning",
+    "scenario_label": "large_group_meeting"
+  },
+  "krok-large_group_meeting-002": {
+    "category": "calendar_planning",
+    "scenario_label": "large_group_meeting"
+  },
+  "krok-large_group_meeting-003": {
+    "category": "calendar_planning",
+    "scenario_label": "large_group_meeting"
+  },
+  "krok-large_group_meeting-004": {
+    "category": "calendar_planning",
+    "scenario_label": "large_group_meeting"
+  },
+  "krok-large_group_meeting-005": {
+    "category": "calendar_planning",
+    "scenario_label": "large_group_meeting"
+  },
+  "krok-large_group_meeting-006": {
+    "category": "calendar_planning",
+    "scenario_label": "large_group_meeting"
+  },
+  "krok-large_group_meeting-007": {
+    "category": "calendar_planning",
+    "scenario_label": "large_group_meeting"
+  },
+  "krok-large_group_meeting-008": {
+    "category": "calendar_planning",
+    "scenario_label": "large_group_meeting"
+  },
+  "krok-large_group_meeting-009": {
+    "category": "calendar_planning",
+    "scenario_label": "large_group_meeting"
+  },
+  "krok-large_group_meeting-010": {
+    "category": "calendar_planning",
+    "scenario_label": "large_group_meeting"
+  },
+  "krok-large_group_meeting-011": {
+    "category": "calendar_planning",
+    "scenario_label": "large_group_meeting"
+  },
+  "krok-large_group_meeting-012": {
+    "category": "calendar_planning",
+    "scenario_label": "large_group_meeting"
+  },
+  "krok-large_group_meeting-013": {
+    "category": "calendar_planning",
+    "scenario_label": "large_group_meeting"
+  },
+  "krok-large_group_meeting-014": {
+    "category": "calendar_planning",
+    "scenario_label": "large_group_meeting"
+  },
+  "krok-large_group_meeting-015": {
+    "category": "calendar_planning",
+    "scenario_label": "large_group_meeting"
+  },
+  "krok-large_group_meeting-016": {
+    "category": "calendar_planning",
+    "scenario_label": "large_group_meeting"
+  },
+  "krok-large_group_meeting-017": {
+    "category": "calendar_planning",
+    "scenario_label": "large_group_meeting"
+  },
+  "krok-meeting_body_attachment-000": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_attachment"
+  },
+  "krok-meeting_body_attachment-001": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_attachment"
+  },
+  "krok-meeting_body_attachment-002": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_attachment"
+  },
+  "krok-meeting_body_attachment-003": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_attachment"
+  },
+  "krok-meeting_body_attachment-004": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_attachment"
+  },
+  "krok-meeting_body_attachment-005": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_attachment"
+  },
+  "krok-meeting_body_attachment-006": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_attachment"
+  },
+  "krok-meeting_body_attachment-007": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_attachment"
+  },
+  "krok-post_meeting_reminders-000": {
+    "category": "calendar_planning",
+    "scenario_label": "post_meeting_reminders"
+  },
+  "krok-post_meeting_reminders-001": {
+    "category": "calendar_planning",
+    "scenario_label": "post_meeting_reminders"
+  },
+  "krok-post_meeting_reminders-002": {
+    "category": "calendar_planning",
+    "scenario_label": "post_meeting_reminders"
+  },
+  "krok-post_meeting_reminders-003": {
+    "category": "calendar_planning",
+    "scenario_label": "post_meeting_reminders"
+  },
+  "krok-post_meeting_reminders-004": {
+    "category": "calendar_planning",
+    "scenario_label": "post_meeting_reminders"
+  },
+  "krok-post_meeting_reminders-005": {
+    "category": "calendar_planning",
+    "scenario_label": "post_meeting_reminders"
+  },
+  "krok-post_meeting_reminders-006": {
+    "category": "calendar_planning",
+    "scenario_label": "post_meeting_reminders"
+  },
+  "krok-post_meeting_reminders-007": {
+    "category": "calendar_planning",
+    "scenario_label": "post_meeting_reminders"
+  },
+  "krok-post_meeting_reminders-008": {
+    "category": "calendar_planning",
+    "scenario_label": "post_meeting_reminders"
+  },
+  "krok-post_meeting_reminders-009": {
+    "category": "calendar_planning",
+    "scenario_label": "post_meeting_reminders"
+  },
+  "krok-post_meeting_reminders-010": {
+    "category": "calendar_planning",
+    "scenario_label": "post_meeting_reminders"
+  },
+  "krok-post_meeting_reminders-011": {
+    "category": "calendar_planning",
+    "scenario_label": "post_meeting_reminders"
+  },
+  "krok-post_meeting_reminders-012": {
+    "category": "calendar_planning",
+    "scenario_label": "post_meeting_reminders"
+  },
+  "krok-post_meeting_reminders-013": {
+    "category": "calendar_planning",
+    "scenario_label": "post_meeting_reminders"
+  },
+  "krok-post_meeting_reminders-014": {
+    "category": "calendar_planning",
+    "scenario_label": "post_meeting_reminders"
+  },
+  "krok-post_meeting_reminders-015": {
+    "category": "calendar_planning",
+    "scenario_label": "post_meeting_reminders"
+  },
+  "krok-post_meeting_reminders-016": {
+    "category": "calendar_planning",
+    "scenario_label": "post_meeting_reminders"
+  },
+  "krok-post_meeting_reminders-017": {
+    "category": "calendar_planning",
+    "scenario_label": "post_meeting_reminders"
+  },
+  "krok-post_meeting_reminders-018": {
+    "category": "calendar_planning",
+    "scenario_label": "post_meeting_reminders"
+  },
+  "krok-tomorrow_meetings-000": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "krok-tomorrow_meetings-001": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "krok-tomorrow_meetings-002": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "krok-tomorrow_meetings-003": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "krok-tomorrow_meetings-004": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "krok-tomorrow_meetings-005": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "krok-tomorrow_meetings-006": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "krok-tomorrow_meetings-007": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "krok-tomorrow_meetings-008": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "krok-tomorrow_meetings-009": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "krok-tomorrow_meetings-010": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "krok-tomorrow_meetings-011": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "krok-tomorrow_meetings-012": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "krok-tomorrow_meetings-013": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "krok-tomorrow_meetings-014": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "krok-tomorrow_meetings-015": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "krok-tomorrow_meetings-016": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "krok-tomorrow_meetings-017": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "krok-tomorrow_meetings-018": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "krok-tomorrow_meetings-019": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "krok-tomorrow_meetings-020": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "krok-tomorrow_meetings-021": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "krok-tomorrow_meetings-022": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "krok-email_to_project_ticket-000": {
+    "category": "task_management",
+    "scenario_label": "email_to_project_ticket"
+  },
+  "krok-email_to_project_ticket-001": {
+    "category": "task_management",
+    "scenario_label": "email_to_project_ticket"
+  },
+  "krok-email_to_project_ticket-002": {
+    "category": "task_management",
+    "scenario_label": "email_to_project_ticket"
+  },
+  "krok-email_to_project_ticket-003": {
+    "category": "task_management",
+    "scenario_label": "email_to_project_ticket"
+  },
+  "krok-email_to_project_ticket-004": {
+    "category": "task_management",
+    "scenario_label": "email_to_project_ticket"
+  },
+  "krok-email_to_project_ticket-005": {
+    "category": "task_management",
+    "scenario_label": "email_to_project_ticket"
+  },
+  "krok-email_to_project_ticket-006": {
+    "category": "task_management",
+    "scenario_label": "email_to_project_ticket"
+  },
+  "krok-email_to_project_ticket-007": {
+    "category": "task_management",
+    "scenario_label": "email_to_project_ticket"
+  },
+  "krok-email_to_project_ticket-008": {
+    "category": "task_management",
+    "scenario_label": "email_to_project_ticket"
+  },
+  "krok-email_to_project_ticket-009": {
+    "category": "task_management",
+    "scenario_label": "email_to_project_ticket"
+  },
+  "krok-email_to_project_ticket-010": {
+    "category": "task_management",
+    "scenario_label": "email_to_project_ticket"
+  },
+  "krok-email_to_project_ticket-011": {
+    "category": "task_management",
+    "scenario_label": "email_to_project_ticket"
+  },
+  "krok-email_to_project_ticket-012": {
+    "category": "task_management",
+    "scenario_label": "email_to_project_ticket"
+  },
+  "krok-email_to_project_ticket-013": {
+    "category": "task_management",
+    "scenario_label": "email_to_project_ticket"
+  },
+  "krok-email_to_project_ticket-014": {
+    "category": "task_management",
+    "scenario_label": "email_to_project_ticket"
+  },
+  "krok-email_to_project_ticket-015": {
+    "category": "task_management",
+    "scenario_label": "email_to_project_ticket"
+  },
+  "krok-email_to_project_ticket-016": {
+    "category": "task_management",
+    "scenario_label": "email_to_project_ticket"
+  },
+  "krok-email_to_project_ticket-017": {
+    "category": "task_management",
+    "scenario_label": "email_to_project_ticket"
+  },
+  "krok-email_to_project_ticket-018": {
+    "category": "task_management",
+    "scenario_label": "email_to_project_ticket"
+  },
+  "krok-email_to_project_ticket-019": {
+    "category": "task_management",
+    "scenario_label": "email_to_project_ticket"
+  },
+  "krok-email_to_project_ticket-020": {
+    "category": "task_management",
+    "scenario_label": "email_to_project_ticket"
+  },
+  "krok-email_to_project_ticket-021": {
+    "category": "task_management",
+    "scenario_label": "email_to_project_ticket"
+  },
+  "krok-email_to_project_ticket-022": {
+    "category": "task_management",
+    "scenario_label": "email_to_project_ticket"
+  },
+  "krok-email_to_project_ticket-023": {
+    "category": "task_management",
+    "scenario_label": "email_to_project_ticket"
+  },
+  "krok-email_to_project_ticket-024": {
+    "category": "task_management",
+    "scenario_label": "email_to_project_ticket"
+  },
+  "krok-email_to_project_ticket-025": {
+    "category": "task_management",
+    "scenario_label": "email_to_project_ticket"
+  },
+  "krok-isup_project_status_monitoring-000": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "krok-isup_project_status_monitoring-001": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "krok-isup_project_status_monitoring-002": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "krok-isup_project_status_monitoring-003": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "krok-isup_project_status_monitoring-004": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "krok-isup_project_status_monitoring-005": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "krok-isup_project_status_monitoring-006": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "krok-isup_project_status_monitoring-007": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "krok-isup_project_status_monitoring-008": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "krok-isup_project_status_monitoring-009": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "krok-isup_project_status_monitoring-010": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "krok-isup_project_status_monitoring-011": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "krok-isup_project_status_monitoring-012": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "krok-isup_project_status_monitoring-013": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "krok-isup_project_status_monitoring-014": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "krok-isup_project_status_monitoring-015": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "krok-isup_project_status_monitoring-016": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "krok-isup_project_status_monitoring-017": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "krok-isup_project_status_monitoring-018": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "krok-isup_project_status_monitoring-019": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "krok-isup_project_status_monitoring-020": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "krok-isup_project_status_monitoring-021": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "krok-isup_project_status_monitoring-022": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "krok-isup_project_status_monitoring-023": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "krok-control_chitchat-000": {
+    "category": "other",
+    "scenario_label": "control_chitchat"
+  },
+  "krok-control_chitchat-001": {
+    "category": "other",
+    "scenario_label": "control_chitchat"
+  },
+  "krok-control_chitchat-002": {
+    "category": "other",
+    "scenario_label": "control_chitchat"
+  },
+  "krok-control_chitchat-003": {
+    "category": "other",
+    "scenario_label": "control_chitchat"
+  },
+  "krok-control_chitchat-004": {
+    "category": "other",
+    "scenario_label": "control_chitchat"
+  },
+  "krok-control_chitchat-005": {
+    "category": "other",
+    "scenario_label": "control_chitchat"
+  },
+  "krok-control_chitchat-006": {
+    "category": "other",
+    "scenario_label": "control_chitchat"
+  },
+  "krok-control_chitchat-007": {
+    "category": "other",
+    "scenario_label": "control_chitchat"
+  },
+  "krok-control_chitchat-008": {
+    "category": "other",
+    "scenario_label": "control_chitchat"
+  },
+  "krok-control_chitchat-009": {
+    "category": "other",
+    "scenario_label": "control_chitchat"
+  },
+  "krok-control_vague-000": {
+    "category": "other",
+    "scenario_label": "control_vague"
+  },
+  "krok-control_vague-001": {
+    "category": "other",
+    "scenario_label": "control_vague"
+  },
+  "krok-control_vague-002": {
+    "category": "other",
+    "scenario_label": "control_vague"
+  },
+  "krok-control_vague-003": {
+    "category": "other",
+    "scenario_label": "control_vague"
+  },
+  "krok-control_vague-004": {
+    "category": "other",
+    "scenario_label": "control_vague"
+  },
+  "krok-control_vague-005": {
+    "category": "other",
+    "scenario_label": "control_vague"
+  },
+  "krok-control_vague-006": {
+    "category": "other",
+    "scenario_label": "control_vague"
+  },
+  "krok-control_vague-007": {
+    "category": "other",
+    "scenario_label": "control_vague"
+  },
+  "krok-control_vague-008": {
+    "category": "other",
+    "scenario_label": "control_vague"
+  },
+  "krok-control_vague-009": {
+    "category": "other",
+    "scenario_label": "control_vague"
+  },
+  "krok-control_multi_intent-000": {
+    "category": "other",
+    "scenario_label": "control_multi_intent"
+  },
+  "krok-control_multi_intent-001": {
+    "category": "other",
+    "scenario_label": "control_multi_intent"
+  },
+  "krok-control_multi_intent-002": {
+    "category": "other",
+    "scenario_label": "control_multi_intent"
+  },
+  "krok-control_multi_intent-003": {
+    "category": "other",
+    "scenario_label": "control_multi_intent"
+  },
+  "krok-control_multi_intent-004": {
+    "category": "other",
+    "scenario_label": "control_multi_intent"
+  },
+  "krok-control_multi_intent-005": {
+    "category": "other",
+    "scenario_label": "control_multi_intent"
+  },
+  "krok-control_multi_intent-006": {
+    "category": "other",
+    "scenario_label": "control_multi_intent"
+  },
+  "krok-control_multi_intent-007": {
+    "category": "other",
+    "scenario_label": "control_multi_intent"
+  },
+  "krok-control_multi_intent-008": {
+    "category": "other",
+    "scenario_label": "control_multi_intent"
+  },
+  "krok-control_multi_intent-009": {
+    "category": "other",
+    "scenario_label": "control_multi_intent"
   }
 }

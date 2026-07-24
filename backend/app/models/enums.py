@@ -6,6 +6,7 @@ class Category(StrEnum):
     INFORMATION_SEARCH = "information_search"
     SUMMARIZATION = "summarization"
     DATA_ANALYSIS = "data_analysis"
+    CODE_ASSISTANCE = "code_assistance"
     REPORTING_EXPORT = "reporting_export"
     TASK_MANAGEMENT = "task_management"
     MONITORING_AUTOMATION = "monitoring_automation"

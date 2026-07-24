@@ -44,6 +44,10 @@ async def create_event(
     event = AgentEvent(
         external_id=data.external_id,
         agent_id=data.agent_id,
+        user_id=data.user_id,
+        team=data.team,
+        direction=data.direction,
+        is_synthetic=data.is_synthetic,
         import_id=import_id,
         model=data.request.model,
         stream=data.request.stream,
@@ -100,6 +104,10 @@ def to_event_list_item(view: EventView) -> EventListItem:
         id=view.event.id,
         external_id=view.event.external_id,
         agent_id=view.event.agent_id,
+        user_id=view.event.user_id,
+        team=view.event.team,
+        direction=view.event.direction,
+        is_synthetic=view.event.is_synthetic,
         occurred_at=view.event.occurred_at,
         received_at=view.event.received_at,
         effective_user_query=(
@@ -135,6 +143,7 @@ def to_event_detail(view: EventView) -> EventDetail:
         rating=float(view.event.rating) if view.event.rating is not None else None,
         prompt_tokens=view.event.prompt_tokens,
         completion_tokens=view.event.completion_tokens,
+        total_tokens=view.event.total_tokens,
         warnings=view.analysis.warnings if view.analysis else None,
     )
 

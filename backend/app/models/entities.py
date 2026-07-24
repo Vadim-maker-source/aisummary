@@ -70,6 +70,8 @@ class AgentEvent(Base):
         Index("ix_events_analysis_status", "analysis_status"),
         Index("ix_events_occurred_at", "occurred_at"),
         Index("ix_events_import_id", "import_id"),
+        Index("ix_events_team", "team"),
+        Index("ix_events_direction", "direction"),
     )
 
     id: Mapped[uuid.UUID] = mapped_column(
@@ -77,6 +79,12 @@ class AgentEvent(Base):
     )
     external_id: Mapped[str] = mapped_column(String(255), nullable=False)
     agent_id: Mapped[str] = mapped_column(String(255), nullable=False)
+    user_id: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    team: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    direction: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    is_synthetic: Mapped[bool] = mapped_column(
+        Boolean, nullable=False, default=False
+    )
     import_id: Mapped[uuid.UUID | None] = mapped_column(
         ForeignKey("imports.id", ondelete="SET NULL"), nullable=True
     )

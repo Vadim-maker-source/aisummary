@@ -85,5 +85,87 @@ async def test_dashboard_summary(client):
         "scenario_count": 0,
         "unclassified_count": 0,
         "query_problem_rate": 0.0,
+        "response_count": 0,
+        "rated_count": 0,
+        "timestamped_count": 1,
+        "dimensioned_count": 0,
+        "synthetic_requests": 0,
     }
+
+
+async def test_business_dimensions_and_effectiveness(client):
+    payload = event_payload(external_id="dimensions-1")
+    payload.update(
+        {
+            "user_id": "user-1",
+            "team": "CRM-аналитика",
+            "direction": "Продажи",
+            "is_synthetic": True,
+            "response": {
+                "content": "Готовый ответ",
+                "usage": {
+                    "prompt_tokens": 1000,
+                    "completion_tokens": 50,
+                    "total_tokens": 1050,
+                },
+            },
+            "execution_status": "success",
+            "latency_ms": 1200,
+            "rating": 5,
+        }
+    )
+    await client.post("/api/v1/events", json=payload)
+    await process_event_batch(20)
+
+    summary = (await client.get("/api/v1/dashboard/summary")).json()
+    assert summary["response_count"] == 1
+    assert summary["rated_count"] == 1
+    assert summary["dimensioned_count"] == 1
+    assert summary["synthetic_requests"] == 1
+
+    response = await client.get(
+        "/api/v1/dashboard/effectiveness",
+        params={"dimension": "direction"},
+    )
+    assert response.status_code == 200
+    assert response.json()["available"] is True
+    assert response.json()["items"][0]["name"] == "Продажи"
+    assert response.json()["items"][0]["success_rate"] == 100.0
+    assert response.json()["items"][0]["average_rating"] == 5.0
+
+
+async def test_openai_compatible_response_is_normalized(client):
+    payload = event_payload(external_id="openai-response-1")
+    payload.update(
+        {
+            "response": {
+                "id": "chatcmpl-test",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "Готовый ответ модели",
+                        },
+                        "finish_reason": "stop",
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 100_000,
+                    "completion_tokens": 125,
+                    "total_tokens": 100_125,
+                },
+            },
+            "execution_status": "success",
+        }
+    )
+
+    created = await client.post("/api/v1/events", json=payload)
+    assert created.status_code == 202
+
+    response = await client.get(f"/api/v1/events/{created.json()['id']}")
+    assert response.status_code == 200
+    assert response.json()["prompt_tokens"] == 100_000
+    assert response.json()["completion_tokens"] == 125
+    assert response.json()["total_tokens"] == 100_125
 

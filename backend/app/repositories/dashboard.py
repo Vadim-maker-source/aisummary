@@ -118,6 +118,62 @@ async def get_summary_counts(
         )
         or 0
     )
+    response_count = int(
+        (
+            await session.scalar(
+                select(func.count(AgentEvent.id)).where(
+                    *conditions,
+                    AgentEvent.agent_answer.is_not(None),
+                )
+            )
+        )
+        or 0
+    )
+    rated_count = int(
+        (
+            await session.scalar(
+                select(func.count(AgentEvent.id)).where(
+                    *conditions,
+                    AgentEvent.rating.is_not(None),
+                )
+            )
+        )
+        or 0
+    )
+    timestamped_count = int(
+        (
+            await session.scalar(
+                select(func.count(AgentEvent.id)).where(
+                    *conditions,
+                    AgentEvent.occurred_at.is_not(None),
+                )
+            )
+        )
+        or 0
+    )
+    dimensioned_count = int(
+        (
+            await session.scalar(
+                select(func.count(AgentEvent.id)).where(
+                    *conditions,
+                    (AgentEvent.team.is_not(None))
+                    | (AgentEvent.direction.is_not(None)),
+                )
+            )
+        )
+        or 0
+    )
+    synthetic_requests = int(
+        (
+            await session.scalar(
+                select(func.count(AgentEvent.id)).where(
+                    *conditions,
+                    AgentEvent.is_synthetic.is_(True),
+                )
+            )
+        )
+        or 0
+    )
     return {
         "total_requests": total,
         "analyzed_requests": analyzed,
@@ -130,6 +186,11 @@ async def get_summary_counts(
             (problematic / analyzed * 100) if analyzed else 0,
             1,
         ),
+        "response_count": response_count,
+        "rated_count": rated_count,
+        "timestamped_count": timestamped_count,
+        "dimensioned_count": dimensioned_count,
+        "synthetic_requests": synthetic_requests,
     }
 
 
@@ -238,4 +299,75 @@ async def get_timeline(
         (row[0], int(row[1]), int(row[2] or 0))
         for row in rows
     ]
+
+
+async def get_problem_rows(session: AsyncSession) -> list[tuple]:
+    return list(
+        (
+            await session.execute(
+                select(
+                    EventAnalysis.query_problem_reasons,
+                    AgentEvent.execution_status,
+                    AgentEvent.agent_answer,
+                    AgentEvent.rating,
+                )
+                .select_from(AgentEvent)
+                .outerjoin(
+                    EventAnalysis,
+                    EventAnalysis.event_id == AgentEvent.id,
+                )
+            )
+        ).all()
+    )
+
+
+async def get_scenario_trend_rows(session: AsyncSession) -> list[tuple]:
+    return list(
+        (
+            await session.execute(
+                select(
+                    Scenario.id,
+                    Scenario.name,
+                    Scenario.category,
+                    AgentEvent.occurred_at,
+                )
+                .join(AnalysisRun, AnalysisRun.id == Scenario.analysis_run_id)
+                .join(
+                    ScenarioMember,
+                    ScenarioMember.scenario_id == Scenario.id,
+                )
+                .join(AgentEvent, AgentEvent.id == ScenarioMember.event_id)
+                .where(
+                    AnalysisRun.is_current.is_(True),
+                    AgentEvent.occurred_at.is_not(None),
+                )
+            )
+        ).all()
+    )
+
+
+async def get_effectiveness_rows(session: AsyncSession) -> list[tuple]:
+    return list(
+        (
+            await session.execute(
+                select(
+                    AgentEvent.agent_id,
+                    AgentEvent.team,
+                    AgentEvent.direction,
+                    AgentEvent.user_id,
+                    AgentEvent.execution_status,
+                    AgentEvent.agent_answer,
+                    AgentEvent.rating,
+                    AgentEvent.latency_ms,
+                    EventAnalysis.id,
+                    EventAnalysis.query_problem_reasons,
+                )
+                .select_from(AgentEvent)
+                .outerjoin(
+                    EventAnalysis,
+                    EventAnalysis.event_id == AgentEvent.id,
+                )
+            )
+        ).all()
+    )
 

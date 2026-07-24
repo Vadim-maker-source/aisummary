@@ -20,6 +20,10 @@ SUPPORTED_IMPORT_SUFFIXES = {".json", ".jsonl", ".txt"}
 _EVENT_METADATA_KEYS = {
     "external_id",
     "agent_id",
+    "user_id",
+    "team",
+    "direction",
+    "is_synthetic",
     "occurred_at",
     "response",
     "execution_status",

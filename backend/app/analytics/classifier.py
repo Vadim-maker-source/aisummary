@@ -67,6 +67,12 @@ def rule_based_classify(query: str) -> Tuple[Category, float]:
     if max_score == 0:
         return Category.other, _CONFIDENCE_OTHER
 
+    # A short request that simultaneously activates three or more unrelated
+    # task types is a multi-intent request, not a reliable single category.
+    positive_categories = sum(1 for score in scores.values() if score > 0)
+    if positive_categories >= 3 and max_score <= 2:
+        return Category.other, _CONFIDENCE_OTHER
+
     leaders = [category for category, score in scores.items() if score == max_score]
     if len(leaders) != 1:
         return Category.other, _CONFIDENCE_OTHER

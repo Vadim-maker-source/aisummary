@@ -1,31 +1,46 @@
-# Datasets (synthetic)
+# Datasets
 
-All data here is **synthetic** and declared as such (`agent_id="synthetic-demo-agent"`).
-No real user data and no agent answers are included — the MVP evaluates *queries*,
-not answer correctness, so `response` is always `null`.
+Все данные синтетические и явно отмечены полем `is_synthetic=true`.
 
-## Files
+## Покрытие задания
 
-| File | Purpose |
-|------|---------|
-| `demo_events.jsonl` | 511 `EventCreate` objects (contract §5.2), one JSON per line. Import target for the end-to-end demo. |
-| `demo_labels.json` | `external_id → {category, scenario_label}` ground truth. **Not** fed to the analyzer — used only by the quality metrics. |
-| `demo_truth.json` | Auxiliary per-event truth (query, category, scenario_label, oversized flag). |
-| `validation_events.jsonl` | 140 records `{external_id, query, expected_category}` for manual/automatic checking. |
-| `validation_labels.json` | `external_id → expected_scenario_label`. Held out from the analyzer for manual grouping checks. |
+- все 35 бизнес-сценариев из выданного описания;
+- 3 контрольных сценария: нерабочий, неясный и многозадачный запрос;
+- неравномерная частота сценариев;
+- направления, команды, пользователи и несколько агентов;
+- синтетическая динамика с растущими, стабильными и снижающимися сценариями;
+- ответы, статусы, оценки и задержки для каждого шестого события в quick-профиле.
 
-## Demo dataset properties (role file §10)
+## Быстрый датасет
 
-- 31 source topics (28 real-category + 3 `other`), ≥ 16 formulations each;
-- 511 events (≥ 465), unique `external_id`;
-- timestamps spread over 46 days (≥ 30);
-- 15 oversized examples (`content > 20000` chars, wrapped in `<context>` + `<user_query>`);
-- 48 `other` events (chit-chat / vague / multi-intent), ≥ 20 ambiguous/multi-intent.
+Подходит для разработки, тестов и локального показа:
 
-## Regenerate
-
-```bash
-PYTHONPATH=backend python3 data/generate_datasets.py
+```powershell
+python data/generate_datasets.py --profile quick
 ```
 
-The generator is deterministic; regenerating reproduces byte-identical files.
+Создаёт:
+
+- `demo_events.jsonl`;
+- `demo_labels.json`;
+- `demo_truth.json`;
+- `validation_events.jsonl`;
+- `validation_labels.json`;
+- `demo_manifest.json`.
+
+## Датасет со средним контекстом 100k токенов
+
+Большой файл генерируется по требованию и не хранится в Git:
+
+```powershell
+python data/generate_datasets.py --profile compliant
+```
+
+Результат:
+
+- `compliant_events_100k.jsonl`;
+- `compliant_events_100k.manifest.json`.
+
+Каждый запрос получает целевой контекст 100 000 prompt-токенов. Импортировать
+этот профиль нужно как JSONL: backend обрабатывает его построчно и не загружает
+весь файл в память.

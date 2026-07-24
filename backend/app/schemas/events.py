@@ -3,7 +3,13 @@ from decimal import Decimal
 from typing import Literal
 from uuid import UUID
 
-from pydantic import BaseModel, ConfigDict, Field, field_validator
+from pydantic import (
+    BaseModel,
+    ConfigDict,
+    Field,
+    field_validator,
+    model_validator,
+)
 
 from app.models.enums import (
     AnalysisStatus,
@@ -37,10 +43,30 @@ class ResponsePayload(BaseModel):
     content: str | None = None
     usage: UsagePayload | None = None
 
+    @model_validator(mode="before")
+    @classmethod
+    def normalize_openai_response(cls, value):
+        if not isinstance(value, dict) or "content" in value:
+            return value
+        choices = value.get("choices")
+        if isinstance(choices, list) and choices:
+            first = choices[0]
+            if isinstance(first, dict):
+                message = first.get("message")
+                if isinstance(message, dict):
+                    normalized = dict(value)
+                    normalized["content"] = message.get("content")
+                    return normalized
+        return value
+
 
 class EventCreate(BaseModel):
     external_id: str = Field(min_length=1, max_length=255)
     agent_id: str = Field(min_length=1, max_length=255)
+    user_id: str | None = Field(default=None, max_length=255)
+    team: str | None = Field(default=None, max_length=255)
+    direction: str | None = Field(default=None, max_length=255)
+    is_synthetic: bool = False
     occurred_at: datetime | None = None
     request: RequestPayload
     response: ResponsePayload | None = None
@@ -55,6 +81,14 @@ class EventCreate(BaseModel):
         if not value:
             raise ValueError("must not be blank")
         return value
+
+    @field_validator("user_id", "team", "direction")
+    @classmethod
+    def strip_optional_dimensions(cls, value: str | None) -> str | None:
+        if value is None:
+            return None
+        stripped = value.strip()
+        return stripped or None
 
 
 class EventAccepted(BaseModel):
@@ -73,6 +107,10 @@ class EventListItem(BaseModel):
     id: UUID
     external_id: str
     agent_id: str
+    user_id: str | None
+    team: str | None
+    direction: str | None
+    is_synthetic: bool
     occurred_at: datetime | None
     received_at: datetime
     effective_user_query: str | None
@@ -99,6 +137,7 @@ class EventDetail(EventListItem):
     rating: float | None
     prompt_tokens: int | None
     completion_tokens: int | None
+    total_tokens: int | None
     warnings: list[str] | None
 
 

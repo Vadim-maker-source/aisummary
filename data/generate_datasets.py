@@ -1,321 +1,213 @@
-"""Deterministic synthetic dataset generator for the analytics MVP.
+"""Generate datasets for the KROK prompt-radar case.
 
-Produces (all under ``data/``):
-  - demo_events.jsonl        list of EventCreate objects (contract section 5.2)
-  - demo_labels.json         external_id -> {category, scenario_label} ground truth
-                             (sidecar, NOT fed to the analyzer; used by metrics)
-  - validation_events.jsonl  {external_id, query, expected_category}
-  - validation_labels.json   external_id -> expected_scenario_label
-
-Design goals:
-  * 31 source topics (28 real-category + 3 "other"), >= 16 formulations each;
-  * keyword-rich phrasings so the rule-based classifier is correct offline;
-  * tight intra-topic / distinct cross-topic phrasings so char-ngram TF-IDF
-    clusters each topic separately;
-  * >= 465 events, unique external_id, timestamps spread over >= 30 days,
-    >= 10 oversized examples, >= 20 ambiguous / multi-intent examples;
-  * response always null (no agent answers are synthesised);
-  * agent_id == "synthetic-demo-agent".
-
-Run:  PYTHONPATH=backend python3 data/generate_datasets.py
+``quick`` is compact and suitable for development. ``compliant`` uses the
+case's 100k-token average target. Both profiles explicitly mark synthetic data.
 """
 
 from __future__ import annotations
 
+import argparse
 import json
+import math
+from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from typing import Dict, List
+from typing import Iterable
 
 DATA_DIR = Path(__file__).resolve().parent
-AGENT_ID = "synthetic-demo-agent"
-BASE_DAY = datetime(2026, 6, 8, tzinfo=timezone.utc)  # ~46 days before 2026-07-24
-MODELS = ["DeepSeek-V4-Flash", "GigaChat-Pro", "YandexGPT-4", "T-lite", "Qwen2.5-72B", "Llama-3.1-70B"]
-N_PER_TOPIC = 16
+BASE_DAY = datetime(2026, 6, 1, 8, 0, tzinfo=timezone.utc)
+MODELS = ["DeepSeek-V4-Flash", "GigaChat-Pro", "YandexGPT-4"]
+AGENTS = ["mail-copilot", "knowledge-assistant", "work-management-agent"]
 
-# --------------------------------------------------------------------------- #
-# Slot pools (each >= 16 values; none contain category keyword stems unless the
-# template intends them to).
-# --------------------------------------------------------------------------- #
-WHO = ["команды", "коллег", "отдела продаж", "руководителей", "партнёров",
-       "проектной группы", "бухгалтерии", "подрядчика", "топ-менеджеров",
-       "юристов", "аналитиков", "заказчика", "службы поддержки", "HR-отдела",
-       "маркетологов", "дизайнеров"]
-WHEN = ["понедельник", "вторник", "среду", "четверг", "пятницу", "следующую неделю",
-        "утро", "вечер", "14:00", "10 утра", "после обеда", "конец недели",
-        "завтра", "послезавтра", "начало месяца", "ближайшие дни"]
-EVENT = ["созвоне", "планёрке", "презентации", "обеде", "конференции", "тренинге",
-         "собеседовании", "дежурстве", "отпуске", "командировке", "корпоративе",
-         "вебинаре", "звонке", "интервью", "демонстрации", "экскурсии"]
-WHAT_PRICE = ["ноутбуков", "серверов", "авиабилетов", "поставщиков", "сырья",
-              "акций компании", "валюты", "конкурентов", "облачных услуг",
-              "подписок", "комплектующих", "топлива", "металлов", "недвижимости",
-              "логистики", "аренды"]
-WHAT_TASK = ["интеграции", "релиза", "бэклога", "инцидента", "доработки", "миграции",
-             "тестирования", "онбординга", "закупки", "аудита", "рефакторинга",
-             "поставки", "внедрения", "обновления", "поддержки", "исправления"]
-WHAT_PROJECT = ["нового сайта", "мобильного приложения", "CRM-системы", "склада",
-                "портала", "маркетплейса", "дашборда", "публичного API", "биллинга",
-                "документооборота", "чат-бота", "витрины", "личного кабинета",
-                "платёжного шлюза", "системы доставки", "базы знаний"]
-PERIOD = ["сегодня", "вчера", "эту неделю", "прошлую неделю", "месяц", "квартал",
-          "март", "апрель", "май", "июнь", "полугодие", "год",
-          "последние 7 дней", "выходные", "праздники", "первый квартал"]
-WHAT_REP = ["продажам", "выручке", "расходам", "марже", "конверсии", "трафику",
-            "заявкам", "отгрузкам", "закупкам", "возвратам", "KPI", "воронке",
-            "филиалам", "менеджерам", "регионам", "категориям"]
-WHAT_DOC = ["договора", "политики", "инструкции", "регламента", "статьи",
-            "презентации", "протокола", "спецификации", "мануала", "обзора",
-            "исследования", "методички", "гайда", "должностной", "брифа", "устава"]
-WHAT_MEET = ["планёрки", "ретро", "созвона", "воркшопа", "совещания", "стратсессии",
-             "питча", "демо", "стендапа", "брейнсторма", "ревью", "синка",
-             "интервью", "защиты", "консилиума", "переклички"]
-WHAT_ORG = ["Ромашка", "Технопром", "СеверСталь", "АгроХолдинг", "МедиаГрупп",
-            "ФинТех", "СтройИнвест", "ЭкоЛогистика", "НефтеГаз", "ТрансСервис",
-            "БиоФарм", "ЦифроБанк", "ТелекомПлюс", "ЭнергоСбыт", "АвтоМир", "ГидроМаш"]
-WHAT_TOPIC = ["импортозамещения", "кибербезопасности", "ИИ в бизнесе",
-              "удалённой работы", "ESG-повестки", "блокчейна", "интернет-маркетинга",
-              "цепочек поставок", "налоговой реформы", "стартап-экосистемы",
-              "венчурных инвестиций", "бизнес-процессов", "облачных платформ",
-              "больших данных", "робототехники", "цифровой трансформации"]
-WHAT_DATA = ["продаж", "пользователей", "трафика", "заказов", "платежей", "логов",
-             "кликов", "сессий", "подписчиков", "отказов", "конверсий", "выручки",
-             "остатков", "обращений", "доставок", "регистраций"]
-WHAT_PROD = ["новом смартфоне", "ноутбуке", "наушниках", "сервисе доставки",
-             "приложении", "подписке", "онлайн-курсе", "отеле", "ресторане",
-             "автомобиле", "фитнес-клубе", "банке", "страховке", "маркетплейсе",
-             "провайдере", "кофейне"]
-WHAT_ERR = ["ошибка 500", "таймаут запроса", "утечка памяти", "дедлок",
-            "сбой синхронизации", "потеря пакетов", "краш приложения", "зависание",
-            "сбой авторизации", "переполнение диска", "конфликт версий",
-            "сбой оплаты", "отказ сервиса", "повреждение файла", "сбой импорта",
-            "падение сервера"]
-WHAT_TERM = ["кэш", "контейнеризация", "индекс базы", "вебхук", "очередь сообщений",
-             "балансировщик нагрузки", "микросервис", "токен доступа", "шифрование",
-             "репликация", "виртуализация", "шлюз приложений", "непрерывная поставка",
-             "нормализация", "шардирование", "идемпотентность"]
-WHAT_SYS = ["кэш", "планировщик", "сборщик мусора", "очередь сообщений",
-            "система логирования", "балансировщик нагрузки", "конвейер сборки",
-            "оркестратор", "кэширующий слой", "механизм блокировок", "движок поиска",
-            "система прав", "шина событий", "кластер", "процесс репликации", "буфер обмена"]
-NEUTRAL = ["сделке", "договору", "заказу", "поставке", "оплате", "обращению",
-           "клиенту", "проекту", "вопросу", "запросу", "услуге", "продукту",
-           "тарифу", "гарантии", "возврату", "счёту"]
-CHAT = ["жизни", "погоде", "планах на выходные", "хобби", "путешествиях", "кино",
-        "музыке", "спорте", "книгах", "еде", "природе", "космосе", "истории",
-        "будущем", "искусстве", "фотографии"]
-VAGUE = ["Помоги мне разобраться с этим", "Сделай как считаешь нужным",
-         "Разберись с этим сам", "Сделай что-нибудь полезное", "Продолжи как раньше",
-         "Сделай на своё усмотрение", "Займись этим", "Действуй по обстоятельствам",
-         "Сделай всё необходимое", "Возьми это на себя", "Реши как лучше",
-         "Организуй это самостоятельно", "Доведи до готовности", "Сделай красиво",
-         "Приведи в порядок", "Оформи как обычно"]
 
-# --------------------------------------------------------------------------- #
-# Topic definitions: (label, category, template with a single {} slot, pool)
-# --------------------------------------------------------------------------- #
+@dataclass(frozen=True)
+class Topic:
+    label: str
+    category: str
+    intent: str
+    volume: int
+    trend: str
+    direction: str
+    team: str
+    supplied: bool = True
+
+
+# All 35 business scenarios from the supplied case, plus 3 control scenarios.
 TOPICS = [
-    # calendar_planning
-    ("cal_meeting_slot", "calendar_planning", "Найди общий свободный слот для встречи {}", WHO),
-    ("cal_reschedule", "calendar_planning", "Перенеси встречу в календаре на {}", WHEN),
-    ("cal_reminder", "calendar_planning", "Поставь напоминание о {}", EVENT),
-    # monitoring_automation
-    ("mon_email", "monitoring_automation", "Настрой периодический мониторинг входящих писем от {}", WHO),
-    ("mon_price", "monitoring_automation", "Отслеживай изменение цен и присылай уведомления по {}", WHAT_PRICE),
-    ("mon_deadline", "monitoring_automation", "Настрой периодические уведомления о приближении дедлайнов {}", WHAT_TASK),
-    # task_management
-    ("task_jira", "task_management", "Создай задачу в Jira для {}", WHO),
-    ("task_ticket", "task_management", "Обнови статус задачи и тикета по {}", WHAT_TASK),
-    ("task_project", "task_management", "Составь план задач в системе project для {}", WHAT_PROJECT),
-    # reporting_export
-    ("rep_excel_sales", "reporting_export", "Выгрузи отчёт по продажам за {} в Excel", PERIOD),
-    ("rep_pdf_summary", "reporting_export", "Сформируй сводный отчёт по {} и экспортируй в PDF", WHAT_REP),
-    ("rep_csv_export", "reporting_export", "Экспортируй выгрузку данных дашборда по {} в CSV", WHAT_REP),
-    # summarization
-    ("sum_document", "summarization", "Сделай краткое саммари документа {}", WHAT_DOC),
-    ("sum_meeting_notes", "summarization", "Подготовь краткую сводку итогов встречи по итогам {}", WHAT_MEET),
-    ("sum_emails", "summarization", "Сделай краткую сводку писем за {}", PERIOD),
-    # information_search
-    ("info_contacts", "information_search", "Найди контакты {}", WHO),
-    ("info_company", "information_search", "Найди и собери информацию о компании {}", WHAT_ORG),
-    ("info_docs", "information_search", "Организуй поиск и найди документы по теме {}", WHAT_TOPIC),
-    # data_analysis
-    ("data_sql", "data_analysis", "Составь SQL-запрос к таблице базы данных по {}", WHAT_DATA),
-    ("data_metrics", "data_analysis", "Посчитай ключевые метрики и проведи анализ данных по {}", WHAT_DATA),
-    ("data_table", "data_analysis", "Проведи анализ данных таблицы по {}", WHAT_DATA),
-    # text_generation
-    ("text_letter", "text_generation", "Напиши деловое письмо для {}", WHO),
-    ("text_reply", "text_generation", "Сформулируй ответное письмо по {}", NEUTRAL),
-    ("text_review", "text_generation", "Напиши развёрнутый отзыв о {}", WHAT_PROD),
-    ("text_post", "text_generation", "Напиши и сформулируй текст поста для соцсетей про {}", WHAT_TOPIC),
-    # knowledge_explanation
-    ("kn_why", "knowledge_explanation", "Объясни, почему возникает {}", WHAT_ERR),
-    ("kn_what", "knowledge_explanation", "Расскажи, что такое {}", WHAT_TERM),
-    ("kn_how", "knowledge_explanation", "Объясни и расскажи, как устроен {}", WHAT_SYS),
-    # other
-    ("other_chitchat", "other", "Давай просто пообщаемся о {}", CHAT),
-    ("other_multi_intent", "other", "Найди контакты клиента и напиши им письмо по {}", NEUTRAL),
-    ("other_vague", "other", "{}", VAGUE),
+    Topic("daily_mail_digest", "summarization", "подготовить структурированную сводку важных писем за прошедший день по заданному шаблону", 28, "growing", "Корпоративные сервисы", "Офис руководителя"),
+    Topic("client_group_research", "information_search", "собрать по компании-клиенту директоров дочерних обществ и сведения о выигранных сделках", 14, "stable", "Продажи", "Аккаунт-менеджеры"),
+    Topic("unanswered_price_requests", "monitoring_automation", "настроить автоматический мониторинг и отслеживать письма с запросом расчёта цены, на которые не ответили в течение двух часов", 25, "growing", "Продажи", "Коммерческие предложения"),
+    Topic("mail_monitoring_rules", "monitoring_automation", "создать периодическое задание мониторинга почты по заданным правилам", 20, "stable", "Корпоративные сервисы", "Автоматизация"),
+    Topic("won_tenders_notifications", "monitoring_automation", "настроить мониторинг и еженедельно уведомлять фокус-группу о продажах с выигранными тендерами", 18, "growing", "Продажи", "Тендерный отдел"),
+    Topic("crm_digest_to_email", "monitoring_automation", "настроить периодический мониторинг, собирать аналитику из CRM и отправлять её на почту фокус-группе", 22, "growing", "Продажи", "CRM-аналитика"),
+    Topic("project_team_vendor_owner", "information_search", "найти состав проектной команды и ответственное за вендора направление", 13, "stable", "Проектный бизнес", "Ресурсный менеджмент"),
+    Topic("crm_criteria_search", "information_search", "собрать информацию из CRM по заданным критериям", 24, "stable", "Продажи", "CRM-аналитика"),
+    Topic("company_open_source_summary", "information_search", "найти сведения о компании в открытых источниках и подготовить аналитическую сводку", 27, "growing", "Продажи", "Аккаунт-менеджеры"),
+    Topic("client_excel_report", "reporting_export", "собрать информацию по клиенту, сформировать единый отчёт и экспортировать его в Excel", 19, "stable", "Продажи", "Отчётность"),
+    Topic("crm_fields_to_excel", "reporting_export", "выгрузить выбранные поля из CRM в документ Excel", 26, "stable", "Продажи", "CRM-аналитика"),
+    Topic("coolfeedback_manager_review", "text_generation", "сформулировать и написать отзыв руководителя в CoolFeedback по тезисам и договорённостям после мониторинга", 12, "growing", "HR", "Развитие сотрудников"),
+    Topic("pre_monitoring_note", "task_management", "записать заметку в анкету перед мониторингом сотрудника", 10, "stable", "HR", "Развитие сотрудников"),
+    Topic("isup_ticket_edit", "task_management", "создать новый тикет или отредактировать существующий тикет в ИСУП", 21, "stable", "Проектный бизнес", "Управление проектами"),
+    Topic("weekly_tender_report", "reporting_export", "подготовить еженедельный отчёт о выигранных тендерах за последние семь дней", 23, "growing", "Продажи", "Тендерный отдел"),
+    Topic("jira_assigned_tasks", "task_management", "показать список задач Jira, назначенных на текущего сотрудника", 30, "stable", "ИТ", "Разработка"),
+    Topic("jira_priority_tasks", "task_management", "показать задачи Jira с фильтрацией по приоритету", 17, "declining", "ИТ", "Разработка"),
+    Topic("manager_observations", "task_management", "зафиксировать наблюдения руководителя о работе сотрудника", 11, "growing", "HR", "Руководители"),
+    Topic("analysis_export_excel", "reporting_export", "сформировать отчёт и экспортировать результаты анализа в Excel для передачи коллегам", 18, "stable", "Аналитика", "BI"),
+    Topic("generic_excel_export", "reporting_export", "выгрузить рабочие данные в Excel для внешнего анализа и отчётности", 20, "stable", "Аналитика", "BI"),
+    Topic("supplier_blog_search", "information_search", "быстро найти актуальную информацию о поставщиках в корпоративном блоге", 9, "declining", "Закупки", "Поставщики"),
+    Topic("confluence_process_search", "information_search", "найти описание рабочего процесса в Confluence", 29, "growing", "Корпоративные сервисы", "База знаний"),
+    Topic("leader_calendar_slot", "calendar_planning", "найти свободное время в календаре руководителя и запланировать встречу", 24, "stable", "Корпоративные сервисы", "Офис руководителя"),
+    Topic("confirm_task_completion", "task_management", "подтвердить выполнение задачи и закрыть завершённую работу", 15, "stable", "Проектный бизнес", "Управление проектами"),
+    Topic("task_history_completion", "task_management", "добавить задачу в историю и отметить её выполненной", 14, "declining", "Проектный бизнес", "Управление проектами"),
+    Topic("large_meeting_room", "calendar_planning", "найти свободную переговорную для встречи с большим количеством участников", 16, "growing", "Корпоративные сервисы", "Офис руководителя"),
+    Topic("client_thread_reply", "text_generation", "прочитать переписку с клиентом, сформулировать и написать содержательный ответ", 31, "growing", "Продажи", "Аккаунт-менеджеры"),
+    Topic("discussion_notes", "summarization", "записать итоги обсуждения с коллегами и выделить договорённости", 22, "stable", "Корпоративные сервисы", "Совместная работа"),
+    Topic("client_contacts", "information_search", "найти контакты клиента по названию компании", 20, "stable", "Продажи", "Аккаунт-менеджеры"),
+    Topic("large_group_meeting", "calendar_planning", "создать встречу для большого списка коллег и найти общий свободный слот", 18, "growing", "Корпоративные сервисы", "Офис руководителя"),
+    Topic("meeting_body_attachment", "information_search", "найти информацию, приложенную текстом в теле встречи", 8, "stable", "Корпоративные сервисы", "Совместная работа"),
+    Topic("post_meeting_reminders", "calendar_planning", "создать в календаре напоминания по договорённостям после встречи и сгруппировать запланированные дела", 19, "growing", "Корпоративные сервисы", "Персональная продуктивность"),
+    Topic("tomorrow_meetings", "calendar_planning", "показать список встреч на следующий день для подготовки", 23, "stable", "Корпоративные сервисы", "Персональная продуктивность"),
+    Topic("email_to_project_ticket", "task_management", "создать и актуализировать тикеты Project на основе входящих писем", 26, "growing", "Проектный бизнес", "Управление проектами"),
+    Topic("isup_project_status_monitoring", "monitoring_automation", "настроить мониторинг, периодически контролировать статусы проектов в ИСУП и сообщать о важных переходах", 24, "growing", "Проектный бизнес", "Управление проектами"),
+    Topic("control_chitchat", "other", "обсудить нерабочую тему без бизнес-задачи", 10, "stable", "Не указано", "Не указано", False),
+    Topic("control_vague", "other", "сделать что-нибудь полезное без контекста и критериев результата", 10, "stable", "Не указано", "Не указано", False),
+    Topic("control_multi_intent", "other", "одновременно найти клиента, написать письмо, создать встречу и выгрузить отчёт", 10, "stable", "Не указано", "Не указано", False),
 ]
 
-
-def _queries_for(template: str, pool: List[str], n: int) -> List[str]:
-    out: List[str] = []
-    i = 0
-    while len(out) < n:
-        value = pool[i % len(pool)]
-        suffix = "" if i < len(pool) else f" (вариант {i // len(pool) + 1})"
-        candidate = template.format(value) + suffix
-        if candidate not in out:
-            out.append(candidate)
-        i += 1
-        if i > n * 4:  # safety
-            break
-    return out
-
-
-def _timestamp(index: int) -> str:
-    # Spread across ~46 days, cycling hours for realism.
-    day = index % 46
-    hour = 8 + (index % 10)
-    minute = (index * 7) % 60
-    ts = BASE_DAY + timedelta(days=day, hours=hour - 8, minutes=minute)
-    return ts.strftime("%Y-%m-%dT%H:%M:%SZ")
+PREFIXES = [
+    "Помоги",
+    "Нужно",
+    "Пожалуйста, помоги",
+    "Хочу",
+    "Требуется",
+    "Сможешь",
+    "Прошу",
+    "Необходимо",
+]
+DETAILS = ["Укажи источник каждого результата.", "Сделай результат кратким и структурированным.", "Если данных не хватает, перечисли, что нужно уточнить.", "Сохрани деловой стиль и выдели следующие действия.", "Не придумывай отсутствующие сведения."]
+CONTEXT = " ".join([
+    "Контекст содержит выдержки из корпоративной базы знаний, переписки и описаний процессов.",
+    "Данные могут включать проекты, роли участников, историю изменений и внутренние комментарии.",
+    "Необходимо учитывать ограничения доступа и использовать только приложенные сведения.",
+    "Результат должен быть проверяемым, структурированным и пригодным для дальнейшей работы.",
+]) + " "
 
 
-def _oversized_content(query: str) -> str:
-    filler = ("Ниже приведён большой технический контекст, скопированный из "
-              "корпоративной базы знаний и переписки. ") * 750
-    return (
-        "### Задача\nИспользуй приведённый контекст для ответа.\n"
-        f"<context>\n{filler}\n</context>\n"
-        f"<user_query>\n{query}\n</user_query>"
-    )
+def query_for(topic: Topic, variant: int) -> str:
+    return f"{PREFIXES[variant % len(PREFIXES)]} {topic.intent}. {DETAILS[variant % len(DETAILS)]}"
 
 
-def _messages_for(index: int, query: str, oversized: bool) -> List[Dict[str, str]]:
-    if oversized:
-        return [{"role": "user", "content": _oversized_content(query)}]
-    kind = index % 5
-    if kind == 0:
-        return [{"role": "user", "content": query}]
-    if kind == 1:
-        return [{"role": "system", "content": "Ты — корпоративный ассистент."},
-                {"role": "user", "content": query}]
-    if kind == 2:
-        return [{"role": "user", "content": "Здравствуйте, есть вопрос."},
-                {"role": "assistant", "content": "Конечно, слушаю вас."},
-                {"role": "user", "content": query}]
-    if kind == 3:
-        ctx = "Небольшая справочная заметка по теме запроса для контекста."
-        return [{"role": "user",
-                 "content": f"### Контекст\n<context>\n{ctx}\n</context>\n"
-                            f"<user_query>\n{query}\n</user_query>"}]
-    return [{"role": "system", "content": "Отвечай кратко и по делу."},
-            {"role": "user", "content": query}]
+def content_for(query: str, target_tokens: int) -> str:
+    target_chars = max(len(query), int(target_tokens * 3.1))
+    context = (CONTEXT * math.ceil(target_chars / len(CONTEXT)))[:target_chars]
+    return f"<context>\n{context}\n</context>\n<user_query>\n{query}\n</user_query>"
 
 
-def _event(index: int, external_id: str, query: str, oversized: bool) -> Dict:
+def day_for(topic: Topic, variant: int) -> int:
+    fraction = (variant + 1) / (topic.volume + 1)
+    if topic.trend == "growing":
+        return min(41, int(41 * math.sqrt(fraction)))
+    if topic.trend == "declining":
+        return min(41, int(41 * (fraction**2)))
+    return (variant * 11 + topic.volume * 3) % 42
+
+
+def event_for(topic: Topic, topic_index: int, variant: int, target_tokens: int, answers: bool) -> dict:
+    query = query_for(topic, variant)
+    index = topic_index * 1000 + variant
+    occurred_at = BASE_DAY + timedelta(days=day_for(topic, variant), hours=index % 9, minutes=index * 7 % 60)
+    answered = answers and index % 6 == 0
+    failed = answered and index % 29 == 0
+    response = None
+    if answered:
+        response = {
+            "content": f"Результат по задаче «{topic.intent}». Собраны доступные данные, ограничения и следующие действия.",
+            "usage": {"prompt_tokens": target_tokens, "completion_tokens": 180, "total_tokens": target_tokens + 180},
+        }
     return {
-        "external_id": external_id,
-        "agent_id": AGENT_ID,
-        "occurred_at": _timestamp(index),
+        "external_id": f"krok-{topic.label}-{variant:03d}",
+        "agent_id": AGENTS[topic_index % len(AGENTS)],
+        "user_id": f"user-{index % 47 + 1:03d}",
+        "team": topic.team,
+        "direction": topic.direction,
+        "is_synthetic": True,
+        "occurred_at": occurred_at.isoformat().replace("+00:00", "Z"),
         "request": {
             "model": MODELS[index % len(MODELS)],
             "stream": bool(index % 2),
-            "messages": _messages_for(index, query, oversized),
+            "messages": [
+                {"role": "system", "content": "Ты — корпоративный ИИ-ассистент. Не выдумывай факты."},
+                {"role": "user", "content": content_for(query, target_tokens)},
+            ],
         },
-        "response": None,
-        "execution_status": "unknown",
-        "latency_ms": None,
-        "rating": None,
+        "response": response,
+        "execution_status": "error" if failed else ("success" if answered else "unknown"),
+        "latency_ms": 1800 + index % 17 * 220 if answered else None,
+        "rating": 2 if failed else (4 + index % 2 if answered else None),
     }
 
 
-def build_demo():
-    events: List[Dict] = []
-    labels: Dict[str, Dict[str, str]] = {}
-    # (query, category, scenario_label) truth for metrics
-    truth: List[Dict[str, str]] = []
-
-    idx = 0
-    # base formulations
-    per_topic_queries: Dict[str, List[str]] = {}
-    for label, category, template, pool in TOPICS:
-        queries = _queries_for(template, pool, N_PER_TOPIC)
-        per_topic_queries[label] = (category, queries)  # type: ignore
-        for q in queries:
-            ext = f"demo-{idx:05d}"
-            events.append(_event(idx, ext, q, oversized=False))
-            labels[ext] = {"category": category, "scenario_label": label}
-            truth.append({"external_id": ext, "query": q, "category": category,
-                          "scenario_label": label, "oversized": False})
-            idx += 1
-
-    # oversized extras: one per selected real-category topic (>= 15 total)
-    oversized_labels = [lbl for lbl, cat, _t, _p in TOPICS if cat != "other"][:15]
-    for label in oversized_labels:
-        category, queries = per_topic_queries[label]  # type: ignore
-        q = queries[0]
-        ext = f"demo-{idx:05d}"
-        events.append(_event(idx, ext, q, oversized=True))
-        labels[ext] = {"category": category, "scenario_label": label}
-        truth.append({"external_id": ext, "query": q, "category": category,
-                      "scenario_label": label, "oversized": True})
-        idx += 1
-
-    return events, labels, truth
+def pairs(target_tokens: int, answers: bool) -> Iterable[tuple[dict, dict]]:
+    for topic_index, topic in enumerate(TOPICS):
+        for variant in range(topic.volume):
+            event = event_for(topic, topic_index, variant, target_tokens, answers)
+            yield event, {
+                "external_id": event["external_id"],
+                "query": query_for(topic, variant),
+                "category": topic.category,
+                "scenario_label": topic.label,
+                "supplied_topic": topic.supplied,
+                "target_prompt_tokens": target_tokens,
+            }
 
 
-def build_validation():
-    # 5 fresh formulations for a spread of real-category topics (>= 60 records).
-    chosen = [t for t in TOPICS if t[1] != "other"]
-    records = []
-    labels: Dict[str, str] = {}
-    vidx = 0
-    for label, category, template, pool in chosen:
-        # take slot values from the tail so they differ from demo's head usage
-        vals = list(reversed(pool))[:5]
-        for value in vals:
-            query = template.format(value)
-            ext = f"val-{vidx:03d}"
-            records.append({"external_id": ext, "query": query, "expected_category": category})
-            labels[ext] = label
-            vidx += 1
-            if vidx >= 140:
-                break
-    return records, labels
+def write_jsonl(path: Path, rows: Iterable[dict]) -> None:
+    with path.open("w", encoding="utf-8", newline="\n") as output:
+        for row in rows:
+            output.write(json.dumps(row, ensure_ascii=False) + "\n")
 
 
-def write_all():
-    events, demo_labels, truth = build_demo()
-    val_records, val_labels = build_validation()
+def write_quick() -> dict:
+    generated = list(pairs(1_500, True))
+    events, truth = [x[0] for x in generated], [x[1] for x in generated]
+    labels = {row["external_id"]: {"category": row["category"], "scenario_label": row["scenario_label"]} for row in truth}
+    validation, validation_labels = [], {}
+    for index, topic in enumerate(TOPICS):
+        for variant in range(3):
+            external_id = f"validation-{index:02d}-{variant}"
+            validation.append({"external_id": external_id, "query": query_for(topic, variant + 50), "expected_category": topic.category})
+            validation_labels[external_id] = topic.label
+    write_jsonl(DATA_DIR / "demo_events.jsonl", events)
+    (DATA_DIR / "demo_labels.json").write_text(json.dumps(labels, ensure_ascii=False, indent=2), encoding="utf-8")
+    (DATA_DIR / "demo_truth.json").write_text(json.dumps(truth, ensure_ascii=False, indent=2), encoding="utf-8")
+    write_jsonl(DATA_DIR / "validation_events.jsonl", validation)
+    (DATA_DIR / "validation_labels.json").write_text(json.dumps(validation_labels, ensure_ascii=False, indent=2), encoding="utf-8")
+    manifest = {"profile": "quick", "events": len(events), "supplied_topics": 35, "control_topics": 3, "target_average_prompt_tokens": 1_500, "is_synthetic": True}
+    (DATA_DIR / "demo_manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
+    return manifest
 
-    (DATA_DIR / "demo_events.jsonl").write_text(
-        "\n".join(json.dumps(e, ensure_ascii=False) for e in events) + "\n", encoding="utf-8")
-    (DATA_DIR / "demo_labels.json").write_text(
-        json.dumps(demo_labels, ensure_ascii=False, indent=2), encoding="utf-8")
-    (DATA_DIR / "demo_truth.json").write_text(
-        json.dumps(truth, ensure_ascii=False, indent=2), encoding="utf-8")
-    (DATA_DIR / "validation_events.jsonl").write_text(
-        "\n".join(json.dumps(r, ensure_ascii=False) for r in val_records) + "\n", encoding="utf-8")
-    (DATA_DIR / "validation_labels.json").write_text(
-        json.dumps(val_labels, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    return events, demo_labels, truth, val_records, val_labels
+def write_compliant(output: Path) -> dict:
+    output.parent.mkdir(parents=True, exist_ok=True)
+    generated = pairs(100_000, False)
+    count = 0
+    with output.open("w", encoding="utf-8", newline="\n") as stream:
+        for event, _truth in generated:
+            stream.write(json.dumps(event, ensure_ascii=False) + "\n")
+            count += 1
+    manifest = {"profile": "compliant", "events": count, "supplied_topics": 35, "control_topics": 3, "target_average_prompt_tokens": 100_000, "is_synthetic": True, "output": str(output)}
+    output.with_suffix(".manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
+    return manifest
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--profile", choices=["quick", "compliant"], default="quick")
+    parser.add_argument("--output", type=Path, default=DATA_DIR / "compliant_events_100k.jsonl")
+    args = parser.parse_args()
+    manifest = write_quick() if args.profile == "quick" else write_compliant(args.output)
+    print(json.dumps(manifest, ensure_ascii=False, indent=2))
 
 
 if __name__ == "__main__":
-    events, demo_labels, truth, val_records, val_labels = write_all()
-    n_topics = len(set(t["scenario_label"] for t in truth))
-    n_oversized = sum(1 for t in truth if t["oversized"])
-    n_ambig = sum(1 for t in truth if t["scenario_label"] in ("other_multi_intent", "other_chitchat", "other_vague"))
-    print(f"demo_events: {len(events)} | topics: {n_topics} | oversized: {n_oversized} "
-          f"| other(ambig/vague/multi): {n_ambig}")
-    print(f"validation_events: {len(val_records)} | validation scenario labels: {len(set(val_labels.values()))}")
-    days = sorted(set(e['occurred_at'][:10] for e in events))
-    print(f"distinct days: {len(days)} ({days[0]} .. {days[-1]})")
-    # min formulations per topic
-    from collections import Counter
-    per = Counter(t["scenario_label"] for t in truth)
-    print("min formulations/topic:", min(per.values()), "| max:", max(per.values()))
+    main()

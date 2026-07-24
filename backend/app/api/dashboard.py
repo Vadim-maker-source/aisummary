@@ -1,4 +1,5 @@
 from datetime import datetime
+from typing import Literal
 
 from fastapi import APIRouter, Depends, Query
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -8,7 +9,10 @@ from app.models.enums import Category
 from app.schemas.dashboard import (
     CategoryListResponse,
     DashboardSummary,
+    EffectivenessResponse,
+    ProblemListResponse,
     ScenarioListResponse,
+    ScenarioTrendResponse,
     TimelineResponse,
 )
 from app.services import dashboard as dashboard_service
@@ -56,4 +60,33 @@ async def timeline(
     session: AsyncSession = Depends(get_db_session),
 ) -> TimelineResponse:
     return await dashboard_service.get_timeline(session)
+
+
+@router.get("/problems", response_model=ProblemListResponse)
+async def problems(
+    session: AsyncSession = Depends(get_db_session),
+) -> ProblemListResponse:
+    return await dashboard_service.get_problems(session)
+
+
+@router.get("/scenario-trends", response_model=ScenarioTrendResponse)
+async def scenario_trends(
+    window_days: int = Query(default=7, ge=2, le=90),
+    session: AsyncSession = Depends(get_db_session),
+) -> ScenarioTrendResponse:
+    return await dashboard_service.get_scenario_trends(
+        session,
+        window_days=window_days,
+    )
+
+
+@router.get("/effectiveness", response_model=EffectivenessResponse)
+async def effectiveness(
+    dimension: Literal["agent_id", "team", "direction"] = "agent_id",
+    session: AsyncSession = Depends(get_db_session),
+) -> EffectivenessResponse:
+    return await dashboard_service.get_effectiveness(
+        session,
+        dimension=dimension,
+    )
 

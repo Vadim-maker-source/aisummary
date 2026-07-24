@@ -27,6 +27,9 @@ Canonical analytics event:
 {
   "external_id": "request-001",
   "agent_id": "corporate-agent",
+  "user_id": "user-42",
+  "team": "CRM-аналитика",
+  "direction": "Продажи",
   "occurred_at": "2026-07-25T12:00:00Z",
   "request": {
     "model": "DeepSeek-V4-Flash",
@@ -39,6 +42,11 @@ Canonical analytics event:
   "execution_status": "unknown"
 }
 ```
+
+`user_id`, `team` and `direction` enable effectiveness breakdowns in the CTO
+dashboard. `response`, `execution_status`, `latency_ms` and `rating` enable
+agent-quality metrics. If they are absent, the API reports that coverage is
+unavailable instead of inventing an effectiveness score.
 
 Raw OpenAI-compatible request:
 

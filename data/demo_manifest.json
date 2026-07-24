@@ -1,0 +1,8 @@
+{
+  "profile": "quick",
+  "events": 726,
+  "supplied_topics": 35,
+  "control_topics": 3,
+  "target_average_prompt_tokens": 1500,
+  "is_synthetic": true
+}

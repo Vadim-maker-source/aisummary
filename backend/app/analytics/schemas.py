@@ -26,6 +26,7 @@ class Category(str, Enum):
     information_search = "information_search"
     summarization = "summarization"
     data_analysis = "data_analysis"
+    code_assistance = "code_assistance"
     reporting_export = "reporting_export"
     task_management = "task_management"
     monitoring_automation = "monitoring_automation"

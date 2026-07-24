@@ -1,140 +1,114 @@
-{"external_id": "val-000", "query": "Найди общий свободный слот для встречи дизайнеров", "expected_category": "calendar_planning"}
-{"external_id": "val-001", "query": "Найди общий свободный слот для встречи маркетологов", "expected_category": "calendar_planning"}
-{"external_id": "val-002", "query": "Найди общий свободный слот для встречи HR-отдела", "expected_category": "calendar_planning"}
-{"external_id": "val-003", "query": "Найди общий свободный слот для встречи службы поддержки", "expected_category": "calendar_planning"}
-{"external_id": "val-004", "query": "Найди общий свободный слот для встречи заказчика", "expected_category": "calendar_planning"}
-{"external_id": "val-005", "query": "Перенеси встречу в календаре на ближайшие дни", "expected_category": "calendar_planning"}
-{"external_id": "val-006", "query": "Перенеси встречу в календаре на начало месяца", "expected_category": "calendar_planning"}
-{"external_id": "val-007", "query": "Перенеси встречу в календаре на послезавтра", "expected_category": "calendar_planning"}
-{"external_id": "val-008", "query": "Перенеси встречу в календаре на завтра", "expected_category": "calendar_planning"}
-{"external_id": "val-009", "query": "Перенеси встречу в календаре на конец недели", "expected_category": "calendar_planning"}
-{"external_id": "val-010", "query": "Поставь напоминание о экскурсии", "expected_category": "calendar_planning"}
-{"external_id": "val-011", "query": "Поставь напоминание о демонстрации", "expected_category": "calendar_planning"}
-{"external_id": "val-012", "query": "Поставь напоминание о интервью", "expected_category": "calendar_planning"}
-{"external_id": "val-013", "query": "Поставь напоминание о звонке", "expected_category": "calendar_planning"}
-{"external_id": "val-014", "query": "Поставь напоминание о вебинаре", "expected_category": "calendar_planning"}
-{"external_id": "val-015", "query": "Настрой периодический мониторинг входящих писем от дизайнеров", "expected_category": "monitoring_automation"}
-{"external_id": "val-016", "query": "Настрой периодический мониторинг входящих писем от маркетологов", "expected_category": "monitoring_automation"}
-{"external_id": "val-017", "query": "Настрой периодический мониторинг входящих писем от HR-отдела", "expected_category": "monitoring_automation"}
-{"external_id": "val-018", "query": "Настрой периодический мониторинг входящих писем от службы поддержки", "expected_category": "monitoring_automation"}
-{"external_id": "val-019", "query": "Настрой периодический мониторинг входящих писем от заказчика", "expected_category": "monitoring_automation"}
-{"external_id": "val-020", "query": "Отслеживай изменение цен и присылай уведомления по аренды", "expected_category": "monitoring_automation"}
-{"external_id": "val-021", "query": "Отслеживай изменение цен и присылай уведомления по логистики", "expected_category": "monitoring_automation"}
-{"external_id": "val-022", "query": "Отслеживай изменение цен и присылай уведомления по недвижимости", "expected_category": "monitoring_automation"}
-{"external_id": "val-023", "query": "Отслеживай изменение цен и присылай уведомления по металлов", "expected_category": "monitoring_automation"}
-{"external_id": "val-024", "query": "Отслеживай изменение цен и присылай уведомления по топлива", "expected_category": "monitoring_automation"}
-{"external_id": "val-025", "query": "Настрой периодические уведомления о приближении дедлайнов исправления", "expected_category": "monitoring_automation"}
-{"external_id": "val-026", "query": "Настрой периодические уведомления о приближении дедлайнов поддержки", "expected_category": "monitoring_automation"}
-{"external_id": "val-027", "query": "Настрой периодические уведомления о приближении дедлайнов обновления", "expected_category": "monitoring_automation"}
-{"external_id": "val-028", "query": "Настрой периодические уведомления о приближении дедлайнов внедрения", "expected_category": "monitoring_automation"}
-{"external_id": "val-029", "query": "Настрой периодические уведомления о приближении дедлайнов поставки", "expected_category": "monitoring_automation"}
-{"external_id": "val-030", "query": "Создай задачу в Jira для дизайнеров", "expected_category": "task_management"}
-{"external_id": "val-031", "query": "Создай задачу в Jira для маркетологов", "expected_category": "task_management"}
-{"external_id": "val-032", "query": "Создай задачу в Jira для HR-отдела", "expected_category": "task_management"}
-{"external_id": "val-033", "query": "Создай задачу в Jira для службы поддержки", "expected_category": "task_management"}
-{"external_id": "val-034", "query": "Создай задачу в Jira для заказчика", "expected_category": "task_management"}
-{"external_id": "val-035", "query": "Обнови статус задачи и тикета по исправления", "expected_category": "task_management"}
-{"external_id": "val-036", "query": "Обнови статус задачи и тикета по поддержки", "expected_category": "task_management"}
-{"external_id": "val-037", "query": "Обнови статус задачи и тикета по обновления", "expected_category": "task_management"}
-{"external_id": "val-038", "query": "Обнови статус задачи и тикета по внедрения", "expected_category": "task_management"}
-{"external_id": "val-039", "query": "Обнови статус задачи и тикета по поставки", "expected_category": "task_management"}
-{"external_id": "val-040", "query": "Составь план задач в системе project для базы знаний", "expected_category": "task_management"}
-{"external_id": "val-041", "query": "Составь план задач в системе project для системы доставки", "expected_category": "task_management"}
-{"external_id": "val-042", "query": "Составь план задач в системе project для платёжного шлюза", "expected_category": "task_management"}
-{"external_id": "val-043", "query": "Составь план задач в системе project для личного кабинета", "expected_category": "task_management"}
-{"external_id": "val-044", "query": "Составь план задач в системе project для витрины", "expected_category": "task_management"}
-{"external_id": "val-045", "query": "Выгрузи отчёт по продажам за первый квартал в Excel", "expected_category": "reporting_export"}
-{"external_id": "val-046", "query": "Выгрузи отчёт по продажам за праздники в Excel", "expected_category": "reporting_export"}
-{"external_id": "val-047", "query": "Выгрузи отчёт по продажам за выходные в Excel", "expected_category": "reporting_export"}
-{"external_id": "val-048", "query": "Выгрузи отчёт по продажам за последние 7 дней в Excel", "expected_category": "reporting_export"}
-{"external_id": "val-049", "query": "Выгрузи отчёт по продажам за год в Excel", "expected_category": "reporting_export"}
-{"external_id": "val-050", "query": "Сформируй сводный отчёт по категориям и экспортируй в PDF", "expected_category": "reporting_export"}
-{"external_id": "val-051", "query": "Сформируй сводный отчёт по регионам и экспортируй в PDF", "expected_category": "reporting_export"}
-{"external_id": "val-052", "query": "Сформируй сводный отчёт по менеджерам и экспортируй в PDF", "expected_category": "reporting_export"}
-{"external_id": "val-053", "query": "Сформируй сводный отчёт по филиалам и экспортируй в PDF", "expected_category": "reporting_export"}
-{"external_id": "val-054", "query": "Сформируй сводный отчёт по воронке и экспортируй в PDF", "expected_category": "reporting_export"}
-{"external_id": "val-055", "query": "Экспортируй выгрузку данных дашборда по категориям в CSV", "expected_category": "reporting_export"}
-{"external_id": "val-056", "query": "Экспортируй выгрузку данных дашборда по регионам в CSV", "expected_category": "reporting_export"}
-{"external_id": "val-057", "query": "Экспортируй выгрузку данных дашборда по менеджерам в CSV", "expected_category": "reporting_export"}
-{"external_id": "val-058", "query": "Экспортируй выгрузку данных дашборда по филиалам в CSV", "expected_category": "reporting_export"}
-{"external_id": "val-059", "query": "Экспортируй выгрузку данных дашборда по воронке в CSV", "expected_category": "reporting_export"}
-{"external_id": "val-060", "query": "Сделай краткое саммари документа устава", "expected_category": "summarization"}
-{"external_id": "val-061", "query": "Сделай краткое саммари документа брифа", "expected_category": "summarization"}
-{"external_id": "val-062", "query": "Сделай краткое саммари документа должностной", "expected_category": "summarization"}
-{"external_id": "val-063", "query": "Сделай краткое саммари документа гайда", "expected_category": "summarization"}
-{"external_id": "val-064", "query": "Сделай краткое саммари документа методички", "expected_category": "summarization"}
-{"external_id": "val-065", "query": "Подготовь краткую сводку итогов встречи по итогам переклички", "expected_category": "summarization"}
-{"external_id": "val-066", "query": "Подготовь краткую сводку итогов встречи по итогам консилиума", "expected_category": "summarization"}
-{"external_id": "val-067", "query": "Подготовь краткую сводку итогов встречи по итогам защиты", "expected_category": "summarization"}
-{"external_id": "val-068", "query": "Подготовь краткую сводку итогов встречи по итогам интервью", "expected_category": "summarization"}
-{"external_id": "val-069", "query": "Подготовь краткую сводку итогов встречи по итогам синка", "expected_category": "summarization"}
-{"external_id": "val-070", "query": "Сделай краткую сводку писем за первый квартал", "expected_category": "summarization"}
-{"external_id": "val-071", "query": "Сделай краткую сводку писем за праздники", "expected_category": "summarization"}
-{"external_id": "val-072", "query": "Сделай краткую сводку писем за выходные", "expected_category": "summarization"}
-{"external_id": "val-073", "query": "Сделай краткую сводку писем за последние 7 дней", "expected_category": "summarization"}
-{"external_id": "val-074", "query": "Сделай краткую сводку писем за год", "expected_category": "summarization"}
-{"external_id": "val-075", "query": "Найди контакты дизайнеров", "expected_category": "information_search"}
-{"external_id": "val-076", "query": "Найди контакты маркетологов", "expected_category": "information_search"}
-{"external_id": "val-077", "query": "Найди контакты HR-отдела", "expected_category": "information_search"}
-{"external_id": "val-078", "query": "Найди контакты службы поддержки", "expected_category": "information_search"}
-{"external_id": "val-079", "query": "Найди контакты заказчика", "expected_category": "information_search"}
-{"external_id": "val-080", "query": "Найди и собери информацию о компании ГидроМаш", "expected_category": "information_search"}
-{"external_id": "val-081", "query": "Найди и собери информацию о компании АвтоМир", "expected_category": "information_search"}
-{"external_id": "val-082", "query": "Найди и собери информацию о компании ЭнергоСбыт", "expected_category": "information_search"}
-{"external_id": "val-083", "query": "Найди и собери информацию о компании ТелекомПлюс", "expected_category": "information_search"}
-{"external_id": "val-084", "query": "Найди и собери информацию о компании ЦифроБанк", "expected_category": "information_search"}
-{"external_id": "val-085", "query": "Организуй поиск и найди документы по теме цифровой трансформации", "expected_category": "information_search"}
-{"external_id": "val-086", "query": "Организуй поиск и найди документы по теме робототехники", "expected_category": "information_search"}
-{"external_id": "val-087", "query": "Организуй поиск и найди документы по теме больших данных", "expected_category": "information_search"}
-{"external_id": "val-088", "query": "Организуй поиск и найди документы по теме облачных платформ", "expected_category": "information_search"}
-{"external_id": "val-089", "query": "Организуй поиск и найди документы по теме бизнес-процессов", "expected_category": "information_search"}
-{"external_id": "val-090", "query": "Составь SQL-запрос к таблице базы данных по регистраций", "expected_category": "data_analysis"}
-{"external_id": "val-091", "query": "Составь SQL-запрос к таблице базы данных по доставок", "expected_category": "data_analysis"}
-{"external_id": "val-092", "query": "Составь SQL-запрос к таблице базы данных по обращений", "expected_category": "data_analysis"}
-{"external_id": "val-093", "query": "Составь SQL-запрос к таблице базы данных по остатков", "expected_category": "data_analysis"}
-{"external_id": "val-094", "query": "Составь SQL-запрос к таблице базы данных по выручки", "expected_category": "data_analysis"}
-{"external_id": "val-095", "query": "Посчитай ключевые метрики и проведи анализ данных по регистраций", "expected_category": "data_analysis"}
-{"external_id": "val-096", "query": "Посчитай ключевые метрики и проведи анализ данных по доставок", "expected_category": "data_analysis"}
-{"external_id": "val-097", "query": "Посчитай ключевые метрики и проведи анализ данных по обращений", "expected_category": "data_analysis"}
-{"external_id": "val-098", "query": "Посчитай ключевые метрики и проведи анализ данных по остатков", "expected_category": "data_analysis"}
-{"external_id": "val-099", "query": "Посчитай ключевые метрики и проведи анализ данных по выручки", "expected_category": "data_analysis"}
-{"external_id": "val-100", "query": "Проведи анализ данных таблицы по регистраций", "expected_category": "data_analysis"}
-{"external_id": "val-101", "query": "Проведи анализ данных таблицы по доставок", "expected_category": "data_analysis"}
-{"external_id": "val-102", "query": "Проведи анализ данных таблицы по обращений", "expected_category": "data_analysis"}
-{"external_id": "val-103", "query": "Проведи анализ данных таблицы по остатков", "expected_category": "data_analysis"}
-{"external_id": "val-104", "query": "Проведи анализ данных таблицы по выручки", "expected_category": "data_analysis"}
-{"external_id": "val-105", "query": "Напиши деловое письмо для дизайнеров", "expected_category": "text_generation"}
-{"external_id": "val-106", "query": "Напиши деловое письмо для маркетологов", "expected_category": "text_generation"}
-{"external_id": "val-107", "query": "Напиши деловое письмо для HR-отдела", "expected_category": "text_generation"}
-{"external_id": "val-108", "query": "Напиши деловое письмо для службы поддержки", "expected_category": "text_generation"}
-{"external_id": "val-109", "query": "Напиши деловое письмо для заказчика", "expected_category": "text_generation"}
-{"external_id": "val-110", "query": "Сформулируй ответное письмо по счёту", "expected_category": "text_generation"}
-{"external_id": "val-111", "query": "Сформулируй ответное письмо по возврату", "expected_category": "text_generation"}
-{"external_id": "val-112", "query": "Сформулируй ответное письмо по гарантии", "expected_category": "text_generation"}
-{"external_id": "val-113", "query": "Сформулируй ответное письмо по тарифу", "expected_category": "text_generation"}
-{"external_id": "val-114", "query": "Сформулируй ответное письмо по продукту", "expected_category": "text_generation"}
-{"external_id": "val-115", "query": "Напиши развёрнутый отзыв о кофейне", "expected_category": "text_generation"}
-{"external_id": "val-116", "query": "Напиши развёрнутый отзыв о провайдере", "expected_category": "text_generation"}
-{"external_id": "val-117", "query": "Напиши развёрнутый отзыв о маркетплейсе", "expected_category": "text_generation"}
-{"external_id": "val-118", "query": "Напиши развёрнутый отзыв о страховке", "expected_category": "text_generation"}
-{"external_id": "val-119", "query": "Напиши развёрнутый отзыв о банке", "expected_category": "text_generation"}
-{"external_id": "val-120", "query": "Напиши и сформулируй текст поста для соцсетей про цифровой трансформации", "expected_category": "text_generation"}
-{"external_id": "val-121", "query": "Напиши и сформулируй текст поста для соцсетей про робототехники", "expected_category": "text_generation"}
-{"external_id": "val-122", "query": "Напиши и сформулируй текст поста для соцсетей про больших данных", "expected_category": "text_generation"}
-{"external_id": "val-123", "query": "Напиши и сформулируй текст поста для соцсетей про облачных платформ", "expected_category": "text_generation"}
-{"external_id": "val-124", "query": "Напиши и сформулируй текст поста для соцсетей про бизнес-процессов", "expected_category": "text_generation"}
-{"external_id": "val-125", "query": "Объясни, почему возникает падение сервера", "expected_category": "knowledge_explanation"}
-{"external_id": "val-126", "query": "Объясни, почему возникает сбой импорта", "expected_category": "knowledge_explanation"}
-{"external_id": "val-127", "query": "Объясни, почему возникает повреждение файла", "expected_category": "knowledge_explanation"}
-{"external_id": "val-128", "query": "Объясни, почему возникает отказ сервиса", "expected_category": "knowledge_explanation"}
-{"external_id": "val-129", "query": "Объясни, почему возникает сбой оплаты", "expected_category": "knowledge_explanation"}
-{"external_id": "val-130", "query": "Расскажи, что такое идемпотентность", "expected_category": "knowledge_explanation"}
-{"external_id": "val-131", "query": "Расскажи, что такое шардирование", "expected_category": "knowledge_explanation"}
-{"external_id": "val-132", "query": "Расскажи, что такое нормализация", "expected_category": "knowledge_explanation"}
-{"external_id": "val-133", "query": "Расскажи, что такое непрерывная поставка", "expected_category": "knowledge_explanation"}
-{"external_id": "val-134", "query": "Расскажи, что такое шлюз приложений", "expected_category": "knowledge_explanation"}
-{"external_id": "val-135", "query": "Объясни и расскажи, как устроен буфер обмена", "expected_category": "knowledge_explanation"}
-{"external_id": "val-136", "query": "Объясни и расскажи, как устроен процесс репликации", "expected_category": "knowledge_explanation"}
-{"external_id": "val-137", "query": "Объясни и расскажи, как устроен кластер", "expected_category": "knowledge_explanation"}
-{"external_id": "val-138", "query": "Объясни и расскажи, как устроен шина событий", "expected_category": "knowledge_explanation"}
-{"external_id": "val-139", "query": "Объясни и расскажи, как устроен система прав", "expected_category": "knowledge_explanation"}
+{"external_id": "validation-00-0", "query": "Пожалуйста, помоги подготовить структурированную сводку важных писем за прошедший день по заданному шаблону. Укажи источник каждого результата.", "expected_category": "summarization"}
+{"external_id": "validation-00-1", "query": "Хочу подготовить структурированную сводку важных писем за прошедший день по заданному шаблону. Сделай результат кратким и структурированным.", "expected_category": "summarization"}
+{"external_id": "validation-00-2", "query": "Требуется подготовить структурированную сводку важных писем за прошедший день по заданному шаблону. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "summarization"}
+{"external_id": "validation-01-0", "query": "Пожалуйста, помоги собрать по компании-клиенту директоров дочерних обществ и сведения о выигранных сделках. Укажи источник каждого результата.", "expected_category": "information_search"}
+{"external_id": "validation-01-1", "query": "Хочу собрать по компании-клиенту директоров дочерних обществ и сведения о выигранных сделках. Сделай результат кратким и структурированным.", "expected_category": "information_search"}
+{"external_id": "validation-01-2", "query": "Требуется собрать по компании-клиенту директоров дочерних обществ и сведения о выигранных сделках. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "information_search"}
+{"external_id": "validation-02-0", "query": "Пожалуйста, помоги настроить автоматический мониторинг и отслеживать письма с запросом расчёта цены, на которые не ответили в течение двух часов. Укажи источник каждого результата.", "expected_category": "monitoring_automation"}
+{"external_id": "validation-02-1", "query": "Хочу настроить автоматический мониторинг и отслеживать письма с запросом расчёта цены, на которые не ответили в течение двух часов. Сделай результат кратким и структурированным.", "expected_category": "monitoring_automation"}
+{"external_id": "validation-02-2", "query": "Требуется настроить автоматический мониторинг и отслеживать письма с запросом расчёта цены, на которые не ответили в течение двух часов. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "monitoring_automation"}
+{"external_id": "validation-03-0", "query": "Пожалуйста, помоги создать периодическое задание мониторинга почты по заданным правилам. Укажи источник каждого результата.", "expected_category": "monitoring_automation"}
+{"external_id": "validation-03-1", "query": "Хочу создать периодическое задание мониторинга почты по заданным правилам. Сделай результат кратким и структурированным.", "expected_category": "monitoring_automation"}
+{"external_id": "validation-03-2", "query": "Требуется создать периодическое задание мониторинга почты по заданным правилам. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "monitoring_automation"}
+{"external_id": "validation-04-0", "query": "Пожалуйста, помоги настроить мониторинг и еженедельно уведомлять фокус-группу о продажах с выигранными тендерами. Укажи источник каждого результата.", "expected_category": "monitoring_automation"}
+{"external_id": "validation-04-1", "query": "Хочу настроить мониторинг и еженедельно уведомлять фокус-группу о продажах с выигранными тендерами. Сделай результат кратким и структурированным.", "expected_category": "monitoring_automation"}
+{"external_id": "validation-04-2", "query": "Требуется настроить мониторинг и еженедельно уведомлять фокус-группу о продажах с выигранными тендерами. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "monitoring_automation"}
+{"external_id": "validation-05-0", "query": "Пожалуйста, помоги настроить периодический мониторинг, собирать аналитику из CRM и отправлять её на почту фокус-группе. Укажи источник каждого результата.", "expected_category": "monitoring_automation"}
+{"external_id": "validation-05-1", "query": "Хочу настроить периодический мониторинг, собирать аналитику из CRM и отправлять её на почту фокус-группе. Сделай результат кратким и структурированным.", "expected_category": "monitoring_automation"}
+{"external_id": "validation-05-2", "query": "Требуется настроить периодический мониторинг, собирать аналитику из CRM и отправлять её на почту фокус-группе. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "monitoring_automation"}
+{"external_id": "validation-06-0", "query": "Пожалуйста, помоги найти состав проектной команды и ответственное за вендора направление. Укажи источник каждого результата.", "expected_category": "information_search"}
+{"external_id": "validation-06-1", "query": "Хочу найти состав проектной команды и ответственное за вендора направление. Сделай результат кратким и структурированным.", "expected_category": "information_search"}
+{"external_id": "validation-06-2", "query": "Требуется найти состав проектной команды и ответственное за вендора направление. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "information_search"}
+{"external_id": "validation-07-0", "query": "Пожалуйста, помоги собрать информацию из CRM по заданным критериям. Укажи источник каждого результата.", "expected_category": "information_search"}
+{"external_id": "validation-07-1", "query": "Хочу собрать информацию из CRM по заданным критериям. Сделай результат кратким и структурированным.", "expected_category": "information_search"}
+{"external_id": "validation-07-2", "query": "Требуется собрать информацию из CRM по заданным критериям. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "information_search"}
+{"external_id": "validation-08-0", "query": "Пожалуйста, помоги найти сведения о компании в открытых источниках и подготовить аналитическую сводку. Укажи источник каждого результата.", "expected_category": "information_search"}
+{"external_id": "validation-08-1", "query": "Хочу найти сведения о компании в открытых источниках и подготовить аналитическую сводку. Сделай результат кратким и структурированным.", "expected_category": "information_search"}
+{"external_id": "validation-08-2", "query": "Требуется найти сведения о компании в открытых источниках и подготовить аналитическую сводку. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "information_search"}
+{"external_id": "validation-09-0", "query": "Пожалуйста, помоги собрать информацию по клиенту, сформировать единый отчёт и экспортировать его в Excel. Укажи источник каждого результата.", "expected_category": "reporting_export"}
+{"external_id": "validation-09-1", "query": "Хочу собрать информацию по клиенту, сформировать единый отчёт и экспортировать его в Excel. Сделай результат кратким и структурированным.", "expected_category": "reporting_export"}
+{"external_id": "validation-09-2", "query": "Требуется собрать информацию по клиенту, сформировать единый отчёт и экспортировать его в Excel. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "reporting_export"}
+{"external_id": "validation-10-0", "query": "Пожалуйста, помоги выгрузить выбранные поля из CRM в документ Excel. Укажи источник каждого результата.", "expected_category": "reporting_export"}
+{"external_id": "validation-10-1", "query": "Хочу выгрузить выбранные поля из CRM в документ Excel. Сделай результат кратким и структурированным.", "expected_category": "reporting_export"}
+{"external_id": "validation-10-2", "query": "Требуется выгрузить выбранные поля из CRM в документ Excel. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "reporting_export"}
+{"external_id": "validation-11-0", "query": "Пожалуйста, помоги сформулировать и написать отзыв руководителя в CoolFeedback по тезисам и договорённостям после мониторинга. Укажи источник каждого результата.", "expected_category": "text_generation"}
+{"external_id": "validation-11-1", "query": "Хочу сформулировать и написать отзыв руководителя в CoolFeedback по тезисам и договорённостям после мониторинга. Сделай результат кратким и структурированным.", "expected_category": "text_generation"}
+{"external_id": "validation-11-2", "query": "Требуется сформулировать и написать отзыв руководителя в CoolFeedback по тезисам и договорённостям после мониторинга. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "text_generation"}
+{"external_id": "validation-12-0", "query": "Пожалуйста, помоги записать заметку в анкету перед мониторингом сотрудника. Укажи источник каждого результата.", "expected_category": "task_management"}
+{"external_id": "validation-12-1", "query": "Хочу записать заметку в анкету перед мониторингом сотрудника. Сделай результат кратким и структурированным.", "expected_category": "task_management"}
+{"external_id": "validation-12-2", "query": "Требуется записать заметку в анкету перед мониторингом сотрудника. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "task_management"}
+{"external_id": "validation-13-0", "query": "Пожалуйста, помоги создать новый тикет или отредактировать существующий тикет в ИСУП. Укажи источник каждого результата.", "expected_category": "task_management"}
+{"external_id": "validation-13-1", "query": "Хочу создать новый тикет или отредактировать существующий тикет в ИСУП. Сделай результат кратким и структурированным.", "expected_category": "task_management"}
+{"external_id": "validation-13-2", "query": "Требуется создать новый тикет или отредактировать существующий тикет в ИСУП. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "task_management"}
+{"external_id": "validation-14-0", "query": "Пожалуйста, помоги подготовить еженедельный отчёт о выигранных тендерах за последние семь дней. Укажи источник каждого результата.", "expected_category": "reporting_export"}
+{"external_id": "validation-14-1", "query": "Хочу подготовить еженедельный отчёт о выигранных тендерах за последние семь дней. Сделай результат кратким и структурированным.", "expected_category": "reporting_export"}
+{"external_id": "validation-14-2", "query": "Требуется подготовить еженедельный отчёт о выигранных тендерах за последние семь дней. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "reporting_export"}
+{"external_id": "validation-15-0", "query": "Пожалуйста, помоги показать список задач Jira, назначенных на текущего сотрудника. Укажи источник каждого результата.", "expected_category": "task_management"}
+{"external_id": "validation-15-1", "query": "Хочу показать список задач Jira, назначенных на текущего сотрудника. Сделай результат кратким и структурированным.", "expected_category": "task_management"}
+{"external_id": "validation-15-2", "query": "Требуется показать список задач Jira, назначенных на текущего сотрудника. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "task_management"}
+{"external_id": "validation-16-0", "query": "Пожалуйста, помоги показать задачи Jira с фильтрацией по приоритету. Укажи источник каждого результата.", "expected_category": "task_management"}
+{"external_id": "validation-16-1", "query": "Хочу показать задачи Jira с фильтрацией по приоритету. Сделай результат кратким и структурированным.", "expected_category": "task_management"}
+{"external_id": "validation-16-2", "query": "Требуется показать задачи Jira с фильтрацией по приоритету. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "task_management"}
+{"external_id": "validation-17-0", "query": "Пожалуйста, помоги зафиксировать наблюдения руководителя о работе сотрудника. Укажи источник каждого результата.", "expected_category": "task_management"}
+{"external_id": "validation-17-1", "query": "Хочу зафиксировать наблюдения руководителя о работе сотрудника. Сделай результат кратким и структурированным.", "expected_category": "task_management"}
+{"external_id": "validation-17-2", "query": "Требуется зафиксировать наблюдения руководителя о работе сотрудника. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "task_management"}
+{"external_id": "validation-18-0", "query": "Пожалуйста, помоги сформировать отчёт и экспортировать результаты анализа в Excel для передачи коллегам. Укажи источник каждого результата.", "expected_category": "reporting_export"}
+{"external_id": "validation-18-1", "query": "Хочу сформировать отчёт и экспортировать результаты анализа в Excel для передачи коллегам. Сделай результат кратким и структурированным.", "expected_category": "reporting_export"}
+{"external_id": "validation-18-2", "query": "Требуется сформировать отчёт и экспортировать результаты анализа в Excel для передачи коллегам. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "reporting_export"}
+{"external_id": "validation-19-0", "query": "Пожалуйста, помоги выгрузить рабочие данные в Excel для внешнего анализа и отчётности. Укажи источник каждого результата.", "expected_category": "reporting_export"}
+{"external_id": "validation-19-1", "query": "Хочу выгрузить рабочие данные в Excel для внешнего анализа и отчётности. Сделай результат кратким и структурированным.", "expected_category": "reporting_export"}
+{"external_id": "validation-19-2", "query": "Требуется выгрузить рабочие данные в Excel для внешнего анализа и отчётности. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "reporting_export"}
+{"external_id": "validation-20-0", "query": "Пожалуйста, помоги быстро найти актуальную информацию о поставщиках в корпоративном блоге. Укажи источник каждого результата.", "expected_category": "information_search"}
+{"external_id": "validation-20-1", "query": "Хочу быстро найти актуальную информацию о поставщиках в корпоративном блоге. Сделай результат кратким и структурированным.", "expected_category": "information_search"}
+{"external_id": "validation-20-2", "query": "Требуется быстро найти актуальную информацию о поставщиках в корпоративном блоге. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "information_search"}
+{"external_id": "validation-21-0", "query": "Пожалуйста, помоги найти описание рабочего процесса в Confluence. Укажи источник каждого результата.", "expected_category": "information_search"}
+{"external_id": "validation-21-1", "query": "Хочу найти описание рабочего процесса в Confluence. Сделай результат кратким и структурированным.", "expected_category": "information_search"}
+{"external_id": "validation-21-2", "query": "Требуется найти описание рабочего процесса в Confluence. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "information_search"}
+{"external_id": "validation-22-0", "query": "Пожалуйста, помоги найти свободное время в календаре руководителя и запланировать встречу. Укажи источник каждого результата.", "expected_category": "calendar_planning"}
+{"external_id": "validation-22-1", "query": "Хочу найти свободное время в календаре руководителя и запланировать встречу. Сделай результат кратким и структурированным.", "expected_category": "calendar_planning"}
+{"external_id": "validation-22-2", "query": "Требуется найти свободное время в календаре руководителя и запланировать встречу. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "calendar_planning"}
+{"external_id": "validation-23-0", "query": "Пожалуйста, помоги подтвердить выполнение задачи и закрыть завершённую работу. Укажи источник каждого результата.", "expected_category": "task_management"}
+{"external_id": "validation-23-1", "query": "Хочу подтвердить выполнение задачи и закрыть завершённую работу. Сделай результат кратким и структурированным.", "expected_category": "task_management"}
+{"external_id": "validation-23-2", "query": "Требуется подтвердить выполнение задачи и закрыть завершённую работу. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "task_management"}
+{"external_id": "validation-24-0", "query": "Пожалуйста, помоги добавить задачу в историю и отметить её выполненной. Укажи источник каждого результата.", "expected_category": "task_management"}
+{"external_id": "validation-24-1", "query": "Хочу добавить задачу в историю и отметить её выполненной. Сделай результат кратким и структурированным.", "expected_category": "task_management"}
+{"external_id": "validation-24-2", "query": "Требуется добавить задачу в историю и отметить её выполненной. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "task_management"}
+{"external_id": "validation-25-0", "query": "Пожалуйста, помоги найти свободную переговорную для встречи с большим количеством участников. Укажи источник каждого результата.", "expected_category": "calendar_planning"}
+{"external_id": "validation-25-1", "query": "Хочу найти свободную переговорную для встречи с большим количеством участников. Сделай результат кратким и структурированным.", "expected_category": "calendar_planning"}
+{"external_id": "validation-25-2", "query": "Требуется найти свободную переговорную для встречи с большим количеством участников. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "calendar_planning"}
+{"external_id": "validation-26-0", "query": "Пожалуйста, помоги прочитать переписку с клиентом, сформулировать и написать содержательный ответ. Укажи источник каждого результата.", "expected_category": "text_generation"}
+{"external_id": "validation-26-1", "query": "Хочу прочитать переписку с клиентом, сформулировать и написать содержательный ответ. Сделай результат кратким и структурированным.", "expected_category": "text_generation"}
+{"external_id": "validation-26-2", "query": "Требуется прочитать переписку с клиентом, сформулировать и написать содержательный ответ. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "text_generation"}
+{"external_id": "validation-27-0", "query": "Пожалуйста, помоги записать итоги обсуждения с коллегами и выделить договорённости. Укажи источник каждого результата.", "expected_category": "summarization"}
+{"external_id": "validation-27-1", "query": "Хочу записать итоги обсуждения с коллегами и выделить договорённости. Сделай результат кратким и структурированным.", "expected_category": "summarization"}
+{"external_id": "validation-27-2", "query": "Требуется записать итоги обсуждения с коллегами и выделить договорённости. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "summarization"}
+{"external_id": "validation-28-0", "query": "Пожалуйста, помоги найти контакты клиента по названию компании. Укажи источник каждого результата.", "expected_category": "information_search"}
+{"external_id": "validation-28-1", "query": "Хочу найти контакты клиента по названию компании. Сделай результат кратким и структурированным.", "expected_category": "information_search"}
+{"external_id": "validation-28-2", "query": "Требуется найти контакты клиента по названию компании. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "information_search"}
+{"external_id": "validation-29-0", "query": "Пожалуйста, помоги создать встречу для большого списка коллег и найти общий свободный слот. Укажи источник каждого результата.", "expected_category": "calendar_planning"}
+{"external_id": "validation-29-1", "query": "Хочу создать встречу для большого списка коллег и найти общий свободный слот. Сделай результат кратким и структурированным.", "expected_category": "calendar_planning"}
+{"external_id": "validation-29-2", "query": "Требуется создать встречу для большого списка коллег и найти общий свободный слот. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "calendar_planning"}
+{"external_id": "validation-30-0", "query": "Пожалуйста, помоги найти информацию, приложенную текстом в теле встречи. Укажи источник каждого результата.", "expected_category": "information_search"}
+{"external_id": "validation-30-1", "query": "Хочу найти информацию, приложенную текстом в теле встречи. Сделай результат кратким и структурированным.", "expected_category": "information_search"}
+{"external_id": "validation-30-2", "query": "Требуется найти информацию, приложенную текстом в теле встречи. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "information_search"}
+{"external_id": "validation-31-0", "query": "Пожалуйста, помоги создать в календаре напоминания по договорённостям после встречи и сгруппировать запланированные дела. Укажи источник каждого результата.", "expected_category": "calendar_planning"}
+{"external_id": "validation-31-1", "query": "Хочу создать в календаре напоминания по договорённостям после встречи и сгруппировать запланированные дела. Сделай результат кратким и структурированным.", "expected_category": "calendar_planning"}
+{"external_id": "validation-31-2", "query": "Требуется создать в календаре напоминания по договорённостям после встречи и сгруппировать запланированные дела. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "calendar_planning"}
+{"external_id": "validation-32-0", "query": "Пожалуйста, помоги показать список встреч на следующий день для подготовки. Укажи источник каждого результата.", "expected_category": "calendar_planning"}
+{"external_id": "validation-32-1", "query": "Хочу показать список встреч на следующий день для подготовки. Сделай результат кратким и структурированным.", "expected_category": "calendar_planning"}
+{"external_id": "validation-32-2", "query": "Требуется показать список встреч на следующий день для подготовки. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "calendar_planning"}
+{"external_id": "validation-33-0", "query": "Пожалуйста, помоги создать и актуализировать тикеты Project на основе входящих писем. Укажи источник каждого результата.", "expected_category": "task_management"}
+{"external_id": "validation-33-1", "query": "Хочу создать и актуализировать тикеты Project на основе входящих писем. Сделай результат кратким и структурированным.", "expected_category": "task_management"}
+{"external_id": "validation-33-2", "query": "Требуется создать и актуализировать тикеты Project на основе входящих писем. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "task_management"}
+{"external_id": "validation-34-0", "query": "Пожалуйста, помоги настроить мониторинг, периодически контролировать статусы проектов в ИСУП и сообщать о важных переходах. Укажи источник каждого результата.", "expected_category": "monitoring_automation"}
+{"external_id": "validation-34-1", "query": "Хочу настроить мониторинг, периодически контролировать статусы проектов в ИСУП и сообщать о важных переходах. Сделай результат кратким и структурированным.", "expected_category": "monitoring_automation"}
+{"external_id": "validation-34-2", "query": "Требуется настроить мониторинг, периодически контролировать статусы проектов в ИСУП и сообщать о важных переходах. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "monitoring_automation"}
+{"external_id": "validation-35-0", "query": "Пожалуйста, помоги обсудить нерабочую тему без бизнес-задачи. Укажи источник каждого результата.", "expected_category": "other"}
+{"external_id": "validation-35-1", "query": "Хочу обсудить нерабочую тему без бизнес-задачи. Сделай результат кратким и структурированным.", "expected_category": "other"}
+{"external_id": "validation-35-2", "query": "Требуется обсудить нерабочую тему без бизнес-задачи. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "other"}
+{"external_id": "validation-36-0", "query": "Пожалуйста, помоги сделать что-нибудь полезное без контекста и критериев результата. Укажи источник каждого результата.", "expected_category": "other"}
+{"external_id": "validation-36-1", "query": "Хочу сделать что-нибудь полезное без контекста и критериев результата. Сделай результат кратким и структурированным.", "expected_category": "other"}
+{"external_id": "validation-36-2", "query": "Требуется сделать что-нибудь полезное без контекста и критериев результата. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "other"}
+{"external_id": "validation-37-0", "query": "Пожалуйста, помоги одновременно найти клиента, написать письмо, создать встречу и выгрузить отчёт. Укажи источник каждого результата.", "expected_category": "other"}
+{"external_id": "validation-37-1", "query": "Хочу одновременно найти клиента, написать письмо, создать встречу и выгрузить отчёт. Сделай результат кратким и структурированным.", "expected_category": "other"}
+{"external_id": "validation-37-2", "query": "Требуется одновременно найти клиента, написать письмо, создать встречу и выгрузить отчёт. Если данных не хватает, перечисли, что нужно уточнить.", "expected_category": "other"}

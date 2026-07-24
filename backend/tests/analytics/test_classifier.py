@@ -34,6 +34,7 @@ def _inp(content):
         ("Сделай краткое саммари документа", Category.summarization),
         ("Найди контакты клиента", Category.information_search),
         ("Проведи анализ данных таблицы", Category.data_analysis),
+        ("Помоги исправить Python traceback в коде", Category.code_assistance),
         ("Напиши деловое письмо", Category.text_generation),
         ("Объясни почему возникает ошибка", Category.knowledge_explanation),
         ("Поговорим о чём-нибудь", Category.other),
