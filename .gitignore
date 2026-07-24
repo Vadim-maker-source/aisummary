@@ -1,0 +1,16 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+backend/.test_backend.db
+backend/.vendor/
+backend/.wheels/
+.docker-config/
+
+backend/.env
+backend/.venv/
