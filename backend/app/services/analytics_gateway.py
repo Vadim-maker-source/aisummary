@@ -74,11 +74,26 @@ async def analyze_event(
 ) -> dict[str, Any]:
     try:
         module = importlib.import_module("app.analytics.public")
-    except ModuleNotFoundError:
+        schemas = importlib.import_module("app.analytics.schemas")
+    except ModuleNotFoundError as exc:
+        if exc.name not in {
+            "app.analytics",
+            "app.analytics.public",
+            "app.analytics.schemas",
+        }:
+            raise
         module = None
 
     if module is not None:
-        result = await module.analyze_event(data, known_scenarios)
+        analysis_input = schemas.AnalysisInput.model_validate(data)
+        scenario_inputs = [
+            schemas.KnownScenario.model_validate(item)
+            for item in known_scenarios
+        ]
+        result = await module.analyze_event(
+            analysis_input,
+            scenario_inputs,
+        )
         if hasattr(result, "model_dump"):
             return result.model_dump(mode="json")
         return dict(result)
@@ -111,11 +126,22 @@ async def discover_scenarios(
 ) -> dict[str, Any]:
     try:
         module = importlib.import_module("app.analytics.public")
-    except ModuleNotFoundError:
+        schemas = importlib.import_module("app.analytics.schemas")
+    except ModuleNotFoundError as exc:
+        if exc.name not in {
+            "app.analytics",
+            "app.analytics.public",
+            "app.analytics.schemas",
+        }:
+            raise
         module = None
 
     if module is not None:
-        result = await module.discover_scenarios(records)
+        scenario_records = [
+            schemas.ScenarioInputRecord.model_validate(item)
+            for item in records
+        ]
+        result = await module.discover_scenarios(scenario_records)
         if hasattr(result, "model_dump"):
             return result.model_dump(mode="json")
         return dict(result)

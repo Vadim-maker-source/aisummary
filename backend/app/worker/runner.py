@@ -1,6 +1,10 @@
 import asyncio
 import logging
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 from app.core.config import get_settings
 from app.worker.event_worker import process_event_batch
 from app.worker.recluster_worker import process_next_run

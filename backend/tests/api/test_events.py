@@ -57,7 +57,7 @@ async def test_worker_persists_analysis(client):
     assert payload["effective_user_query"] == "Найди общий слот для встречи"
     assert payload["category"] == "calendar_planning"
     assert payload["classification_confidence"] == 0.7
-    assert "llm_unavailable" in payload["warnings"]
+    assert payload["warnings"] == []
 
 
 async def test_event_validation(client):

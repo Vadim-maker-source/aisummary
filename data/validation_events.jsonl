@@ -1,0 +1,140 @@
+{"external_id": "val-000", "query": "Найди общий свободный слот для встречи дизайнеров", "expected_category": "calendar_planning"}
+{"external_id": "val-001", "query": "Найди общий свободный слот для встречи маркетологов", "expected_category": "calendar_planning"}
+{"external_id": "val-002", "query": "Найди общий свободный слот для встречи HR-отдела", "expected_category": "calendar_planning"}
+{"external_id": "val-003", "query": "Найди общий свободный слот для встречи службы поддержки", "expected_category": "calendar_planning"}
+{"external_id": "val-004", "query": "Найди общий свободный слот для встречи заказчика", "expected_category": "calendar_planning"}
+{"external_id": "val-005", "query": "Перенеси встречу в календаре на ближайшие дни", "expected_category": "calendar_planning"}
+{"external_id": "val-006", "query": "Перенеси встречу в календаре на начало месяца", "expected_category": "calendar_planning"}
+{"external_id": "val-007", "query": "Перенеси встречу в календаре на послезавтра", "expected_category": "calendar_planning"}
+{"external_id": "val-008", "query": "Перенеси встречу в календаре на завтра", "expected_category": "calendar_planning"}
+{"external_id": "val-009", "query": "Перенеси встречу в календаре на конец недели", "expected_category": "calendar_planning"}
+{"external_id": "val-010", "query": "Поставь напоминание о экскурсии", "expected_category": "calendar_planning"}
+{"external_id": "val-011", "query": "Поставь напоминание о демонстрации", "expected_category": "calendar_planning"}
+{"external_id": "val-012", "query": "Поставь напоминание о интервью", "expected_category": "calendar_planning"}
+{"external_id": "val-013", "query": "Поставь напоминание о звонке", "expected_category": "calendar_planning"}
+{"external_id": "val-014", "query": "Поставь напоминание о вебинаре", "expected_category": "calendar_planning"}
+{"external_id": "val-015", "query": "Настрой периодический мониторинг входящих писем от дизайнеров", "expected_category": "monitoring_automation"}
+{"external_id": "val-016", "query": "Настрой периодический мониторинг входящих писем от маркетологов", "expected_category": "monitoring_automation"}
+{"external_id": "val-017", "query": "Настрой периодический мониторинг входящих писем от HR-отдела", "expected_category": "monitoring_automation"}
+{"external_id": "val-018", "query": "Настрой периодический мониторинг входящих писем от службы поддержки", "expected_category": "monitoring_automation"}
+{"external_id": "val-019", "query": "Настрой периодический мониторинг входящих писем от заказчика", "expected_category": "monitoring_automation"}
+{"external_id": "val-020", "query": "Отслеживай изменение цен и присылай уведомления по аренды", "expected_category": "monitoring_automation"}
+{"external_id": "val-021", "query": "Отслеживай изменение цен и присылай уведомления по логистики", "expected_category": "monitoring_automation"}
+{"external_id": "val-022", "query": "Отслеживай изменение цен и присылай уведомления по недвижимости", "expected_category": "monitoring_automation"}
+{"external_id": "val-023", "query": "Отслеживай изменение цен и присылай уведомления по металлов", "expected_category": "monitoring_automation"}
+{"external_id": "val-024", "query": "Отслеживай изменение цен и присылай уведомления по топлива", "expected_category": "monitoring_automation"}
+{"external_id": "val-025", "query": "Настрой периодические уведомления о приближении дедлайнов исправления", "expected_category": "monitoring_automation"}
+{"external_id": "val-026", "query": "Настрой периодические уведомления о приближении дедлайнов поддержки", "expected_category": "monitoring_automation"}
+{"external_id": "val-027", "query": "Настрой периодические уведомления о приближении дедлайнов обновления", "expected_category": "monitoring_automation"}
+{"external_id": "val-028", "query": "Настрой периодические уведомления о приближении дедлайнов внедрения", "expected_category": "monitoring_automation"}
+{"external_id": "val-029", "query": "Настрой периодические уведомления о приближении дедлайнов поставки", "expected_category": "monitoring_automation"}
+{"external_id": "val-030", "query": "Создай задачу в Jira для дизайнеров", "expected_category": "task_management"}
+{"external_id": "val-031", "query": "Создай задачу в Jira для маркетологов", "expected_category": "task_management"}
+{"external_id": "val-032", "query": "Создай задачу в Jira для HR-отдела", "expected_category": "task_management"}
+{"external_id": "val-033", "query": "Создай задачу в Jira для службы поддержки", "expected_category": "task_management"}
+{"external_id": "val-034", "query": "Создай задачу в Jira для заказчика", "expected_category": "task_management"}
+{"external_id": "val-035", "query": "Обнови статус задачи и тикета по исправления", "expected_category": "task_management"}
+{"external_id": "val-036", "query": "Обнови статус задачи и тикета по поддержки", "expected_category": "task_management"}
+{"external_id": "val-037", "query": "Обнови статус задачи и тикета по обновления", "expected_category": "task_management"}
+{"external_id": "val-038", "query": "Обнови статус задачи и тикета по внедрения", "expected_category": "task_management"}
+{"external_id": "val-039", "query": "Обнови статус задачи и тикета по поставки", "expected_category": "task_management"}
+{"external_id": "val-040", "query": "Составь план задач в системе project для базы знаний", "expected_category": "task_management"}
+{"external_id": "val-041", "query": "Составь план задач в системе project для системы доставки", "expected_category": "task_management"}
+{"external_id": "val-042", "query": "Составь план задач в системе project для платёжного шлюза", "expected_category": "task_management"}
+{"external_id": "val-043", "query": "Составь план задач в системе project для личного кабинета", "expected_category": "task_management"}
+{"external_id": "val-044", "query": "Составь план задач в системе project для витрины", "expected_category": "task_management"}
+{"external_id": "val-045", "query": "Выгрузи отчёт по продажам за первый квартал в Excel", "expected_category": "reporting_export"}
+{"external_id": "val-046", "query": "Выгрузи отчёт по продажам за праздники в Excel", "expected_category": "reporting_export"}
+{"external_id": "val-047", "query": "Выгрузи отчёт по продажам за выходные в Excel", "expected_category": "reporting_export"}
+{"external_id": "val-048", "query": "Выгрузи отчёт по продажам за последние 7 дней в Excel", "expected_category": "reporting_export"}
+{"external_id": "val-049", "query": "Выгрузи отчёт по продажам за год в Excel", "expected_category": "reporting_export"}
+{"external_id": "val-050", "query": "Сформируй сводный отчёт по категориям и экспортируй в PDF", "expected_category": "reporting_export"}
+{"external_id": "val-051", "query": "Сформируй сводный отчёт по регионам и экспортируй в PDF", "expected_category": "reporting_export"}
+{"external_id": "val-052", "query": "Сформируй сводный отчёт по менеджерам и экспортируй в PDF", "expected_category": "reporting_export"}
+{"external_id": "val-053", "query": "Сформируй сводный отчёт по филиалам и экспортируй в PDF", "expected_category": "reporting_export"}
+{"external_id": "val-054", "query": "Сформируй сводный отчёт по воронке и экспортируй в PDF", "expected_category": "reporting_export"}
+{"external_id": "val-055", "query": "Экспортируй выгрузку данных дашборда по категориям в CSV", "expected_category": "reporting_export"}
+{"external_id": "val-056", "query": "Экспортируй выгрузку данных дашборда по регионам в CSV", "expected_category": "reporting_export"}
+{"external_id": "val-057", "query": "Экспортируй выгрузку данных дашборда по менеджерам в CSV", "expected_category": "reporting_export"}
+{"external_id": "val-058", "query": "Экспортируй выгрузку данных дашборда по филиалам в CSV", "expected_category": "reporting_export"}
+{"external_id": "val-059", "query": "Экспортируй выгрузку данных дашборда по воронке в CSV", "expected_category": "reporting_export"}
+{"external_id": "val-060", "query": "Сделай краткое саммари документа устава", "expected_category": "summarization"}
+{"external_id": "val-061", "query": "Сделай краткое саммари документа брифа", "expected_category": "summarization"}
+{"external_id": "val-062", "query": "Сделай краткое саммари документа должностной", "expected_category": "summarization"}
+{"external_id": "val-063", "query": "Сделай краткое саммари документа гайда", "expected_category": "summarization"}
+{"external_id": "val-064", "query": "Сделай краткое саммари документа методички", "expected_category": "summarization"}
+{"external_id": "val-065", "query": "Подготовь краткую сводку итогов встречи по итогам переклички", "expected_category": "summarization"}
+{"external_id": "val-066", "query": "Подготовь краткую сводку итогов встречи по итогам консилиума", "expected_category": "summarization"}
+{"external_id": "val-067", "query": "Подготовь краткую сводку итогов встречи по итогам защиты", "expected_category": "summarization"}
+{"external_id": "val-068", "query": "Подготовь краткую сводку итогов встречи по итогам интервью", "expected_category": "summarization"}
+{"external_id": "val-069", "query": "Подготовь краткую сводку итогов встречи по итогам синка", "expected_category": "summarization"}
+{"external_id": "val-070", "query": "Сделай краткую сводку писем за первый квартал", "expected_category": "summarization"}
+{"external_id": "val-071", "query": "Сделай краткую сводку писем за праздники", "expected_category": "summarization"}
+{"external_id": "val-072", "query": "Сделай краткую сводку писем за выходные", "expected_category": "summarization"}
+{"external_id": "val-073", "query": "Сделай краткую сводку писем за последние 7 дней", "expected_category": "summarization"}
+{"external_id": "val-074", "query": "Сделай краткую сводку писем за год", "expected_category": "summarization"}
+{"external_id": "val-075", "query": "Найди контакты дизайнеров", "expected_category": "information_search"}
+{"external_id": "val-076", "query": "Найди контакты маркетологов", "expected_category": "information_search"}
+{"external_id": "val-077", "query": "Найди контакты HR-отдела", "expected_category": "information_search"}
+{"external_id": "val-078", "query": "Найди контакты службы поддержки", "expected_category": "information_search"}
+{"external_id": "val-079", "query": "Найди контакты заказчика", "expected_category": "information_search"}
+{"external_id": "val-080", "query": "Найди и собери информацию о компании ГидроМаш", "expected_category": "information_search"}
+{"external_id": "val-081", "query": "Найди и собери информацию о компании АвтоМир", "expected_category": "information_search"}
+{"external_id": "val-082", "query": "Найди и собери информацию о компании ЭнергоСбыт", "expected_category": "information_search"}
+{"external_id": "val-083", "query": "Найди и собери информацию о компании ТелекомПлюс", "expected_category": "information_search"}
+{"external_id": "val-084", "query": "Найди и собери информацию о компании ЦифроБанк", "expected_category": "information_search"}
+{"external_id": "val-085", "query": "Организуй поиск и найди документы по теме цифровой трансформации", "expected_category": "information_search"}
+{"external_id": "val-086", "query": "Организуй поиск и найди документы по теме робототехники", "expected_category": "information_search"}
+{"external_id": "val-087", "query": "Организуй поиск и найди документы по теме больших данных", "expected_category": "information_search"}
+{"external_id": "val-088", "query": "Организуй поиск и найди документы по теме облачных платформ", "expected_category": "information_search"}
+{"external_id": "val-089", "query": "Организуй поиск и найди документы по теме бизнес-процессов", "expected_category": "information_search"}
+{"external_id": "val-090", "query": "Составь SQL-запрос к таблице базы данных по регистраций", "expected_category": "data_analysis"}
+{"external_id": "val-091", "query": "Составь SQL-запрос к таблице базы данных по доставок", "expected_category": "data_analysis"}
+{"external_id": "val-092", "query": "Составь SQL-запрос к таблице базы данных по обращений", "expected_category": "data_analysis"}
+{"external_id": "val-093", "query": "Составь SQL-запрос к таблице базы данных по остатков", "expected_category": "data_analysis"}
+{"external_id": "val-094", "query": "Составь SQL-запрос к таблице базы данных по выручки", "expected_category": "data_analysis"}
+{"external_id": "val-095", "query": "Посчитай ключевые метрики и проведи анализ данных по регистраций", "expected_category": "data_analysis"}
+{"external_id": "val-096", "query": "Посчитай ключевые метрики и проведи анализ данных по доставок", "expected_category": "data_analysis"}
+{"external_id": "val-097", "query": "Посчитай ключевые метрики и проведи анализ данных по обращений", "expected_category": "data_analysis"}
+{"external_id": "val-098", "query": "Посчитай ключевые метрики и проведи анализ данных по остатков", "expected_category": "data_analysis"}
+{"external_id": "val-099", "query": "Посчитай ключевые метрики и проведи анализ данных по выручки", "expected_category": "data_analysis"}
+{"external_id": "val-100", "query": "Проведи анализ данных таблицы по регистраций", "expected_category": "data_analysis"}
+{"external_id": "val-101", "query": "Проведи анализ данных таблицы по доставок", "expected_category": "data_analysis"}
+{"external_id": "val-102", "query": "Проведи анализ данных таблицы по обращений", "expected_category": "data_analysis"}
+{"external_id": "val-103", "query": "Проведи анализ данных таблицы по остатков", "expected_category": "data_analysis"}
+{"external_id": "val-104", "query": "Проведи анализ данных таблицы по выручки", "expected_category": "data_analysis"}
+{"external_id": "val-105", "query": "Напиши деловое письмо для дизайнеров", "expected_category": "text_generation"}
+{"external_id": "val-106", "query": "Напиши деловое письмо для маркетологов", "expected_category": "text_generation"}
+{"external_id": "val-107", "query": "Напиши деловое письмо для HR-отдела", "expected_category": "text_generation"}
+{"external_id": "val-108", "query": "Напиши деловое письмо для службы поддержки", "expected_category": "text_generation"}
+{"external_id": "val-109", "query": "Напиши деловое письмо для заказчика", "expected_category": "text_generation"}
+{"external_id": "val-110", "query": "Сформулируй ответное письмо по счёту", "expected_category": "text_generation"}
+{"external_id": "val-111", "query": "Сформулируй ответное письмо по возврату", "expected_category": "text_generation"}
+{"external_id": "val-112", "query": "Сформулируй ответное письмо по гарантии", "expected_category": "text_generation"}
+{"external_id": "val-113", "query": "Сформулируй ответное письмо по тарифу", "expected_category": "text_generation"}
+{"external_id": "val-114", "query": "Сформулируй ответное письмо по продукту", "expected_category": "text_generation"}
+{"external_id": "val-115", "query": "Напиши развёрнутый отзыв о кофейне", "expected_category": "text_generation"}
+{"external_id": "val-116", "query": "Напиши развёрнутый отзыв о провайдере", "expected_category": "text_generation"}
+{"external_id": "val-117", "query": "Напиши развёрнутый отзыв о маркетплейсе", "expected_category": "text_generation"}
+{"external_id": "val-118", "query": "Напиши развёрнутый отзыв о страховке", "expected_category": "text_generation"}
+{"external_id": "val-119", "query": "Напиши развёрнутый отзыв о банке", "expected_category": "text_generation"}
+{"external_id": "val-120", "query": "Напиши и сформулируй текст поста для соцсетей про цифровой трансформации", "expected_category": "text_generation"}
+{"external_id": "val-121", "query": "Напиши и сформулируй текст поста для соцсетей про робототехники", "expected_category": "text_generation"}
+{"external_id": "val-122", "query": "Напиши и сформулируй текст поста для соцсетей про больших данных", "expected_category": "text_generation"}
+{"external_id": "val-123", "query": "Напиши и сформулируй текст поста для соцсетей про облачных платформ", "expected_category": "text_generation"}
+{"external_id": "val-124", "query": "Напиши и сформулируй текст поста для соцсетей про бизнес-процессов", "expected_category": "text_generation"}
+{"external_id": "val-125", "query": "Объясни, почему возникает падение сервера", "expected_category": "knowledge_explanation"}
+{"external_id": "val-126", "query": "Объясни, почему возникает сбой импорта", "expected_category": "knowledge_explanation"}
+{"external_id": "val-127", "query": "Объясни, почему возникает повреждение файла", "expected_category": "knowledge_explanation"}
+{"external_id": "val-128", "query": "Объясни, почему возникает отказ сервиса", "expected_category": "knowledge_explanation"}
+{"external_id": "val-129", "query": "Объясни, почему возникает сбой оплаты", "expected_category": "knowledge_explanation"}
+{"external_id": "val-130", "query": "Расскажи, что такое идемпотентность", "expected_category": "knowledge_explanation"}
+{"external_id": "val-131", "query": "Расскажи, что такое шардирование", "expected_category": "knowledge_explanation"}
+{"external_id": "val-132", "query": "Расскажи, что такое нормализация", "expected_category": "knowledge_explanation"}
+{"external_id": "val-133", "query": "Расскажи, что такое непрерывная поставка", "expected_category": "knowledge_explanation"}
+{"external_id": "val-134", "query": "Расскажи, что такое шлюз приложений", "expected_category": "knowledge_explanation"}
+{"external_id": "val-135", "query": "Объясни и расскажи, как устроен буфер обмена", "expected_category": "knowledge_explanation"}
+{"external_id": "val-136", "query": "Объясни и расскажи, как устроен процесс репликации", "expected_category": "knowledge_explanation"}
+{"external_id": "val-137", "query": "Объясни и расскажи, как устроен кластер", "expected_category": "knowledge_explanation"}
+{"external_id": "val-138", "query": "Объясни и расскажи, как устроен шина событий", "expected_category": "knowledge_explanation"}
+{"external_id": "val-139", "query": "Объясни и расскажи, как устроен система прав", "expected_category": "knowledge_explanation"}

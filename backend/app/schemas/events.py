@@ -26,6 +26,8 @@ class UsagePayload(BaseModel):
 
 
 class RequestPayload(BaseModel):
+    model_config = ConfigDict(extra="allow")
+
     model: str | None = Field(default=None, max_length=255)
     stream: bool = False
     messages: list[Message] = Field(min_length=1)

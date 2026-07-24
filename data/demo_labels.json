@@ -1,0 +1,2046 @@
+{
+  "demo-00000": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_meeting_slot"
+  },
+  "demo-00001": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_meeting_slot"
+  },
+  "demo-00002": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_meeting_slot"
+  },
+  "demo-00003": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_meeting_slot"
+  },
+  "demo-00004": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_meeting_slot"
+  },
+  "demo-00005": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_meeting_slot"
+  },
+  "demo-00006": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_meeting_slot"
+  },
+  "demo-00007": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_meeting_slot"
+  },
+  "demo-00008": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_meeting_slot"
+  },
+  "demo-00009": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_meeting_slot"
+  },
+  "demo-00010": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_meeting_slot"
+  },
+  "demo-00011": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_meeting_slot"
+  },
+  "demo-00012": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_meeting_slot"
+  },
+  "demo-00013": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_meeting_slot"
+  },
+  "demo-00014": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_meeting_slot"
+  },
+  "demo-00015": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_meeting_slot"
+  },
+  "demo-00016": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reschedule"
+  },
+  "demo-00017": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reschedule"
+  },
+  "demo-00018": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reschedule"
+  },
+  "demo-00019": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reschedule"
+  },
+  "demo-00020": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reschedule"
+  },
+  "demo-00021": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reschedule"
+  },
+  "demo-00022": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reschedule"
+  },
+  "demo-00023": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reschedule"
+  },
+  "demo-00024": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reschedule"
+  },
+  "demo-00025": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reschedule"
+  },
+  "demo-00026": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reschedule"
+  },
+  "demo-00027": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reschedule"
+  },
+  "demo-00028": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reschedule"
+  },
+  "demo-00029": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reschedule"
+  },
+  "demo-00030": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reschedule"
+  },
+  "demo-00031": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reschedule"
+  },
+  "demo-00032": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reminder"
+  },
+  "demo-00033": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reminder"
+  },
+  "demo-00034": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reminder"
+  },
+  "demo-00035": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reminder"
+  },
+  "demo-00036": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reminder"
+  },
+  "demo-00037": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reminder"
+  },
+  "demo-00038": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reminder"
+  },
+  "demo-00039": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reminder"
+  },
+  "demo-00040": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reminder"
+  },
+  "demo-00041": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reminder"
+  },
+  "demo-00042": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reminder"
+  },
+  "demo-00043": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reminder"
+  },
+  "demo-00044": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reminder"
+  },
+  "demo-00045": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reminder"
+  },
+  "demo-00046": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reminder"
+  },
+  "demo-00047": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reminder"
+  },
+  "demo-00048": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_email"
+  },
+  "demo-00049": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_email"
+  },
+  "demo-00050": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_email"
+  },
+  "demo-00051": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_email"
+  },
+  "demo-00052": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_email"
+  },
+  "demo-00053": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_email"
+  },
+  "demo-00054": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_email"
+  },
+  "demo-00055": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_email"
+  },
+  "demo-00056": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_email"
+  },
+  "demo-00057": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_email"
+  },
+  "demo-00058": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_email"
+  },
+  "demo-00059": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_email"
+  },
+  "demo-00060": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_email"
+  },
+  "demo-00061": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_email"
+  },
+  "demo-00062": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_email"
+  },
+  "demo-00063": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_email"
+  },
+  "demo-00064": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_price"
+  },
+  "demo-00065": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_price"
+  },
+  "demo-00066": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_price"
+  },
+  "demo-00067": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_price"
+  },
+  "demo-00068": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_price"
+  },
+  "demo-00069": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_price"
+  },
+  "demo-00070": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_price"
+  },
+  "demo-00071": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_price"
+  },
+  "demo-00072": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_price"
+  },
+  "demo-00073": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_price"
+  },
+  "demo-00074": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_price"
+  },
+  "demo-00075": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_price"
+  },
+  "demo-00076": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_price"
+  },
+  "demo-00077": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_price"
+  },
+  "demo-00078": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_price"
+  },
+  "demo-00079": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_price"
+  },
+  "demo-00080": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_deadline"
+  },
+  "demo-00081": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_deadline"
+  },
+  "demo-00082": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_deadline"
+  },
+  "demo-00083": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_deadline"
+  },
+  "demo-00084": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_deadline"
+  },
+  "demo-00085": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_deadline"
+  },
+  "demo-00086": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_deadline"
+  },
+  "demo-00087": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_deadline"
+  },
+  "demo-00088": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_deadline"
+  },
+  "demo-00089": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_deadline"
+  },
+  "demo-00090": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_deadline"
+  },
+  "demo-00091": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_deadline"
+  },
+  "demo-00092": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_deadline"
+  },
+  "demo-00093": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_deadline"
+  },
+  "demo-00094": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_deadline"
+  },
+  "demo-00095": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_deadline"
+  },
+  "demo-00096": {
+    "category": "task_management",
+    "scenario_label": "task_jira"
+  },
+  "demo-00097": {
+    "category": "task_management",
+    "scenario_label": "task_jira"
+  },
+  "demo-00098": {
+    "category": "task_management",
+    "scenario_label": "task_jira"
+  },
+  "demo-00099": {
+    "category": "task_management",
+    "scenario_label": "task_jira"
+  },
+  "demo-00100": {
+    "category": "task_management",
+    "scenario_label": "task_jira"
+  },
+  "demo-00101": {
+    "category": "task_management",
+    "scenario_label": "task_jira"
+  },
+  "demo-00102": {
+    "category": "task_management",
+    "scenario_label": "task_jira"
+  },
+  "demo-00103": {
+    "category": "task_management",
+    "scenario_label": "task_jira"
+  },
+  "demo-00104": {
+    "category": "task_management",
+    "scenario_label": "task_jira"
+  },
+  "demo-00105": {
+    "category": "task_management",
+    "scenario_label": "task_jira"
+  },
+  "demo-00106": {
+    "category": "task_management",
+    "scenario_label": "task_jira"
+  },
+  "demo-00107": {
+    "category": "task_management",
+    "scenario_label": "task_jira"
+  },
+  "demo-00108": {
+    "category": "task_management",
+    "scenario_label": "task_jira"
+  },
+  "demo-00109": {
+    "category": "task_management",
+    "scenario_label": "task_jira"
+  },
+  "demo-00110": {
+    "category": "task_management",
+    "scenario_label": "task_jira"
+  },
+  "demo-00111": {
+    "category": "task_management",
+    "scenario_label": "task_jira"
+  },
+  "demo-00112": {
+    "category": "task_management",
+    "scenario_label": "task_ticket"
+  },
+  "demo-00113": {
+    "category": "task_management",
+    "scenario_label": "task_ticket"
+  },
+  "demo-00114": {
+    "category": "task_management",
+    "scenario_label": "task_ticket"
+  },
+  "demo-00115": {
+    "category": "task_management",
+    "scenario_label": "task_ticket"
+  },
+  "demo-00116": {
+    "category": "task_management",
+    "scenario_label": "task_ticket"
+  },
+  "demo-00117": {
+    "category": "task_management",
+    "scenario_label": "task_ticket"
+  },
+  "demo-00118": {
+    "category": "task_management",
+    "scenario_label": "task_ticket"
+  },
+  "demo-00119": {
+    "category": "task_management",
+    "scenario_label": "task_ticket"
+  },
+  "demo-00120": {
+    "category": "task_management",
+    "scenario_label": "task_ticket"
+  },
+  "demo-00121": {
+    "category": "task_management",
+    "scenario_label": "task_ticket"
+  },
+  "demo-00122": {
+    "category": "task_management",
+    "scenario_label": "task_ticket"
+  },
+  "demo-00123": {
+    "category": "task_management",
+    "scenario_label": "task_ticket"
+  },
+  "demo-00124": {
+    "category": "task_management",
+    "scenario_label": "task_ticket"
+  },
+  "demo-00125": {
+    "category": "task_management",
+    "scenario_label": "task_ticket"
+  },
+  "demo-00126": {
+    "category": "task_management",
+    "scenario_label": "task_ticket"
+  },
+  "demo-00127": {
+    "category": "task_management",
+    "scenario_label": "task_ticket"
+  },
+  "demo-00128": {
+    "category": "task_management",
+    "scenario_label": "task_project"
+  },
+  "demo-00129": {
+    "category": "task_management",
+    "scenario_label": "task_project"
+  },
+  "demo-00130": {
+    "category": "task_management",
+    "scenario_label": "task_project"
+  },
+  "demo-00131": {
+    "category": "task_management",
+    "scenario_label": "task_project"
+  },
+  "demo-00132": {
+    "category": "task_management",
+    "scenario_label": "task_project"
+  },
+  "demo-00133": {
+    "category": "task_management",
+    "scenario_label": "task_project"
+  },
+  "demo-00134": {
+    "category": "task_management",
+    "scenario_label": "task_project"
+  },
+  "demo-00135": {
+    "category": "task_management",
+    "scenario_label": "task_project"
+  },
+  "demo-00136": {
+    "category": "task_management",
+    "scenario_label": "task_project"
+  },
+  "demo-00137": {
+    "category": "task_management",
+    "scenario_label": "task_project"
+  },
+  "demo-00138": {
+    "category": "task_management",
+    "scenario_label": "task_project"
+  },
+  "demo-00139": {
+    "category": "task_management",
+    "scenario_label": "task_project"
+  },
+  "demo-00140": {
+    "category": "task_management",
+    "scenario_label": "task_project"
+  },
+  "demo-00141": {
+    "category": "task_management",
+    "scenario_label": "task_project"
+  },
+  "demo-00142": {
+    "category": "task_management",
+    "scenario_label": "task_project"
+  },
+  "demo-00143": {
+    "category": "task_management",
+    "scenario_label": "task_project"
+  },
+  "demo-00144": {
+    "category": "reporting_export",
+    "scenario_label": "rep_excel_sales"
+  },
+  "demo-00145": {
+    "category": "reporting_export",
+    "scenario_label": "rep_excel_sales"
+  },
+  "demo-00146": {
+    "category": "reporting_export",
+    "scenario_label": "rep_excel_sales"
+  },
+  "demo-00147": {
+    "category": "reporting_export",
+    "scenario_label": "rep_excel_sales"
+  },
+  "demo-00148": {
+    "category": "reporting_export",
+    "scenario_label": "rep_excel_sales"
+  },
+  "demo-00149": {
+    "category": "reporting_export",
+    "scenario_label": "rep_excel_sales"
+  },
+  "demo-00150": {
+    "category": "reporting_export",
+    "scenario_label": "rep_excel_sales"
+  },
+  "demo-00151": {
+    "category": "reporting_export",
+    "scenario_label": "rep_excel_sales"
+  },
+  "demo-00152": {
+    "category": "reporting_export",
+    "scenario_label": "rep_excel_sales"
+  },
+  "demo-00153": {
+    "category": "reporting_export",
+    "scenario_label": "rep_excel_sales"
+  },
+  "demo-00154": {
+    "category": "reporting_export",
+    "scenario_label": "rep_excel_sales"
+  },
+  "demo-00155": {
+    "category": "reporting_export",
+    "scenario_label": "rep_excel_sales"
+  },
+  "demo-00156": {
+    "category": "reporting_export",
+    "scenario_label": "rep_excel_sales"
+  },
+  "demo-00157": {
+    "category": "reporting_export",
+    "scenario_label": "rep_excel_sales"
+  },
+  "demo-00158": {
+    "category": "reporting_export",
+    "scenario_label": "rep_excel_sales"
+  },
+  "demo-00159": {
+    "category": "reporting_export",
+    "scenario_label": "rep_excel_sales"
+  },
+  "demo-00160": {
+    "category": "reporting_export",
+    "scenario_label": "rep_pdf_summary"
+  },
+  "demo-00161": {
+    "category": "reporting_export",
+    "scenario_label": "rep_pdf_summary"
+  },
+  "demo-00162": {
+    "category": "reporting_export",
+    "scenario_label": "rep_pdf_summary"
+  },
+  "demo-00163": {
+    "category": "reporting_export",
+    "scenario_label": "rep_pdf_summary"
+  },
+  "demo-00164": {
+    "category": "reporting_export",
+    "scenario_label": "rep_pdf_summary"
+  },
+  "demo-00165": {
+    "category": "reporting_export",
+    "scenario_label": "rep_pdf_summary"
+  },
+  "demo-00166": {
+    "category": "reporting_export",
+    "scenario_label": "rep_pdf_summary"
+  },
+  "demo-00167": {
+    "category": "reporting_export",
+    "scenario_label": "rep_pdf_summary"
+  },
+  "demo-00168": {
+    "category": "reporting_export",
+    "scenario_label": "rep_pdf_summary"
+  },
+  "demo-00169": {
+    "category": "reporting_export",
+    "scenario_label": "rep_pdf_summary"
+  },
+  "demo-00170": {
+    "category": "reporting_export",
+    "scenario_label": "rep_pdf_summary"
+  },
+  "demo-00171": {
+    "category": "reporting_export",
+    "scenario_label": "rep_pdf_summary"
+  },
+  "demo-00172": {
+    "category": "reporting_export",
+    "scenario_label": "rep_pdf_summary"
+  },
+  "demo-00173": {
+    "category": "reporting_export",
+    "scenario_label": "rep_pdf_summary"
+  },
+  "demo-00174": {
+    "category": "reporting_export",
+    "scenario_label": "rep_pdf_summary"
+  },
+  "demo-00175": {
+    "category": "reporting_export",
+    "scenario_label": "rep_pdf_summary"
+  },
+  "demo-00176": {
+    "category": "reporting_export",
+    "scenario_label": "rep_csv_export"
+  },
+  "demo-00177": {
+    "category": "reporting_export",
+    "scenario_label": "rep_csv_export"
+  },
+  "demo-00178": {
+    "category": "reporting_export",
+    "scenario_label": "rep_csv_export"
+  },
+  "demo-00179": {
+    "category": "reporting_export",
+    "scenario_label": "rep_csv_export"
+  },
+  "demo-00180": {
+    "category": "reporting_export",
+    "scenario_label": "rep_csv_export"
+  },
+  "demo-00181": {
+    "category": "reporting_export",
+    "scenario_label": "rep_csv_export"
+  },
+  "demo-00182": {
+    "category": "reporting_export",
+    "scenario_label": "rep_csv_export"
+  },
+  "demo-00183": {
+    "category": "reporting_export",
+    "scenario_label": "rep_csv_export"
+  },
+  "demo-00184": {
+    "category": "reporting_export",
+    "scenario_label": "rep_csv_export"
+  },
+  "demo-00185": {
+    "category": "reporting_export",
+    "scenario_label": "rep_csv_export"
+  },
+  "demo-00186": {
+    "category": "reporting_export",
+    "scenario_label": "rep_csv_export"
+  },
+  "demo-00187": {
+    "category": "reporting_export",
+    "scenario_label": "rep_csv_export"
+  },
+  "demo-00188": {
+    "category": "reporting_export",
+    "scenario_label": "rep_csv_export"
+  },
+  "demo-00189": {
+    "category": "reporting_export",
+    "scenario_label": "rep_csv_export"
+  },
+  "demo-00190": {
+    "category": "reporting_export",
+    "scenario_label": "rep_csv_export"
+  },
+  "demo-00191": {
+    "category": "reporting_export",
+    "scenario_label": "rep_csv_export"
+  },
+  "demo-00192": {
+    "category": "summarization",
+    "scenario_label": "sum_document"
+  },
+  "demo-00193": {
+    "category": "summarization",
+    "scenario_label": "sum_document"
+  },
+  "demo-00194": {
+    "category": "summarization",
+    "scenario_label": "sum_document"
+  },
+  "demo-00195": {
+    "category": "summarization",
+    "scenario_label": "sum_document"
+  },
+  "demo-00196": {
+    "category": "summarization",
+    "scenario_label": "sum_document"
+  },
+  "demo-00197": {
+    "category": "summarization",
+    "scenario_label": "sum_document"
+  },
+  "demo-00198": {
+    "category": "summarization",
+    "scenario_label": "sum_document"
+  },
+  "demo-00199": {
+    "category": "summarization",
+    "scenario_label": "sum_document"
+  },
+  "demo-00200": {
+    "category": "summarization",
+    "scenario_label": "sum_document"
+  },
+  "demo-00201": {
+    "category": "summarization",
+    "scenario_label": "sum_document"
+  },
+  "demo-00202": {
+    "category": "summarization",
+    "scenario_label": "sum_document"
+  },
+  "demo-00203": {
+    "category": "summarization",
+    "scenario_label": "sum_document"
+  },
+  "demo-00204": {
+    "category": "summarization",
+    "scenario_label": "sum_document"
+  },
+  "demo-00205": {
+    "category": "summarization",
+    "scenario_label": "sum_document"
+  },
+  "demo-00206": {
+    "category": "summarization",
+    "scenario_label": "sum_document"
+  },
+  "demo-00207": {
+    "category": "summarization",
+    "scenario_label": "sum_document"
+  },
+  "demo-00208": {
+    "category": "summarization",
+    "scenario_label": "sum_meeting_notes"
+  },
+  "demo-00209": {
+    "category": "summarization",
+    "scenario_label": "sum_meeting_notes"
+  },
+  "demo-00210": {
+    "category": "summarization",
+    "scenario_label": "sum_meeting_notes"
+  },
+  "demo-00211": {
+    "category": "summarization",
+    "scenario_label": "sum_meeting_notes"
+  },
+  "demo-00212": {
+    "category": "summarization",
+    "scenario_label": "sum_meeting_notes"
+  },
+  "demo-00213": {
+    "category": "summarization",
+    "scenario_label": "sum_meeting_notes"
+  },
+  "demo-00214": {
+    "category": "summarization",
+    "scenario_label": "sum_meeting_notes"
+  },
+  "demo-00215": {
+    "category": "summarization",
+    "scenario_label": "sum_meeting_notes"
+  },
+  "demo-00216": {
+    "category": "summarization",
+    "scenario_label": "sum_meeting_notes"
+  },
+  "demo-00217": {
+    "category": "summarization",
+    "scenario_label": "sum_meeting_notes"
+  },
+  "demo-00218": {
+    "category": "summarization",
+    "scenario_label": "sum_meeting_notes"
+  },
+  "demo-00219": {
+    "category": "summarization",
+    "scenario_label": "sum_meeting_notes"
+  },
+  "demo-00220": {
+    "category": "summarization",
+    "scenario_label": "sum_meeting_notes"
+  },
+  "demo-00221": {
+    "category": "summarization",
+    "scenario_label": "sum_meeting_notes"
+  },
+  "demo-00222": {
+    "category": "summarization",
+    "scenario_label": "sum_meeting_notes"
+  },
+  "demo-00223": {
+    "category": "summarization",
+    "scenario_label": "sum_meeting_notes"
+  },
+  "demo-00224": {
+    "category": "summarization",
+    "scenario_label": "sum_emails"
+  },
+  "demo-00225": {
+    "category": "summarization",
+    "scenario_label": "sum_emails"
+  },
+  "demo-00226": {
+    "category": "summarization",
+    "scenario_label": "sum_emails"
+  },
+  "demo-00227": {
+    "category": "summarization",
+    "scenario_label": "sum_emails"
+  },
+  "demo-00228": {
+    "category": "summarization",
+    "scenario_label": "sum_emails"
+  },
+  "demo-00229": {
+    "category": "summarization",
+    "scenario_label": "sum_emails"
+  },
+  "demo-00230": {
+    "category": "summarization",
+    "scenario_label": "sum_emails"
+  },
+  "demo-00231": {
+    "category": "summarization",
+    "scenario_label": "sum_emails"
+  },
+  "demo-00232": {
+    "category": "summarization",
+    "scenario_label": "sum_emails"
+  },
+  "demo-00233": {
+    "category": "summarization",
+    "scenario_label": "sum_emails"
+  },
+  "demo-00234": {
+    "category": "summarization",
+    "scenario_label": "sum_emails"
+  },
+  "demo-00235": {
+    "category": "summarization",
+    "scenario_label": "sum_emails"
+  },
+  "demo-00236": {
+    "category": "summarization",
+    "scenario_label": "sum_emails"
+  },
+  "demo-00237": {
+    "category": "summarization",
+    "scenario_label": "sum_emails"
+  },
+  "demo-00238": {
+    "category": "summarization",
+    "scenario_label": "sum_emails"
+  },
+  "demo-00239": {
+    "category": "summarization",
+    "scenario_label": "sum_emails"
+  },
+  "demo-00240": {
+    "category": "information_search",
+    "scenario_label": "info_contacts"
+  },
+  "demo-00241": {
+    "category": "information_search",
+    "scenario_label": "info_contacts"
+  },
+  "demo-00242": {
+    "category": "information_search",
+    "scenario_label": "info_contacts"
+  },
+  "demo-00243": {
+    "category": "information_search",
+    "scenario_label": "info_contacts"
+  },
+  "demo-00244": {
+    "category": "information_search",
+    "scenario_label": "info_contacts"
+  },
+  "demo-00245": {
+    "category": "information_search",
+    "scenario_label": "info_contacts"
+  },
+  "demo-00246": {
+    "category": "information_search",
+    "scenario_label": "info_contacts"
+  },
+  "demo-00247": {
+    "category": "information_search",
+    "scenario_label": "info_contacts"
+  },
+  "demo-00248": {
+    "category": "information_search",
+    "scenario_label": "info_contacts"
+  },
+  "demo-00249": {
+    "category": "information_search",
+    "scenario_label": "info_contacts"
+  },
+  "demo-00250": {
+    "category": "information_search",
+    "scenario_label": "info_contacts"
+  },
+  "demo-00251": {
+    "category": "information_search",
+    "scenario_label": "info_contacts"
+  },
+  "demo-00252": {
+    "category": "information_search",
+    "scenario_label": "info_contacts"
+  },
+  "demo-00253": {
+    "category": "information_search",
+    "scenario_label": "info_contacts"
+  },
+  "demo-00254": {
+    "category": "information_search",
+    "scenario_label": "info_contacts"
+  },
+  "demo-00255": {
+    "category": "information_search",
+    "scenario_label": "info_contacts"
+  },
+  "demo-00256": {
+    "category": "information_search",
+    "scenario_label": "info_company"
+  },
+  "demo-00257": {
+    "category": "information_search",
+    "scenario_label": "info_company"
+  },
+  "demo-00258": {
+    "category": "information_search",
+    "scenario_label": "info_company"
+  },
+  "demo-00259": {
+    "category": "information_search",
+    "scenario_label": "info_company"
+  },
+  "demo-00260": {
+    "category": "information_search",
+    "scenario_label": "info_company"
+  },
+  "demo-00261": {
+    "category": "information_search",
+    "scenario_label": "info_company"
+  },
+  "demo-00262": {
+    "category": "information_search",
+    "scenario_label": "info_company"
+  },
+  "demo-00263": {
+    "category": "information_search",
+    "scenario_label": "info_company"
+  },
+  "demo-00264": {
+    "category": "information_search",
+    "scenario_label": "info_company"
+  },
+  "demo-00265": {
+    "category": "information_search",
+    "scenario_label": "info_company"
+  },
+  "demo-00266": {
+    "category": "information_search",
+    "scenario_label": "info_company"
+  },
+  "demo-00267": {
+    "category": "information_search",
+    "scenario_label": "info_company"
+  },
+  "demo-00268": {
+    "category": "information_search",
+    "scenario_label": "info_company"
+  },
+  "demo-00269": {
+    "category": "information_search",
+    "scenario_label": "info_company"
+  },
+  "demo-00270": {
+    "category": "information_search",
+    "scenario_label": "info_company"
+  },
+  "demo-00271": {
+    "category": "information_search",
+    "scenario_label": "info_company"
+  },
+  "demo-00272": {
+    "category": "information_search",
+    "scenario_label": "info_docs"
+  },
+  "demo-00273": {
+    "category": "information_search",
+    "scenario_label": "info_docs"
+  },
+  "demo-00274": {
+    "category": "information_search",
+    "scenario_label": "info_docs"
+  },
+  "demo-00275": {
+    "category": "information_search",
+    "scenario_label": "info_docs"
+  },
+  "demo-00276": {
+    "category": "information_search",
+    "scenario_label": "info_docs"
+  },
+  "demo-00277": {
+    "category": "information_search",
+    "scenario_label": "info_docs"
+  },
+  "demo-00278": {
+    "category": "information_search",
+    "scenario_label": "info_docs"
+  },
+  "demo-00279": {
+    "category": "information_search",
+    "scenario_label": "info_docs"
+  },
+  "demo-00280": {
+    "category": "information_search",
+    "scenario_label": "info_docs"
+  },
+  "demo-00281": {
+    "category": "information_search",
+    "scenario_label": "info_docs"
+  },
+  "demo-00282": {
+    "category": "information_search",
+    "scenario_label": "info_docs"
+  },
+  "demo-00283": {
+    "category": "information_search",
+    "scenario_label": "info_docs"
+  },
+  "demo-00284": {
+    "category": "information_search",
+    "scenario_label": "info_docs"
+  },
+  "demo-00285": {
+    "category": "information_search",
+    "scenario_label": "info_docs"
+  },
+  "demo-00286": {
+    "category": "information_search",
+    "scenario_label": "info_docs"
+  },
+  "demo-00287": {
+    "category": "information_search",
+    "scenario_label": "info_docs"
+  },
+  "demo-00288": {
+    "category": "data_analysis",
+    "scenario_label": "data_sql"
+  },
+  "demo-00289": {
+    "category": "data_analysis",
+    "scenario_label": "data_sql"
+  },
+  "demo-00290": {
+    "category": "data_analysis",
+    "scenario_label": "data_sql"
+  },
+  "demo-00291": {
+    "category": "data_analysis",
+    "scenario_label": "data_sql"
+  },
+  "demo-00292": {
+    "category": "data_analysis",
+    "scenario_label": "data_sql"
+  },
+  "demo-00293": {
+    "category": "data_analysis",
+    "scenario_label": "data_sql"
+  },
+  "demo-00294": {
+    "category": "data_analysis",
+    "scenario_label": "data_sql"
+  },
+  "demo-00295": {
+    "category": "data_analysis",
+    "scenario_label": "data_sql"
+  },
+  "demo-00296": {
+    "category": "data_analysis",
+    "scenario_label": "data_sql"
+  },
+  "demo-00297": {
+    "category": "data_analysis",
+    "scenario_label": "data_sql"
+  },
+  "demo-00298": {
+    "category": "data_analysis",
+    "scenario_label": "data_sql"
+  },
+  "demo-00299": {
+    "category": "data_analysis",
+    "scenario_label": "data_sql"
+  },
+  "demo-00300": {
+    "category": "data_analysis",
+    "scenario_label": "data_sql"
+  },
+  "demo-00301": {
+    "category": "data_analysis",
+    "scenario_label": "data_sql"
+  },
+  "demo-00302": {
+    "category": "data_analysis",
+    "scenario_label": "data_sql"
+  },
+  "demo-00303": {
+    "category": "data_analysis",
+    "scenario_label": "data_sql"
+  },
+  "demo-00304": {
+    "category": "data_analysis",
+    "scenario_label": "data_metrics"
+  },
+  "demo-00305": {
+    "category": "data_analysis",
+    "scenario_label": "data_metrics"
+  },
+  "demo-00306": {
+    "category": "data_analysis",
+    "scenario_label": "data_metrics"
+  },
+  "demo-00307": {
+    "category": "data_analysis",
+    "scenario_label": "data_metrics"
+  },
+  "demo-00308": {
+    "category": "data_analysis",
+    "scenario_label": "data_metrics"
+  },
+  "demo-00309": {
+    "category": "data_analysis",
+    "scenario_label": "data_metrics"
+  },
+  "demo-00310": {
+    "category": "data_analysis",
+    "scenario_label": "data_metrics"
+  },
+  "demo-00311": {
+    "category": "data_analysis",
+    "scenario_label": "data_metrics"
+  },
+  "demo-00312": {
+    "category": "data_analysis",
+    "scenario_label": "data_metrics"
+  },
+  "demo-00313": {
+    "category": "data_analysis",
+    "scenario_label": "data_metrics"
+  },
+  "demo-00314": {
+    "category": "data_analysis",
+    "scenario_label": "data_metrics"
+  },
+  "demo-00315": {
+    "category": "data_analysis",
+    "scenario_label": "data_metrics"
+  },
+  "demo-00316": {
+    "category": "data_analysis",
+    "scenario_label": "data_metrics"
+  },
+  "demo-00317": {
+    "category": "data_analysis",
+    "scenario_label": "data_metrics"
+  },
+  "demo-00318": {
+    "category": "data_analysis",
+    "scenario_label": "data_metrics"
+  },
+  "demo-00319": {
+    "category": "data_analysis",
+    "scenario_label": "data_metrics"
+  },
+  "demo-00320": {
+    "category": "data_analysis",
+    "scenario_label": "data_table"
+  },
+  "demo-00321": {
+    "category": "data_analysis",
+    "scenario_label": "data_table"
+  },
+  "demo-00322": {
+    "category": "data_analysis",
+    "scenario_label": "data_table"
+  },
+  "demo-00323": {
+    "category": "data_analysis",
+    "scenario_label": "data_table"
+  },
+  "demo-00324": {
+    "category": "data_analysis",
+    "scenario_label": "data_table"
+  },
+  "demo-00325": {
+    "category": "data_analysis",
+    "scenario_label": "data_table"
+  },
+  "demo-00326": {
+    "category": "data_analysis",
+    "scenario_label": "data_table"
+  },
+  "demo-00327": {
+    "category": "data_analysis",
+    "scenario_label": "data_table"
+  },
+  "demo-00328": {
+    "category": "data_analysis",
+    "scenario_label": "data_table"
+  },
+  "demo-00329": {
+    "category": "data_analysis",
+    "scenario_label": "data_table"
+  },
+  "demo-00330": {
+    "category": "data_analysis",
+    "scenario_label": "data_table"
+  },
+  "demo-00331": {
+    "category": "data_analysis",
+    "scenario_label": "data_table"
+  },
+  "demo-00332": {
+    "category": "data_analysis",
+    "scenario_label": "data_table"
+  },
+  "demo-00333": {
+    "category": "data_analysis",
+    "scenario_label": "data_table"
+  },
+  "demo-00334": {
+    "category": "data_analysis",
+    "scenario_label": "data_table"
+  },
+  "demo-00335": {
+    "category": "data_analysis",
+    "scenario_label": "data_table"
+  },
+  "demo-00336": {
+    "category": "text_generation",
+    "scenario_label": "text_letter"
+  },
+  "demo-00337": {
+    "category": "text_generation",
+    "scenario_label": "text_letter"
+  },
+  "demo-00338": {
+    "category": "text_generation",
+    "scenario_label": "text_letter"
+  },
+  "demo-00339": {
+    "category": "text_generation",
+    "scenario_label": "text_letter"
+  },
+  "demo-00340": {
+    "category": "text_generation",
+    "scenario_label": "text_letter"
+  },
+  "demo-00341": {
+    "category": "text_generation",
+    "scenario_label": "text_letter"
+  },
+  "demo-00342": {
+    "category": "text_generation",
+    "scenario_label": "text_letter"
+  },
+  "demo-00343": {
+    "category": "text_generation",
+    "scenario_label": "text_letter"
+  },
+  "demo-00344": {
+    "category": "text_generation",
+    "scenario_label": "text_letter"
+  },
+  "demo-00345": {
+    "category": "text_generation",
+    "scenario_label": "text_letter"
+  },
+  "demo-00346": {
+    "category": "text_generation",
+    "scenario_label": "text_letter"
+  },
+  "demo-00347": {
+    "category": "text_generation",
+    "scenario_label": "text_letter"
+  },
+  "demo-00348": {
+    "category": "text_generation",
+    "scenario_label": "text_letter"
+  },
+  "demo-00349": {
+    "category": "text_generation",
+    "scenario_label": "text_letter"
+  },
+  "demo-00350": {
+    "category": "text_generation",
+    "scenario_label": "text_letter"
+  },
+  "demo-00351": {
+    "category": "text_generation",
+    "scenario_label": "text_letter"
+  },
+  "demo-00352": {
+    "category": "text_generation",
+    "scenario_label": "text_reply"
+  },
+  "demo-00353": {
+    "category": "text_generation",
+    "scenario_label": "text_reply"
+  },
+  "demo-00354": {
+    "category": "text_generation",
+    "scenario_label": "text_reply"
+  },
+  "demo-00355": {
+    "category": "text_generation",
+    "scenario_label": "text_reply"
+  },
+  "demo-00356": {
+    "category": "text_generation",
+    "scenario_label": "text_reply"
+  },
+  "demo-00357": {
+    "category": "text_generation",
+    "scenario_label": "text_reply"
+  },
+  "demo-00358": {
+    "category": "text_generation",
+    "scenario_label": "text_reply"
+  },
+  "demo-00359": {
+    "category": "text_generation",
+    "scenario_label": "text_reply"
+  },
+  "demo-00360": {
+    "category": "text_generation",
+    "scenario_label": "text_reply"
+  },
+  "demo-00361": {
+    "category": "text_generation",
+    "scenario_label": "text_reply"
+  },
+  "demo-00362": {
+    "category": "text_generation",
+    "scenario_label": "text_reply"
+  },
+  "demo-00363": {
+    "category": "text_generation",
+    "scenario_label": "text_reply"
+  },
+  "demo-00364": {
+    "category": "text_generation",
+    "scenario_label": "text_reply"
+  },
+  "demo-00365": {
+    "category": "text_generation",
+    "scenario_label": "text_reply"
+  },
+  "demo-00366": {
+    "category": "text_generation",
+    "scenario_label": "text_reply"
+  },
+  "demo-00367": {
+    "category": "text_generation",
+    "scenario_label": "text_reply"
+  },
+  "demo-00368": {
+    "category": "text_generation",
+    "scenario_label": "text_review"
+  },
+  "demo-00369": {
+    "category": "text_generation",
+    "scenario_label": "text_review"
+  },
+  "demo-00370": {
+    "category": "text_generation",
+    "scenario_label": "text_review"
+  },
+  "demo-00371": {
+    "category": "text_generation",
+    "scenario_label": "text_review"
+  },
+  "demo-00372": {
+    "category": "text_generation",
+    "scenario_label": "text_review"
+  },
+  "demo-00373": {
+    "category": "text_generation",
+    "scenario_label": "text_review"
+  },
+  "demo-00374": {
+    "category": "text_generation",
+    "scenario_label": "text_review"
+  },
+  "demo-00375": {
+    "category": "text_generation",
+    "scenario_label": "text_review"
+  },
+  "demo-00376": {
+    "category": "text_generation",
+    "scenario_label": "text_review"
+  },
+  "demo-00377": {
+    "category": "text_generation",
+    "scenario_label": "text_review"
+  },
+  "demo-00378": {
+    "category": "text_generation",
+    "scenario_label": "text_review"
+  },
+  "demo-00379": {
+    "category": "text_generation",
+    "scenario_label": "text_review"
+  },
+  "demo-00380": {
+    "category": "text_generation",
+    "scenario_label": "text_review"
+  },
+  "demo-00381": {
+    "category": "text_generation",
+    "scenario_label": "text_review"
+  },
+  "demo-00382": {
+    "category": "text_generation",
+    "scenario_label": "text_review"
+  },
+  "demo-00383": {
+    "category": "text_generation",
+    "scenario_label": "text_review"
+  },
+  "demo-00384": {
+    "category": "text_generation",
+    "scenario_label": "text_post"
+  },
+  "demo-00385": {
+    "category": "text_generation",
+    "scenario_label": "text_post"
+  },
+  "demo-00386": {
+    "category": "text_generation",
+    "scenario_label": "text_post"
+  },
+  "demo-00387": {
+    "category": "text_generation",
+    "scenario_label": "text_post"
+  },
+  "demo-00388": {
+    "category": "text_generation",
+    "scenario_label": "text_post"
+  },
+  "demo-00389": {
+    "category": "text_generation",
+    "scenario_label": "text_post"
+  },
+  "demo-00390": {
+    "category": "text_generation",
+    "scenario_label": "text_post"
+  },
+  "demo-00391": {
+    "category": "text_generation",
+    "scenario_label": "text_post"
+  },
+  "demo-00392": {
+    "category": "text_generation",
+    "scenario_label": "text_post"
+  },
+  "demo-00393": {
+    "category": "text_generation",
+    "scenario_label": "text_post"
+  },
+  "demo-00394": {
+    "category": "text_generation",
+    "scenario_label": "text_post"
+  },
+  "demo-00395": {
+    "category": "text_generation",
+    "scenario_label": "text_post"
+  },
+  "demo-00396": {
+    "category": "text_generation",
+    "scenario_label": "text_post"
+  },
+  "demo-00397": {
+    "category": "text_generation",
+    "scenario_label": "text_post"
+  },
+  "demo-00398": {
+    "category": "text_generation",
+    "scenario_label": "text_post"
+  },
+  "demo-00399": {
+    "category": "text_generation",
+    "scenario_label": "text_post"
+  },
+  "demo-00400": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_why"
+  },
+  "demo-00401": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_why"
+  },
+  "demo-00402": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_why"
+  },
+  "demo-00403": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_why"
+  },
+  "demo-00404": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_why"
+  },
+  "demo-00405": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_why"
+  },
+  "demo-00406": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_why"
+  },
+  "demo-00407": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_why"
+  },
+  "demo-00408": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_why"
+  },
+  "demo-00409": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_why"
+  },
+  "demo-00410": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_why"
+  },
+  "demo-00411": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_why"
+  },
+  "demo-00412": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_why"
+  },
+  "demo-00413": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_why"
+  },
+  "demo-00414": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_why"
+  },
+  "demo-00415": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_why"
+  },
+  "demo-00416": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_what"
+  },
+  "demo-00417": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_what"
+  },
+  "demo-00418": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_what"
+  },
+  "demo-00419": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_what"
+  },
+  "demo-00420": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_what"
+  },
+  "demo-00421": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_what"
+  },
+  "demo-00422": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_what"
+  },
+  "demo-00423": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_what"
+  },
+  "demo-00424": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_what"
+  },
+  "demo-00425": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_what"
+  },
+  "demo-00426": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_what"
+  },
+  "demo-00427": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_what"
+  },
+  "demo-00428": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_what"
+  },
+  "demo-00429": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_what"
+  },
+  "demo-00430": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_what"
+  },
+  "demo-00431": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_what"
+  },
+  "demo-00432": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_how"
+  },
+  "demo-00433": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_how"
+  },
+  "demo-00434": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_how"
+  },
+  "demo-00435": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_how"
+  },
+  "demo-00436": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_how"
+  },
+  "demo-00437": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_how"
+  },
+  "demo-00438": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_how"
+  },
+  "demo-00439": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_how"
+  },
+  "demo-00440": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_how"
+  },
+  "demo-00441": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_how"
+  },
+  "demo-00442": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_how"
+  },
+  "demo-00443": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_how"
+  },
+  "demo-00444": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_how"
+  },
+  "demo-00445": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_how"
+  },
+  "demo-00446": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_how"
+  },
+  "demo-00447": {
+    "category": "knowledge_explanation",
+    "scenario_label": "kn_how"
+  },
+  "demo-00448": {
+    "category": "other",
+    "scenario_label": "other_chitchat"
+  },
+  "demo-00449": {
+    "category": "other",
+    "scenario_label": "other_chitchat"
+  },
+  "demo-00450": {
+    "category": "other",
+    "scenario_label": "other_chitchat"
+  },
+  "demo-00451": {
+    "category": "other",
+    "scenario_label": "other_chitchat"
+  },
+  "demo-00452": {
+    "category": "other",
+    "scenario_label": "other_chitchat"
+  },
+  "demo-00453": {
+    "category": "other",
+    "scenario_label": "other_chitchat"
+  },
+  "demo-00454": {
+    "category": "other",
+    "scenario_label": "other_chitchat"
+  },
+  "demo-00455": {
+    "category": "other",
+    "scenario_label": "other_chitchat"
+  },
+  "demo-00456": {
+    "category": "other",
+    "scenario_label": "other_chitchat"
+  },
+  "demo-00457": {
+    "category": "other",
+    "scenario_label": "other_chitchat"
+  },
+  "demo-00458": {
+    "category": "other",
+    "scenario_label": "other_chitchat"
+  },
+  "demo-00459": {
+    "category": "other",
+    "scenario_label": "other_chitchat"
+  },
+  "demo-00460": {
+    "category": "other",
+    "scenario_label": "other_chitchat"
+  },
+  "demo-00461": {
+    "category": "other",
+    "scenario_label": "other_chitchat"
+  },
+  "demo-00462": {
+    "category": "other",
+    "scenario_label": "other_chitchat"
+  },
+  "demo-00463": {
+    "category": "other",
+    "scenario_label": "other_chitchat"
+  },
+  "demo-00464": {
+    "category": "other",
+    "scenario_label": "other_multi_intent"
+  },
+  "demo-00465": {
+    "category": "other",
+    "scenario_label": "other_multi_intent"
+  },
+  "demo-00466": {
+    "category": "other",
+    "scenario_label": "other_multi_intent"
+  },
+  "demo-00467": {
+    "category": "other",
+    "scenario_label": "other_multi_intent"
+  },
+  "demo-00468": {
+    "category": "other",
+    "scenario_label": "other_multi_intent"
+  },
+  "demo-00469": {
+    "category": "other",
+    "scenario_label": "other_multi_intent"
+  },
+  "demo-00470": {
+    "category": "other",
+    "scenario_label": "other_multi_intent"
+  },
+  "demo-00471": {
+    "category": "other",
+    "scenario_label": "other_multi_intent"
+  },
+  "demo-00472": {
+    "category": "other",
+    "scenario_label": "other_multi_intent"
+  },
+  "demo-00473": {
+    "category": "other",
+    "scenario_label": "other_multi_intent"
+  },
+  "demo-00474": {
+    "category": "other",
+    "scenario_label": "other_multi_intent"
+  },
+  "demo-00475": {
+    "category": "other",
+    "scenario_label": "other_multi_intent"
+  },
+  "demo-00476": {
+    "category": "other",
+    "scenario_label": "other_multi_intent"
+  },
+  "demo-00477": {
+    "category": "other",
+    "scenario_label": "other_multi_intent"
+  },
+  "demo-00478": {
+    "category": "other",
+    "scenario_label": "other_multi_intent"
+  },
+  "demo-00479": {
+    "category": "other",
+    "scenario_label": "other_multi_intent"
+  },
+  "demo-00480": {
+    "category": "other",
+    "scenario_label": "other_vague"
+  },
+  "demo-00481": {
+    "category": "other",
+    "scenario_label": "other_vague"
+  },
+  "demo-00482": {
+    "category": "other",
+    "scenario_label": "other_vague"
+  },
+  "demo-00483": {
+    "category": "other",
+    "scenario_label": "other_vague"
+  },
+  "demo-00484": {
+    "category": "other",
+    "scenario_label": "other_vague"
+  },
+  "demo-00485": {
+    "category": "other",
+    "scenario_label": "other_vague"
+  },
+  "demo-00486": {
+    "category": "other",
+    "scenario_label": "other_vague"
+  },
+  "demo-00487": {
+    "category": "other",
+    "scenario_label": "other_vague"
+  },
+  "demo-00488": {
+    "category": "other",
+    "scenario_label": "other_vague"
+  },
+  "demo-00489": {
+    "category": "other",
+    "scenario_label": "other_vague"
+  },
+  "demo-00490": {
+    "category": "other",
+    "scenario_label": "other_vague"
+  },
+  "demo-00491": {
+    "category": "other",
+    "scenario_label": "other_vague"
+  },
+  "demo-00492": {
+    "category": "other",
+    "scenario_label": "other_vague"
+  },
+  "demo-00493": {
+    "category": "other",
+    "scenario_label": "other_vague"
+  },
+  "demo-00494": {
+    "category": "other",
+    "scenario_label": "other_vague"
+  },
+  "demo-00495": {
+    "category": "other",
+    "scenario_label": "other_vague"
+  },
+  "demo-00496": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_meeting_slot"
+  },
+  "demo-00497": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reschedule"
+  },
+  "demo-00498": {
+    "category": "calendar_planning",
+    "scenario_label": "cal_reminder"
+  },
+  "demo-00499": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_email"
+  },
+  "demo-00500": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_price"
+  },
+  "demo-00501": {
+    "category": "monitoring_automation",
+    "scenario_label": "mon_deadline"
+  },
+  "demo-00502": {
+    "category": "task_management",
+    "scenario_label": "task_jira"
+  },
+  "demo-00503": {
+    "category": "task_management",
+    "scenario_label": "task_ticket"
+  },
+  "demo-00504": {
+    "category": "task_management",
+    "scenario_label": "task_project"
+  },
+  "demo-00505": {
+    "category": "reporting_export",
+    "scenario_label": "rep_excel_sales"
+  },
+  "demo-00506": {
+    "category": "reporting_export",
+    "scenario_label": "rep_pdf_summary"
+  },
+  "demo-00507": {
+    "category": "reporting_export",
+    "scenario_label": "rep_csv_export"
+  },
+  "demo-00508": {
+    "category": "summarization",
+    "scenario_label": "sum_document"
+  },
+  "demo-00509": {
+    "category": "summarization",
+    "scenario_label": "sum_meeting_notes"
+  },
+  "demo-00510": {
+    "category": "summarization",
+    "scenario_label": "sum_emails"
+  }
+}
