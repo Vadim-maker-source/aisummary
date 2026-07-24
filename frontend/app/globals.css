@@ -750,6 +750,62 @@ select {
   margin-top: auto;
 }
 
+.scenarios-page .filter-bar label > span {
+  font-size: 12px;
+}
+
+.scenarios-page .filter-bar select,
+.scenarios-page .text-button {
+  font-size: 14px;
+}
+
+.scenarios-page .panel-heading h2 {
+  font-size: 21px;
+}
+
+.scenarios-page .count-label {
+  font-size: 13px;
+}
+
+.scenarios-page .badge {
+  min-height: 28px;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.scenarios-page .scenario-rank {
+  font-size: 13px;
+}
+
+.scenarios-page .scenario-main h3 {
+  font-size: 22px;
+  line-height: 1.25;
+}
+
+.scenarios-page .scenario-main > p {
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.scenarios-page .scenario-meta {
+  font-size: 13px;
+}
+
+.scenarios-page .scenario-action > p {
+  font-size: 11px;
+}
+
+.scenarios-page .scenario-action > strong {
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.scenarios-page .scenario-action .button,
+.scenarios-page .pagination p,
+.scenarios-page .pagination span {
+  font-size: 13px;
+}
+
 .pagination {
   display: flex;
   align-items: center;

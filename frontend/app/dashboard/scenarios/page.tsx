@@ -23,7 +23,7 @@ const PAGE_SIZE = 20;
 
 export default function ScenariosPage() {
   return (
-    <>
+    <div className="scenarios-page">
       <PageHeader
         eyebrow="Анализ сценариев"
         title="Сценарии"
@@ -38,7 +38,7 @@ export default function ScenariosPage() {
       >
         <ScenariosContent />
       </Suspense>
-    </>
+    </div>
   );
 }
 
