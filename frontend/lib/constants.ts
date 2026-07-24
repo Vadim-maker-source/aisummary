@@ -23,6 +23,7 @@ export const CATEGORY_LABELS: Record<Category, string> = {
   information_search: "Поиск информации",
   summarization: "Саммаризация",
   data_analysis: "Анализ данных",
+  code_assistance: "Помощь с кодом",
   reporting_export: "Отчёты и экспорт",
   task_management: "Управление задачами",
   monitoring_automation: "Мониторинг",

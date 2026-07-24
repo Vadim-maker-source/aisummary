@@ -3,12 +3,16 @@
 import { useQuery } from "@tanstack/react-query";
 import {
   ArrowRight,
+  Building2,
   CheckCircle2,
   CircleAlert,
   Layers3,
   MessagesSquare,
+  TrendingDown,
+  TrendingUp,
 } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
 import {
   AutomationBadge,
   CategoryBadge,
@@ -39,11 +43,38 @@ import {
 import {
   getCategories,
   getDashboardSummary,
+  getEffectiveness,
+  getProblems,
+  getScenarioTrends,
   getScenarios,
 } from "@/lib/api";
 import { CATEGORY_LABELS } from "@/lib/constants";
+import type { EffectivenessDimension, ScenarioTrend } from "@/types/api";
+
+const DIMENSION_LABELS: Record<EffectivenessDimension, string> = {
+  direction: "Направления",
+  team: "Команды",
+  agent_id: "Агенты",
+};
+
+const TREND_LABELS: Record<ScenarioTrend, string> = {
+  growing: "Растёт",
+  stable: "Без изменений",
+  declining: "Снижается",
+  new: "Новый",
+};
+
+function formatPeriod(value: string | null): string {
+  if (!value) return "—";
+  return new Intl.DateTimeFormat("ru-RU", {
+    day: "2-digit",
+    month: "short",
+  }).format(new Date(`${value}T00:00:00Z`));
+}
 
 export default function DashboardPage() {
+  const [dimension, setDimension] =
+    useState<EffectivenessDimension>("direction");
   const summary = useQuery({
     queryKey: ["dashboard-summary"],
     queryFn: getDashboardSummary,
@@ -52,6 +83,18 @@ export default function DashboardPage() {
   const categories = useQuery({
     queryKey: ["dashboard-categories"],
     queryFn: getCategories,
+  });
+  const problems = useQuery({
+    queryKey: ["dashboard-problems"],
+    queryFn: getProblems,
+  });
+  const trends = useQuery({
+    queryKey: ["dashboard-scenario-trends", 7],
+    queryFn: () => getScenarioTrends(7),
+  });
+  const effectiveness = useQuery({
+    queryKey: ["dashboard-effectiveness", dimension],
+    queryFn: () => getEffectiveness(dimension),
   });
   const scenarios = useQuery({
     queryKey: ["dashboard-scenarios", "top"],
@@ -76,9 +119,9 @@ export default function DashboardPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Обзор"
+        eyebrow="Отчёт для руководителя"
         title="Аналитика запросов"
-        description="Распределение запросов по задачам и сценариям во всей загруженной выборке."
+        description="Что сотрудники поручают ИИ-агентам, где возникают проблемы и какие сценарии стоит развивать."
         action={
           <Button asChild>
             <Link href="/imports">Импортировать данные</Link>
@@ -162,20 +205,25 @@ export default function DashboardPage() {
                 <strong className="metric-value">
                   {summary.data.scenario_count.toLocaleString("ru-RU")}
                 </strong>
-                <p className="metric-caption">сгруппированных способов использования</p>
+                <p className="metric-caption">устойчивых способов использования</p>
               </CardContent>
             </Card>
           </section>
 
-          <div className="sample-status" aria-label="Состояние обработки">
+          <div className="sample-status" aria-label="Состояние выборки">
             <span>Состояние выборки</span>
+            {summary.data.synthetic_requests > 0 ? (
+              <Badge variant="warning">
+                Синтетические: {summary.data.synthetic_requests}
+              </Badge>
+            ) : null}
             <Badge variant="outline">
               Ожидают: {summary.data.pending_requests}
             </Badge>
             <Badge
               variant={summary.data.failed_requests ? "destructive" : "outline"}
             >
-              Ошибки: {summary.data.failed_requests}
+              Ошибки анализа: {summary.data.failed_requests}
             </Badge>
             <Badge
               variant={
@@ -184,17 +232,20 @@ export default function DashboardPage() {
             >
               Без категории: {summary.data.unclassified_count}
             </Badge>
+            <Badge variant="outline">
+              Ответы агента: {summary.data.response_count}
+            </Badge>
           </div>
         </>
       )}
 
-      <section className="overview-grid" aria-label="Распределение и качество данных">
+      <section className="overview-grid" aria-label="Категории и проблемы">
         <Card>
           <CardHeader className="section-card-header">
             <div>
-              <CardTitle>Категории запросов</CardTitle>
+              <CardTitle>Что чаще всего спрашивают</CardTitle>
               <CardDescription>
-                Частота задач во всей загруженной выборке
+                Распределение задач по категориям
               </CardDescription>
             </div>
             <Button variant="ghost" size="sm" asChild>
@@ -242,28 +293,182 @@ export default function DashboardPage() {
 
         <Card>
           <CardHeader>
-            <CardTitle>Как читать отчёт</CardTitle>
+            <CardTitle>Топ проблем</CardTitle>
             <CardDescription>
-              Показатели рассчитаны по загруженным запросам
+              Что мешает запросам и ответам быть полезными
             </CardDescription>
           </CardHeader>
-          <CardContent className="report-notes">
+          <CardContent>
+            {problems.isPending ? (
+              <LoadingBlock rows={6} />
+            ) : problems.isError ? (
+              <ErrorState
+                message={errorMessage(problems.error)}
+                onRetry={() => problems.refetch()}
+              />
+            ) : problems.data.items.length === 0 ? (
+              <EmptyState
+                title="Проблемы не обнаружены"
+                description="Для оценки ответов также нужны response, execution_status или rating."
+              />
+            ) : (
+              <>
+                <div className="problem-list">
+                  {problems.data.items.slice(0, 6).map((item) => (
+                    <div className="problem-row" key={item.code}>
+                      <div>
+                        <strong>{item.label}</strong>
+                        <Badge
+                          variant={item.kind === "agent" ? "warning" : "outline"}
+                        >
+                          {item.kind === "agent" ? "Ответ агента" : "Запрос"}
+                        </Badge>
+                      </div>
+                      <span>
+                        {item.count}
+                        <small>{item.percentage}%</small>
+                      </span>
+                    </div>
+                  ))}
+                </div>
+                {!problems.data.agent_quality_available ? (
+                  <p className="data-notice">
+                    Качество ответов не рассчитано: во входных данных нет ответов,
+                    статусов выполнения или оценок.
+                  </p>
+                ) : null}
+              </>
+            )}
+          </CardContent>
+        </Card>
+      </section>
+
+      <section className="insight-grid" aria-label="Динамика и эффективность">
+        <Card>
+          <CardHeader>
+            <CardTitle>Растущие сценарии</CardTitle>
+            <CardDescription>
+              Последние 7 дней относительно предыдущих 7 дней
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            {trends.isPending ? (
+              <LoadingBlock rows={5} />
+            ) : trends.isError ? (
+              <ErrorState
+                message={errorMessage(trends.error)}
+                onRetry={() => trends.refetch()}
+              />
+            ) : !trends.data.available ? (
+              <EmptyState
+                title="Недостаточно истории"
+                description="Для сравнения нужны реальные даты минимум за два полных периода."
+              />
+            ) : (
+              <>
+                <p className="period-caption">
+                  {formatPeriod(trends.data.date_from)} —{" "}
+                  {formatPeriod(trends.data.date_to)}
+                </p>
+                <div className="trend-list">
+                  {trends.data.items.slice(0, 5).map((item) => (
+                    <Link
+                      className="trend-row"
+                      href={`/dashboard/scenarios/${item.id}`}
+                      key={item.id}
+                    >
+                      <div>
+                        <strong>{item.name}</strong>
+                        <span>{CATEGORY_LABELS[item.category]}</span>
+                      </div>
+                      <Badge
+                        variant={
+                          item.trend === "declining" ? "outline" : "secondary"
+                        }
+                      >
+                        {item.trend === "declining" ? (
+                          <TrendingDown size={14} />
+                        ) : (
+                          <TrendingUp size={14} />
+                        )}
+                        {item.growth_percent === null
+                          ? TREND_LABELS[item.trend]
+                          : `${item.growth_percent > 0 ? "+" : ""}${item.growth_percent}%`}
+                      </Badge>
+                    </Link>
+                  ))}
+                </div>
+              </>
+            )}
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader className="effectiveness-header">
             <div>
-              <strong>Категория</strong>
-              <p>Тип задачи: поиск, анализ данных, подготовка текста и другие.</p>
+              <CardTitle>Эффективность внедрения</CardTitle>
+              <CardDescription>
+                Использование и качество по бизнес-разрезам
+              </CardDescription>
             </div>
-            <div>
-              <strong>Сценарий</strong>
-              <p>Группа похожих запросов внутри одной категории.</p>
+            <Building2 size={20} aria-hidden="true" />
+          </CardHeader>
+          <CardContent>
+            <div className="dimension-switch" aria-label="Разрез эффективности">
+              {(Object.keys(DIMENSION_LABELS) as EffectivenessDimension[]).map(
+                (item) => (
+                  <button
+                    className={item === dimension ? "active" : ""}
+                    type="button"
+                    onClick={() => setDimension(item)}
+                    key={item}
+                  >
+                    {DIMENSION_LABELS[item]}
+                  </button>
+                ),
+              )}
             </div>
-            <div>
-              <strong>Требует внимания</strong>
-              <p>Неоднозначный запрос, нехватка контекста или несколько задач сразу.</p>
-            </div>
-            <div>
-              <strong>Автоматизация</strong>
-              <p>Оценка того, насколько сценарий подходит для повторяемого процесса.</p>
-            </div>
+            {effectiveness.isPending ? (
+              <LoadingBlock rows={5} />
+            ) : effectiveness.isError ? (
+              <ErrorState
+                message={errorMessage(effectiveness.error)}
+                onRetry={() => effectiveness.refetch()}
+              />
+            ) : !effectiveness.data.available ? (
+              <EmptyState
+                title={`Нет данных: ${DIMENSION_LABELS[dimension].toLowerCase()}`}
+                description="Передавайте team, direction и user_id во входном событии. Для оценки полезности также нужны ответы, статусы или rating."
+              />
+            ) : (
+              <>
+                <p className="period-caption">
+                  Заполненность разреза: {effectiveness.data.coverage_percent}%
+                </p>
+                <div className="effectiveness-list">
+                  {effectiveness.data.items.slice(0, 5).map((item) => (
+                    <div className="effectiveness-row" key={item.name}>
+                      <div>
+                        <strong>{item.name}</strong>
+                        <span>{item.total_requests} запросов</span>
+                      </div>
+                      <div>
+                        <strong>{item.problem_rate}%</strong>
+                        <span>с проблемами</span>
+                      </div>
+                      <div>
+                        <strong>
+                          {item.success_rate === null
+                            ? "—"
+                            : `${item.success_rate}%`}
+                        </strong>
+                        <span>успешных</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
           </CardContent>
         </Card>
       </section>
@@ -271,7 +476,7 @@ export default function DashboardPage() {
       <Card className="scenarios-section">
         <CardHeader className="section-card-header">
           <div>
-            <CardTitle>Частые сценарии</CardTitle>
+            <CardTitle>Частые сценарии и следующие действия</CardTitle>
             <CardDescription>
               Пять наиболее распространённых групп запросов
             </CardDescription>
@@ -317,6 +522,9 @@ export default function DashboardPage() {
                         {scenario.name}
                       </Link>
                       <span className="scenario-summary">{scenario.summary}</span>
+                      <span className="scenario-action-hint">
+                        Действие: {scenario.suggested_action}
+                      </span>
                     </TableCell>
                     <TableCell>
                       <CategoryBadge value={scenario.category} />

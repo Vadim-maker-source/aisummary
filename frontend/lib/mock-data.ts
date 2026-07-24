@@ -18,6 +18,11 @@ export const mockDashboardSummary = {
   scenario_count: 22,
   unclassified_count: 71,
   query_problem_rate: 14.6,
+  response_count: 0,
+  rated_count: 0,
+  timestamped_count: 2486,
+  dimensioned_count: 0,
+  synthetic_requests: 2486,
 } satisfies DashboardSummary;
 
 export const mockCategories = {

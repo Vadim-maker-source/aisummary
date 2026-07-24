@@ -9,6 +9,7 @@ export type Category =
   | "information_search"
   | "summarization"
   | "data_analysis"
+  | "code_assistance"
   | "reporting_export"
   | "task_management"
   | "monitoring_automation"
@@ -42,6 +43,10 @@ export interface EventListItem {
   id: string;
   external_id: string;
   agent_id: string;
+  user_id?: string | null;
+  team?: string | null;
+  direction?: string | null;
+  is_synthetic?: boolean;
   occurred_at: string | null;
   received_at: string;
   effective_user_query: string | null;
@@ -80,6 +85,11 @@ export interface DashboardSummary {
   scenario_count: number;
   unclassified_count: number;
   query_problem_rate: number;
+  response_count: number;
+  rated_count: number;
+  timestamped_count: number;
+  dimensioned_count: number;
+  synthetic_requests: number;
 }
 
 export interface CategoryItem {
@@ -122,6 +132,61 @@ export interface TimelineItem {
 
 export interface TimelineResponse {
   items: TimelineItem[];
+}
+
+export interface ProblemItem {
+  code: string;
+  label: string;
+  count: number;
+  percentage: number;
+  kind: "query" | "agent";
+}
+
+export interface ProblemListResponse {
+  items: ProblemItem[];
+  total_requests: number;
+  agent_quality_available: boolean;
+}
+
+export type ScenarioTrend = "growing" | "stable" | "declining" | "new";
+
+export interface ScenarioTrendItem {
+  id: string;
+  name: string;
+  category: Category;
+  current_count: number;
+  previous_count: number;
+  growth_percent: number | null;
+  trend: ScenarioTrend;
+}
+
+export interface ScenarioTrendResponse {
+  available: boolean;
+  window_days: number;
+  date_from: string | null;
+  date_to: string | null;
+  items: ScenarioTrendItem[];
+}
+
+export type EffectivenessDimension = "agent_id" | "team" | "direction";
+
+export interface EffectivenessItem {
+  name: string;
+  total_requests: number;
+  analyzed_requests: number;
+  problem_rate: number;
+  success_rate: number | null;
+  answer_coverage: number;
+  average_rating: number | null;
+  average_latency_ms: number | null;
+  unique_users: number | null;
+}
+
+export interface EffectivenessResponse {
+  dimension: EffectivenessDimension;
+  available: boolean;
+  coverage_percent: number;
+  items: EffectivenessItem[];
 }
 
 export interface ImportAccepted {
