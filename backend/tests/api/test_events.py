@@ -96,6 +96,40 @@ async def test_dashboard_summary(client):
     }
 
 
+async def test_dashboard_report_exports_supported_formats(client):
+    await client.post("/api/v1/events", json=event_payload())
+    await process_event_batch(20)
+
+    expected = {
+        "json": ("application/json", b"{"),
+        "csv": ("text/csv", b"\xef\xbb\xbf"),
+        "md": ("text/markdown", b"# "),
+        "pdf": ("application/pdf", b"%PDF"),
+    }
+    for report_format, (content_type, prefix) in expected.items():
+        response = await client.get(
+            "/api/v1/dashboard/report",
+            params={"format": report_format},
+        )
+        assert response.status_code == 200
+        assert response.headers["content-type"].startswith(content_type)
+        assert response.headers["content-disposition"].endswith(
+            f'.{report_format}"'
+        )
+        assert response.content.startswith(prefix)
+
+    payload = (
+        await client.get(
+            "/api/v1/dashboard/report",
+            params={"format": "json"},
+        )
+    ).json()
+    assert payload["summary"]["total_requests"] == 1
+    assert payload["categories"][0]["representative_queries"] == [
+        "Найди общий слот для встречи"
+    ]
+
+
 async def test_reset_deletes_analytics_data_but_keeps_api_operational(client):
     await client.post("/api/v1/events", json=event_payload())
     await process_event_batch(20)

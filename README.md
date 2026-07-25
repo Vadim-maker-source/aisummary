@@ -20,6 +20,7 @@
 - рекомендации для CTO: автоматизация, развитие агентов и обучение команд;
 - доказательные метрики пользы через `task_completed` и
   `estimated_minutes_saved`.
+- выгрузка полного отчёта в PDF, Markdown, CSV и JSON.
 
 ## Быстрый запуск через Docker
 
@@ -137,6 +138,15 @@ Invoke-RestMethod -Method Post http://localhost:8000/api/v1/analysis/reprocess
 
 ```powershell
 Invoke-RestMethod -Method Post http://localhost:8000/api/v1/analysis/recluster
+```
+
+Отчёт можно сохранить кнопкой на главной странице или получить напрямую:
+
+```text
+GET /api/v1/dashboard/report?format=pdf
+GET /api/v1/dashboard/report?format=md
+GET /api/v1/dashboard/report?format=csv
+GET /api/v1/dashboard/report?format=json
 ```
 
 Для локального демо можно включить кнопку полного сброса аналитических данных:
