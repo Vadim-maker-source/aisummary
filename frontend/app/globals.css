@@ -186,6 +186,12 @@ label:has(input:focus-visible) {
   padding: 42px 42px 70px;
 }
 
+.page-frame-wide {
+  width: min(1760px, 100%);
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
 .page-header {
   display: flex;
   justify-content: space-between;
@@ -995,9 +1001,8 @@ select {
 }
 
 .requests-table-scroll {
-  max-height: min(68vh, 680px);
-  overflow: auto;
-  overscroll-behavior: contain;
+  overflow-x: auto;
+  overflow-y: visible;
 }
 
 .requests-table th {
