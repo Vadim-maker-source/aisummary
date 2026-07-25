@@ -4,6 +4,7 @@ os.environ["DATABASE_URL"] = "sqlite+aiosqlite:///./.test_backend.db"
 os.environ["LLM_BASE_URL"] = ""
 os.environ["LLM_API_KEY"] = ""
 os.environ["LLM_MODEL"] = ""
+os.environ["ALLOW_DATA_RESET"] = "true"
 
 import pytest_asyncio
 from httpx import ASGITransport, AsyncClient

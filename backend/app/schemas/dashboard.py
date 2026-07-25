@@ -162,3 +162,13 @@ class ReprocessAccepted(BaseModel):
     queued_events: int
     status: str = "pending"
 
+
+class ResetAnalyticsRequest(BaseModel):
+    confirmation: Literal["RESET"]
+
+
+class ResetAnalyticsResponse(BaseModel):
+    deleted_events: int
+    deleted_imports: int
+    deleted_analysis_runs: int
+

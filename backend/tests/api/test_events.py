@@ -96,6 +96,34 @@ async def test_dashboard_summary(client):
     }
 
 
+async def test_reset_deletes_analytics_data_but_keeps_api_operational(client):
+    await client.post("/api/v1/events", json=event_payload())
+    await process_event_batch(20)
+    await client.post("/api/v1/analysis/recluster")
+
+    rejected = await client.post(
+        "/api/v1/analysis/reset",
+        json={"confirmation": "wrong"},
+    )
+    assert rejected.status_code == 422
+
+    response = await client.post(
+        "/api/v1/analysis/reset",
+        json={"confirmation": "RESET"},
+    )
+    assert response.status_code == 200
+    assert response.json() == {
+        "deleted_events": 1,
+        "deleted_imports": 0,
+        "deleted_analysis_runs": 1,
+    }
+
+    summary = await client.get("/api/v1/dashboard/summary")
+    assert summary.status_code == 200
+    assert summary.json()["total_requests"] == 0
+    assert summary.json()["scenario_count"] == 0
+
+
 async def test_business_dimensions_and_effectiveness(client):
     payload = event_payload(external_id="dimensions-1")
     payload.update(

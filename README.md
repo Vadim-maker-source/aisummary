@@ -139,6 +139,16 @@ Invoke-RestMethod -Method Post http://localhost:8000/api/v1/analysis/reprocess
 Invoke-RestMethod -Method Post http://localhost:8000/api/v1/analysis/recluster
 ```
 
+Для локального демо можно включить кнопку полного сброса аналитических данных:
+
+```dotenv
+ALLOW_DATA_RESET=true
+```
+
+Сброс удаляет события, результаты анализа, сценарии и историю импортов, но
+сохраняет таблицы и миграции. По умолчанию эта возможность выключена и не
+должна включаться на публичном стенде без авторизации.
+
 ## Проверка
 
 ```powershell

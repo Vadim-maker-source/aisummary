@@ -29,6 +29,7 @@ services:
       LLM_MODEL: ${LLM_MODEL:-}
       LLM_TIMEOUT_SECONDS: ${LLM_TIMEOUT_SECONDS:-20}
       CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3000}
+      ALLOW_DATA_RESET: ${ALLOW_DATA_RESET:-false}
     ports:
       - "8000:8000"
     depends_on:
