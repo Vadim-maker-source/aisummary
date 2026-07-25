@@ -1,8 +1,6 @@
-Сайт: http://203.81.218.106/
-Дашборд: http://203.81.218.106/dashboard
+203.81.218.106
 
-Если сайт по IP недоступен, выполните в терминале:
-ssh -N -L 8080:127.0.0.1:80 vadim67okak@203.81.218.106
-
-После подключения откройте:
-http://localhost:8080/dashboard
+Если не открывается, пробростьте порт в Terminal: ssh -N -L 8080:127.0.0.1:80 vadim67okak@203.81.218.106
+Fingerprint: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICUBh+wdUT527gEur8BSwwIaoFHl8AAA8yRQUlIelDSm 
+Vadimbureev380@gmail.com
+потом http://localhost:8080
