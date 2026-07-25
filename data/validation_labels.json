@@ -1,0 +1,1112 @@
+[
+  {
+    "external_id": "val-t01-v01",
+    "query": "Подготовь краткое саммари, сводку и итоги: Коротко подведи итоги писем, которые пришли мне за сутки.",
+    "expected_category": "summarization",
+    "expected_scenario_label": "daily_email_digest"
+  },
+  {
+    "external_id": "val-t01-v02",
+    "query": "Подготовь краткое саммари, сводку и итоги: пожалуйста, коротко подведи итоги писем, которые пришли мне за сутки.",
+    "expected_category": "summarization",
+    "expected_scenario_label": "daily_email_digest"
+  },
+  {
+    "external_id": "val-t01-v03",
+    "query": "Подготовь краткое саммари, сводку и итоги: Коротко подведи итоги писем, которые пришли мне за сутки. Укажи результат кратко.",
+    "expected_category": "summarization",
+    "expected_scenario_label": "daily_email_digest"
+  },
+  {
+    "external_id": "val-t01-v04",
+    "query": "Подготовь краткое саммари, сводку и итоги: Коротко подведи итоги писем, которые пришли мне за сутки. Перечисли использованные источники.",
+    "expected_category": "summarization",
+    "expected_scenario_label": "daily_email_digest"
+  },
+  {
+    "external_id": "val-t01-v05",
+    "query": "Подготовь краткое саммари, сводку и итоги: Коротко подведи итоги писем, которые пришли мне за сутки. Не придумывай отсутствующие сведения.",
+    "expected_category": "summarization",
+    "expected_scenario_label": "daily_email_digest"
+  },
+  {
+    "external_id": "val-t02-v01",
+    "query": "Найди через поиск и собери информацию: Кто руководит дочерними компаниями этого клиента и какие тендеры мы там выиграли.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "client_company_360"
+  },
+  {
+    "external_id": "val-t02-v02",
+    "query": "Найди через поиск и собери информацию: пожалуйста, кто руководит дочерними компаниями этого клиента и какие тендеры мы там выиграли.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "client_company_360"
+  },
+  {
+    "external_id": "val-t02-v03",
+    "query": "Найди через поиск и собери информацию: Кто руководит дочерними компаниями этого клиента и какие тендеры мы там выиграли. Укажи результат кратко.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "client_company_360"
+  },
+  {
+    "external_id": "val-t02-v04",
+    "query": "Найди через поиск и собери информацию: Кто руководит дочерними компаниями этого клиента и какие тендеры мы там выиграли. Перечисли использованные источники.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "client_company_360"
+  },
+  {
+    "external_id": "val-t02-v05",
+    "query": "Найди через поиск и собери информацию: Кто руководит дочерними компаниями этого клиента и какие тендеры мы там выиграли. Не придумывай отсутствующие сведения.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "client_company_360"
+  },
+  {
+    "external_id": "val-t03-v01",
+    "query": "Настрой периодический мониторинг, отслеживание и уведомление: Сообщай о письмах с просьбой посчитать цену, на которые никто не ответил за 120 минут.",
+    "expected_category": "monitoring_automation",
+    "expected_scenario_label": "monitor_unanswered_price_requests"
+  },
+  {
+    "external_id": "val-t03-v02",
+    "query": "Настрой периодический мониторинг, отслеживание и уведомление: пожалуйста, сообщай о письмах с просьбой посчитать цену, на которые никто не ответил за 120 минут.",
+    "expected_category": "monitoring_automation",
+    "expected_scenario_label": "monitor_unanswered_price_requests"
+  },
+  {
+    "external_id": "val-t03-v03",
+    "query": "Настрой периодический мониторинг, отслеживание и уведомление: Сообщай о письмах с просьбой посчитать цену, на которые никто не ответил за 120 минут. Укажи результат кратко.",
+    "expected_category": "monitoring_automation",
+    "expected_scenario_label": "monitor_unanswered_price_requests"
+  },
+  {
+    "external_id": "val-t03-v04",
+    "query": "Настрой периодический мониторинг, отслеживание и уведомление: Сообщай о письмах с просьбой посчитать цену, на которые никто не ответил за 120 минут. Перечисли использованные источники.",
+    "expected_category": "monitoring_automation",
+    "expected_scenario_label": "monitor_unanswered_price_requests"
+  },
+  {
+    "external_id": "val-t03-v05",
+    "query": "Настрой периодический мониторинг, отслеживание и уведомление: Сообщай о письмах с просьбой посчитать цену, на которые никто не ответил за 120 минут. Не придумывай отсутствующие сведения.",
+    "expected_category": "monitoring_automation",
+    "expected_scenario_label": "monitor_unanswered_price_requests"
+  },
+  {
+    "external_id": "val-t04-v01",
+    "query": "Настрой периодический мониторинг, отслеживание и уведомление: По пятницам присылай фокус-группе подборку тендеров, выигранных за неделю.",
+    "expected_category": "monitoring_automation",
+    "expected_scenario_label": "weekly_won_tenders_digest"
+  },
+  {
+    "external_id": "val-t04-v02",
+    "query": "Настрой периодический мониторинг, отслеживание и уведомление: пожалуйста, по пятницам присылай фокус-группе подборку тендеров, выигранных за неделю.",
+    "expected_category": "monitoring_automation",
+    "expected_scenario_label": "weekly_won_tenders_digest"
+  },
+  {
+    "external_id": "val-t04-v03",
+    "query": "Настрой периодический мониторинг, отслеживание и уведомление: По пятницам присылай фокус-группе подборку тендеров, выигранных за неделю. Укажи результат кратко.",
+    "expected_category": "monitoring_automation",
+    "expected_scenario_label": "weekly_won_tenders_digest"
+  },
+  {
+    "external_id": "val-t04-v04",
+    "query": "Настрой периодический мониторинг, отслеживание и уведомление: По пятницам присылай фокус-группе подборку тендеров, выигранных за неделю. Перечисли использованные источники.",
+    "expected_category": "monitoring_automation",
+    "expected_scenario_label": "weekly_won_tenders_digest"
+  },
+  {
+    "external_id": "val-t04-v05",
+    "query": "Настрой периодический мониторинг, отслеживание и уведомление: По пятницам присылай фокус-группе подборку тендеров, выигранных за неделю. Не придумывай отсутствующие сведения.",
+    "expected_category": "monitoring_automation",
+    "expected_scenario_label": "weekly_won_tenders_digest"
+  },
+  {
+    "external_id": "val-t05-v01",
+    "query": "Найди через поиск и собери информацию: Кто входит в команду проекта и какое направление ведёт поставщика.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "project_team_vendor_owner"
+  },
+  {
+    "external_id": "val-t05-v02",
+    "query": "Найди через поиск и собери информацию: пожалуйста, кто входит в команду проекта и какое направление ведёт поставщика.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "project_team_vendor_owner"
+  },
+  {
+    "external_id": "val-t05-v03",
+    "query": "Найди через поиск и собери информацию: Кто входит в команду проекта и какое направление ведёт поставщика. Укажи результат кратко.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "project_team_vendor_owner"
+  },
+  {
+    "external_id": "val-t05-v04",
+    "query": "Найди через поиск и собери информацию: Кто входит в команду проекта и какое направление ведёт поставщика. Перечисли использованные источники.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "project_team_vendor_owner"
+  },
+  {
+    "external_id": "val-t05-v05",
+    "query": "Найди через поиск и собери информацию: Кто входит в команду проекта и какое направление ведёт поставщика. Не придумывай отсутствующие сведения.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "project_team_vendor_owner"
+  },
+  {
+    "external_id": "val-t06-v01",
+    "query": "Найди через поиск и собери информацию: Подготовь справку о компании на основе доступных публичных материалов.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "company_open_source_research"
+  },
+  {
+    "external_id": "val-t06-v02",
+    "query": "Найди через поиск и собери информацию: пожалуйста, подготовь справку о компании на основе доступных публичных материалов.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "company_open_source_research"
+  },
+  {
+    "external_id": "val-t06-v03",
+    "query": "Найди через поиск и собери информацию: Подготовь справку о компании на основе доступных публичных материалов. Укажи результат кратко.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "company_open_source_research"
+  },
+  {
+    "external_id": "val-t06-v04",
+    "query": "Найди через поиск и собери информацию: Подготовь справку о компании на основе доступных публичных материалов. Перечисли использованные источники.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "company_open_source_research"
+  },
+  {
+    "external_id": "val-t06-v05",
+    "query": "Найди через поиск и собери информацию: Подготовь справку о компании на основе доступных публичных материалов. Не придумывай отсутствующие сведения.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "company_open_source_research"
+  },
+  {
+    "external_id": "val-t07-v01",
+    "query": "Сформируй отчёт, выгрузку и экспорт в Excel: Подготовь файл Excel по клиенту, используя выбранные поля CRM.",
+    "expected_category": "reporting_export",
+    "expected_scenario_label": "crm_client_excel_report"
+  },
+  {
+    "external_id": "val-t07-v02",
+    "query": "Сформируй отчёт, выгрузку и экспорт в Excel: пожалуйста, подготовь файл Excel по клиенту, используя выбранные поля CRM.",
+    "expected_category": "reporting_export",
+    "expected_scenario_label": "crm_client_excel_report"
+  },
+  {
+    "external_id": "val-t07-v03",
+    "query": "Сформируй отчёт, выгрузку и экспорт в Excel: Подготовь файл Excel по клиенту, используя выбранные поля CRM. Укажи результат кратко.",
+    "expected_category": "reporting_export",
+    "expected_scenario_label": "crm_client_excel_report"
+  },
+  {
+    "external_id": "val-t07-v04",
+    "query": "Сформируй отчёт, выгрузку и экспорт в Excel: Подготовь файл Excel по клиенту, используя выбранные поля CRM. Перечисли использованные источники.",
+    "expected_category": "reporting_export",
+    "expected_scenario_label": "crm_client_excel_report"
+  },
+  {
+    "external_id": "val-t07-v05",
+    "query": "Сформируй отчёт, выгрузку и экспорт в Excel: Подготовь файл Excel по клиенту, используя выбранные поля CRM. Не придумывай отсутствующие сведения.",
+    "expected_category": "reporting_export",
+    "expected_scenario_label": "crm_client_excel_report"
+  },
+  {
+    "external_id": "val-t08-v01",
+    "query": "Напиши и сформулируй текст: Преврати мои заметки после мониторинга в корректный отзыв руководителя.",
+    "expected_category": "text_generation",
+    "expected_scenario_label": "manager_feedback_coolfeedback"
+  },
+  {
+    "external_id": "val-t08-v02",
+    "query": "Напиши и сформулируй текст: пожалуйста, преврати мои заметки после мониторинга в корректный отзыв руководителя.",
+    "expected_category": "text_generation",
+    "expected_scenario_label": "manager_feedback_coolfeedback"
+  },
+  {
+    "external_id": "val-t08-v03",
+    "query": "Напиши и сформулируй текст: Преврати мои заметки после мониторинга в корректный отзыв руководителя. Укажи результат кратко.",
+    "expected_category": "text_generation",
+    "expected_scenario_label": "manager_feedback_coolfeedback"
+  },
+  {
+    "external_id": "val-t08-v04",
+    "query": "Напиши и сформулируй текст: Преврати мои заметки после мониторинга в корректный отзыв руководителя. Перечисли использованные источники.",
+    "expected_category": "text_generation",
+    "expected_scenario_label": "manager_feedback_coolfeedback"
+  },
+  {
+    "external_id": "val-t08-v05",
+    "query": "Напиши и сформулируй текст: Преврати мои заметки после мониторинга в корректный отзыв руководителя. Не придумывай отсутствующие сведения.",
+    "expected_category": "text_generation",
+    "expected_scenario_label": "manager_feedback_coolfeedback"
+  },
+  {
+    "external_id": "val-t09-v01",
+    "query": "Напиши и сформулируй текст: Оформи мои тезисы как заметку перед встречей по мониторингу.",
+    "expected_category": "text_generation",
+    "expected_scenario_label": "pre_monitoring_employee_note"
+  },
+  {
+    "external_id": "val-t09-v02",
+    "query": "Напиши и сформулируй текст: пожалуйста, оформи мои тезисы как заметку перед встречей по мониторингу.",
+    "expected_category": "text_generation",
+    "expected_scenario_label": "pre_monitoring_employee_note"
+  },
+  {
+    "external_id": "val-t09-v03",
+    "query": "Напиши и сформулируй текст: Оформи мои тезисы как заметку перед встречей по мониторингу. Укажи результат кратко.",
+    "expected_category": "text_generation",
+    "expected_scenario_label": "pre_monitoring_employee_note"
+  },
+  {
+    "external_id": "val-t09-v04",
+    "query": "Напиши и сформулируй текст: Оформи мои тезисы как заметку перед встречей по мониторингу. Перечисли использованные источники.",
+    "expected_category": "text_generation",
+    "expected_scenario_label": "pre_monitoring_employee_note"
+  },
+  {
+    "external_id": "val-t09-v05",
+    "query": "Напиши и сформулируй текст: Оформи мои тезисы как заметку перед встречей по мониторингу. Не придумывай отсутствующие сведения.",
+    "expected_category": "text_generation",
+    "expected_scenario_label": "pre_monitoring_employee_note"
+  },
+  {
+    "external_id": "val-t10-v01",
+    "query": "Создай задачу или тикет Jira Project: Нужно создать обращение в ИСУП и исправить уже заведённое.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "isup_ticket_editing"
+  },
+  {
+    "external_id": "val-t10-v02",
+    "query": "Создай задачу или тикет Jira Project: пожалуйста, нужно создать обращение в ИСУП и исправить уже заведённое.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "isup_ticket_editing"
+  },
+  {
+    "external_id": "val-t10-v03",
+    "query": "Создай задачу или тикет Jira Project: Нужно создать обращение в ИСУП и исправить уже заведённое. Укажи результат кратко.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "isup_ticket_editing"
+  },
+  {
+    "external_id": "val-t10-v04",
+    "query": "Создай задачу или тикет Jira Project: Нужно создать обращение в ИСУП и исправить уже заведённое. Перечисли использованные источники.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "isup_ticket_editing"
+  },
+  {
+    "external_id": "val-t10-v05",
+    "query": "Создай задачу или тикет Jira Project: Нужно создать обращение в ИСУП и исправить уже заведённое. Не придумывай отсутствующие сведения.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "isup_ticket_editing"
+  },
+  {
+    "external_id": "val-t11-v01",
+    "query": "Настрой периодический мониторинг, отслеживание и уведомление: Каждые семь дней отправляй сводку по тендерам, которые мы выиграли.",
+    "expected_category": "monitoring_automation",
+    "expected_scenario_label": "weekly_won_tenders_digest"
+  },
+  {
+    "external_id": "val-t11-v02",
+    "query": "Настрой периодический мониторинг, отслеживание и уведомление: пожалуйста, каждые семь дней отправляй сводку по тендерам, которые мы выиграли.",
+    "expected_category": "monitoring_automation",
+    "expected_scenario_label": "weekly_won_tenders_digest"
+  },
+  {
+    "external_id": "val-t11-v03",
+    "query": "Настрой периодический мониторинг, отслеживание и уведомление: Каждые семь дней отправляй сводку по тендерам, которые мы выиграли. Укажи результат кратко.",
+    "expected_category": "monitoring_automation",
+    "expected_scenario_label": "weekly_won_tenders_digest"
+  },
+  {
+    "external_id": "val-t11-v04",
+    "query": "Настрой периодический мониторинг, отслеживание и уведомление: Каждые семь дней отправляй сводку по тендерам, которые мы выиграли. Перечисли использованные источники.",
+    "expected_category": "monitoring_automation",
+    "expected_scenario_label": "weekly_won_tenders_digest"
+  },
+  {
+    "external_id": "val-t11-v05",
+    "query": "Настрой периодический мониторинг, отслеживание и уведомление: Каждые семь дней отправляй сводку по тендерам, которые мы выиграли. Не придумывай отсутствующие сведения.",
+    "expected_category": "monitoring_automation",
+    "expected_scenario_label": "weekly_won_tenders_digest"
+  },
+  {
+    "external_id": "val-t12-v01",
+    "query": "Создай задачу или тикет Jira Project: Какие задачи сейчас закреплены за мной в Jira.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "jira_assigned_tasks"
+  },
+  {
+    "external_id": "val-t12-v02",
+    "query": "Создай задачу или тикет Jira Project: пожалуйста, какие задачи сейчас закреплены за мной в Jira.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "jira_assigned_tasks"
+  },
+  {
+    "external_id": "val-t12-v03",
+    "query": "Создай задачу или тикет Jira Project: Какие задачи сейчас закреплены за мной в Jira. Укажи результат кратко.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "jira_assigned_tasks"
+  },
+  {
+    "external_id": "val-t12-v04",
+    "query": "Создай задачу или тикет Jira Project: Какие задачи сейчас закреплены за мной в Jira. Перечисли использованные источники.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "jira_assigned_tasks"
+  },
+  {
+    "external_id": "val-t12-v05",
+    "query": "Создай задачу или тикет Jira Project: Какие задачи сейчас закреплены за мной в Jira. Не придумывай отсутствующие сведения.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "jira_assigned_tasks"
+  },
+  {
+    "external_id": "val-t13-v01",
+    "query": "Создай задачу или тикет Jira Project: Какие из моих Jira-задач имеют наивысший приоритет.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "jira_priority_tasks"
+  },
+  {
+    "external_id": "val-t13-v02",
+    "query": "Создай задачу или тикет Jira Project: пожалуйста, какие из моих Jira-задач имеют наивысший приоритет.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "jira_priority_tasks"
+  },
+  {
+    "external_id": "val-t13-v03",
+    "query": "Создай задачу или тикет Jira Project: Какие из моих Jira-задач имеют наивысший приоритет. Укажи результат кратко.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "jira_priority_tasks"
+  },
+  {
+    "external_id": "val-t13-v04",
+    "query": "Создай задачу или тикет Jira Project: Какие из моих Jira-задач имеют наивысший приоритет. Перечисли использованные источники.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "jira_priority_tasks"
+  },
+  {
+    "external_id": "val-t13-v05",
+    "query": "Создай задачу или тикет Jira Project: Какие из моих Jira-задач имеют наивысший приоритет. Не придумывай отсутствующие сведения.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "jira_priority_tasks"
+  },
+  {
+    "external_id": "val-t14-v01",
+    "query": "Напиши и сформулируй текст: Оформи мои наблюдения за сотрудником как понятную запись руководителя.",
+    "expected_category": "text_generation",
+    "expected_scenario_label": "employee_observation_note"
+  },
+  {
+    "external_id": "val-t14-v02",
+    "query": "Напиши и сформулируй текст: пожалуйста, оформи мои наблюдения за сотрудником как понятную запись руководителя.",
+    "expected_category": "text_generation",
+    "expected_scenario_label": "employee_observation_note"
+  },
+  {
+    "external_id": "val-t14-v03",
+    "query": "Напиши и сформулируй текст: Оформи мои наблюдения за сотрудником как понятную запись руководителя. Укажи результат кратко.",
+    "expected_category": "text_generation",
+    "expected_scenario_label": "employee_observation_note"
+  },
+  {
+    "external_id": "val-t14-v04",
+    "query": "Напиши и сформулируй текст: Оформи мои наблюдения за сотрудником как понятную запись руководителя. Перечисли использованные источники.",
+    "expected_category": "text_generation",
+    "expected_scenario_label": "employee_observation_note"
+  },
+  {
+    "external_id": "val-t14-v05",
+    "query": "Напиши и сформулируй текст: Оформи мои наблюдения за сотрудником как понятную запись руководителя. Не придумывай отсутствующие сведения.",
+    "expected_category": "text_generation",
+    "expected_scenario_label": "employee_observation_note"
+  },
+  {
+    "external_id": "val-t15-v01",
+    "query": "Сформируй отчёт, выгрузку и экспорт в Excel: Подготовь электронную таблицу с результатами анализа.",
+    "expected_category": "reporting_export",
+    "expected_scenario_label": "excel_data_export"
+  },
+  {
+    "external_id": "val-t15-v02",
+    "query": "Сформируй отчёт, выгрузку и экспорт в Excel: пожалуйста, подготовь электронную таблицу с результатами анализа.",
+    "expected_category": "reporting_export",
+    "expected_scenario_label": "excel_data_export"
+  },
+  {
+    "external_id": "val-t15-v03",
+    "query": "Сформируй отчёт, выгрузку и экспорт в Excel: Подготовь электронную таблицу с результатами анализа. Укажи результат кратко.",
+    "expected_category": "reporting_export",
+    "expected_scenario_label": "excel_data_export"
+  },
+  {
+    "external_id": "val-t15-v04",
+    "query": "Сформируй отчёт, выгрузку и экспорт в Excel: Подготовь электронную таблицу с результатами анализа. Перечисли использованные источники.",
+    "expected_category": "reporting_export",
+    "expected_scenario_label": "excel_data_export"
+  },
+  {
+    "external_id": "val-t15-v05",
+    "query": "Сформируй отчёт, выгрузку и экспорт в Excel: Подготовь электронную таблицу с результатами анализа. Не придумывай отсутствующие сведения.",
+    "expected_category": "reporting_export",
+    "expected_scenario_label": "excel_data_export"
+  },
+  {
+    "external_id": "val-t16-v01",
+    "query": "Сформируй отчёт, выгрузку и экспорт в Excel: Подготовь файл Excel с данными для самостоятельной обработки.",
+    "expected_category": "reporting_export",
+    "expected_scenario_label": "excel_data_export"
+  },
+  {
+    "external_id": "val-t16-v02",
+    "query": "Сформируй отчёт, выгрузку и экспорт в Excel: пожалуйста, подготовь файл Excel с данными для самостоятельной обработки.",
+    "expected_category": "reporting_export",
+    "expected_scenario_label": "excel_data_export"
+  },
+  {
+    "external_id": "val-t16-v03",
+    "query": "Сформируй отчёт, выгрузку и экспорт в Excel: Подготовь файл Excel с данными для самостоятельной обработки. Укажи результат кратко.",
+    "expected_category": "reporting_export",
+    "expected_scenario_label": "excel_data_export"
+  },
+  {
+    "external_id": "val-t16-v04",
+    "query": "Сформируй отчёт, выгрузку и экспорт в Excel: Подготовь файл Excel с данными для самостоятельной обработки. Перечисли использованные источники.",
+    "expected_category": "reporting_export",
+    "expected_scenario_label": "excel_data_export"
+  },
+  {
+    "external_id": "val-t16-v05",
+    "query": "Сформируй отчёт, выгрузку и экспорт в Excel: Подготовь файл Excel с данными для самостоятельной обработки. Не придумывай отсутствующие сведения.",
+    "expected_category": "reporting_export",
+    "expected_scenario_label": "excel_data_export"
+  },
+  {
+    "external_id": "val-t17-v01",
+    "query": "Найди через поиск и собери информацию: Какие новости о поставщике появились в нашем блоге.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "supplier_blog_search"
+  },
+  {
+    "external_id": "val-t17-v02",
+    "query": "Найди через поиск и собери информацию: пожалуйста, какие новости о поставщике появились в нашем блоге.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "supplier_blog_search"
+  },
+  {
+    "external_id": "val-t17-v03",
+    "query": "Найди через поиск и собери информацию: Какие новости о поставщике появились в нашем блоге. Укажи результат кратко.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "supplier_blog_search"
+  },
+  {
+    "external_id": "val-t17-v04",
+    "query": "Найди через поиск и собери информацию: Какие новости о поставщике появились в нашем блоге. Перечисли использованные источники.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "supplier_blog_search"
+  },
+  {
+    "external_id": "val-t17-v05",
+    "query": "Найди через поиск и собери информацию: Какие новости о поставщике появились в нашем блоге. Не придумывай отсутствующие сведения.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "supplier_blog_search"
+  },
+  {
+    "external_id": "val-t18-v01",
+    "query": "Найди через поиск и собери информацию: Где в Confluence описан порядок выполнения этой операции.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "confluence_process_search"
+  },
+  {
+    "external_id": "val-t18-v02",
+    "query": "Найди через поиск и собери информацию: пожалуйста, где в Confluence описан порядок выполнения этой операции.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "confluence_process_search"
+  },
+  {
+    "external_id": "val-t18-v03",
+    "query": "Найди через поиск и собери информацию: Где в Confluence описан порядок выполнения этой операции. Укажи результат кратко.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "confluence_process_search"
+  },
+  {
+    "external_id": "val-t18-v04",
+    "query": "Найди через поиск и собери информацию: Где в Confluence описан порядок выполнения этой операции. Перечисли использованные источники.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "confluence_process_search"
+  },
+  {
+    "external_id": "val-t18-v05",
+    "query": "Найди через поиск и собери информацию: Где в Confluence описан порядок выполнения этой операции. Не придумывай отсутствующие сведения.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "confluence_process_search"
+  },
+  {
+    "external_id": "val-t19-v01",
+    "query": "Запланируй встречу в календаре, найди слот и расписание: Когда у руководителя есть окно для встречи на этой неделе.",
+    "expected_category": "calendar_planning",
+    "expected_scenario_label": "executive_calendar_scheduling"
+  },
+  {
+    "external_id": "val-t19-v02",
+    "query": "Запланируй встречу в календаре, найди слот и расписание: пожалуйста, когда у руководителя есть окно для встречи на этой неделе.",
+    "expected_category": "calendar_planning",
+    "expected_scenario_label": "executive_calendar_scheduling"
+  },
+  {
+    "external_id": "val-t19-v03",
+    "query": "Запланируй встречу в календаре, найди слот и расписание: Когда у руководителя есть окно для встречи на этой неделе. Укажи результат кратко.",
+    "expected_category": "calendar_planning",
+    "expected_scenario_label": "executive_calendar_scheduling"
+  },
+  {
+    "external_id": "val-t19-v04",
+    "query": "Запланируй встречу в календаре, найди слот и расписание: Когда у руководителя есть окно для встречи на этой неделе. Перечисли использованные источники.",
+    "expected_category": "calendar_planning",
+    "expected_scenario_label": "executive_calendar_scheduling"
+  },
+  {
+    "external_id": "val-t19-v05",
+    "query": "Запланируй встречу в календаре, найди слот и расписание: Когда у руководителя есть окно для встречи на этой неделе. Не придумывай отсутствующие сведения.",
+    "expected_category": "calendar_planning",
+    "expected_scenario_label": "executive_calendar_scheduling"
+  },
+  {
+    "external_id": "val-t20-v01",
+    "query": "Создай задачу или тикет Jira Project: Закрой задачу после подтверждения результата.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "task_completion_confirmation"
+  },
+  {
+    "external_id": "val-t20-v02",
+    "query": "Создай задачу или тикет Jira Project: пожалуйста, закрой задачу после подтверждения результата.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "task_completion_confirmation"
+  },
+  {
+    "external_id": "val-t20-v03",
+    "query": "Создай задачу или тикет Jira Project: Закрой задачу после подтверждения результата. Укажи результат кратко.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "task_completion_confirmation"
+  },
+  {
+    "external_id": "val-t20-v04",
+    "query": "Создай задачу или тикет Jira Project: Закрой задачу после подтверждения результата. Перечисли использованные источники.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "task_completion_confirmation"
+  },
+  {
+    "external_id": "val-t20-v05",
+    "query": "Создай задачу или тикет Jira Project: Закрой задачу после подтверждения результата. Не придумывай отсутствующие сведения.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "task_completion_confirmation"
+  },
+  {
+    "external_id": "val-t21-v01",
+    "query": "Создай задачу или тикет Jira Project: Запиши завершённую задачу в мою историю.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "task_history_tracking"
+  },
+  {
+    "external_id": "val-t21-v02",
+    "query": "Создай задачу или тикет Jira Project: пожалуйста, запиши завершённую задачу в мою историю.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "task_history_tracking"
+  },
+  {
+    "external_id": "val-t21-v03",
+    "query": "Создай задачу или тикет Jira Project: Запиши завершённую задачу в мою историю. Укажи результат кратко.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "task_history_tracking"
+  },
+  {
+    "external_id": "val-t21-v04",
+    "query": "Создай задачу или тикет Jira Project: Запиши завершённую задачу в мою историю. Перечисли использованные источники.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "task_history_tracking"
+  },
+  {
+    "external_id": "val-t21-v05",
+    "query": "Создай задачу или тикет Jira Project: Запиши завершённую задачу в мою историю. Не придумывай отсутствующие сведения.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "task_history_tracking"
+  },
+  {
+    "external_id": "val-t22-v01",
+    "query": "Запланируй встречу в календаре, найди слот и расписание: Какая переговорная вместит всех участников и будет свободна.",
+    "expected_category": "calendar_planning",
+    "expected_scenario_label": "meeting_room_search"
+  },
+  {
+    "external_id": "val-t22-v02",
+    "query": "Запланируй встречу в календаре, найди слот и расписание: пожалуйста, какая переговорная вместит всех участников и будет свободна.",
+    "expected_category": "calendar_planning",
+    "expected_scenario_label": "meeting_room_search"
+  },
+  {
+    "external_id": "val-t22-v03",
+    "query": "Запланируй встречу в календаре, найди слот и расписание: Какая переговорная вместит всех участников и будет свободна. Укажи результат кратко.",
+    "expected_category": "calendar_planning",
+    "expected_scenario_label": "meeting_room_search"
+  },
+  {
+    "external_id": "val-t22-v04",
+    "query": "Запланируй встречу в календаре, найди слот и расписание: Какая переговорная вместит всех участников и будет свободна. Перечисли использованные источники.",
+    "expected_category": "calendar_planning",
+    "expected_scenario_label": "meeting_room_search"
+  },
+  {
+    "external_id": "val-t22-v05",
+    "query": "Запланируй встречу в календаре, найди слот и расписание: Какая переговорная вместит всех участников и будет свободна. Не придумывай отсутствующие сведения.",
+    "expected_category": "calendar_planning",
+    "expected_scenario_label": "meeting_room_search"
+  },
+  {
+    "external_id": "val-t23-v01",
+    "query": "Напиши и сформулируй текст: Предложи корректный ответ клиенту после изучения цепочки писем.",
+    "expected_category": "text_generation",
+    "expected_scenario_label": "client_correspondence_reply"
+  },
+  {
+    "external_id": "val-t23-v02",
+    "query": "Напиши и сформулируй текст: пожалуйста, предложи корректный ответ клиенту после изучения цепочки писем.",
+    "expected_category": "text_generation",
+    "expected_scenario_label": "client_correspondence_reply"
+  },
+  {
+    "external_id": "val-t23-v03",
+    "query": "Напиши и сформулируй текст: Предложи корректный ответ клиенту после изучения цепочки писем. Укажи результат кратко.",
+    "expected_category": "text_generation",
+    "expected_scenario_label": "client_correspondence_reply"
+  },
+  {
+    "external_id": "val-t23-v04",
+    "query": "Напиши и сформулируй текст: Предложи корректный ответ клиенту после изучения цепочки писем. Перечисли использованные источники.",
+    "expected_category": "text_generation",
+    "expected_scenario_label": "client_correspondence_reply"
+  },
+  {
+    "external_id": "val-t23-v05",
+    "query": "Напиши и сформулируй текст: Предложи корректный ответ клиенту после изучения цепочки писем. Не придумывай отсутствующие сведения.",
+    "expected_category": "text_generation",
+    "expected_scenario_label": "client_correspondence_reply"
+  },
+  {
+    "external_id": "val-t24-v01",
+    "query": "Подготовь краткое саммари, сводку и итоги: Кратко зафиксируй, о чём мы договорились на встрече.",
+    "expected_category": "summarization",
+    "expected_scenario_label": "discussion_outcomes_note"
+  },
+  {
+    "external_id": "val-t24-v02",
+    "query": "Подготовь краткое саммари, сводку и итоги: пожалуйста, кратко зафиксируй, о чём мы договорились на встрече.",
+    "expected_category": "summarization",
+    "expected_scenario_label": "discussion_outcomes_note"
+  },
+  {
+    "external_id": "val-t24-v03",
+    "query": "Подготовь краткое саммари, сводку и итоги: Кратко зафиксируй, о чём мы договорились на встрече. Укажи результат кратко.",
+    "expected_category": "summarization",
+    "expected_scenario_label": "discussion_outcomes_note"
+  },
+  {
+    "external_id": "val-t24-v04",
+    "query": "Подготовь краткое саммари, сводку и итоги: Кратко зафиксируй, о чём мы договорились на встрече. Перечисли использованные источники.",
+    "expected_category": "summarization",
+    "expected_scenario_label": "discussion_outcomes_note"
+  },
+  {
+    "external_id": "val-t24-v05",
+    "query": "Подготовь краткое саммари, сводку и итоги: Кратко зафиксируй, о чём мы договорились на встрече. Не придумывай отсутствующие сведения.",
+    "expected_category": "summarization",
+    "expected_scenario_label": "discussion_outcomes_note"
+  },
+  {
+    "external_id": "val-t25-v01",
+    "query": "Найди через поиск и собери информацию: Кого можно найти в контактах по этой компании.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "client_contacts_search"
+  },
+  {
+    "external_id": "val-t25-v02",
+    "query": "Найди через поиск и собери информацию: пожалуйста, кого можно найти в контактах по этой компании.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "client_contacts_search"
+  },
+  {
+    "external_id": "val-t25-v03",
+    "query": "Найди через поиск и собери информацию: Кого можно найти в контактах по этой компании. Укажи результат кратко.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "client_contacts_search"
+  },
+  {
+    "external_id": "val-t25-v04",
+    "query": "Найди через поиск и собери информацию: Кого можно найти в контактах по этой компании. Перечисли использованные источники.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "client_contacts_search"
+  },
+  {
+    "external_id": "val-t25-v05",
+    "query": "Найди через поиск и собери информацию: Кого можно найти в контактах по этой компании. Не придумывай отсутствующие сведения.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "client_contacts_search"
+  },
+  {
+    "external_id": "val-t26-v01",
+    "query": "Запланируй встречу в календаре, найди слот и расписание: Когда все участники смогут одновременно присоединиться к встрече.",
+    "expected_category": "calendar_planning",
+    "expected_scenario_label": "multi_participant_meeting"
+  },
+  {
+    "external_id": "val-t26-v02",
+    "query": "Запланируй встречу в календаре, найди слот и расписание: пожалуйста, когда все участники смогут одновременно присоединиться к встрече.",
+    "expected_category": "calendar_planning",
+    "expected_scenario_label": "multi_participant_meeting"
+  },
+  {
+    "external_id": "val-t26-v03",
+    "query": "Запланируй встречу в календаре, найди слот и расписание: Когда все участники смогут одновременно присоединиться к встрече. Укажи результат кратко.",
+    "expected_category": "calendar_planning",
+    "expected_scenario_label": "multi_participant_meeting"
+  },
+  {
+    "external_id": "val-t26-v04",
+    "query": "Запланируй встречу в календаре, найди слот и расписание: Когда все участники смогут одновременно присоединиться к встрече. Перечисли использованные источники.",
+    "expected_category": "calendar_planning",
+    "expected_scenario_label": "multi_participant_meeting"
+  },
+  {
+    "external_id": "val-t26-v05",
+    "query": "Запланируй встречу в календаре, найди слот и расписание: Когда все участники смогут одновременно присоединиться к встрече. Не придумывай отсутствующие сведения.",
+    "expected_category": "calendar_planning",
+    "expected_scenario_label": "multi_participant_meeting"
+  },
+  {
+    "external_id": "val-t27-v01",
+    "query": "Найди через поиск и собери информацию: Что было написано в описании этой встречи.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "meeting_body_search"
+  },
+  {
+    "external_id": "val-t27-v02",
+    "query": "Найди через поиск и собери информацию: пожалуйста, что было написано в описании этой встречи.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "meeting_body_search"
+  },
+  {
+    "external_id": "val-t27-v03",
+    "query": "Найди через поиск и собери информацию: Что было написано в описании этой встречи. Укажи результат кратко.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "meeting_body_search"
+  },
+  {
+    "external_id": "val-t27-v04",
+    "query": "Найди через поиск и собери информацию: Что было написано в описании этой встречи. Перечисли использованные источники.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "meeting_body_search"
+  },
+  {
+    "external_id": "val-t27-v05",
+    "query": "Найди через поиск и собери информацию: Что было написано в описании этой встречи. Не придумывай отсутствующие сведения.",
+    "expected_category": "information_search",
+    "expected_scenario_label": "meeting_body_search"
+  },
+  {
+    "external_id": "val-t28-v01",
+    "query": "Запланируй встречу в календаре, найди слот и расписание: Напомни мне о согласованных действиях в назначенные даты.",
+    "expected_category": "calendar_planning",
+    "expected_scenario_label": "planned_work_reminders"
+  },
+  {
+    "external_id": "val-t28-v02",
+    "query": "Запланируй встречу в календаре, найди слот и расписание: пожалуйста, напомни мне о согласованных действиях в назначенные даты.",
+    "expected_category": "calendar_planning",
+    "expected_scenario_label": "planned_work_reminders"
+  },
+  {
+    "external_id": "val-t28-v03",
+    "query": "Запланируй встречу в календаре, найди слот и расписание: Напомни мне о согласованных действиях в назначенные даты. Укажи результат кратко.",
+    "expected_category": "calendar_planning",
+    "expected_scenario_label": "planned_work_reminders"
+  },
+  {
+    "external_id": "val-t28-v04",
+    "query": "Запланируй встречу в календаре, найди слот и расписание: Напомни мне о согласованных действиях в назначенные даты. Перечисли использованные источники.",
+    "expected_category": "calendar_planning",
+    "expected_scenario_label": "planned_work_reminders"
+  },
+  {
+    "external_id": "val-t28-v05",
+    "query": "Запланируй встречу в календаре, найди слот и расписание: Напомни мне о согласованных действиях в назначенные даты. Не придумывай отсутствующие сведения.",
+    "expected_category": "calendar_planning",
+    "expected_scenario_label": "planned_work_reminders"
+  },
+  {
+    "external_id": "val-t29-v01",
+    "query": "Запланируй встречу в календаре, найди слот и расписание: Подготовь расписание встреч на завтрашний день.",
+    "expected_category": "calendar_planning",
+    "expected_scenario_label": "tomorrow_meetings"
+  },
+  {
+    "external_id": "val-t29-v02",
+    "query": "Запланируй встречу в календаре, найди слот и расписание: пожалуйста, подготовь расписание встреч на завтрашний день.",
+    "expected_category": "calendar_planning",
+    "expected_scenario_label": "tomorrow_meetings"
+  },
+  {
+    "external_id": "val-t29-v03",
+    "query": "Запланируй встречу в календаре, найди слот и расписание: Подготовь расписание встреч на завтрашний день. Укажи результат кратко.",
+    "expected_category": "calendar_planning",
+    "expected_scenario_label": "tomorrow_meetings"
+  },
+  {
+    "external_id": "val-t29-v04",
+    "query": "Запланируй встречу в календаре, найди слот и расписание: Подготовь расписание встреч на завтрашний день. Перечисли использованные источники.",
+    "expected_category": "calendar_planning",
+    "expected_scenario_label": "tomorrow_meetings"
+  },
+  {
+    "external_id": "val-t29-v05",
+    "query": "Запланируй встречу в календаре, найди слот и расписание: Подготовь расписание встреч на завтрашний день. Не придумывай отсутствующие сведения.",
+    "expected_category": "calendar_planning",
+    "expected_scenario_label": "tomorrow_meetings"
+  },
+  {
+    "external_id": "val-t30-v01",
+    "query": "Создай задачу или тикет Jira Project: Создай задачи Project из писем, требующих действий.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "project_tickets_from_email"
+  },
+  {
+    "external_id": "val-t30-v02",
+    "query": "Создай задачу или тикет Jira Project: пожалуйста, создай задачи Project из писем, требующих действий.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "project_tickets_from_email"
+  },
+  {
+    "external_id": "val-t30-v03",
+    "query": "Создай задачу или тикет Jira Project: Создай задачи Project из писем, требующих действий. Укажи результат кратко.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "project_tickets_from_email"
+  },
+  {
+    "external_id": "val-t30-v04",
+    "query": "Создай задачу или тикет Jira Project: Создай задачи Project из писем, требующих действий. Перечисли использованные источники.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "project_tickets_from_email"
+  },
+  {
+    "external_id": "val-t30-v05",
+    "query": "Создай задачу или тикет Jira Project: Создай задачи Project из писем, требующих действий. Не придумывай отсутствующие сведения.",
+    "expected_category": "task_management",
+    "expected_scenario_label": "project_tickets_from_email"
+  },
+  {
+    "external_id": "val-t31-v01",
+    "query": "Настрой периодический мониторинг, отслеживание и уведомление: Сообщай, когда проект в ИСУП переходит в контролируемый статус.",
+    "expected_category": "monitoring_automation",
+    "expected_scenario_label": "isup_project_status_monitoring"
+  },
+  {
+    "external_id": "val-t31-v02",
+    "query": "Настрой периодический мониторинг, отслеживание и уведомление: пожалуйста, сообщай, когда проект в ИСУП переходит в контролируемый статус.",
+    "expected_category": "monitoring_automation",
+    "expected_scenario_label": "isup_project_status_monitoring"
+  },
+  {
+    "external_id": "val-t31-v03",
+    "query": "Настрой периодический мониторинг, отслеживание и уведомление: Сообщай, когда проект в ИСУП переходит в контролируемый статус. Укажи результат кратко.",
+    "expected_category": "monitoring_automation",
+    "expected_scenario_label": "isup_project_status_monitoring"
+  },
+  {
+    "external_id": "val-t31-v04",
+    "query": "Настрой периодический мониторинг, отслеживание и уведомление: Сообщай, когда проект в ИСУП переходит в контролируемый статус. Перечисли использованные источники.",
+    "expected_category": "monitoring_automation",
+    "expected_scenario_label": "isup_project_status_monitoring"
+  },
+  {
+    "external_id": "val-t31-v05",
+    "query": "Настрой периодический мониторинг, отслеживание и уведомление: Сообщай, когда проект в ИСУП переходит в контролируемый статус. Не придумывай отсутствующие сведения.",
+    "expected_category": "monitoring_automation",
+    "expected_scenario_label": "isup_project_status_monitoring"
+  },
+  {
+    "external_id": "val-s01-v01",
+    "query": "Проведи анализ данных, таблицы, SQL и метрик: Определи по данным продаж точки роста и аномалии.",
+    "expected_category": "data_analysis",
+    "expected_scenario_label": "sales_metrics_analysis"
+  },
+  {
+    "external_id": "val-s01-v02",
+    "query": "Проведи анализ данных, таблицы, SQL и метрик: пожалуйста, определи по данным продаж точки роста и аномалии.",
+    "expected_category": "data_analysis",
+    "expected_scenario_label": "sales_metrics_analysis"
+  },
+  {
+    "external_id": "val-s01-v03",
+    "query": "Проведи анализ данных, таблицы, SQL и метрик: Определи по данным продаж точки роста и аномалии. Укажи результат кратко.",
+    "expected_category": "data_analysis",
+    "expected_scenario_label": "sales_metrics_analysis"
+  },
+  {
+    "external_id": "val-s01-v04",
+    "query": "Проведи анализ данных, таблицы, SQL и метрик: Определи по данным продаж точки роста и аномалии. Перечисли использованные источники.",
+    "expected_category": "data_analysis",
+    "expected_scenario_label": "sales_metrics_analysis"
+  },
+  {
+    "external_id": "val-s01-v05",
+    "query": "Проведи анализ данных, таблицы, SQL и метрик: Определи по данным продаж точки роста и аномалии. Не придумывай отсутствующие сведения.",
+    "expected_category": "data_analysis",
+    "expected_scenario_label": "sales_metrics_analysis"
+  },
+  {
+    "external_id": "val-s02-v01",
+    "query": "Объясни, расскажи почему и что это такое: Почему договор проходит несколько уровней согласования.",
+    "expected_category": "knowledge_explanation",
+    "expected_scenario_label": "corporate_process_explanation"
+  },
+  {
+    "external_id": "val-s02-v02",
+    "query": "Объясни, расскажи почему и что это такое: пожалуйста, почему договор проходит несколько уровней согласования.",
+    "expected_category": "knowledge_explanation",
+    "expected_scenario_label": "corporate_process_explanation"
+  },
+  {
+    "external_id": "val-s02-v03",
+    "query": "Объясни, расскажи почему и что это такое: Почему договор проходит несколько уровней согласования. Укажи результат кратко.",
+    "expected_category": "knowledge_explanation",
+    "expected_scenario_label": "corporate_process_explanation"
+  },
+  {
+    "external_id": "val-s02-v04",
+    "query": "Объясни, расскажи почему и что это такое: Почему договор проходит несколько уровней согласования. Перечисли использованные источники.",
+    "expected_category": "knowledge_explanation",
+    "expected_scenario_label": "corporate_process_explanation"
+  },
+  {
+    "external_id": "val-s02-v05",
+    "query": "Объясни, расскажи почему и что это такое: Почему договор проходит несколько уровней согласования. Не придумывай отсутствующие сведения.",
+    "expected_category": "knowledge_explanation",
+    "expected_scenario_label": "corporate_process_explanation"
+  },
+  {
+    "external_id": "val-s03-v01",
+    "query": "Давай поболтаем и пообщаемся о фильме: Давай просто поболтаем.",
+    "expected_category": "non_work_general",
+    "expected_scenario_label": "non_work_conversation"
+  },
+  {
+    "external_id": "val-s03-v02",
+    "query": "Давай поболтаем и пообщаемся о фильме: пожалуйста, давай просто поболтаем.",
+    "expected_category": "non_work_general",
+    "expected_scenario_label": "non_work_conversation"
+  },
+  {
+    "external_id": "val-s03-v03",
+    "query": "Давай поболтаем и пообщаемся о фильме: Давай просто поболтаем. Укажи результат кратко.",
+    "expected_category": "non_work_general",
+    "expected_scenario_label": "non_work_conversation"
+  },
+  {
+    "external_id": "val-s03-v04",
+    "query": "Давай поболтаем и пообщаемся о фильме: Давай просто поболтаем. Перечисли использованные источники.",
+    "expected_category": "non_work_general",
+    "expected_scenario_label": "non_work_conversation"
+  },
+  {
+    "external_id": "val-s03-v05",
+    "query": "Давай поболтаем и пообщаемся о фильме: Давай просто поболтаем. Не придумывай отсутствующие сведения.",
+    "expected_category": "non_work_general",
+    "expected_scenario_label": "non_work_conversation"
+  },
+  {
+    "external_id": "val-s04-v01",
+    "query": "Помоги с кодом Python, traceback и FastAPI: Почему этот Python-код падает с traceback и как его исправить.",
+    "expected_category": "code_assistance",
+    "expected_scenario_label": "python_traceback_debugging"
+  },
+  {
+    "external_id": "val-s04-v02",
+    "query": "Помоги с кодом Python, traceback и FastAPI: пожалуйста, почему этот Python-код падает с traceback и как его исправить.",
+    "expected_category": "code_assistance",
+    "expected_scenario_label": "python_traceback_debugging"
+  },
+  {
+    "external_id": "val-s04-v03",
+    "query": "Помоги с кодом Python, traceback и FastAPI: Почему этот Python-код падает с traceback и как его исправить. Укажи результат кратко.",
+    "expected_category": "code_assistance",
+    "expected_scenario_label": "python_traceback_debugging"
+  },
+  {
+    "external_id": "val-s04-v04",
+    "query": "Помоги с кодом Python, traceback и FastAPI: Почему этот Python-код падает с traceback и как его исправить. Перечисли использованные источники.",
+    "expected_category": "code_assistance",
+    "expected_scenario_label": "python_traceback_debugging"
+  },
+  {
+    "external_id": "val-s04-v05",
+    "query": "Помоги с кодом Python, traceback и FastAPI: Почему этот Python-код падает с traceback и как его исправить. Не придумывай отсутствующие сведения.",
+    "expected_category": "code_assistance",
+    "expected_scenario_label": "python_traceback_debugging"
+  },
+  {
+    "external_id": "val-s05-v01",
+    "query": "Помоги с кодом Python, traceback и FastAPI: Реализуй безопасный FastAPI endpoint и тесты для него.",
+    "expected_category": "code_assistance",
+    "expected_scenario_label": "api_backend_implementation"
+  },
+  {
+    "external_id": "val-s05-v02",
+    "query": "Помоги с кодом Python, traceback и FastAPI: пожалуйста, реализуй безопасный FastAPI endpoint и тесты для него.",
+    "expected_category": "code_assistance",
+    "expected_scenario_label": "api_backend_implementation"
+  },
+  {
+    "external_id": "val-s05-v03",
+    "query": "Помоги с кодом Python, traceback и FastAPI: Реализуй безопасный FastAPI endpoint и тесты для него. Укажи результат кратко.",
+    "expected_category": "code_assistance",
+    "expected_scenario_label": "api_backend_implementation"
+  },
+  {
+    "external_id": "val-s05-v04",
+    "query": "Помоги с кодом Python, traceback и FastAPI: Реализуй безопасный FastAPI endpoint и тесты для него. Перечисли использованные источники.",
+    "expected_category": "code_assistance",
+    "expected_scenario_label": "api_backend_implementation"
+  },
+  {
+    "external_id": "val-s05-v05",
+    "query": "Помоги с кодом Python, traceback и FastAPI: Реализуй безопасный FastAPI endpoint и тесты для него. Не придумывай отсутствующие сведения.",
+    "expected_category": "code_assistance",
+    "expected_scenario_label": "api_backend_implementation"
+  },
+  {
+    "external_id": "val-s06-v01",
+    "query": "Неясная формулировка без деталей: Сделай что-нибудь.",
+    "expected_category": "other",
+    "expected_scenario_label": "unclassified_request"
+  },
+  {
+    "external_id": "val-s06-v02",
+    "query": "Неясная формулировка без деталей: пожалуйста, сделай что-нибудь.",
+    "expected_category": "other",
+    "expected_scenario_label": "unclassified_request"
+  },
+  {
+    "external_id": "val-s06-v03",
+    "query": "Неясная формулировка без деталей: Сделай что-нибудь. Укажи результат кратко.",
+    "expected_category": "other",
+    "expected_scenario_label": "unclassified_request"
+  },
+  {
+    "external_id": "val-s06-v04",
+    "query": "Неясная формулировка без деталей: Сделай что-нибудь. Перечисли использованные источники.",
+    "expected_category": "other",
+    "expected_scenario_label": "unclassified_request"
+  },
+  {
+    "external_id": "val-s06-v05",
+    "query": "Неясная формулировка без деталей: Сделай что-нибудь. Не придумывай отсутствующие сведения.",
+    "expected_category": "other",
+    "expected_scenario_label": "unclassified_request"
+  }
+]

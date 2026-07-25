@@ -1,0 +1,2962 @@
+{
+  "demo-t01-v01": {
+    "category": "summarization",
+    "scenario_label": "daily_email_digest"
+  },
+  "demo-t01-v02": {
+    "category": "summarization",
+    "scenario_label": "daily_email_digest"
+  },
+  "demo-t01-v03": {
+    "category": "summarization",
+    "scenario_label": "daily_email_digest"
+  },
+  "demo-t01-v04": {
+    "category": "summarization",
+    "scenario_label": "daily_email_digest"
+  },
+  "demo-t01-v05": {
+    "category": "summarization",
+    "scenario_label": "daily_email_digest"
+  },
+  "demo-t01-v06": {
+    "category": "summarization",
+    "scenario_label": "daily_email_digest"
+  },
+  "demo-t01-v07": {
+    "category": "summarization",
+    "scenario_label": "daily_email_digest"
+  },
+  "demo-t01-v08": {
+    "category": "summarization",
+    "scenario_label": "daily_email_digest"
+  },
+  "demo-t01-v09": {
+    "category": "summarization",
+    "scenario_label": "daily_email_digest"
+  },
+  "demo-t01-v10": {
+    "category": "summarization",
+    "scenario_label": "daily_email_digest"
+  },
+  "demo-t01-v11": {
+    "category": "summarization",
+    "scenario_label": "daily_email_digest"
+  },
+  "demo-t01-v12": {
+    "category": "summarization",
+    "scenario_label": "daily_email_digest"
+  },
+  "demo-t01-v13": {
+    "category": "summarization",
+    "scenario_label": "daily_email_digest"
+  },
+  "demo-t01-v14": {
+    "category": "summarization",
+    "scenario_label": "daily_email_digest"
+  },
+  "demo-t01-v15": {
+    "category": "summarization",
+    "scenario_label": "daily_email_digest"
+  },
+  "demo-t01-v16": {
+    "category": "summarization",
+    "scenario_label": "daily_email_digest"
+  },
+  "demo-t01-v17": {
+    "category": "summarization",
+    "scenario_label": "daily_email_digest"
+  },
+  "demo-t01-v18": {
+    "category": "summarization",
+    "scenario_label": "daily_email_digest"
+  },
+  "demo-t01-v19": {
+    "category": "summarization",
+    "scenario_label": "daily_email_digest"
+  },
+  "demo-t01-v20": {
+    "category": "summarization",
+    "scenario_label": "daily_email_digest"
+  },
+  "demo-t02-v01": {
+    "category": "information_search",
+    "scenario_label": "client_company_360"
+  },
+  "demo-t02-v02": {
+    "category": "information_search",
+    "scenario_label": "client_company_360"
+  },
+  "demo-t02-v03": {
+    "category": "information_search",
+    "scenario_label": "client_company_360"
+  },
+  "demo-t02-v04": {
+    "category": "information_search",
+    "scenario_label": "client_company_360"
+  },
+  "demo-t02-v05": {
+    "category": "information_search",
+    "scenario_label": "client_company_360"
+  },
+  "demo-t02-v06": {
+    "category": "information_search",
+    "scenario_label": "client_company_360"
+  },
+  "demo-t02-v07": {
+    "category": "information_search",
+    "scenario_label": "client_company_360"
+  },
+  "demo-t02-v08": {
+    "category": "information_search",
+    "scenario_label": "client_company_360"
+  },
+  "demo-t02-v09": {
+    "category": "information_search",
+    "scenario_label": "client_company_360"
+  },
+  "demo-t02-v10": {
+    "category": "information_search",
+    "scenario_label": "client_company_360"
+  },
+  "demo-t02-v11": {
+    "category": "information_search",
+    "scenario_label": "client_company_360"
+  },
+  "demo-t02-v12": {
+    "category": "information_search",
+    "scenario_label": "client_company_360"
+  },
+  "demo-t02-v13": {
+    "category": "information_search",
+    "scenario_label": "client_company_360"
+  },
+  "demo-t02-v14": {
+    "category": "information_search",
+    "scenario_label": "client_company_360"
+  },
+  "demo-t02-v15": {
+    "category": "information_search",
+    "scenario_label": "client_company_360"
+  },
+  "demo-t02-v16": {
+    "category": "information_search",
+    "scenario_label": "client_company_360"
+  },
+  "demo-t02-v17": {
+    "category": "information_search",
+    "scenario_label": "client_company_360"
+  },
+  "demo-t02-v18": {
+    "category": "information_search",
+    "scenario_label": "client_company_360"
+  },
+  "demo-t02-v19": {
+    "category": "information_search",
+    "scenario_label": "client_company_360"
+  },
+  "demo-t02-v20": {
+    "category": "information_search",
+    "scenario_label": "client_company_360"
+  },
+  "demo-t03-v01": {
+    "category": "monitoring_automation",
+    "scenario_label": "monitor_unanswered_price_requests"
+  },
+  "demo-t03-v02": {
+    "category": "monitoring_automation",
+    "scenario_label": "monitor_unanswered_price_requests"
+  },
+  "demo-t03-v03": {
+    "category": "monitoring_automation",
+    "scenario_label": "monitor_unanswered_price_requests"
+  },
+  "demo-t03-v04": {
+    "category": "monitoring_automation",
+    "scenario_label": "monitor_unanswered_price_requests"
+  },
+  "demo-t03-v05": {
+    "category": "monitoring_automation",
+    "scenario_label": "monitor_unanswered_price_requests"
+  },
+  "demo-t03-v06": {
+    "category": "monitoring_automation",
+    "scenario_label": "monitor_unanswered_price_requests"
+  },
+  "demo-t03-v07": {
+    "category": "monitoring_automation",
+    "scenario_label": "monitor_unanswered_price_requests"
+  },
+  "demo-t03-v08": {
+    "category": "monitoring_automation",
+    "scenario_label": "monitor_unanswered_price_requests"
+  },
+  "demo-t03-v09": {
+    "category": "monitoring_automation",
+    "scenario_label": "monitor_unanswered_price_requests"
+  },
+  "demo-t03-v10": {
+    "category": "monitoring_automation",
+    "scenario_label": "monitor_unanswered_price_requests"
+  },
+  "demo-t03-v11": {
+    "category": "monitoring_automation",
+    "scenario_label": "monitor_unanswered_price_requests"
+  },
+  "demo-t03-v12": {
+    "category": "monitoring_automation",
+    "scenario_label": "monitor_unanswered_price_requests"
+  },
+  "demo-t03-v13": {
+    "category": "monitoring_automation",
+    "scenario_label": "monitor_unanswered_price_requests"
+  },
+  "demo-t03-v14": {
+    "category": "monitoring_automation",
+    "scenario_label": "monitor_unanswered_price_requests"
+  },
+  "demo-t03-v15": {
+    "category": "monitoring_automation",
+    "scenario_label": "monitor_unanswered_price_requests"
+  },
+  "demo-t03-v16": {
+    "category": "monitoring_automation",
+    "scenario_label": "monitor_unanswered_price_requests"
+  },
+  "demo-t03-v17": {
+    "category": "monitoring_automation",
+    "scenario_label": "monitor_unanswered_price_requests"
+  },
+  "demo-t03-v18": {
+    "category": "monitoring_automation",
+    "scenario_label": "monitor_unanswered_price_requests"
+  },
+  "demo-t03-v19": {
+    "category": "monitoring_automation",
+    "scenario_label": "monitor_unanswered_price_requests"
+  },
+  "demo-t03-v20": {
+    "category": "monitoring_automation",
+    "scenario_label": "monitor_unanswered_price_requests"
+  },
+  "demo-t04-v01": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t04-v02": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t04-v03": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t04-v04": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t04-v05": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t04-v06": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t04-v07": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t04-v08": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t04-v09": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t04-v10": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t04-v11": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t04-v12": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t04-v13": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t04-v14": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t04-v15": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t04-v16": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t04-v17": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t04-v18": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t04-v19": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t04-v20": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t05-v01": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "demo-t05-v02": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "demo-t05-v03": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "demo-t05-v04": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "demo-t05-v05": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "demo-t05-v06": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "demo-t05-v07": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "demo-t05-v08": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "demo-t05-v09": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "demo-t05-v10": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "demo-t05-v11": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "demo-t05-v12": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "demo-t05-v13": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "demo-t05-v14": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "demo-t05-v15": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "demo-t05-v16": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "demo-t05-v17": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "demo-t05-v18": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "demo-t05-v19": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "demo-t05-v20": {
+    "category": "information_search",
+    "scenario_label": "project_team_vendor_owner"
+  },
+  "demo-t06-v01": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_research"
+  },
+  "demo-t06-v02": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_research"
+  },
+  "demo-t06-v03": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_research"
+  },
+  "demo-t06-v04": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_research"
+  },
+  "demo-t06-v05": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_research"
+  },
+  "demo-t06-v06": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_research"
+  },
+  "demo-t06-v07": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_research"
+  },
+  "demo-t06-v08": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_research"
+  },
+  "demo-t06-v09": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_research"
+  },
+  "demo-t06-v10": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_research"
+  },
+  "demo-t06-v11": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_research"
+  },
+  "demo-t06-v12": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_research"
+  },
+  "demo-t06-v13": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_research"
+  },
+  "demo-t06-v14": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_research"
+  },
+  "demo-t06-v15": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_research"
+  },
+  "demo-t06-v16": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_research"
+  },
+  "demo-t06-v17": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_research"
+  },
+  "demo-t06-v18": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_research"
+  },
+  "demo-t06-v19": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_research"
+  },
+  "demo-t06-v20": {
+    "category": "information_search",
+    "scenario_label": "company_open_source_research"
+  },
+  "demo-t07-v01": {
+    "category": "reporting_export",
+    "scenario_label": "crm_client_excel_report"
+  },
+  "demo-t07-v02": {
+    "category": "reporting_export",
+    "scenario_label": "crm_client_excel_report"
+  },
+  "demo-t07-v03": {
+    "category": "reporting_export",
+    "scenario_label": "crm_client_excel_report"
+  },
+  "demo-t07-v04": {
+    "category": "reporting_export",
+    "scenario_label": "crm_client_excel_report"
+  },
+  "demo-t07-v05": {
+    "category": "reporting_export",
+    "scenario_label": "crm_client_excel_report"
+  },
+  "demo-t07-v06": {
+    "category": "reporting_export",
+    "scenario_label": "crm_client_excel_report"
+  },
+  "demo-t07-v07": {
+    "category": "reporting_export",
+    "scenario_label": "crm_client_excel_report"
+  },
+  "demo-t07-v08": {
+    "category": "reporting_export",
+    "scenario_label": "crm_client_excel_report"
+  },
+  "demo-t07-v09": {
+    "category": "reporting_export",
+    "scenario_label": "crm_client_excel_report"
+  },
+  "demo-t07-v10": {
+    "category": "reporting_export",
+    "scenario_label": "crm_client_excel_report"
+  },
+  "demo-t07-v11": {
+    "category": "reporting_export",
+    "scenario_label": "crm_client_excel_report"
+  },
+  "demo-t07-v12": {
+    "category": "reporting_export",
+    "scenario_label": "crm_client_excel_report"
+  },
+  "demo-t07-v13": {
+    "category": "reporting_export",
+    "scenario_label": "crm_client_excel_report"
+  },
+  "demo-t07-v14": {
+    "category": "reporting_export",
+    "scenario_label": "crm_client_excel_report"
+  },
+  "demo-t07-v15": {
+    "category": "reporting_export",
+    "scenario_label": "crm_client_excel_report"
+  },
+  "demo-t07-v16": {
+    "category": "reporting_export",
+    "scenario_label": "crm_client_excel_report"
+  },
+  "demo-t07-v17": {
+    "category": "reporting_export",
+    "scenario_label": "crm_client_excel_report"
+  },
+  "demo-t07-v18": {
+    "category": "reporting_export",
+    "scenario_label": "crm_client_excel_report"
+  },
+  "demo-t07-v19": {
+    "category": "reporting_export",
+    "scenario_label": "crm_client_excel_report"
+  },
+  "demo-t07-v20": {
+    "category": "reporting_export",
+    "scenario_label": "crm_client_excel_report"
+  },
+  "demo-t08-v01": {
+    "category": "text_generation",
+    "scenario_label": "manager_feedback_coolfeedback"
+  },
+  "demo-t08-v02": {
+    "category": "text_generation",
+    "scenario_label": "manager_feedback_coolfeedback"
+  },
+  "demo-t08-v03": {
+    "category": "text_generation",
+    "scenario_label": "manager_feedback_coolfeedback"
+  },
+  "demo-t08-v04": {
+    "category": "text_generation",
+    "scenario_label": "manager_feedback_coolfeedback"
+  },
+  "demo-t08-v05": {
+    "category": "text_generation",
+    "scenario_label": "manager_feedback_coolfeedback"
+  },
+  "demo-t08-v06": {
+    "category": "text_generation",
+    "scenario_label": "manager_feedback_coolfeedback"
+  },
+  "demo-t08-v07": {
+    "category": "text_generation",
+    "scenario_label": "manager_feedback_coolfeedback"
+  },
+  "demo-t08-v08": {
+    "category": "text_generation",
+    "scenario_label": "manager_feedback_coolfeedback"
+  },
+  "demo-t08-v09": {
+    "category": "text_generation",
+    "scenario_label": "manager_feedback_coolfeedback"
+  },
+  "demo-t08-v10": {
+    "category": "text_generation",
+    "scenario_label": "manager_feedback_coolfeedback"
+  },
+  "demo-t08-v11": {
+    "category": "text_generation",
+    "scenario_label": "manager_feedback_coolfeedback"
+  },
+  "demo-t08-v12": {
+    "category": "text_generation",
+    "scenario_label": "manager_feedback_coolfeedback"
+  },
+  "demo-t08-v13": {
+    "category": "text_generation",
+    "scenario_label": "manager_feedback_coolfeedback"
+  },
+  "demo-t08-v14": {
+    "category": "text_generation",
+    "scenario_label": "manager_feedback_coolfeedback"
+  },
+  "demo-t08-v15": {
+    "category": "text_generation",
+    "scenario_label": "manager_feedback_coolfeedback"
+  },
+  "demo-t08-v16": {
+    "category": "text_generation",
+    "scenario_label": "manager_feedback_coolfeedback"
+  },
+  "demo-t08-v17": {
+    "category": "text_generation",
+    "scenario_label": "manager_feedback_coolfeedback"
+  },
+  "demo-t08-v18": {
+    "category": "text_generation",
+    "scenario_label": "manager_feedback_coolfeedback"
+  },
+  "demo-t08-v19": {
+    "category": "text_generation",
+    "scenario_label": "manager_feedback_coolfeedback"
+  },
+  "demo-t08-v20": {
+    "category": "text_generation",
+    "scenario_label": "manager_feedback_coolfeedback"
+  },
+  "demo-t09-v01": {
+    "category": "text_generation",
+    "scenario_label": "pre_monitoring_employee_note"
+  },
+  "demo-t09-v02": {
+    "category": "text_generation",
+    "scenario_label": "pre_monitoring_employee_note"
+  },
+  "demo-t09-v03": {
+    "category": "text_generation",
+    "scenario_label": "pre_monitoring_employee_note"
+  },
+  "demo-t09-v04": {
+    "category": "text_generation",
+    "scenario_label": "pre_monitoring_employee_note"
+  },
+  "demo-t09-v05": {
+    "category": "text_generation",
+    "scenario_label": "pre_monitoring_employee_note"
+  },
+  "demo-t09-v06": {
+    "category": "text_generation",
+    "scenario_label": "pre_monitoring_employee_note"
+  },
+  "demo-t09-v07": {
+    "category": "text_generation",
+    "scenario_label": "pre_monitoring_employee_note"
+  },
+  "demo-t09-v08": {
+    "category": "text_generation",
+    "scenario_label": "pre_monitoring_employee_note"
+  },
+  "demo-t09-v09": {
+    "category": "text_generation",
+    "scenario_label": "pre_monitoring_employee_note"
+  },
+  "demo-t09-v10": {
+    "category": "text_generation",
+    "scenario_label": "pre_monitoring_employee_note"
+  },
+  "demo-t09-v11": {
+    "category": "text_generation",
+    "scenario_label": "pre_monitoring_employee_note"
+  },
+  "demo-t09-v12": {
+    "category": "text_generation",
+    "scenario_label": "pre_monitoring_employee_note"
+  },
+  "demo-t09-v13": {
+    "category": "text_generation",
+    "scenario_label": "pre_monitoring_employee_note"
+  },
+  "demo-t09-v14": {
+    "category": "text_generation",
+    "scenario_label": "pre_monitoring_employee_note"
+  },
+  "demo-t09-v15": {
+    "category": "text_generation",
+    "scenario_label": "pre_monitoring_employee_note"
+  },
+  "demo-t09-v16": {
+    "category": "text_generation",
+    "scenario_label": "pre_monitoring_employee_note"
+  },
+  "demo-t09-v17": {
+    "category": "text_generation",
+    "scenario_label": "pre_monitoring_employee_note"
+  },
+  "demo-t09-v18": {
+    "category": "text_generation",
+    "scenario_label": "pre_monitoring_employee_note"
+  },
+  "demo-t09-v19": {
+    "category": "text_generation",
+    "scenario_label": "pre_monitoring_employee_note"
+  },
+  "demo-t09-v20": {
+    "category": "text_generation",
+    "scenario_label": "pre_monitoring_employee_note"
+  },
+  "demo-t10-v01": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_editing"
+  },
+  "demo-t10-v02": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_editing"
+  },
+  "demo-t10-v03": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_editing"
+  },
+  "demo-t10-v04": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_editing"
+  },
+  "demo-t10-v05": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_editing"
+  },
+  "demo-t10-v06": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_editing"
+  },
+  "demo-t10-v07": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_editing"
+  },
+  "demo-t10-v08": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_editing"
+  },
+  "demo-t10-v09": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_editing"
+  },
+  "demo-t10-v10": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_editing"
+  },
+  "demo-t10-v11": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_editing"
+  },
+  "demo-t10-v12": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_editing"
+  },
+  "demo-t10-v13": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_editing"
+  },
+  "demo-t10-v14": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_editing"
+  },
+  "demo-t10-v15": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_editing"
+  },
+  "demo-t10-v16": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_editing"
+  },
+  "demo-t10-v17": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_editing"
+  },
+  "demo-t10-v18": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_editing"
+  },
+  "demo-t10-v19": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_editing"
+  },
+  "demo-t10-v20": {
+    "category": "task_management",
+    "scenario_label": "isup_ticket_editing"
+  },
+  "demo-t11-v01": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t11-v02": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t11-v03": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t11-v04": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t11-v05": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t11-v06": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t11-v07": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t11-v08": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t11-v09": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t11-v10": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t11-v11": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t11-v12": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t11-v13": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t11-v14": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t11-v15": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t11-v16": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t11-v17": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t11-v18": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t11-v19": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t11-v20": {
+    "category": "monitoring_automation",
+    "scenario_label": "weekly_won_tenders_digest"
+  },
+  "demo-t12-v01": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "demo-t12-v02": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "demo-t12-v03": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "demo-t12-v04": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "demo-t12-v05": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "demo-t12-v06": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "demo-t12-v07": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "demo-t12-v08": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "demo-t12-v09": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "demo-t12-v10": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "demo-t12-v11": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "demo-t12-v12": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "demo-t12-v13": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "demo-t12-v14": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "demo-t12-v15": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "demo-t12-v16": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "demo-t12-v17": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "demo-t12-v18": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "demo-t12-v19": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "demo-t12-v20": {
+    "category": "task_management",
+    "scenario_label": "jira_assigned_tasks"
+  },
+  "demo-t13-v01": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "demo-t13-v02": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "demo-t13-v03": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "demo-t13-v04": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "demo-t13-v05": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "demo-t13-v06": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "demo-t13-v07": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "demo-t13-v08": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "demo-t13-v09": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "demo-t13-v10": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "demo-t13-v11": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "demo-t13-v12": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "demo-t13-v13": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "demo-t13-v14": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "demo-t13-v15": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "demo-t13-v16": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "demo-t13-v17": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "demo-t13-v18": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "demo-t13-v19": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "demo-t13-v20": {
+    "category": "task_management",
+    "scenario_label": "jira_priority_tasks"
+  },
+  "demo-t14-v01": {
+    "category": "text_generation",
+    "scenario_label": "employee_observation_note"
+  },
+  "demo-t14-v02": {
+    "category": "text_generation",
+    "scenario_label": "employee_observation_note"
+  },
+  "demo-t14-v03": {
+    "category": "text_generation",
+    "scenario_label": "employee_observation_note"
+  },
+  "demo-t14-v04": {
+    "category": "text_generation",
+    "scenario_label": "employee_observation_note"
+  },
+  "demo-t14-v05": {
+    "category": "text_generation",
+    "scenario_label": "employee_observation_note"
+  },
+  "demo-t14-v06": {
+    "category": "text_generation",
+    "scenario_label": "employee_observation_note"
+  },
+  "demo-t14-v07": {
+    "category": "text_generation",
+    "scenario_label": "employee_observation_note"
+  },
+  "demo-t14-v08": {
+    "category": "text_generation",
+    "scenario_label": "employee_observation_note"
+  },
+  "demo-t14-v09": {
+    "category": "text_generation",
+    "scenario_label": "employee_observation_note"
+  },
+  "demo-t14-v10": {
+    "category": "text_generation",
+    "scenario_label": "employee_observation_note"
+  },
+  "demo-t14-v11": {
+    "category": "text_generation",
+    "scenario_label": "employee_observation_note"
+  },
+  "demo-t14-v12": {
+    "category": "text_generation",
+    "scenario_label": "employee_observation_note"
+  },
+  "demo-t14-v13": {
+    "category": "text_generation",
+    "scenario_label": "employee_observation_note"
+  },
+  "demo-t14-v14": {
+    "category": "text_generation",
+    "scenario_label": "employee_observation_note"
+  },
+  "demo-t14-v15": {
+    "category": "text_generation",
+    "scenario_label": "employee_observation_note"
+  },
+  "demo-t14-v16": {
+    "category": "text_generation",
+    "scenario_label": "employee_observation_note"
+  },
+  "demo-t14-v17": {
+    "category": "text_generation",
+    "scenario_label": "employee_observation_note"
+  },
+  "demo-t14-v18": {
+    "category": "text_generation",
+    "scenario_label": "employee_observation_note"
+  },
+  "demo-t14-v19": {
+    "category": "text_generation",
+    "scenario_label": "employee_observation_note"
+  },
+  "demo-t14-v20": {
+    "category": "text_generation",
+    "scenario_label": "employee_observation_note"
+  },
+  "demo-t15-v01": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t15-v02": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t15-v03": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t15-v04": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t15-v05": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t15-v06": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t15-v07": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t15-v08": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t15-v09": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t15-v10": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t15-v11": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t15-v12": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t15-v13": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t15-v14": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t15-v15": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t15-v16": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t15-v17": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t15-v18": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t15-v19": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t15-v20": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t16-v01": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t16-v02": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t16-v03": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t16-v04": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t16-v05": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t16-v06": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t16-v07": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t16-v08": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t16-v09": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t16-v10": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t16-v11": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t16-v12": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t16-v13": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t16-v14": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t16-v15": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t16-v16": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t16-v17": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t16-v18": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t16-v19": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t16-v20": {
+    "category": "reporting_export",
+    "scenario_label": "excel_data_export"
+  },
+  "demo-t17-v01": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "demo-t17-v02": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "demo-t17-v03": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "demo-t17-v04": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "demo-t17-v05": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "demo-t17-v06": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "demo-t17-v07": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "demo-t17-v08": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "demo-t17-v09": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "demo-t17-v10": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "demo-t17-v11": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "demo-t17-v12": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "demo-t17-v13": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "demo-t17-v14": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "demo-t17-v15": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "demo-t17-v16": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "demo-t17-v17": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "demo-t17-v18": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "demo-t17-v19": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "demo-t17-v20": {
+    "category": "information_search",
+    "scenario_label": "supplier_blog_search"
+  },
+  "demo-t18-v01": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "demo-t18-v02": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "demo-t18-v03": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "demo-t18-v04": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "demo-t18-v05": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "demo-t18-v06": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "demo-t18-v07": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "demo-t18-v08": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "demo-t18-v09": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "demo-t18-v10": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "demo-t18-v11": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "demo-t18-v12": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "demo-t18-v13": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "demo-t18-v14": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "demo-t18-v15": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "demo-t18-v16": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "demo-t18-v17": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "demo-t18-v18": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "demo-t18-v19": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "demo-t18-v20": {
+    "category": "information_search",
+    "scenario_label": "confluence_process_search"
+  },
+  "demo-t19-v01": {
+    "category": "calendar_planning",
+    "scenario_label": "executive_calendar_scheduling"
+  },
+  "demo-t19-v02": {
+    "category": "calendar_planning",
+    "scenario_label": "executive_calendar_scheduling"
+  },
+  "demo-t19-v03": {
+    "category": "calendar_planning",
+    "scenario_label": "executive_calendar_scheduling"
+  },
+  "demo-t19-v04": {
+    "category": "calendar_planning",
+    "scenario_label": "executive_calendar_scheduling"
+  },
+  "demo-t19-v05": {
+    "category": "calendar_planning",
+    "scenario_label": "executive_calendar_scheduling"
+  },
+  "demo-t19-v06": {
+    "category": "calendar_planning",
+    "scenario_label": "executive_calendar_scheduling"
+  },
+  "demo-t19-v07": {
+    "category": "calendar_planning",
+    "scenario_label": "executive_calendar_scheduling"
+  },
+  "demo-t19-v08": {
+    "category": "calendar_planning",
+    "scenario_label": "executive_calendar_scheduling"
+  },
+  "demo-t19-v09": {
+    "category": "calendar_planning",
+    "scenario_label": "executive_calendar_scheduling"
+  },
+  "demo-t19-v10": {
+    "category": "calendar_planning",
+    "scenario_label": "executive_calendar_scheduling"
+  },
+  "demo-t19-v11": {
+    "category": "calendar_planning",
+    "scenario_label": "executive_calendar_scheduling"
+  },
+  "demo-t19-v12": {
+    "category": "calendar_planning",
+    "scenario_label": "executive_calendar_scheduling"
+  },
+  "demo-t19-v13": {
+    "category": "calendar_planning",
+    "scenario_label": "executive_calendar_scheduling"
+  },
+  "demo-t19-v14": {
+    "category": "calendar_planning",
+    "scenario_label": "executive_calendar_scheduling"
+  },
+  "demo-t19-v15": {
+    "category": "calendar_planning",
+    "scenario_label": "executive_calendar_scheduling"
+  },
+  "demo-t19-v16": {
+    "category": "calendar_planning",
+    "scenario_label": "executive_calendar_scheduling"
+  },
+  "demo-t19-v17": {
+    "category": "calendar_planning",
+    "scenario_label": "executive_calendar_scheduling"
+  },
+  "demo-t19-v18": {
+    "category": "calendar_planning",
+    "scenario_label": "executive_calendar_scheduling"
+  },
+  "demo-t19-v19": {
+    "category": "calendar_planning",
+    "scenario_label": "executive_calendar_scheduling"
+  },
+  "demo-t19-v20": {
+    "category": "calendar_planning",
+    "scenario_label": "executive_calendar_scheduling"
+  },
+  "demo-t20-v01": {
+    "category": "task_management",
+    "scenario_label": "task_completion_confirmation"
+  },
+  "demo-t20-v02": {
+    "category": "task_management",
+    "scenario_label": "task_completion_confirmation"
+  },
+  "demo-t20-v03": {
+    "category": "task_management",
+    "scenario_label": "task_completion_confirmation"
+  },
+  "demo-t20-v04": {
+    "category": "task_management",
+    "scenario_label": "task_completion_confirmation"
+  },
+  "demo-t20-v05": {
+    "category": "task_management",
+    "scenario_label": "task_completion_confirmation"
+  },
+  "demo-t20-v06": {
+    "category": "task_management",
+    "scenario_label": "task_completion_confirmation"
+  },
+  "demo-t20-v07": {
+    "category": "task_management",
+    "scenario_label": "task_completion_confirmation"
+  },
+  "demo-t20-v08": {
+    "category": "task_management",
+    "scenario_label": "task_completion_confirmation"
+  },
+  "demo-t20-v09": {
+    "category": "task_management",
+    "scenario_label": "task_completion_confirmation"
+  },
+  "demo-t20-v10": {
+    "category": "task_management",
+    "scenario_label": "task_completion_confirmation"
+  },
+  "demo-t20-v11": {
+    "category": "task_management",
+    "scenario_label": "task_completion_confirmation"
+  },
+  "demo-t20-v12": {
+    "category": "task_management",
+    "scenario_label": "task_completion_confirmation"
+  },
+  "demo-t20-v13": {
+    "category": "task_management",
+    "scenario_label": "task_completion_confirmation"
+  },
+  "demo-t20-v14": {
+    "category": "task_management",
+    "scenario_label": "task_completion_confirmation"
+  },
+  "demo-t20-v15": {
+    "category": "task_management",
+    "scenario_label": "task_completion_confirmation"
+  },
+  "demo-t20-v16": {
+    "category": "task_management",
+    "scenario_label": "task_completion_confirmation"
+  },
+  "demo-t20-v17": {
+    "category": "task_management",
+    "scenario_label": "task_completion_confirmation"
+  },
+  "demo-t20-v18": {
+    "category": "task_management",
+    "scenario_label": "task_completion_confirmation"
+  },
+  "demo-t20-v19": {
+    "category": "task_management",
+    "scenario_label": "task_completion_confirmation"
+  },
+  "demo-t20-v20": {
+    "category": "task_management",
+    "scenario_label": "task_completion_confirmation"
+  },
+  "demo-t21-v01": {
+    "category": "task_management",
+    "scenario_label": "task_history_tracking"
+  },
+  "demo-t21-v02": {
+    "category": "task_management",
+    "scenario_label": "task_history_tracking"
+  },
+  "demo-t21-v03": {
+    "category": "task_management",
+    "scenario_label": "task_history_tracking"
+  },
+  "demo-t21-v04": {
+    "category": "task_management",
+    "scenario_label": "task_history_tracking"
+  },
+  "demo-t21-v05": {
+    "category": "task_management",
+    "scenario_label": "task_history_tracking"
+  },
+  "demo-t21-v06": {
+    "category": "task_management",
+    "scenario_label": "task_history_tracking"
+  },
+  "demo-t21-v07": {
+    "category": "task_management",
+    "scenario_label": "task_history_tracking"
+  },
+  "demo-t21-v08": {
+    "category": "task_management",
+    "scenario_label": "task_history_tracking"
+  },
+  "demo-t21-v09": {
+    "category": "task_management",
+    "scenario_label": "task_history_tracking"
+  },
+  "demo-t21-v10": {
+    "category": "task_management",
+    "scenario_label": "task_history_tracking"
+  },
+  "demo-t21-v11": {
+    "category": "task_management",
+    "scenario_label": "task_history_tracking"
+  },
+  "demo-t21-v12": {
+    "category": "task_management",
+    "scenario_label": "task_history_tracking"
+  },
+  "demo-t21-v13": {
+    "category": "task_management",
+    "scenario_label": "task_history_tracking"
+  },
+  "demo-t21-v14": {
+    "category": "task_management",
+    "scenario_label": "task_history_tracking"
+  },
+  "demo-t21-v15": {
+    "category": "task_management",
+    "scenario_label": "task_history_tracking"
+  },
+  "demo-t21-v16": {
+    "category": "task_management",
+    "scenario_label": "task_history_tracking"
+  },
+  "demo-t21-v17": {
+    "category": "task_management",
+    "scenario_label": "task_history_tracking"
+  },
+  "demo-t21-v18": {
+    "category": "task_management",
+    "scenario_label": "task_history_tracking"
+  },
+  "demo-t21-v19": {
+    "category": "task_management",
+    "scenario_label": "task_history_tracking"
+  },
+  "demo-t21-v20": {
+    "category": "task_management",
+    "scenario_label": "task_history_tracking"
+  },
+  "demo-t22-v01": {
+    "category": "calendar_planning",
+    "scenario_label": "meeting_room_search"
+  },
+  "demo-t22-v02": {
+    "category": "calendar_planning",
+    "scenario_label": "meeting_room_search"
+  },
+  "demo-t22-v03": {
+    "category": "calendar_planning",
+    "scenario_label": "meeting_room_search"
+  },
+  "demo-t22-v04": {
+    "category": "calendar_planning",
+    "scenario_label": "meeting_room_search"
+  },
+  "demo-t22-v05": {
+    "category": "calendar_planning",
+    "scenario_label": "meeting_room_search"
+  },
+  "demo-t22-v06": {
+    "category": "calendar_planning",
+    "scenario_label": "meeting_room_search"
+  },
+  "demo-t22-v07": {
+    "category": "calendar_planning",
+    "scenario_label": "meeting_room_search"
+  },
+  "demo-t22-v08": {
+    "category": "calendar_planning",
+    "scenario_label": "meeting_room_search"
+  },
+  "demo-t22-v09": {
+    "category": "calendar_planning",
+    "scenario_label": "meeting_room_search"
+  },
+  "demo-t22-v10": {
+    "category": "calendar_planning",
+    "scenario_label": "meeting_room_search"
+  },
+  "demo-t22-v11": {
+    "category": "calendar_planning",
+    "scenario_label": "meeting_room_search"
+  },
+  "demo-t22-v12": {
+    "category": "calendar_planning",
+    "scenario_label": "meeting_room_search"
+  },
+  "demo-t22-v13": {
+    "category": "calendar_planning",
+    "scenario_label": "meeting_room_search"
+  },
+  "demo-t22-v14": {
+    "category": "calendar_planning",
+    "scenario_label": "meeting_room_search"
+  },
+  "demo-t22-v15": {
+    "category": "calendar_planning",
+    "scenario_label": "meeting_room_search"
+  },
+  "demo-t22-v16": {
+    "category": "calendar_planning",
+    "scenario_label": "meeting_room_search"
+  },
+  "demo-t22-v17": {
+    "category": "calendar_planning",
+    "scenario_label": "meeting_room_search"
+  },
+  "demo-t22-v18": {
+    "category": "calendar_planning",
+    "scenario_label": "meeting_room_search"
+  },
+  "demo-t22-v19": {
+    "category": "calendar_planning",
+    "scenario_label": "meeting_room_search"
+  },
+  "demo-t22-v20": {
+    "category": "calendar_planning",
+    "scenario_label": "meeting_room_search"
+  },
+  "demo-t23-v01": {
+    "category": "text_generation",
+    "scenario_label": "client_correspondence_reply"
+  },
+  "demo-t23-v02": {
+    "category": "text_generation",
+    "scenario_label": "client_correspondence_reply"
+  },
+  "demo-t23-v03": {
+    "category": "text_generation",
+    "scenario_label": "client_correspondence_reply"
+  },
+  "demo-t23-v04": {
+    "category": "text_generation",
+    "scenario_label": "client_correspondence_reply"
+  },
+  "demo-t23-v05": {
+    "category": "text_generation",
+    "scenario_label": "client_correspondence_reply"
+  },
+  "demo-t23-v06": {
+    "category": "text_generation",
+    "scenario_label": "client_correspondence_reply"
+  },
+  "demo-t23-v07": {
+    "category": "text_generation",
+    "scenario_label": "client_correspondence_reply"
+  },
+  "demo-t23-v08": {
+    "category": "text_generation",
+    "scenario_label": "client_correspondence_reply"
+  },
+  "demo-t23-v09": {
+    "category": "text_generation",
+    "scenario_label": "client_correspondence_reply"
+  },
+  "demo-t23-v10": {
+    "category": "text_generation",
+    "scenario_label": "client_correspondence_reply"
+  },
+  "demo-t23-v11": {
+    "category": "text_generation",
+    "scenario_label": "client_correspondence_reply"
+  },
+  "demo-t23-v12": {
+    "category": "text_generation",
+    "scenario_label": "client_correspondence_reply"
+  },
+  "demo-t23-v13": {
+    "category": "text_generation",
+    "scenario_label": "client_correspondence_reply"
+  },
+  "demo-t23-v14": {
+    "category": "text_generation",
+    "scenario_label": "client_correspondence_reply"
+  },
+  "demo-t23-v15": {
+    "category": "text_generation",
+    "scenario_label": "client_correspondence_reply"
+  },
+  "demo-t23-v16": {
+    "category": "text_generation",
+    "scenario_label": "client_correspondence_reply"
+  },
+  "demo-t23-v17": {
+    "category": "text_generation",
+    "scenario_label": "client_correspondence_reply"
+  },
+  "demo-t23-v18": {
+    "category": "text_generation",
+    "scenario_label": "client_correspondence_reply"
+  },
+  "demo-t23-v19": {
+    "category": "text_generation",
+    "scenario_label": "client_correspondence_reply"
+  },
+  "demo-t23-v20": {
+    "category": "text_generation",
+    "scenario_label": "client_correspondence_reply"
+  },
+  "demo-t24-v01": {
+    "category": "summarization",
+    "scenario_label": "discussion_outcomes_note"
+  },
+  "demo-t24-v02": {
+    "category": "summarization",
+    "scenario_label": "discussion_outcomes_note"
+  },
+  "demo-t24-v03": {
+    "category": "summarization",
+    "scenario_label": "discussion_outcomes_note"
+  },
+  "demo-t24-v04": {
+    "category": "summarization",
+    "scenario_label": "discussion_outcomes_note"
+  },
+  "demo-t24-v05": {
+    "category": "summarization",
+    "scenario_label": "discussion_outcomes_note"
+  },
+  "demo-t24-v06": {
+    "category": "summarization",
+    "scenario_label": "discussion_outcomes_note"
+  },
+  "demo-t24-v07": {
+    "category": "summarization",
+    "scenario_label": "discussion_outcomes_note"
+  },
+  "demo-t24-v08": {
+    "category": "summarization",
+    "scenario_label": "discussion_outcomes_note"
+  },
+  "demo-t24-v09": {
+    "category": "summarization",
+    "scenario_label": "discussion_outcomes_note"
+  },
+  "demo-t24-v10": {
+    "category": "summarization",
+    "scenario_label": "discussion_outcomes_note"
+  },
+  "demo-t24-v11": {
+    "category": "summarization",
+    "scenario_label": "discussion_outcomes_note"
+  },
+  "demo-t24-v12": {
+    "category": "summarization",
+    "scenario_label": "discussion_outcomes_note"
+  },
+  "demo-t24-v13": {
+    "category": "summarization",
+    "scenario_label": "discussion_outcomes_note"
+  },
+  "demo-t24-v14": {
+    "category": "summarization",
+    "scenario_label": "discussion_outcomes_note"
+  },
+  "demo-t24-v15": {
+    "category": "summarization",
+    "scenario_label": "discussion_outcomes_note"
+  },
+  "demo-t24-v16": {
+    "category": "summarization",
+    "scenario_label": "discussion_outcomes_note"
+  },
+  "demo-t24-v17": {
+    "category": "summarization",
+    "scenario_label": "discussion_outcomes_note"
+  },
+  "demo-t24-v18": {
+    "category": "summarization",
+    "scenario_label": "discussion_outcomes_note"
+  },
+  "demo-t24-v19": {
+    "category": "summarization",
+    "scenario_label": "discussion_outcomes_note"
+  },
+  "demo-t24-v20": {
+    "category": "summarization",
+    "scenario_label": "discussion_outcomes_note"
+  },
+  "demo-t25-v01": {
+    "category": "information_search",
+    "scenario_label": "client_contacts_search"
+  },
+  "demo-t25-v02": {
+    "category": "information_search",
+    "scenario_label": "client_contacts_search"
+  },
+  "demo-t25-v03": {
+    "category": "information_search",
+    "scenario_label": "client_contacts_search"
+  },
+  "demo-t25-v04": {
+    "category": "information_search",
+    "scenario_label": "client_contacts_search"
+  },
+  "demo-t25-v05": {
+    "category": "information_search",
+    "scenario_label": "client_contacts_search"
+  },
+  "demo-t25-v06": {
+    "category": "information_search",
+    "scenario_label": "client_contacts_search"
+  },
+  "demo-t25-v07": {
+    "category": "information_search",
+    "scenario_label": "client_contacts_search"
+  },
+  "demo-t25-v08": {
+    "category": "information_search",
+    "scenario_label": "client_contacts_search"
+  },
+  "demo-t25-v09": {
+    "category": "information_search",
+    "scenario_label": "client_contacts_search"
+  },
+  "demo-t25-v10": {
+    "category": "information_search",
+    "scenario_label": "client_contacts_search"
+  },
+  "demo-t25-v11": {
+    "category": "information_search",
+    "scenario_label": "client_contacts_search"
+  },
+  "demo-t25-v12": {
+    "category": "information_search",
+    "scenario_label": "client_contacts_search"
+  },
+  "demo-t25-v13": {
+    "category": "information_search",
+    "scenario_label": "client_contacts_search"
+  },
+  "demo-t25-v14": {
+    "category": "information_search",
+    "scenario_label": "client_contacts_search"
+  },
+  "demo-t25-v15": {
+    "category": "information_search",
+    "scenario_label": "client_contacts_search"
+  },
+  "demo-t25-v16": {
+    "category": "information_search",
+    "scenario_label": "client_contacts_search"
+  },
+  "demo-t25-v17": {
+    "category": "information_search",
+    "scenario_label": "client_contacts_search"
+  },
+  "demo-t25-v18": {
+    "category": "information_search",
+    "scenario_label": "client_contacts_search"
+  },
+  "demo-t25-v19": {
+    "category": "information_search",
+    "scenario_label": "client_contacts_search"
+  },
+  "demo-t25-v20": {
+    "category": "information_search",
+    "scenario_label": "client_contacts_search"
+  },
+  "demo-t26-v01": {
+    "category": "calendar_planning",
+    "scenario_label": "multi_participant_meeting"
+  },
+  "demo-t26-v02": {
+    "category": "calendar_planning",
+    "scenario_label": "multi_participant_meeting"
+  },
+  "demo-t26-v03": {
+    "category": "calendar_planning",
+    "scenario_label": "multi_participant_meeting"
+  },
+  "demo-t26-v04": {
+    "category": "calendar_planning",
+    "scenario_label": "multi_participant_meeting"
+  },
+  "demo-t26-v05": {
+    "category": "calendar_planning",
+    "scenario_label": "multi_participant_meeting"
+  },
+  "demo-t26-v06": {
+    "category": "calendar_planning",
+    "scenario_label": "multi_participant_meeting"
+  },
+  "demo-t26-v07": {
+    "category": "calendar_planning",
+    "scenario_label": "multi_participant_meeting"
+  },
+  "demo-t26-v08": {
+    "category": "calendar_planning",
+    "scenario_label": "multi_participant_meeting"
+  },
+  "demo-t26-v09": {
+    "category": "calendar_planning",
+    "scenario_label": "multi_participant_meeting"
+  },
+  "demo-t26-v10": {
+    "category": "calendar_planning",
+    "scenario_label": "multi_participant_meeting"
+  },
+  "demo-t26-v11": {
+    "category": "calendar_planning",
+    "scenario_label": "multi_participant_meeting"
+  },
+  "demo-t26-v12": {
+    "category": "calendar_planning",
+    "scenario_label": "multi_participant_meeting"
+  },
+  "demo-t26-v13": {
+    "category": "calendar_planning",
+    "scenario_label": "multi_participant_meeting"
+  },
+  "demo-t26-v14": {
+    "category": "calendar_planning",
+    "scenario_label": "multi_participant_meeting"
+  },
+  "demo-t26-v15": {
+    "category": "calendar_planning",
+    "scenario_label": "multi_participant_meeting"
+  },
+  "demo-t26-v16": {
+    "category": "calendar_planning",
+    "scenario_label": "multi_participant_meeting"
+  },
+  "demo-t26-v17": {
+    "category": "calendar_planning",
+    "scenario_label": "multi_participant_meeting"
+  },
+  "demo-t26-v18": {
+    "category": "calendar_planning",
+    "scenario_label": "multi_participant_meeting"
+  },
+  "demo-t26-v19": {
+    "category": "calendar_planning",
+    "scenario_label": "multi_participant_meeting"
+  },
+  "demo-t26-v20": {
+    "category": "calendar_planning",
+    "scenario_label": "multi_participant_meeting"
+  },
+  "demo-t27-v01": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_search"
+  },
+  "demo-t27-v02": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_search"
+  },
+  "demo-t27-v03": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_search"
+  },
+  "demo-t27-v04": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_search"
+  },
+  "demo-t27-v05": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_search"
+  },
+  "demo-t27-v06": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_search"
+  },
+  "demo-t27-v07": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_search"
+  },
+  "demo-t27-v08": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_search"
+  },
+  "demo-t27-v09": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_search"
+  },
+  "demo-t27-v10": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_search"
+  },
+  "demo-t27-v11": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_search"
+  },
+  "demo-t27-v12": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_search"
+  },
+  "demo-t27-v13": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_search"
+  },
+  "demo-t27-v14": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_search"
+  },
+  "demo-t27-v15": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_search"
+  },
+  "demo-t27-v16": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_search"
+  },
+  "demo-t27-v17": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_search"
+  },
+  "demo-t27-v18": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_search"
+  },
+  "demo-t27-v19": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_search"
+  },
+  "demo-t27-v20": {
+    "category": "information_search",
+    "scenario_label": "meeting_body_search"
+  },
+  "demo-t28-v01": {
+    "category": "calendar_planning",
+    "scenario_label": "planned_work_reminders"
+  },
+  "demo-t28-v02": {
+    "category": "calendar_planning",
+    "scenario_label": "planned_work_reminders"
+  },
+  "demo-t28-v03": {
+    "category": "calendar_planning",
+    "scenario_label": "planned_work_reminders"
+  },
+  "demo-t28-v04": {
+    "category": "calendar_planning",
+    "scenario_label": "planned_work_reminders"
+  },
+  "demo-t28-v05": {
+    "category": "calendar_planning",
+    "scenario_label": "planned_work_reminders"
+  },
+  "demo-t28-v06": {
+    "category": "calendar_planning",
+    "scenario_label": "planned_work_reminders"
+  },
+  "demo-t28-v07": {
+    "category": "calendar_planning",
+    "scenario_label": "planned_work_reminders"
+  },
+  "demo-t28-v08": {
+    "category": "calendar_planning",
+    "scenario_label": "planned_work_reminders"
+  },
+  "demo-t28-v09": {
+    "category": "calendar_planning",
+    "scenario_label": "planned_work_reminders"
+  },
+  "demo-t28-v10": {
+    "category": "calendar_planning",
+    "scenario_label": "planned_work_reminders"
+  },
+  "demo-t28-v11": {
+    "category": "calendar_planning",
+    "scenario_label": "planned_work_reminders"
+  },
+  "demo-t28-v12": {
+    "category": "calendar_planning",
+    "scenario_label": "planned_work_reminders"
+  },
+  "demo-t28-v13": {
+    "category": "calendar_planning",
+    "scenario_label": "planned_work_reminders"
+  },
+  "demo-t28-v14": {
+    "category": "calendar_planning",
+    "scenario_label": "planned_work_reminders"
+  },
+  "demo-t28-v15": {
+    "category": "calendar_planning",
+    "scenario_label": "planned_work_reminders"
+  },
+  "demo-t28-v16": {
+    "category": "calendar_planning",
+    "scenario_label": "planned_work_reminders"
+  },
+  "demo-t28-v17": {
+    "category": "calendar_planning",
+    "scenario_label": "planned_work_reminders"
+  },
+  "demo-t28-v18": {
+    "category": "calendar_planning",
+    "scenario_label": "planned_work_reminders"
+  },
+  "demo-t28-v19": {
+    "category": "calendar_planning",
+    "scenario_label": "planned_work_reminders"
+  },
+  "demo-t28-v20": {
+    "category": "calendar_planning",
+    "scenario_label": "planned_work_reminders"
+  },
+  "demo-t29-v01": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "demo-t29-v02": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "demo-t29-v03": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "demo-t29-v04": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "demo-t29-v05": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "demo-t29-v06": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "demo-t29-v07": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "demo-t29-v08": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "demo-t29-v09": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "demo-t29-v10": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "demo-t29-v11": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "demo-t29-v12": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "demo-t29-v13": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "demo-t29-v14": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "demo-t29-v15": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "demo-t29-v16": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "demo-t29-v17": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "demo-t29-v18": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "demo-t29-v19": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "demo-t29-v20": {
+    "category": "calendar_planning",
+    "scenario_label": "tomorrow_meetings"
+  },
+  "demo-t30-v01": {
+    "category": "task_management",
+    "scenario_label": "project_tickets_from_email"
+  },
+  "demo-t30-v02": {
+    "category": "task_management",
+    "scenario_label": "project_tickets_from_email"
+  },
+  "demo-t30-v03": {
+    "category": "task_management",
+    "scenario_label": "project_tickets_from_email"
+  },
+  "demo-t30-v04": {
+    "category": "task_management",
+    "scenario_label": "project_tickets_from_email"
+  },
+  "demo-t30-v05": {
+    "category": "task_management",
+    "scenario_label": "project_tickets_from_email"
+  },
+  "demo-t30-v06": {
+    "category": "task_management",
+    "scenario_label": "project_tickets_from_email"
+  },
+  "demo-t30-v07": {
+    "category": "task_management",
+    "scenario_label": "project_tickets_from_email"
+  },
+  "demo-t30-v08": {
+    "category": "task_management",
+    "scenario_label": "project_tickets_from_email"
+  },
+  "demo-t30-v09": {
+    "category": "task_management",
+    "scenario_label": "project_tickets_from_email"
+  },
+  "demo-t30-v10": {
+    "category": "task_management",
+    "scenario_label": "project_tickets_from_email"
+  },
+  "demo-t30-v11": {
+    "category": "task_management",
+    "scenario_label": "project_tickets_from_email"
+  },
+  "demo-t30-v12": {
+    "category": "task_management",
+    "scenario_label": "project_tickets_from_email"
+  },
+  "demo-t30-v13": {
+    "category": "task_management",
+    "scenario_label": "project_tickets_from_email"
+  },
+  "demo-t30-v14": {
+    "category": "task_management",
+    "scenario_label": "project_tickets_from_email"
+  },
+  "demo-t30-v15": {
+    "category": "task_management",
+    "scenario_label": "project_tickets_from_email"
+  },
+  "demo-t30-v16": {
+    "category": "task_management",
+    "scenario_label": "project_tickets_from_email"
+  },
+  "demo-t30-v17": {
+    "category": "task_management",
+    "scenario_label": "project_tickets_from_email"
+  },
+  "demo-t30-v18": {
+    "category": "task_management",
+    "scenario_label": "project_tickets_from_email"
+  },
+  "demo-t30-v19": {
+    "category": "task_management",
+    "scenario_label": "project_tickets_from_email"
+  },
+  "demo-t30-v20": {
+    "category": "task_management",
+    "scenario_label": "project_tickets_from_email"
+  },
+  "demo-t31-v01": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "demo-t31-v02": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "demo-t31-v03": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "demo-t31-v04": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "demo-t31-v05": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "demo-t31-v06": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "demo-t31-v07": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "demo-t31-v08": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "demo-t31-v09": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "demo-t31-v10": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "demo-t31-v11": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "demo-t31-v12": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "demo-t31-v13": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "demo-t31-v14": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "demo-t31-v15": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "demo-t31-v16": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "demo-t31-v17": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "demo-t31-v18": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "demo-t31-v19": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "demo-t31-v20": {
+    "category": "monitoring_automation",
+    "scenario_label": "isup_project_status_monitoring"
+  },
+  "demo-s01-v01": {
+    "category": "data_analysis",
+    "scenario_label": "sales_metrics_analysis"
+  },
+  "demo-s01-v02": {
+    "category": "data_analysis",
+    "scenario_label": "sales_metrics_analysis"
+  },
+  "demo-s01-v03": {
+    "category": "data_analysis",
+    "scenario_label": "sales_metrics_analysis"
+  },
+  "demo-s01-v04": {
+    "category": "data_analysis",
+    "scenario_label": "sales_metrics_analysis"
+  },
+  "demo-s01-v05": {
+    "category": "data_analysis",
+    "scenario_label": "sales_metrics_analysis"
+  },
+  "demo-s01-v06": {
+    "category": "data_analysis",
+    "scenario_label": "sales_metrics_analysis"
+  },
+  "demo-s01-v07": {
+    "category": "data_analysis",
+    "scenario_label": "sales_metrics_analysis"
+  },
+  "demo-s01-v08": {
+    "category": "data_analysis",
+    "scenario_label": "sales_metrics_analysis"
+  },
+  "demo-s01-v09": {
+    "category": "data_analysis",
+    "scenario_label": "sales_metrics_analysis"
+  },
+  "demo-s01-v10": {
+    "category": "data_analysis",
+    "scenario_label": "sales_metrics_analysis"
+  },
+  "demo-s01-v11": {
+    "category": "data_analysis",
+    "scenario_label": "sales_metrics_analysis"
+  },
+  "demo-s01-v12": {
+    "category": "data_analysis",
+    "scenario_label": "sales_metrics_analysis"
+  },
+  "demo-s01-v13": {
+    "category": "data_analysis",
+    "scenario_label": "sales_metrics_analysis"
+  },
+  "demo-s01-v14": {
+    "category": "data_analysis",
+    "scenario_label": "sales_metrics_analysis"
+  },
+  "demo-s01-v15": {
+    "category": "data_analysis",
+    "scenario_label": "sales_metrics_analysis"
+  },
+  "demo-s01-v16": {
+    "category": "data_analysis",
+    "scenario_label": "sales_metrics_analysis"
+  },
+  "demo-s01-v17": {
+    "category": "data_analysis",
+    "scenario_label": "sales_metrics_analysis"
+  },
+  "demo-s01-v18": {
+    "category": "data_analysis",
+    "scenario_label": "sales_metrics_analysis"
+  },
+  "demo-s01-v19": {
+    "category": "data_analysis",
+    "scenario_label": "sales_metrics_analysis"
+  },
+  "demo-s01-v20": {
+    "category": "data_analysis",
+    "scenario_label": "sales_metrics_analysis"
+  },
+  "demo-s02-v01": {
+    "category": "knowledge_explanation",
+    "scenario_label": "corporate_process_explanation"
+  },
+  "demo-s02-v02": {
+    "category": "knowledge_explanation",
+    "scenario_label": "corporate_process_explanation"
+  },
+  "demo-s02-v03": {
+    "category": "knowledge_explanation",
+    "scenario_label": "corporate_process_explanation"
+  },
+  "demo-s02-v04": {
+    "category": "knowledge_explanation",
+    "scenario_label": "corporate_process_explanation"
+  },
+  "demo-s02-v05": {
+    "category": "knowledge_explanation",
+    "scenario_label": "corporate_process_explanation"
+  },
+  "demo-s02-v06": {
+    "category": "knowledge_explanation",
+    "scenario_label": "corporate_process_explanation"
+  },
+  "demo-s02-v07": {
+    "category": "knowledge_explanation",
+    "scenario_label": "corporate_process_explanation"
+  },
+  "demo-s02-v08": {
+    "category": "knowledge_explanation",
+    "scenario_label": "corporate_process_explanation"
+  },
+  "demo-s02-v09": {
+    "category": "knowledge_explanation",
+    "scenario_label": "corporate_process_explanation"
+  },
+  "demo-s02-v10": {
+    "category": "knowledge_explanation",
+    "scenario_label": "corporate_process_explanation"
+  },
+  "demo-s02-v11": {
+    "category": "knowledge_explanation",
+    "scenario_label": "corporate_process_explanation"
+  },
+  "demo-s02-v12": {
+    "category": "knowledge_explanation",
+    "scenario_label": "corporate_process_explanation"
+  },
+  "demo-s02-v13": {
+    "category": "knowledge_explanation",
+    "scenario_label": "corporate_process_explanation"
+  },
+  "demo-s02-v14": {
+    "category": "knowledge_explanation",
+    "scenario_label": "corporate_process_explanation"
+  },
+  "demo-s02-v15": {
+    "category": "knowledge_explanation",
+    "scenario_label": "corporate_process_explanation"
+  },
+  "demo-s02-v16": {
+    "category": "knowledge_explanation",
+    "scenario_label": "corporate_process_explanation"
+  },
+  "demo-s02-v17": {
+    "category": "knowledge_explanation",
+    "scenario_label": "corporate_process_explanation"
+  },
+  "demo-s02-v18": {
+    "category": "knowledge_explanation",
+    "scenario_label": "corporate_process_explanation"
+  },
+  "demo-s02-v19": {
+    "category": "knowledge_explanation",
+    "scenario_label": "corporate_process_explanation"
+  },
+  "demo-s02-v20": {
+    "category": "knowledge_explanation",
+    "scenario_label": "corporate_process_explanation"
+  },
+  "demo-s03-v01": {
+    "category": "non_work_general",
+    "scenario_label": "non_work_conversation"
+  },
+  "demo-s03-v02": {
+    "category": "non_work_general",
+    "scenario_label": "non_work_conversation"
+  },
+  "demo-s03-v03": {
+    "category": "non_work_general",
+    "scenario_label": "non_work_conversation"
+  },
+  "demo-s03-v04": {
+    "category": "non_work_general",
+    "scenario_label": "non_work_conversation"
+  },
+  "demo-s03-v05": {
+    "category": "non_work_general",
+    "scenario_label": "non_work_conversation"
+  },
+  "demo-s03-v06": {
+    "category": "non_work_general",
+    "scenario_label": "non_work_conversation"
+  },
+  "demo-s03-v07": {
+    "category": "non_work_general",
+    "scenario_label": "non_work_conversation"
+  },
+  "demo-s03-v08": {
+    "category": "non_work_general",
+    "scenario_label": "non_work_conversation"
+  },
+  "demo-s03-v09": {
+    "category": "non_work_general",
+    "scenario_label": "non_work_conversation"
+  },
+  "demo-s03-v10": {
+    "category": "non_work_general",
+    "scenario_label": "non_work_conversation"
+  },
+  "demo-s03-v11": {
+    "category": "non_work_general",
+    "scenario_label": "non_work_conversation"
+  },
+  "demo-s03-v12": {
+    "category": "non_work_general",
+    "scenario_label": "non_work_conversation"
+  },
+  "demo-s03-v13": {
+    "category": "non_work_general",
+    "scenario_label": "non_work_conversation"
+  },
+  "demo-s03-v14": {
+    "category": "non_work_general",
+    "scenario_label": "non_work_conversation"
+  },
+  "demo-s03-v15": {
+    "category": "non_work_general",
+    "scenario_label": "non_work_conversation"
+  },
+  "demo-s03-v16": {
+    "category": "non_work_general",
+    "scenario_label": "non_work_conversation"
+  },
+  "demo-s03-v17": {
+    "category": "non_work_general",
+    "scenario_label": "non_work_conversation"
+  },
+  "demo-s03-v18": {
+    "category": "non_work_general",
+    "scenario_label": "non_work_conversation"
+  },
+  "demo-s03-v19": {
+    "category": "non_work_general",
+    "scenario_label": "non_work_conversation"
+  },
+  "demo-s03-v20": {
+    "category": "non_work_general",
+    "scenario_label": "non_work_conversation"
+  },
+  "demo-s04-v01": {
+    "category": "code_assistance",
+    "scenario_label": "python_traceback_debugging"
+  },
+  "demo-s04-v02": {
+    "category": "code_assistance",
+    "scenario_label": "python_traceback_debugging"
+  },
+  "demo-s04-v03": {
+    "category": "code_assistance",
+    "scenario_label": "python_traceback_debugging"
+  },
+  "demo-s04-v04": {
+    "category": "code_assistance",
+    "scenario_label": "python_traceback_debugging"
+  },
+  "demo-s04-v05": {
+    "category": "code_assistance",
+    "scenario_label": "python_traceback_debugging"
+  },
+  "demo-s04-v06": {
+    "category": "code_assistance",
+    "scenario_label": "python_traceback_debugging"
+  },
+  "demo-s04-v07": {
+    "category": "code_assistance",
+    "scenario_label": "python_traceback_debugging"
+  },
+  "demo-s04-v08": {
+    "category": "code_assistance",
+    "scenario_label": "python_traceback_debugging"
+  },
+  "demo-s04-v09": {
+    "category": "code_assistance",
+    "scenario_label": "python_traceback_debugging"
+  },
+  "demo-s04-v10": {
+    "category": "code_assistance",
+    "scenario_label": "python_traceback_debugging"
+  },
+  "demo-s04-v11": {
+    "category": "code_assistance",
+    "scenario_label": "python_traceback_debugging"
+  },
+  "demo-s04-v12": {
+    "category": "code_assistance",
+    "scenario_label": "python_traceback_debugging"
+  },
+  "demo-s04-v13": {
+    "category": "code_assistance",
+    "scenario_label": "python_traceback_debugging"
+  },
+  "demo-s04-v14": {
+    "category": "code_assistance",
+    "scenario_label": "python_traceback_debugging"
+  },
+  "demo-s04-v15": {
+    "category": "code_assistance",
+    "scenario_label": "python_traceback_debugging"
+  },
+  "demo-s04-v16": {
+    "category": "code_assistance",
+    "scenario_label": "python_traceback_debugging"
+  },
+  "demo-s04-v17": {
+    "category": "code_assistance",
+    "scenario_label": "python_traceback_debugging"
+  },
+  "demo-s04-v18": {
+    "category": "code_assistance",
+    "scenario_label": "python_traceback_debugging"
+  },
+  "demo-s04-v19": {
+    "category": "code_assistance",
+    "scenario_label": "python_traceback_debugging"
+  },
+  "demo-s04-v20": {
+    "category": "code_assistance",
+    "scenario_label": "python_traceback_debugging"
+  },
+  "demo-s05-v01": {
+    "category": "code_assistance",
+    "scenario_label": "api_backend_implementation"
+  },
+  "demo-s05-v02": {
+    "category": "code_assistance",
+    "scenario_label": "api_backend_implementation"
+  },
+  "demo-s05-v03": {
+    "category": "code_assistance",
+    "scenario_label": "api_backend_implementation"
+  },
+  "demo-s05-v04": {
+    "category": "code_assistance",
+    "scenario_label": "api_backend_implementation"
+  },
+  "demo-s05-v05": {
+    "category": "code_assistance",
+    "scenario_label": "api_backend_implementation"
+  },
+  "demo-s05-v06": {
+    "category": "code_assistance",
+    "scenario_label": "api_backend_implementation"
+  },
+  "demo-s05-v07": {
+    "category": "code_assistance",
+    "scenario_label": "api_backend_implementation"
+  },
+  "demo-s05-v08": {
+    "category": "code_assistance",
+    "scenario_label": "api_backend_implementation"
+  },
+  "demo-s05-v09": {
+    "category": "code_assistance",
+    "scenario_label": "api_backend_implementation"
+  },
+  "demo-s05-v10": {
+    "category": "code_assistance",
+    "scenario_label": "api_backend_implementation"
+  },
+  "demo-s05-v11": {
+    "category": "code_assistance",
+    "scenario_label": "api_backend_implementation"
+  },
+  "demo-s05-v12": {
+    "category": "code_assistance",
+    "scenario_label": "api_backend_implementation"
+  },
+  "demo-s05-v13": {
+    "category": "code_assistance",
+    "scenario_label": "api_backend_implementation"
+  },
+  "demo-s05-v14": {
+    "category": "code_assistance",
+    "scenario_label": "api_backend_implementation"
+  },
+  "demo-s05-v15": {
+    "category": "code_assistance",
+    "scenario_label": "api_backend_implementation"
+  },
+  "demo-s05-v16": {
+    "category": "code_assistance",
+    "scenario_label": "api_backend_implementation"
+  },
+  "demo-s05-v17": {
+    "category": "code_assistance",
+    "scenario_label": "api_backend_implementation"
+  },
+  "demo-s05-v18": {
+    "category": "code_assistance",
+    "scenario_label": "api_backend_implementation"
+  },
+  "demo-s05-v19": {
+    "category": "code_assistance",
+    "scenario_label": "api_backend_implementation"
+  },
+  "demo-s05-v20": {
+    "category": "code_assistance",
+    "scenario_label": "api_backend_implementation"
+  },
+  "demo-s06-v01": {
+    "category": "other",
+    "scenario_label": "unclassified_request"
+  },
+  "demo-s06-v02": {
+    "category": "other",
+    "scenario_label": "unclassified_request"
+  },
+  "demo-s06-v03": {
+    "category": "other",
+    "scenario_label": "unclassified_request"
+  },
+  "demo-s06-v04": {
+    "category": "other",
+    "scenario_label": "unclassified_request"
+  },
+  "demo-s06-v05": {
+    "category": "other",
+    "scenario_label": "unclassified_request"
+  },
+  "demo-s06-v06": {
+    "category": "other",
+    "scenario_label": "unclassified_request"
+  },
+  "demo-s06-v07": {
+    "category": "other",
+    "scenario_label": "unclassified_request"
+  },
+  "demo-s06-v08": {
+    "category": "other",
+    "scenario_label": "unclassified_request"
+  },
+  "demo-s06-v09": {
+    "category": "other",
+    "scenario_label": "unclassified_request"
+  },
+  "demo-s06-v10": {
+    "category": "other",
+    "scenario_label": "unclassified_request"
+  },
+  "demo-s06-v11": {
+    "category": "other",
+    "scenario_label": "unclassified_request"
+  },
+  "demo-s06-v12": {
+    "category": "other",
+    "scenario_label": "unclassified_request"
+  },
+  "demo-s06-v13": {
+    "category": "other",
+    "scenario_label": "unclassified_request"
+  },
+  "demo-s06-v14": {
+    "category": "other",
+    "scenario_label": "unclassified_request"
+  },
+  "demo-s06-v15": {
+    "category": "other",
+    "scenario_label": "unclassified_request"
+  },
+  "demo-s06-v16": {
+    "category": "other",
+    "scenario_label": "unclassified_request"
+  },
+  "demo-s06-v17": {
+    "category": "other",
+    "scenario_label": "unclassified_request"
+  },
+  "demo-s06-v18": {
+    "category": "other",
+    "scenario_label": "unclassified_request"
+  },
+  "demo-s06-v19": {
+    "category": "other",
+    "scenario_label": "unclassified_request"
+  },
+  "demo-s06-v20": {
+    "category": "other",
+    "scenario_label": "unclassified_request"
+  }
+}

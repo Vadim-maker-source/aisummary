@@ -1,0 +1,64 @@
+# Данные Prompt Radar
+
+Каталог содержит воспроизводимый синтетический комплект для разработки,
+автоматической оценки и демонстрации дашборда.
+
+## Основные файлы
+
+- `demo_events.jsonl` — 740 событий для импорта в приложение;
+- `validation_events.jsonl` — 185 независимых событий для offline-оценки;
+- `demo_labels.json`, `demo_truth.json` и `validation_labels.json` —
+  эталонная разметка;
+- `scenario_catalog.json` — итоговый каталог сценариев;
+- `scenario_catalog_source.json` — исходный каталог аналитика без дополнений;
+- `generation_manifest.json` — происхождение и ожидаемые свойства записей;
+- `dataset_metadata.json` — размеры, распределения и SHA-256;
+- `quality_report.md` и `quality_report.json` — результаты проверки;
+- `database_quality_report.md` и `database_quality_report.json` — фактическая
+  end-to-end оценка текущего analysis run в PostgreSQL;
+- `prompt-radar-report.md` — заполненный преддемонстрационный отчёт.
+
+Validation-файлы нельзя загружать в обычный demo-flow: они предназначены для
+оценки аналитического модуля и не должны смешиваться с демонстрационными
+данными.
+
+## Что покрыто
+
+- все 31 исходная тема аналитика;
+- 6 дополнительных тем;
+- все 12 категорий backend, включая `code_assistance`,
+  `non_work_general` и резервную `other`;
+- 35 нормализованных scenario labels;
+- `user_id`, `team`, `direction` и `is_synthetic=true` в каждом событии;
+- ответы, статусы, задержки, оценки, подтверждение выполнения и синтетическая
+  экономия времени не реже чем для каждого шестого события;
+- 31 ambiguous, 31 missing-context, 31 multiple-intent и 12 реально
+  oversized примеров;
+- контекст oversized-примеров больше поддерживаемой границы 100 000 токенов;
+- 49 дней синтетической динамики.
+
+## Воспроизводимость
+
+Из корня проекта:
+
+```powershell
+python scripts/generate_project_dataset.py
+python scripts/validate_project_dataset.py
+python scripts/audit_database_quality.py --write
+```
+
+Совместимая старая команда генерации также работает:
+
+```powershell
+python data/generate_datasets.py
+```
+
+Валидатор использует настоящий offline fallback `backend/app/analytics`,
+принудительно отключает LLM и embeddings и поэтому не требует сети. Database
+audit отдельно проверяет фактический pipeline после импорта и reclustering.
+
+## Ограничения
+
+Датасет синтетический. Поля ответов, выполнений и экономии времени проверяют
+механику продукта, но не доказывают реальную эффективность внедрения ИИ.
+Перед production-выводами нужен отдельный обезличенный real-world holdout.

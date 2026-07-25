@@ -1,0 +1,24 @@
+{"external_id":"holdout-letter-1","query":"Подготовь вежливое деловое письмо клиенту о переносе срока поставки"}
+{"external_id":"holdout-letter-2","query":"Напиши клиенту официальное письмо: поставка задержится на два дня"}
+{"external_id":"holdout-letter-3","query":"Сформулируй деловое письмо заказчику с уведомлением о новом сроке поставки"}
+{"external_id":"holdout-code-1","query":"Объясни Python traceback и помоги исправить ошибку в коде"}
+{"external_id":"holdout-code-2","query":"Найди причину traceback в Python-коде и предложи исправление"}
+{"external_id":"holdout-code-3","query":"Помоги отладить Python: код падает с traceback при запуске"}
+{"external_id":"holdout-summary-1","query":"Сделай краткую сводку важных писем за сегодняшний день"}
+{"external_id":"holdout-summary-2","query":"Подготовь саммари входящих писем за день и выдели поручения"}
+{"external_id":"holdout-summary-3","query":"Собери итоги писем за сегодня в короткую структурированную сводку"}
+{"external_id":"holdout-search-1","query":"Найди в CRM контакты клиента по названию компании"}
+{"external_id":"holdout-search-2","query":"Отыщи контактные данные клиента, используя название компании"}
+{"external_id":"holdout-search-3","query":"Собери из CRM контакты компании-клиента"}
+{"external_id":"holdout-task-1","query":"Создай задачу в Jira и назначь её на руководителя проекта"}
+{"external_id":"holdout-task-2","query":"Добавь в Jira новую задачу для руководителя проекта"}
+{"external_id":"holdout-task-3","query":"Заведи задачу руководителю проекта в Jira"}
+{"external_id":"holdout-calendar-1","query":"Найди общий свободный слот в календаре для встречи команды"}
+{"external_id":"holdout-calendar-2","query":"Подбери время встречи, когда календари всех участников свободны"}
+{"external_id":"holdout-calendar-3","query":"Проверь календари команды и предложи общий слот для встречи"}
+{"external_id":"holdout-export-1","query":"Выгрузи отчёт по продажам за месяц в Excel"}
+{"external_id":"holdout-export-2","query":"Сформируй Excel-отчёт с продажами за прошедший месяц"}
+{"external_id":"holdout-export-3","query":"Экспортируй месячные данные о продажах в отчёт Excel"}
+{"external_id":"holdout-chat-1","query":"Давай просто пообщаемся о космосе"}
+{"external_id":"holdout-chat-2","query":"Поболтаем о новых фильмах без рабочих задач"}
+{"external_id":"holdout-chat-3","query":"Расскажи шутку и посоветуй сериал на вечер"}
