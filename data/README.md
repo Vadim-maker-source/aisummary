@@ -14,6 +14,8 @@
 - `generation_manifest.json` — происхождение и ожидаемые свойства записей;
 - `dataset_metadata.json` — размеры, распределения и SHA-256;
 - `quality_report.md` и `quality_report.json` — результаты проверки;
+- `database_quality_report.md` и `database_quality_report.json` — фактическая
+  end-to-end оценка текущего analysis run в PostgreSQL;
 - `prompt-radar-report.md` — заполненный преддемонстрационный отчёт.
 
 Validation-файлы нельзя загружать в обычный demo-flow: они предназначены для
@@ -42,6 +44,7 @@ Validation-файлы нельзя загружать в обычный demo-flo
 ```powershell
 python scripts/generate_project_dataset.py
 python scripts/validate_project_dataset.py
+python scripts/audit_database_quality.py --write
 ```
 
 Совместимая старая команда генерации также работает:
@@ -50,9 +53,9 @@ python scripts/validate_project_dataset.py
 python data/generate_datasets.py
 ```
 
-Валидатор использует настоящий `backend/app/analytics`, принудительно отключает
-LLM и поэтому не требует сети, не расходует API-баланс и даёт детерминированный
-baseline.
+Валидатор использует настоящий offline fallback `backend/app/analytics`,
+принудительно отключает LLM и embeddings и поэтому не требует сети. Database
+audit отдельно проверяет фактический pipeline после импорта и reclustering.
 
 ## Ограничения
 

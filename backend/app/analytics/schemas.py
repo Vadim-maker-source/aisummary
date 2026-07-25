@@ -101,6 +101,14 @@ class ScenarioInputRecord(BaseModel):
     event_id: str
     effective_query: str
     category: Category
+    classification_confidence: Optional[float] = Field(
+        default=None,
+        ge=0,
+        le=1,
+    )
+    query_problem_reasons: List[QueryProblemReason] = Field(
+        default_factory=list
+    )
 
 
 # --------------------------------------------------------------------------- #

@@ -16,7 +16,7 @@ BACKEND = ROOT / "backend"
 DATA_DIR = ROOT / "data"
 sys.path.insert(0, str(BACKEND))
 
-from app.analytics import llm_client  # noqa: E402
+from app.analytics import embedding_client, llm_client  # noqa: E402
 from app.analytics.public import analyze_event, discover_scenarios  # noqa: E402
 from app.analytics.schemas import (  # noqa: E402
     AnalysisInput,
@@ -92,6 +92,7 @@ def _sha256(path: Path) -> str:
 async def validate() -> dict[str, Any]:
     # The offline baseline must never spend money or depend on network state.
     llm_client.is_configured = lambda: False
+    embedding_client.is_configured = lambda: False
 
     demo = _load_jsonl(DATA_DIR / "demo_events.jsonl")
     validation = _load_jsonl(DATA_DIR / "validation_events.jsonl")

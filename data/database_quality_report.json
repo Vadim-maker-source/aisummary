@@ -1,0 +1,57 @@
+{
+  "status": "pass",
+  "database_integrity": {
+    "expected_events": 740,
+    "stored_events": 740,
+    "missing_events": 0,
+    "extra_events": 0,
+    "completed_analyses": 740,
+    "analysis_errors": 0,
+    "analysis_rows": 740
+  },
+  "current_run": {
+    "id": "a727098f-c284-4d6d-90f3-2de1ecaaec6c",
+    "algorithm_version": "qwen-embedding-agg-v2",
+    "status": "completed",
+    "scenario_count": 45,
+    "member_count": 635
+  },
+  "classification": {
+    "accuracy": 0.8594594594594595,
+    "correct": 636,
+    "total": 740
+  },
+  "scenario_quality": {
+    "regular_queries": {
+      "precision": 0.7950149551345962,
+      "recall": 0.7224134807030259,
+      "f1": 0.75697740649326,
+      "tp": 3987,
+      "fp": 1028,
+      "fn": 1532
+    },
+    "all_non_other_queries": {
+      "precision": 0.7955974842767296,
+      "recall": 0.5960732984293193,
+      "f1": 0.6815324753067944,
+      "tp": 4554,
+      "fp": 1170,
+      "fn": 3086
+    },
+    "regular_member_coverage": 0.9642276422764228,
+    "mean_cluster_purity": 0.9198828686457435,
+    "pure_cluster_count": 37
+  },
+  "limitations": [
+    "Ground truth and events are synthetic.",
+    "Business outcome fields validate dashboard mechanics, not real ROI.",
+    "Problem-detection precision requires a separately annotated holdout."
+  ],
+  "gates": {
+    "database_exact": true,
+    "analysis_complete": true,
+    "scenario_count_reasonable": true,
+    "scenario_f1": true,
+    "scenario_purity": true
+  }
+}
