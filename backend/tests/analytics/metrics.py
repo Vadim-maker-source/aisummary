@@ -1,6 +1,7 @@
 """Quality metrics for the analytics MVP (role file section 11).
 
-Computes, fully offline (rule-based fallback path):
+Computes, fully offline (rule-based fallback path), on the independent
+validation split:
   - category_accuracy
   - unclassified_rate
   - scenario_pairwise_precision / recall / f1
@@ -25,13 +26,24 @@ from app.analytics.schemas import AnalysisInput, Category, ScenarioInputRecord
 DATA_DIR = Path(__file__).resolve().parents[3] / "data"
 
 
-def load_demo() -> Tuple[List[dict], Dict[str, dict]]:
+def load_validation() -> Tuple[List[dict], Dict[str, dict]]:
     events = [
         json.loads(line)
-        for line in (DATA_DIR / "demo_events.jsonl").read_text(encoding="utf-8").splitlines()
+        for line in (DATA_DIR / "validation_events.jsonl")
+        .read_text(encoding="utf-8")
+        .splitlines()
         if line.strip()
     ]
-    labels = json.loads((DATA_DIR / "demo_labels.json").read_text(encoding="utf-8"))
+    label_rows = json.loads(
+        (DATA_DIR / "validation_labels.json").read_text(encoding="utf-8")
+    )
+    labels = {
+        row["external_id"]: {
+            "category": row["expected_category"],
+            "scenario_label": row["expected_scenario_label"],
+        }
+        for row in label_rows
+    }
     return events, labels
 
 
@@ -135,7 +147,7 @@ async def pairwise_metrics(rows: Dict[str, "AnalyzeRow"], labels: Dict[str, dict
 
 
 async def compute_all() -> Dict[str, object]:
-    events, labels = load_demo()
+    events, labels = load_validation()
     rows = await analyze_all(events)
     out: Dict[str, object] = {}
     out.update(category_metrics(rows, labels))
@@ -147,7 +159,7 @@ if __name__ == "__main__":
     import asyncio
 
     metrics = asyncio.run(compute_all())
-    print("=== Analytics quality metrics (demo, offline) ===")
+    print("=== Analytics quality metrics (validation, offline) ===")
     for key, value in metrics.items():
         if isinstance(value, float):
             print(f"  {key}: {value:.4f}")

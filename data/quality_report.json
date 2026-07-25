@@ -1,0 +1,146 @@
+{
+  "status": "pass",
+  "gates": {
+    "schema": true,
+    "unique_ids": true,
+    "extraction": true,
+    "no_demo_validation_leakage": true,
+    "all_categories": true,
+    "synthetic_marking": true,
+    "business_dimensions": true,
+    "response_coverage": true,
+    "category_accuracy": true,
+    "scenario_pairwise_f1": true,
+    "problem_recall": true,
+    "hashes": true
+  },
+  "schema": {
+    "demo_records": 740,
+    "validation_records": 185,
+    "schema_error_count": 0,
+    "schema_error_examples": [],
+    "duplicate_external_id_count": 0,
+    "extraction_mismatch_count": 0
+  },
+  "coverage": {
+    "categories": [
+      "calendar_planning",
+      "code_assistance",
+      "data_analysis",
+      "information_search",
+      "knowledge_explanation",
+      "monitoring_automation",
+      "non_work_general",
+      "other",
+      "reporting_export",
+      "summarization",
+      "task_management",
+      "text_generation"
+    ],
+    "category_count": 12,
+    "scenario_count_including_other": 35,
+    "timestamp_span_days": 49,
+    "responses": 136,
+    "completed_tasks": 133,
+    "estimated_hours_saved": 68.8,
+    "synthetic_marked": 740,
+    "dimensions_complete": {
+      "user_id": 740,
+      "team": 740,
+      "direction": 740
+    }
+  },
+  "edge_cases": {
+    "intended": {
+      "ambiguous": 31,
+      "missing_context": 31,
+      "multiple_intents": 31,
+      "oversized_context": 12
+    },
+    "detected": {
+      "ambiguous": 31,
+      "missing_context": 31,
+      "multiple_intents": 31,
+      "oversized_context": 12
+    },
+    "recall": {
+      "ambiguous": 1.0,
+      "missing_context": 1.0,
+      "multiple_intents": 1.0,
+      "oversized_context": 1.0
+    },
+    "all_backend_problem_counts": {
+      "ambiguous": 45,
+      "low_classification_confidence": 427,
+      "missing_context": 31,
+      "multiple_intents": 36,
+      "oversized_context": 12,
+      "unclassified": 277
+    }
+  },
+  "leakage": {
+    "exact_query_overlap_count": 0,
+    "exact_query_overlap_examples": []
+  },
+  "offline_real_backend": {
+    "category_accuracy": 0.9513513513513514,
+    "unclassified_rate": 0.05405405405405406,
+    "category_correct": 176,
+    "category_total": 185,
+    "category_confusion_errors": {
+      "other -> information_search": 1,
+      "other -> summarization": 1,
+      "text_generation -> other": 7
+    },
+    "scenario_pairwise_precision": 0.9936507936507937,
+    "scenario_pairwise_recall": 0.7634146341463415,
+    "scenario_pairwise_f1": 0.863448275862069,
+    "scenario_tp": 313,
+    "scenario_fp": 2,
+    "scenario_fn": 97,
+    "discovered_scenarios": 37,
+    "unclustered_events": 10
+  },
+  "hashes": {
+    "demo_events.jsonl": {
+      "expected": "23830f7dfcb2d434469694931091c42a9696f0b194f7effdfa3832fba8b7f279",
+      "actual": "23830f7dfcb2d434469694931091c42a9696f0b194f7effdfa3832fba8b7f279",
+      "match": true
+    },
+    "validation_events.jsonl": {
+      "expected": "ee5137091219b5fffe6cf78a13c7e7f6724a6058a5338dad856759bd24dd8c56",
+      "actual": "ee5137091219b5fffe6cf78a13c7e7f6724a6058a5338dad856759bd24dd8c56",
+      "match": true
+    },
+    "demo_labels.json": {
+      "expected": "a6eafff27977514782039283243388687ca3c2c7299099c7bb9aab0ff2e72cfb",
+      "actual": "a6eafff27977514782039283243388687ca3c2c7299099c7bb9aab0ff2e72cfb",
+      "match": true
+    },
+    "demo_truth.json": {
+      "expected": "6873cc674f5561fc3f96dca75927af466e0282dbeec49e932f979d1b71d57dd9",
+      "actual": "6873cc674f5561fc3f96dca75927af466e0282dbeec49e932f979d1b71d57dd9",
+      "match": true
+    },
+    "validation_labels.json": {
+      "expected": "6ebbf4ba112ebd7528eda175ab6cddd8e817b3580bfbb4d3cd21a1bb23fe955b",
+      "actual": "6ebbf4ba112ebd7528eda175ab6cddd8e817b3580bfbb4d3cd21a1bb23fe955b",
+      "match": true
+    },
+    "scenario_catalog.json": {
+      "expected": "466f486f7b578fe3f9c287e7ee04715a6b07b72eeb2c825245172f9726f3fde8",
+      "actual": "466f486f7b578fe3f9c287e7ee04715a6b07b72eeb2c825245172f9726f3fde8",
+      "match": true
+    },
+    "generation_manifest.json": {
+      "expected": "d5736a8018bd43225d71d64d23d8db4087f9b4e28bf3c4c5a5c9e46454f3d42e",
+      "actual": "d5736a8018bd43225d71d64d23d8db4087f9b4e28bf3c4c5a5c9e46454f3d42e",
+      "match": true
+    }
+  },
+  "notes": [
+    "Metrics are calculated by backend/app/analytics with the LLM disabled.",
+    "Validation labels are never passed to the classifier.",
+    "Synthetic outcomes measure dashboard mechanics, not real business ROI."
+  ]
+}

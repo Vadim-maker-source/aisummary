@@ -68,17 +68,21 @@ npm run dev
 
 ## Датасеты
 
-Быстрый профиль:
+Воспроизводимая генерация demo и независимого validation:
 
 ```powershell
-python data\generate_datasets.py --profile quick
+python scripts\generate_project_dataset.py
+python scripts\validate_project_dataset.py
 ```
 
-Профиль с целевым средним контекстом 100k токенов:
+Совместимая короткая команда генерации:
 
 ```powershell
-python data\generate_datasets.py --profile compliant
+python data\generate_datasets.py
 ```
+
+Demo содержит штатные запросы, бизнес-поля и 12 edge cases строго выше
+поддерживаемой границы 100 000 prompt-токенов.
 
 Для большого файла используйте CSV или JSONL: оба формата читаются построчно.
 
