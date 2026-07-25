@@ -1,0 +1,682 @@
+[
+  {
+    "source_topic_id": "T01",
+    "supplemental_topic_id": null,
+    "scenario_label": "daily_email_digest",
+    "scenario_name": "Ежедневная сводка почты",
+    "expected_category": "summarization",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Ежедневная сводка почты».",
+    "representative_queries": [
+      "Сделай краткую структурированную сводку всех писем за прошедший день.",
+      "Подготовь саммари сегодняшней почты и сначала покажи самые важные письма.",
+      "Собери итоги непрочитанных писем за день по моему шаблону."
+    ],
+    "validation_queries": [
+      "Коротко подведи итоги писем, которые пришли мне за сутки.",
+      "Сгруппируй дневную почту по важности и подготовь краткую сводку."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T02",
+    "supplemental_topic_id": null,
+    "scenario_label": "client_company_360",
+    "scenario_name": "Справка по компании-клиенту",
+    "expected_category": "information_search",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Справка по компании-клиенту».",
+    "representative_queries": [
+      "Найди директоров дочерних компаний клиента и проверь, где у нас были выигранные сделки.",
+      "Собери информацию по группе компаний клиента: руководители дочерних обществ и наши победы.",
+      "Подготовь справку по структуре клиента и выигранным сделкам."
+    ],
+    "validation_queries": [
+      "Кто руководит дочерними компаниями этого клиента и какие тендеры мы там выиграли?",
+      "Найди по клиентской группе директоров и сведения об успешных сделках."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T03",
+    "supplemental_topic_id": null,
+    "scenario_label": "monitor_unanswered_price_requests",
+    "scenario_name": "Мониторинг запросов цены без ответа",
+    "expected_category": "monitoring_automation",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Мониторинг запросов цены без ответа».",
+    "representative_queries": [
+      "Создай мониторинг писем с запросом расчёта цены, оставшихся без ответа более двух часов.",
+      "Отслеживай запросы на расчёт стоимости и уведомляй, если ответ не дан за два часа.",
+      "Настрой периодическую проверку почты на просроченные запросы цены."
+    ],
+    "validation_queries": [
+      "Сообщай о письмах с просьбой посчитать цену, на которые никто не ответил за 120 минут.",
+      "Нужен регулярный контроль необработанных запросов стоимости в почте."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T04",
+    "supplemental_topic_id": null,
+    "scenario_label": "weekly_won_tenders_digest",
+    "scenario_name": "Еженедельная рассылка выигранных тендеров",
+    "expected_category": "monitoring_automation",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Еженедельная рассылка выигранных тендеров».",
+    "representative_queries": [
+      "Каждую неделю собирай из CRM выигранные тендеры и отправляй список фокус-группе.",
+      "Настрой еженедельную рассылку аналитики по победам в тендерах.",
+      "Периодически уведомляй команду о продажах с выигранными конкурсами."
+    ],
+    "validation_queries": [
+      "По пятницам присылай фокус-группе подборку тендеров, выигранных за неделю.",
+      "Автоматизируй еженедельный сбор побед из CRM и их отправку по почте."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T05",
+    "supplemental_topic_id": null,
+    "scenario_label": "project_team_vendor_owner",
+    "scenario_name": "Состав команды и ответственный за вендора",
+    "expected_category": "information_search",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Состав команды и ответственный за вендора».",
+    "representative_queries": [
+      "Найди в CRM состав проектной команды и ответственное направление за вендора.",
+      "Собери участников проекта и укажи подразделение, которое отвечает за поставщика.",
+      "Покажи проектную команду и владельца отношений с этим вендором."
+    ],
+    "validation_queries": [
+      "Кто входит в команду проекта и какое направление ведёт поставщика?",
+      "Найди ответственного за вендора и полный список участников проекта."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T06",
+    "supplemental_topic_id": null,
+    "scenario_label": "company_open_source_research",
+    "scenario_name": "Исследование компании в открытых источниках",
+    "expected_category": "information_search",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Исследование компании в открытых источниках».",
+    "representative_queries": [
+      "Найди сведения о компании в открытых источниках и подготовь краткую аналитическую справку.",
+      "Собери публичную информацию о компании и сделай обзор ключевых фактов.",
+      "Проведи поиск по открытым источникам и кратко опиши профиль компании."
+    ],
+    "validation_queries": [
+      "Подготовь справку о компании на основе доступных публичных материалов.",
+      "Найди свежую открытую информацию об организации и обобщи найденное."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T07",
+    "supplemental_topic_id": null,
+    "scenario_label": "crm_client_excel_report",
+    "scenario_name": "Отчёт по клиенту из CRM в Excel",
+    "expected_category": "reporting_export",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Отчёт по клиенту из CRM в Excel».",
+    "representative_queries": [
+      "Выгрузи заданные поля по клиенту из CRM в сводный отчёт Excel.",
+      "Сформируй Excel-отчёт с информацией о клиенте из CRM.",
+      "Собери клиентские данные из CRM и экспортируй их в таблицу Excel."
+    ],
+    "validation_queries": [
+      "Подготовь файл Excel по клиенту, используя выбранные поля CRM.",
+      "Экспортируй карточку клиента из CRM в структурированную таблицу."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T08",
+    "supplemental_topic_id": null,
+    "scenario_label": "manager_feedback_coolfeedback",
+    "scenario_name": "Отзыв руководителя в CoolFeedback",
+    "expected_category": "text_generation",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Отзыв руководителя в CoolFeedback».",
+    "representative_queries": [
+      "Напиши отзыв руководителя для CoolFeedback по моим тезисам после мониторинга.",
+      "Сформулируй обратную связь сотруднику по итогам мониторинга.",
+      "Подготовь текст отзыва с главными наблюдениями и договорённостями."
+    ],
+    "validation_queries": [
+      "Преврати мои заметки после мониторинга в корректный отзыв руководителя.",
+      "Составь для CoolFeedback структурированную обратную связь сотруднику."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T09",
+    "supplemental_topic_id": null,
+    "scenario_label": "pre_monitoring_employee_note",
+    "scenario_name": "Заметка перед встречей с сотрудником",
+    "expected_category": "text_generation",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Заметка перед встречей с сотрудником».",
+    "representative_queries": [
+      "Составь заметку перед мониторингом с сотрудником и запиши вводную информацию.",
+      "Подготовь текст предварительной заметки в анкете сотрудника.",
+      "Сформулируй краткую запись для анкеты перед мониторингом."
+    ],
+    "validation_queries": [
+      "Оформи мои тезисы как заметку перед встречей по мониторингу.",
+      "Напиши вводную запись в анкету сотрудника перед оценкой."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T10",
+    "supplemental_topic_id": null,
+    "scenario_label": "isup_ticket_editing",
+    "scenario_name": "Создание и редактирование тикетов ИСУП",
+    "expected_category": "task_management",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Создание и редактирование тикетов ИСУП».",
+    "representative_queries": [
+      "Добавь новый тикет в ИСУП и отредактируй существующий.",
+      "Создай задачу в ИСУП и обнови поля старого тикета.",
+      "Заведи новый тикет, а в текущем измени статус и описание."
+    ],
+    "validation_queries": [
+      "Нужно создать обращение в ИСУП и исправить уже заведённое.",
+      "Добавь задачу в ИСУП, затем обнови существующую карточку."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T11",
+    "supplemental_topic_id": null,
+    "scenario_label": "weekly_won_tenders_digest",
+    "scenario_name": "Еженедельный отчёт по выигранным тендерам",
+    "expected_category": "monitoring_automation",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Еженедельный отчёт по выигранным тендерам».",
+    "representative_queries": [
+      "Присылай мне еженедельный отчёт о выигранных тендерах за последние семь дней.",
+      "Настрой получение отчёта по победам отдела продаж каждую неделю.",
+      "Раз в неделю формируй список выигранных тендеров для менеджера."
+    ],
+    "validation_queries": [
+      "Каждые семь дней отправляй сводку по тендерам, которые мы выиграли.",
+      "Автоматически готовь недельный отчёт о победах отдела продаж."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T12",
+    "supplemental_topic_id": null,
+    "scenario_label": "jira_assigned_tasks",
+    "scenario_name": "Мои задачи в Jira",
+    "expected_category": "task_management",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Мои задачи в Jira».",
+    "representative_queries": [
+      "Покажи список задач Jira, назначенных на меня.",
+      "Найди все мои открытые тикеты в Jira.",
+      "Собери текущие задачи, где я указан исполнителем."
+    ],
+    "validation_queries": [
+      "Какие задачи сейчас закреплены за мной в Jira?",
+      "Выведи мои активные Jira-тикеты одним списком."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T13",
+    "supplemental_topic_id": null,
+    "scenario_label": "jira_priority_tasks",
+    "scenario_name": "Приоритетные задачи Jira",
+    "expected_category": "task_management",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Приоритетные задачи Jira».",
+    "representative_queries": [
+      "Покажи мои задачи Jira, отсортированные по приоритету.",
+      "Отфильтруй назначенные мне тикеты Jira по высокому приоритету.",
+      "Собери список самых важных задач Jira для планирования дня."
+    ],
+    "validation_queries": [
+      "Какие из моих Jira-задач имеют наивысший приоритет?",
+      "Выведи назначенные мне тикеты от критичных к обычным."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T14",
+    "supplemental_topic_id": null,
+    "scenario_label": "employee_observation_note",
+    "scenario_name": "Наблюдения руководителя о сотруднике",
+    "expected_category": "text_generation",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Наблюдения руководителя о сотруднике».",
+    "representative_queries": [
+      "Сформулируй заметку руководителя с наблюдениями о работе сотрудника.",
+      "Запиши мои наблюдения о прогрессе и вовлечённости сотрудника.",
+      "Подготовь текст управленческой заметки о работе члена команды."
+    ],
+    "validation_queries": [
+      "Оформи мои наблюдения за сотрудником как понятную запись руководителя.",
+      "Напиши заметку о прогрессе сотрудника и необходимой поддержке."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T15",
+    "supplemental_topic_id": null,
+    "scenario_label": "excel_data_export",
+    "scenario_name": "Экспорт результатов анализа в Excel",
+    "expected_category": "reporting_export",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Экспорт результатов анализа в Excel».",
+    "representative_queries": [
+      "Экспортируй результаты анализа в Excel.",
+      "Сформируй Excel-файл с итогами проведённого анализа.",
+      "Выгрузи аналитические результаты в таблицу для коллег."
+    ],
+    "validation_queries": [
+      "Подготовь электронную таблицу с результатами анализа.",
+      "Перенеси итоговые показатели анализа в файл Excel."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T16",
+    "supplemental_topic_id": null,
+    "scenario_label": "excel_data_export",
+    "scenario_name": "Выгрузка рабочих данных в Excel",
+    "expected_category": "reporting_export",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Выгрузка рабочих данных в Excel».",
+    "representative_queries": [
+      "Выгрузи рабочие данные в Excel для дальнейшего анализа.",
+      "Сформируй Excel-таблицу для внешней отчётности.",
+      "Экспортируй выбранные данные системы в электронную таблицу."
+    ],
+    "validation_queries": [
+      "Подготовь файл Excel с данными для самостоятельной обработки.",
+      "Перенеси выборку из системы в таблицу для отчёта."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T17",
+    "supplemental_topic_id": null,
+    "scenario_label": "supplier_blog_search",
+    "scenario_name": "Поиск сведений о поставщике в блоге",
+    "expected_category": "information_search",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Поиск сведений о поставщике в блоге».",
+    "representative_queries": [
+      "Найди в корпоративном блоге информацию о поставщике.",
+      "Поищи последние публикации и обновления по этому поставщику.",
+      "Собери материалы блога, в которых упоминается нужный вендор."
+    ],
+    "validation_queries": [
+      "Какие новости о поставщике появились в нашем блоге?",
+      "Найди свежие записи блога, связанные с этим вендором."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T18",
+    "supplemental_topic_id": null,
+    "scenario_label": "confluence_process_search",
+    "scenario_name": "Поиск процесса в Confluence",
+    "expected_category": "information_search",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Поиск процесса в Confluence».",
+    "representative_queries": [
+      "Найди в Confluence описание нужного рабочего процесса.",
+      "Покажи инструкцию по процессу из корпоративной базы знаний.",
+      "Собери актуальные страницы Confluence по этому процессу."
+    ],
+    "validation_queries": [
+      "Где в Confluence описан порядок выполнения этой операции?",
+      "Найди корпоративную инструкцию по процессу и дай ссылку."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T19",
+    "supplemental_topic_id": null,
+    "scenario_label": "executive_calendar_scheduling",
+    "scenario_name": "Планирование встречи в календаре руководителя",
+    "expected_category": "calendar_planning",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Планирование встречи в календаре руководителя».",
+    "representative_queries": [
+      "Найди свободное время в календаре руководителя и запланируй встречу.",
+      "Подбери доступный слот у руководителя для новой встречи.",
+      "Проверь расписание руководителя и предложи время созвона."
+    ],
+    "validation_queries": [
+      "Когда у руководителя есть окно для встречи на этой неделе?",
+      "Подбери свободный интервал в календаре руководителя."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T20",
+    "supplemental_topic_id": null,
+    "scenario_label": "task_completion_confirmation",
+    "scenario_name": "Подтверждение выполнения задачи",
+    "expected_category": "task_management",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Подтверждение выполнения задачи».",
+    "representative_queries": [
+      "Подтверди выполнение задачи и закрой её.",
+      "Отметь выбранную задачу как выполненную.",
+      "Зафиксируй завершение работы в карточке задачи."
+    ],
+    "validation_queries": [
+      "Закрой задачу после подтверждения результата.",
+      "Поставь отметку о выполнении этой работы."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T21",
+    "supplemental_topic_id": null,
+    "scenario_label": "task_history_tracking",
+    "scenario_name": "История и выполнение личных задач",
+    "expected_category": "task_management",
+    "definition": "Запросы пользователей, относящиеся к сценарию «История и выполнение личных задач».",
+    "representative_queries": [
+      "Добавь задачу в историю и отметь её выполненной.",
+      "Сохрани новую задачу в моём списке и зафиксируй завершение.",
+      "Обнови историю задач, добавив выполненную работу."
+    ],
+    "validation_queries": [
+      "Запиши завершённую задачу в мою историю.",
+      "Добавь дело в список и поставь ему статус выполнено."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T22",
+    "supplemental_topic_id": null,
+    "scenario_label": "meeting_room_search",
+    "scenario_name": "Поиск переговорной комнаты",
+    "expected_category": "calendar_planning",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Поиск переговорной комнаты».",
+    "representative_queries": [
+      "Найди свободную переговорную для встречи с большим числом участников.",
+      "Подбери доступную комнату нужной вместимости на время встречи.",
+      "Проверь переговорные и предложи зал для большой команды."
+    ],
+    "validation_queries": [
+      "Какая переговорная вместит всех участников и будет свободна?",
+      "Найди свободную комнату для групповой встречи."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T23",
+    "supplemental_topic_id": null,
+    "scenario_label": "client_correspondence_reply",
+    "scenario_name": "Ответ на переписку с клиентом",
+    "expected_category": "text_generation",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Ответ на переписку с клиентом».",
+    "representative_queries": [
+      "Прочитай переписку с клиентом и напиши ему ответ.",
+      "Подготовь деловое письмо клиенту с учётом истории общения.",
+      "Сформулируй ответ на последнее сообщение клиента."
+    ],
+    "validation_queries": [
+      "Предложи корректный ответ клиенту после изучения цепочки писем.",
+      "Напиши продолжение переписки, сохранив деловой тон."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T24",
+    "supplemental_topic_id": null,
+    "scenario_label": "discussion_outcomes_note",
+    "scenario_name": "Фиксация итогов обсуждения",
+    "expected_category": "summarization",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Фиксация итогов обсуждения».",
+    "representative_queries": [
+      "Сделай краткие итоги обсуждения с коллегами.",
+      "Подготовь структурированную заметку по результатам разговора.",
+      "Собери договорённости и решения из обсуждения."
+    ],
+    "validation_queries": [
+      "Кратко зафиксируй, о чём мы договорились на встрече.",
+      "Составь итоги разговора: решения, ответственные и следующие шаги."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T25",
+    "supplemental_topic_id": null,
+    "scenario_label": "client_contacts_search",
+    "scenario_name": "Поиск контактов клиента",
+    "expected_category": "information_search",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Поиск контактов клиента».",
+    "representative_queries": [
+      "Найди контакты клиента по названию компании.",
+      "Покажи телефоны и рабочие адреса представителей этой организации.",
+      "Собери контактных лиц клиента из корпоративных систем."
+    ],
+    "validation_queries": [
+      "Кого можно найти в контактах по этой компании?",
+      "Найди рабочие контакты представителей указанного клиента."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T26",
+    "supplemental_topic_id": null,
+    "scenario_label": "multi_participant_meeting",
+    "scenario_name": "Встреча с большим числом участников",
+    "expected_category": "calendar_planning",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Встреча с большим числом участников».",
+    "representative_queries": [
+      "Найди общий свободный слот у всех коллег и создай встречу.",
+      "Проверь календари списка участников и запланируй общий созвон.",
+      "Подбери время, когда вся команда свободна, и отправь приглашение."
+    ],
+    "validation_queries": [
+      "Когда все участники смогут одновременно присоединиться к встрече?",
+      "Сопоставь календари коллег и создай встречу в общем окне."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T27",
+    "supplemental_topic_id": null,
+    "scenario_label": "meeting_body_search",
+    "scenario_name": "Поиск информации в описании встречи",
+    "expected_category": "information_search",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Поиск информации в описании встречи».",
+    "representative_queries": [
+      "Найди информацию, которая была указана в тексте приглашения на встречу.",
+      "Покажи данные из описания календарного события.",
+      "Поищи нужный текст в теле приглашения на встречу."
+    ],
+    "validation_queries": [
+      "Что было написано в описании этой встречи?",
+      "Найди приложенную текстом информацию в календарном событии."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T28",
+    "supplemental_topic_id": null,
+    "scenario_label": "planned_work_reminders",
+    "scenario_name": "Напоминания по запланированным работам",
+    "expected_category": "calendar_planning",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Напоминания по запланированным работам».",
+    "representative_queries": [
+      "Создай напоминания по договорённостям о будущих работах.",
+      "Сгруппируй запланированные дела и поставь по ним напоминания.",
+      "Добавь напоминание о работах, согласованных после встречи с клиентом."
+    ],
+    "validation_queries": [
+      "Напомни мне о согласованных действиях в назначенные даты.",
+      "Создай календарные напоминания для списка будущих работ."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T29",
+    "supplemental_topic_id": null,
+    "scenario_label": "tomorrow_meetings",
+    "scenario_name": "Список встреч на завтра",
+    "expected_category": "calendar_planning",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Список встреч на завтра».",
+    "representative_queries": [
+      "Покажи список моих встреч на завтра.",
+      "Собери завтрашние календарные события, чтобы я мог подготовиться.",
+      "Какие встречи запланированы у меня на следующий день?"
+    ],
+    "validation_queries": [
+      "Подготовь расписание встреч на завтрашний день.",
+      "Выведи календарные события, которые состоятся завтра."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T30",
+    "supplemental_topic_id": null,
+    "scenario_label": "project_tickets_from_email",
+    "scenario_name": "Создание Project-тикетов из писем",
+    "expected_category": "task_management",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Создание Project-тикетов из писем».",
+    "representative_queries": [
+      "Создай тикеты на моей доске Project на основе входящих писем.",
+      "Преобразуй выбранные письма в задачи Microsoft Project.",
+      "Заведи и актуализируй тикеты личной доски по содержанию почты."
+    ],
+    "validation_queries": [
+      "Создай задачи Project из писем, требующих действий.",
+      "Перенеси поручения из входящей почты на мою доску."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": "T31",
+    "supplemental_topic_id": null,
+    "scenario_label": "isup_project_status_monitoring",
+    "scenario_name": "Мониторинг статусов проектов ИСУП",
+    "expected_category": "monitoring_automation",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Мониторинг статусов проектов ИСУП».",
+    "representative_queries": [
+      "Периодически проверяй статусы проектов в ИСУП и сообщай о переходах.",
+      "Настрой мониторинг изменений заданных статусов проекта.",
+      "Отслеживай проекты ИСУП и уведомляй о критичных сменах состояния."
+    ],
+    "validation_queries": [
+      "Сообщай, когда проект в ИСУП переходит в контролируемый статус.",
+      "Нужна регулярная проверка состояний проектов и оповещение об изменениях."
+    ],
+    "is_supplemental": false,
+    "demo_count": 20,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": null,
+    "supplemental_topic_id": "S01",
+    "scenario_label": "sales_metrics_analysis",
+    "scenario_name": "Анализ показателей продаж",
+    "expected_category": "data_analysis",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Анализ показателей продаж».",
+    "representative_queries": [
+      "Проанализируй динамику продаж и найди основные отклонения.",
+      "Сравни показатели продаж по кварталам и выяви тренды.",
+      "Проведи анализ таблицы с метриками отдела продаж."
+    ],
+    "validation_queries": [
+      "Определи по данным продаж точки роста и аномалии.",
+      "Проанализируй метрики выручки и конверсии по периодам."
+    ],
+    "is_supplemental": true,
+    "demo_count": 10,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": null,
+    "supplemental_topic_id": "S02",
+    "scenario_label": "corporate_process_explanation",
+    "scenario_name": "Объяснение корпоративного процесса",
+    "expected_category": "knowledge_explanation",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Объяснение корпоративного процесса».",
+    "representative_queries": [
+      "Объясни, как работает процесс согласования договора.",
+      "Расскажи простыми словами, почему требуется этот этап проверки.",
+      "Объясни назначение корпоративного процесса и его шаги."
+    ],
+    "validation_queries": [
+      "Почему договор проходит несколько уровней согласования?",
+      "Расскажи, что означает этот этап внутреннего процесса."
+    ],
+    "is_supplemental": true,
+    "demo_count": 10,
+    "validation_count": 5
+  },
+  {
+    "source_topic_id": null,
+    "supplemental_topic_id": "S03",
+    "scenario_label": "non_work_conversation",
+    "scenario_name": "Нерабочий общий вопрос",
+    "expected_category": "other",
+    "definition": "Запросы пользователей, относящиеся к сценарию «Нерабочий общий вопрос».",
+    "representative_queries": [
+      "Поговорим о чём-нибудь интересном.",
+      "Какое у тебя сегодня настроение?",
+      "Расскажи случайный забавный факт."
+    ],
+    "validation_queries": [
+      "Давай просто поболтаем.",
+      "Какой сегодня хороший вопрос для разговора?"
+    ],
+    "is_supplemental": true,
+    "demo_count": 10,
+    "validation_count": 5
+  }
+]

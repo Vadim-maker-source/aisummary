@@ -1,8 +1,9 @@
 {
-  "profile": "quick",
-  "events": 726,
-  "supplied_topics": 35,
-  "control_topics": 3,
-  "target_average_prompt_tokens": 1500,
+  "profile": "demo",
+  "events": 740,
+  "source_topics": 31,
+  "supplemental_topics": 6,
+  "target_max_supported_prompt_tokens": 100000,
+  "oversized_edge_prompt_tokens": 100001,
   "is_synthetic": true
 }

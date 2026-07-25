@@ -1,7 +1,8 @@
 """Quality-metric gate (role file section 11).
 
-Runs the offline analytics pipeline over the demo dataset and asserts the
-target quality bars. Skips gracefully if the datasets have not been generated.
+Runs the offline analytics pipeline over the independent validation dataset
+and asserts the target quality bars. Skips gracefully if the datasets have not
+been generated.
 """
 
 from __future__ import annotations
@@ -18,7 +19,7 @@ DATA_DIR = Path(__file__).resolve().parents[3] / "data"
 
 
 @pytest.mark.skipif(
-    not (DATA_DIR / "demo_events.jsonl").exists(),
+    not (DATA_DIR / "validation_events.jsonl").exists(),
     reason="demo dataset not generated (run data/generate_datasets.py)",
 )
 async def test_quality_targets_met():

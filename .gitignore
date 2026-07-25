@@ -8,6 +8,7 @@ __pycache__/
 htmlcov/
 *.egg-info/
 backend/.test_backend.db
+.test_backend.db
 backend/.vendor/
 backend/.wheels/
 .docker-config/

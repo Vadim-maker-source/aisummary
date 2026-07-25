@@ -1,0 +1,72 @@
+{
+  "seed": 20260725,
+  "demo_count": 740,
+  "validation_count": 185,
+  "source_topic_count": 31,
+  "supplemental_topic_count": 6,
+  "category_count": 12,
+  "categories": [
+    "calendar_planning",
+    "code_assistance",
+    "data_analysis",
+    "information_search",
+    "knowledge_explanation",
+    "monitoring_automation",
+    "non_work_general",
+    "other",
+    "reporting_export",
+    "summarization",
+    "task_management",
+    "text_generation"
+  ],
+  "demo_category_distribution": {
+    "calendar_planning": 100,
+    "code_assistance": 40,
+    "data_analysis": 20,
+    "information_search": 140,
+    "knowledge_explanation": 20,
+    "monitoring_automation": 80,
+    "non_work_general": 20,
+    "other": 20,
+    "reporting_export": 60,
+    "summarization": 40,
+    "task_management": 120,
+    "text_generation": 80
+  },
+  "scenario_count_including_other": 35,
+  "timestamp_span_days": 49,
+  "oversized_count": 12,
+  "ambiguous_count": 31,
+  "multiple_intents_count": 31,
+  "missing_context_count": 31,
+  "files": {
+    "demo_events.jsonl": {
+      "sha256": "23830f7dfcb2d434469694931091c42a9696f0b194f7effdfa3832fba8b7f279",
+      "bytes": 10002435
+    },
+    "validation_events.jsonl": {
+      "sha256": "ee5137091219b5fffe6cf78a13c7e7f6724a6058a5338dad856759bd24dd8c56",
+      "bytes": 234139
+    },
+    "demo_labels.json": {
+      "sha256": "a6eafff27977514782039283243388687ca3c2c7299099c7bb9aab0ff2e72cfb",
+      "bytes": 81203
+    },
+    "demo_truth.json": {
+      "sha256": "6873cc674f5561fc3f96dca75927af466e0282dbeec49e932f979d1b71d57dd9",
+      "bytes": 272776
+    },
+    "validation_labels.json": {
+      "sha256": "6ebbf4ba112ebd7528eda175ab6cddd8e817b3580bfbb4d3cd21a1bb23fe955b",
+      "bytes": 70788
+    },
+    "scenario_catalog.json": {
+      "sha256": "466f486f7b578fe3f9c287e7ee04715a6b07b72eeb2c825245172f9726f3fde8",
+      "bytes": 42219
+    },
+    "generation_manifest.json": {
+      "sha256": "d5736a8018bd43225d71d64d23d8db4087f9b4e28bf3c4c5a5c9e46454f3d42e",
+      "bytes": 520288
+    }
+  }
+}

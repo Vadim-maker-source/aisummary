@@ -50,6 +50,7 @@ async def analyze_event(
         category = Category.other
         confidence = 0.0
         reasons = problems.build_problem_reasons(
+            query="",
             category=category,
             confidence=confidence,
             extraction_problems=extracted.problems,
@@ -71,6 +72,7 @@ async def analyze_event(
     warnings.extend(outcome.warnings)
 
     reasons = problems.build_problem_reasons(
+        query=extracted.effective_query,
         category=outcome.category,
         confidence=outcome.confidence,
         extraction_problems=extracted.problems,

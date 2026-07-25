@@ -1,0 +1,5 @@
+# Generated dataset hashes are byte-sensitive and must survive checkout.
+data/*.json text eol=lf
+data/*.jsonl text eol=lf
+data/*.md text eol=lf
+scripts/*.py text eol=lf
