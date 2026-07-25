@@ -10,7 +10,9 @@ import {
 } from "@/lib/mock-data";
 import type {
   CategoryListResponse,
+  CategorySummaryResponse,
   DashboardSummary,
+  DecisionSupportResponse,
   EffectivenessDimension,
   EffectivenessResponse,
   EventListParams,
@@ -107,6 +109,9 @@ export async function getDashboardSummary(): Promise<DashboardSummary> {
           timestamped_count: 0,
           dimensioned_count: 0,
           synthetic_requests: 0,
+          value_observation_count: 0,
+          completed_task_count: 0,
+          estimated_hours_saved: 0,
         }
       : mockDashboardSummary;
   }
@@ -119,6 +124,22 @@ export async function getCategories(): Promise<CategoryListResponse> {
     return MOCK_EMPTY ? { items: [] } : mockCategories;
   }
   return apiRequest("/api/v1/dashboard/categories");
+}
+
+export async function getCategorySummaries(): Promise<CategorySummaryResponse> {
+  if (USE_MOCK_DATA) {
+    maybeMockError();
+    return { items: [] };
+  }
+  return apiRequest("/api/v1/dashboard/category-summaries");
+}
+
+export async function getDecisionSupport(): Promise<DecisionSupportResponse> {
+  if (USE_MOCK_DATA) {
+    maybeMockError();
+    return { items: [], data_limitations: [] };
+  }
+  return apiRequest("/api/v1/dashboard/decision-support");
 }
 
 export async function getTimeline(): Promise<TimelineResponse> {

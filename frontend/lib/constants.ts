@@ -10,11 +10,13 @@ export const CATEGORIES: Category[] = [
   "information_search",
   "summarization",
   "data_analysis",
+  "code_assistance",
   "reporting_export",
   "task_management",
   "monitoring_automation",
   "calendar_planning",
   "knowledge_explanation",
+  "non_work_general",
   "other",
 ];
 
@@ -29,6 +31,7 @@ export const CATEGORY_LABELS: Record<Category, string> = {
   monitoring_automation: "Мониторинг",
   calendar_planning: "Планирование",
   knowledge_explanation: "Объяснение знаний",
+  non_work_general: "Нерабочие и общие вопросы",
   other: "Другое",
 };
 

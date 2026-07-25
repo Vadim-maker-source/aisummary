@@ -15,6 +15,7 @@ export type Category =
   | "monitoring_automation"
   | "calendar_planning"
   | "knowledge_explanation"
+  | "non_work_general"
   | "other";
 
 export type AutomationPotential = "low" | "medium" | "high";
@@ -71,6 +72,8 @@ export interface EventDetail extends EventListItem {
   execution_status: "success" | "error" | "unknown";
   latency_ms: number | null;
   rating: number | null;
+  task_completed: boolean | null;
+  estimated_minutes_saved: number | null;
   prompt_tokens: number | null;
   completion_tokens: number | null;
   warnings: string[];
@@ -90,6 +93,9 @@ export interface DashboardSummary {
   timestamped_count: number;
   dimensioned_count: number;
   synthetic_requests: number;
+  value_observation_count: number;
+  completed_task_count: number;
+  estimated_hours_saved: number;
 }
 
 export interface CategoryItem {
@@ -100,6 +106,21 @@ export interface CategoryItem {
 
 export interface CategoryListResponse {
   items: CategoryItem[];
+}
+
+export interface CategorySummaryItem {
+  category: Category;
+  request_count: number;
+  percentage: number;
+  purpose: string;
+  summary: string;
+  top_scenarios: string[];
+  representative_queries: string[];
+  top_problems: string[];
+}
+
+export interface CategorySummaryResponse {
+  items: CategorySummaryItem[];
 }
 
 export interface ScenarioListItem {
@@ -180,6 +201,9 @@ export interface EffectivenessItem {
   average_rating: number | null;
   average_latency_ms: number | null;
   unique_users: number | null;
+  task_completion_rate: number | null;
+  value_evidence_coverage: number;
+  estimated_hours_saved: number;
 }
 
 export interface EffectivenessResponse {
@@ -187,6 +211,22 @@ export interface EffectivenessResponse {
   available: boolean;
   coverage_percent: number;
   items: EffectivenessItem[];
+}
+
+export interface DecisionRecommendation {
+  kind: "automation" | "agent" | "training";
+  priority: "high" | "medium" | "low";
+  title: string;
+  evidence: string;
+  action: string;
+  scope: string;
+  affected_requests: number;
+  examples: string[];
+}
+
+export interface DecisionSupportResponse {
+  items: DecisionRecommendation[];
+  data_limitations: string[];
 }
 
 export interface ImportAccepted {

@@ -6,8 +6,11 @@ import {
   Building2,
   CheckCircle2,
   CircleAlert,
+  Clock3,
+  GraduationCap,
   Layers3,
   MessagesSquare,
+  Sparkles,
   TrendingDown,
   TrendingUp,
 } from "lucide-react";
@@ -42,7 +45,9 @@ import {
 } from "@/components/ui/table";
 import {
   getCategories,
+  getCategorySummaries,
   getDashboardSummary,
+  getDecisionSupport,
   getEffectiveness,
   getProblems,
   getScenarioTrends,
@@ -87,6 +92,14 @@ export default function DashboardPage() {
   const problems = useQuery({
     queryKey: ["dashboard-problems"],
     queryFn: getProblems,
+  });
+  const categorySummaries = useQuery({
+    queryKey: ["dashboard-category-summaries"],
+    queryFn: getCategorySummaries,
+  });
+  const decisionSupport = useQuery({
+    queryKey: ["dashboard-decision-support"],
+    queryFn: getDecisionSupport,
   });
   const trends = useQuery({
     queryKey: ["dashboard-scenario-trends", 7],
@@ -239,6 +252,28 @@ export default function DashboardPage() {
         </>
       )}
 
+      {summary.data ? (
+        <section className="value-evidence" aria-label="Доказанная полезность">
+          <div>
+            <Clock3 size={20} aria-hidden="true" />
+            <span>Оценка экономии времени</span>
+            <strong>{summary.data.estimated_hours_saved} ч</strong>
+          </div>
+          <div>
+            <CheckCircle2 size={20} aria-hidden="true" />
+            <span>Подтверждённых выполнений</span>
+            <strong>
+              {summary.data.completed_task_count} из{" "}
+              {summary.data.value_observation_count}
+            </strong>
+          </div>
+          <p>
+            Это не расчёт ROI: показатель строится только по переданным{" "}
+            <code>task_completed</code> и <code>estimated_minutes_saved</code>.
+          </p>
+        </section>
+      ) : null}
+
       <section className="overview-grid" aria-label="Категории и проблемы">
         <Card>
           <CardHeader className="section-card-header">
@@ -343,6 +378,49 @@ export default function DashboardPage() {
         </Card>
       </section>
 
+      <Card className="category-summary-section">
+        <CardHeader>
+          <CardTitle>Что стоит за категориями</CardTitle>
+          <CardDescription>
+            Зачем сотрудники используют ИИ, какие формулировки типичны и где
+            возникают сложности
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          {categorySummaries.isPending ? (
+            <LoadingBlock rows={5} />
+          ) : categorySummaries.isError ? (
+            <ErrorState
+              message={errorMessage(categorySummaries.error)}
+              onRetry={() => categorySummaries.refetch()}
+            />
+          ) : categorySummaries.data.items.length === 0 ? (
+            <EmptyState
+              title="Саммари категорий пока нет"
+              description="Они появятся после анализа запросов."
+            />
+          ) : (
+            <div className="category-summary-grid">
+              {categorySummaries.data.items.map((item) => (
+                <article key={item.category}>
+                  <div>
+                    <CategoryBadge value={item.category} />
+                    <strong>{item.percentage}%</strong>
+                  </div>
+                  <p>{item.summary}</p>
+                  {item.representative_queries[0] ? (
+                    <blockquote>«{item.representative_queries[0]}»</blockquote>
+                  ) : null}
+                  {item.top_problems[0] ? (
+                    <span>Частая сложность: {item.top_problems[0]}</span>
+                  ) : null}
+                </article>
+              ))}
+            </div>
+          )}
+        </CardContent>
+      </Card>
+
       <section className="insight-grid" aria-label="Динамика и эффективность">
         <Card>
           <CardHeader>
@@ -438,7 +516,7 @@ export default function DashboardPage() {
             ) : !effectiveness.data.available ? (
               <EmptyState
                 title={`Нет данных: ${DIMENSION_LABELS[dimension].toLowerCase()}`}
-                description="Передавайте team, direction и user_id во входном событии. Для оценки полезности также нужны ответы, статусы или rating."
+                description="Передавайте team, direction и user_id. Для оценки полезности нужны task_completed, estimated_minutes_saved, response, execution_status или rating."
               />
             ) : (
               <>
@@ -458,11 +536,15 @@ export default function DashboardPage() {
                       </div>
                       <div>
                         <strong>
-                          {item.success_rate === null
+                          {item.task_completion_rate === null
                             ? "—"
-                            : `${item.success_rate}%`}
+                            : `${item.task_completion_rate}%`}
                         </strong>
-                        <span>успешных</span>
+                        <span>задач выполнено</span>
+                      </div>
+                      <div>
+                        <strong>{item.estimated_hours_saved} ч</strong>
+                        <span>оценка экономии</span>
                       </div>
                     </div>
                   ))}
@@ -472,6 +554,65 @@ export default function DashboardPage() {
           </CardContent>
         </Card>
       </section>
+
+      <Card className="decision-section">
+        <CardHeader className="section-card-header">
+          <div>
+            <CardTitle>Что делать дальше</CardTitle>
+            <CardDescription>
+              Решения на основе повторяемости запросов, проблем пользователей и
+              наблюдаемых результатов агентов
+            </CardDescription>
+          </div>
+          <Sparkles size={20} aria-hidden="true" />
+        </CardHeader>
+        <CardContent>
+          {decisionSupport.isPending ? (
+            <LoadingBlock rows={6} />
+          ) : decisionSupport.isError ? (
+            <ErrorState
+              message={errorMessage(decisionSupport.error)}
+              onRetry={() => decisionSupport.refetch()}
+            />
+          ) : (
+            <>
+              <div className="decision-grid">
+                {decisionSupport.data.items.slice(0, 9).map((item, index) => (
+                  <article key={`${item.kind}-${item.scope}-${index}`}>
+                    <div className="decision-heading">
+                      {item.kind === "training" ? (
+                        <GraduationCap size={19} aria-hidden="true" />
+                      ) : (
+                        <Sparkles size={19} aria-hidden="true" />
+                      )}
+                      <Badge
+                        variant={item.priority === "high" ? "warning" : "outline"}
+                      >
+                        {item.kind === "training"
+                          ? "Обучение"
+                          : item.kind === "agent"
+                            ? "Развитие агента"
+                            : "Автоматизация"}
+                      </Badge>
+                    </div>
+                    <h3>{item.title}</h3>
+                    <p>{item.evidence}</p>
+                    <strong>{item.action}</strong>
+                  </article>
+                ))}
+              </div>
+              {decisionSupport.data.data_limitations.length ? (
+                <div className="data-limitations">
+                  <strong>Что пока нельзя доказать</strong>
+                  {decisionSupport.data.data_limitations.map((item) => (
+                    <p key={item}>{item}</p>
+                  ))}
+                </div>
+              ) : null}
+            </>
+          )}
+        </CardContent>
+      </Card>
 
       <Card className="scenarios-section">
         <CardHeader className="section-card-header">
