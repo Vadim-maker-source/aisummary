@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import Literal
 
-from fastapi import APIRouter, Depends, Query
+from fastapi import APIRouter, Depends, Query, Response
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.database import get_db_session
@@ -18,6 +18,7 @@ from app.schemas.dashboard import (
     TimelineResponse,
 )
 from app.services import dashboard as dashboard_service
+from app.services.report_export import ReportFormat, build_report
 
 router = APIRouter(prefix="/dashboard", tags=["dashboard"])
 
@@ -104,5 +105,20 @@ async def effectiveness(
     return await dashboard_service.get_effectiveness(
         session,
         dimension=dimension,
+    )
+
+
+@router.get("/report")
+async def report(
+    format: ReportFormat = Query(default="pdf"),
+    session: AsyncSession = Depends(get_db_session),
+) -> Response:
+    artifact = await build_report(session, format)
+    return Response(
+        content=artifact.content,
+        media_type=artifact.media_type,
+        headers={
+            "Content-Disposition": f'attachment; filename="{artifact.filename}"',
+        },
     )
 
