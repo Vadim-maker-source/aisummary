@@ -18,6 +18,7 @@ const navigation = [
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
+  const isWidePage = pathname.startsWith("/dashboard/requests");
 
   return (
     <div className="app-shell">
@@ -26,7 +27,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           <span className="brand-mark">К</span>
           <span>
             <strong>Контур</strong>
-            <small>AI request intelligence</small>
+            <small>Аналитика запросов</small>
           </span>
         </Link>
 
@@ -80,7 +81,9 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             })}
           </nav>
         </header>
-        <main className="page-frame">{children}</main>
+        <main className={isWidePage ? "page-frame page-frame-wide" : "page-frame"}>
+          {children}
+        </main>
       </div>
     </div>
   );

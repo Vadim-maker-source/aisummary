@@ -10,14 +10,20 @@ import {
 } from "@/lib/mock-data";
 import type {
   CategoryListResponse,
+  CategorySummaryResponse,
   DashboardSummary,
+  DecisionSupportResponse,
+  EffectivenessDimension,
+  EffectivenessResponse,
   EventListParams,
   EventListResponse,
   ImportAccepted,
   ImportStatusResponse,
+  ProblemListResponse,
   ScenarioDetail,
   ScenarioListParams,
   ScenarioListResponse,
+  ScenarioTrendResponse,
   TimelineResponse,
 } from "@/types/api";
 
@@ -98,6 +104,14 @@ export async function getDashboardSummary(): Promise<DashboardSummary> {
           scenario_count: 0,
           unclassified_count: 0,
           query_problem_rate: 0,
+          response_count: 0,
+          rated_count: 0,
+          timestamped_count: 0,
+          dimensioned_count: 0,
+          synthetic_requests: 0,
+          value_observation_count: 0,
+          completed_task_count: 0,
+          estimated_hours_saved: 0,
         }
       : mockDashboardSummary;
   }
@@ -112,12 +126,73 @@ export async function getCategories(): Promise<CategoryListResponse> {
   return apiRequest("/api/v1/dashboard/categories");
 }
 
+export async function getCategorySummaries(): Promise<CategorySummaryResponse> {
+  if (USE_MOCK_DATA) {
+    maybeMockError();
+    return { items: [] };
+  }
+  return apiRequest("/api/v1/dashboard/category-summaries");
+}
+
+export async function getDecisionSupport(): Promise<DecisionSupportResponse> {
+  if (USE_MOCK_DATA) {
+    maybeMockError();
+    return { items: [], data_limitations: [] };
+  }
+  return apiRequest("/api/v1/dashboard/decision-support");
+}
+
 export async function getTimeline(): Promise<TimelineResponse> {
   if (USE_MOCK_DATA) {
     maybeMockError();
     return MOCK_EMPTY ? { items: [] } : mockTimeline;
   }
   return apiRequest("/api/v1/dashboard/timeline");
+}
+
+export async function getProblems(): Promise<ProblemListResponse> {
+  if (USE_MOCK_DATA) {
+    maybeMockError();
+    return { items: [], total_requests: 0, agent_quality_available: false };
+  }
+  return apiRequest("/api/v1/dashboard/problems");
+}
+
+export async function getScenarioTrends(
+  windowDays = 7,
+): Promise<ScenarioTrendResponse> {
+  if (USE_MOCK_DATA) {
+    maybeMockError();
+    return {
+      available: false,
+      window_days: windowDays,
+      date_from: null,
+      date_to: null,
+      items: [],
+    };
+  }
+  return apiRequest(
+    `/api/v1/dashboard/scenario-trends${searchParams({
+      window_days: windowDays,
+    })}`,
+  );
+}
+
+export async function getEffectiveness(
+  dimension: EffectivenessDimension,
+): Promise<EffectivenessResponse> {
+  if (USE_MOCK_DATA) {
+    maybeMockError();
+    return {
+      dimension,
+      available: false,
+      coverage_percent: 0,
+      items: [],
+    };
+  }
+  return apiRequest(
+    `/api/v1/dashboard/effectiveness${searchParams({ dimension })}`,
+  );
 }
 
 export async function getScenarios(

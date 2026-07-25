@@ -26,7 +26,7 @@ export default function ScenarioDetailPage() {
         <PageHeader
           eyebrow="Карточка сценария"
           title="Загружаем сценарий"
-          description="Собираем сводку и типичные формулировки."
+          description="Загружаются данные сценария."
         />
         <section className="panel">
           <LoadingBlock rows={7} />
@@ -110,7 +110,7 @@ export default function ScenarioDetailPage() {
         <section className="panel" aria-labelledby="queries-title">
           <div className="panel-heading">
             <div>
-              <p className="panel-kicker">Голос пользователя</p>
+              <p className="panel-kicker">Примеры запросов</p>
               <h2 id="queries-title">Типичные запросы</h2>
             </div>
           </div>
