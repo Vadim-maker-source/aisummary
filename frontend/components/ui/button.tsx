@@ -10,6 +10,7 @@ const buttonVariants = cva("shad-button", {
       secondary: "shad-button-secondary",
       outline: "shad-button-outline",
       ghost: "shad-button-ghost",
+      destructive: "shad-button-destructive",
     },
     size: {
       default: "shad-button-md",

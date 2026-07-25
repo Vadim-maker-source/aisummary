@@ -20,6 +20,7 @@ import type {
   ImportAccepted,
   ImportStatusResponse,
   ProblemListResponse,
+  ResetAnalyticsResponse,
   ScenarioDetail,
   ScenarioListParams,
   ScenarioListResponse,
@@ -308,4 +309,22 @@ export async function getImportStatus(
     return getMockImportStatus(mockImportFilename);
   }
   return apiRequest(`/api/v1/imports/${encodeURIComponent(id)}`);
+}
+
+export async function resetAnalytics(): Promise<ResetAnalyticsResponse> {
+  if (USE_MOCK_DATA) {
+    maybeMockError();
+    return {
+      deleted_events: mockDashboardSummary.total_requests,
+      deleted_imports: 1,
+      deleted_analysis_runs: mockScenarios.total ? 1 : 0,
+    };
+  }
+  return apiRequest("/api/v1/analysis/reset", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ confirmation: "RESET" }),
+  });
 }

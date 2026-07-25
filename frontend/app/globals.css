@@ -1676,6 +1676,20 @@ body {
   background: #f4f4f5;
 }
 
+.shad-button-destructive {
+  color: #ffffff;
+  background: #b4232f;
+}
+
+.shad-button-destructive:hover:not(:disabled) {
+  background: #971d27;
+}
+
+.shad-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
 .shad-button-sm {
   min-height: 36px;
   padding: 0 10px;
@@ -1686,6 +1700,54 @@ body {
   width: 38px;
   min-height: 38px;
   padding: 0;
+}
+
+.alert-dialog-overlay {
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  background: rgb(9 9 11 / 48%);
+}
+
+.alert-dialog-content {
+  position: fixed;
+  z-index: 101;
+  top: 50%;
+  left: 50%;
+  width: min(520px, calc(100vw - 32px));
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 24px 80px rgb(9 9 11 / 18%);
+  transform: translate(-50%, -50%);
+}
+
+.alert-dialog-header {
+  display: grid;
+  gap: 9px;
+}
+
+.alert-dialog-title {
+  margin: 0;
+  color: var(--ink);
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.alert-dialog-description {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.alert-dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 24px;
 }
 
 .shad-select-trigger {
@@ -2880,6 +2942,44 @@ body {
   background: #fff1f0;
 }
 
+.data-reset-card {
+  margin-top: 18px;
+  border-color: #edc9cd;
+}
+
+.import-card-icon.is-danger {
+  color: #a52430;
+  background: #fff0f1;
+}
+
+.data-reset-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.data-reset-row > p {
+  max-width: 760px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.data-reset-success {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 16px;
+  padding: 13px 14px;
+  color: #285b3c;
+  background: #edf7f0;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
 @media (max-width: 1050px) {
   .import-workspace {
     grid-template-columns: 1fr;
@@ -2907,13 +3007,24 @@ body {
 
   .import-form-footer,
   .import-result,
-  .import-status-heading {
+  .import-status-heading,
+  .data-reset-row {
     align-items: stretch;
     flex-direction: column;
   }
 
   .import-form-footer .shad-button,
-  .import-result .shad-button {
+  .import-result .shad-button,
+  .data-reset-row .shad-button {
+    width: 100%;
+  }
+
+  .alert-dialog-footer {
+    align-items: stretch;
+    flex-direction: column-reverse;
+  }
+
+  .alert-dialog-footer .shad-button {
     width: 100%;
   }
 
