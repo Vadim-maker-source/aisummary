@@ -1,12 +1,13 @@
 "use client";
 
-import { useMutation, useQuery } from "@tanstack/react-query";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import {
   ArrowRight,
   CheckCircle2,
   CircleAlert,
   Database,
   FileJson,
+  Trash2,
   UploadCloud,
   X,
 } from "lucide-react";
@@ -21,6 +22,17 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
+import {
   Card,
   CardContent,
   CardDescription,
@@ -28,7 +40,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { getImportStatus, uploadImport } from "@/lib/api";
+import { getImportStatus, resetAnalytics, uploadImport } from "@/lib/api";
 import { IMPORT_STATUS_LABELS } from "@/lib/constants";
 import type { ImportStatus } from "@/types/api";
 
@@ -74,6 +86,7 @@ function formatFileSize(bytes: number): string {
 }
 
 export default function ImportsPage() {
+  const queryClient = useQueryClient();
   const inputRef = useRef<HTMLInputElement>(null);
   const [file, setFile] = useState<File | null>(null);
   const [isDragging, setIsDragging] = useState(false);
@@ -82,6 +95,17 @@ export default function ImportsPage() {
   const upload = useMutation({
     mutationFn: uploadImport,
     onSuccess: (data) => setImportId(data.id),
+  });
+  const reset = useMutation({
+    mutationFn: resetAnalytics,
+    onSuccess: async () => {
+      setImportId(null);
+      setFile(null);
+      setValidationError("");
+      upload.reset();
+      if (inputRef.current) inputRef.current.value = "";
+      await queryClient.invalidateQueries();
+    },
   });
   const status = useQuery({
     queryKey: ["import-status", importId],
@@ -433,6 +457,73 @@ export default function ImportsPage() {
           </CardContent>
         </Card>
       ) : null}
+
+      <Card className="data-reset-card">
+        <CardHeader>
+          <div className="import-card-heading">
+            <span className="import-card-icon is-danger" aria-hidden="true">
+              <Trash2 size={20} />
+            </span>
+            <div>
+              <CardTitle>Сброс аналитических данных</CardTitle>
+              <CardDescription>
+                Подготовьте чистую базу перед загрузкой нового демонстрационного
+                набора.
+              </CardDescription>
+            </div>
+          </div>
+        </CardHeader>
+        <CardContent>
+          <div className="data-reset-row">
+            <p>
+              Будут удалены события, результаты классификации, сценарии и
+              история импортов. Таблицы PostgreSQL и миграции сохранятся.
+            </p>
+            <AlertDialog>
+              <AlertDialogTrigger asChild>
+                <Button variant="destructive" disabled={reset.isPending}>
+                  <Trash2 size={16} aria-hidden="true" />
+                  {reset.isPending ? "Сбрасываем…" : "Сбросить базу"}
+                </Button>
+              </AlertDialogTrigger>
+              <AlertDialogContent>
+                <AlertDialogHeader>
+                  <AlertDialogTitle>
+                    Удалить все аналитические данные?
+                  </AlertDialogTitle>
+                  <AlertDialogDescription>
+                    Действие нельзя отменить. После сброса дашборд будет пустым,
+                    пока вы не импортируете новый файл.
+                  </AlertDialogDescription>
+                </AlertDialogHeader>
+                <AlertDialogFooter>
+                  <AlertDialogCancel asChild>
+                    <Button variant="outline">Отмена</Button>
+                  </AlertDialogCancel>
+                  <AlertDialogAction asChild>
+                    <Button
+                      variant="destructive"
+                      onClick={() => reset.mutate()}
+                    >
+                      Да, удалить данные
+                    </Button>
+                  </AlertDialogAction>
+                </AlertDialogFooter>
+              </AlertDialogContent>
+            </AlertDialog>
+          </div>
+          {reset.isError ? (
+            <ErrorState message={errorMessage(reset.error)} />
+          ) : null}
+          {reset.data ? (
+            <div className="data-reset-success" role="status">
+              <CheckCircle2 size={18} aria-hidden="true" />
+              Удалено событий: {reset.data.deleted_events}. База готова к
+              новому импорту.
+            </div>
+          ) : null}
+        </CardContent>
+      </Card>
     </div>
   );
 }

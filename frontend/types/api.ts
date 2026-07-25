@@ -244,6 +244,12 @@ export interface ImportStatusResponse {
   errors: unknown[];
 }
 
+export interface ResetAnalyticsResponse {
+  deleted_events: number;
+  deleted_imports: number;
+  deleted_analysis_runs: number;
+}
+
 export interface EventListParams {
   page?: number;
   page_size?: number;
