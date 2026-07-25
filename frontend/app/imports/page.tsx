@@ -45,7 +45,7 @@ import { IMPORT_STATUS_LABELS } from "@/lib/constants";
 import type { ImportStatus } from "@/types/api";
 
 const MAX_FILE_BYTES = 512 * 1024 * 1024;
-const SUPPORTED_EXTENSIONS = new Set(["json", "jsonl", "txt"]);
+const SUPPORTED_EXTENSIONS = new Set(["json", "jsonl", "txt", "csv"]);
 
 const STATUS_VARIANTS: Record<
   ImportStatus,
@@ -131,7 +131,7 @@ export default function ImportsPage() {
     const extension = selected.name.toLowerCase().split(".").pop() ?? "";
     if (!SUPPORTED_EXTENSIONS.has(extension)) {
       setFile(null);
-      setValidationError("Поддерживаются файлы .json, .jsonl и .txt");
+      setValidationError("Поддерживаются файлы .json, .jsonl, .txt и .csv");
       if (inputRef.current) inputRef.current.value = "";
       return;
     }
@@ -193,7 +193,7 @@ export default function ImportsPage() {
           <span>1</span>
           <p>
             <strong>Загрузка</strong>
-            JSON, JSONL или TXT до 512 МБ
+            CSV, JSON, JSONL или TXT до 512 МБ
           </p>
         </div>
         <div>
@@ -222,7 +222,7 @@ export default function ImportsPage() {
               <div>
                 <CardTitle>Загрузите файл событий</CardTitle>
                 <CardDescription>
-                  Для больших запросов на 100k токенов используйте JSONL.
+                  Для больших наборов используйте CSV или JSONL.
                 </CardDescription>
               </div>
             </div>
@@ -243,7 +243,7 @@ export default function ImportsPage() {
                   ref={inputRef}
                   type="file"
                   name="file"
-                  accept=".json,.jsonl,.txt,application/json,text/plain"
+                  accept=".json,.jsonl,.txt,.csv,application/json,text/plain,text/csv"
                   onChange={(event) =>
                     selectFile(event.target.files?.[0] ?? null)
                   }
@@ -256,7 +256,9 @@ export default function ImportsPage() {
                     ? "Отпустите файл здесь"
                     : "Перетащите файл или выберите на компьютере"}
                 </strong>
-                <small>JSON · JSONL · TXT — максимальный размер 512 МБ</small>
+                <small>
+                  CSV · JSON · JSONL · TXT — максимальный размер 512 МБ
+                </small>
               </label>
 
               {file ? (
@@ -320,8 +322,8 @@ export default function ImportsPage() {
                 <p>
                   <strong>Сообщения запроса</strong>
                   <span>
-                    request.messages или messages верхнего уровня хотя бы с
-                    одним сообщением пользователя.
+                    request.messages, messages или CSV-колонка user_query,
+                    query либо prompt.
                   </span>
                 </p>
               </div>
@@ -350,7 +352,8 @@ export default function ImportsPage() {
               <CheckCircle2 size={18} aria-hidden="true" />
               <p>
                 <strong>OpenAI-compatible формат поддерживается</strong>
-                Можно передавать сырой объект запроса и ответ с choices и usage.
+                Можно передавать сырой объект запроса, CSV-таблицу и ответ с
+                choices и usage.
               </p>
             </div>
           </CardContent>
