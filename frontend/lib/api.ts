@@ -21,6 +21,8 @@ import type {
   ImportStatusResponse,
   ProblemListResponse,
   ResetAnalyticsResponse,
+  ReportDownload,
+  ReportFormat,
   ScenarioDetail,
   ScenarioListParams,
   ScenarioListResponse,
@@ -327,4 +329,49 @@ export async function resetAnalytics(): Promise<ResetAnalyticsResponse> {
     },
     body: JSON.stringify({ confirmation: "RESET" }),
   });
+}
+
+export async function downloadDashboardReport(
+  format: ReportFormat,
+): Promise<ReportDownload> {
+  if (USE_MOCK_DATA) {
+    maybeMockError();
+    const content = JSON.stringify(
+      {
+        summary: mockDashboardSummary,
+        categories: mockCategories.items,
+        scenarios: mockScenarios.items,
+      },
+      null,
+      2,
+    );
+    return {
+      blob: new Blob([content], { type: "application/json" }),
+      filename: `prompt-radar-report.${format}`,
+    };
+  }
+
+  const response = await fetch(
+    `${API_BASE_URL}/api/v1/dashboard/report?format=${encodeURIComponent(format)}`,
+    { headers: { Accept: "*/*" } },
+  );
+  if (!response.ok) {
+    let detail = `Ошибка API (${response.status})`;
+    try {
+      const payload = (await response.json()) as { detail?: unknown };
+      if (typeof payload.detail === "string") detail = payload.detail;
+    } catch {
+      // The status code remains useful when the response is not JSON.
+    }
+    throw new ApiError(response.status, detail);
+  }
+
+  const disposition = response.headers.get("Content-Disposition") ?? "";
+  const filename =
+    disposition.match(/filename="([^"]+)"/)?.[1] ??
+    `prompt-radar-report.${format}`;
+  return {
+    blob: await response.blob(),
+    filename,
+  };
 }

@@ -250,6 +250,13 @@ export interface ResetAnalyticsResponse {
   deleted_analysis_runs: number;
 }
 
+export type ReportFormat = "pdf" | "md" | "csv" | "json";
+
+export interface ReportDownload {
+  blob: Blob;
+  filename: string;
+}
+
 export interface EventListParams {
   page?: number;
   page_size?: number;
