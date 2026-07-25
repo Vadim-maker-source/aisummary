@@ -1,12 +1,13 @@
 "use client";
 
-import { useQuery } from "@tanstack/react-query";
+import { useMutation, useQuery } from "@tanstack/react-query";
 import {
   ArrowRight,
   Building2,
   CheckCircle2,
   CircleAlert,
   Clock3,
+  Download,
   GraduationCap,
   Layers3,
   MessagesSquare,
@@ -36,6 +37,13 @@ import {
 } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import {
   Table,
   TableBody,
   TableCell,
@@ -48,13 +56,18 @@ import {
   getCategorySummaries,
   getDashboardSummary,
   getDecisionSupport,
+  downloadDashboardReport,
   getEffectiveness,
   getProblems,
   getScenarioTrends,
   getScenarios,
 } from "@/lib/api";
 import { CATEGORY_LABELS } from "@/lib/constants";
-import type { EffectivenessDimension, ScenarioTrend } from "@/types/api";
+import type {
+  EffectivenessDimension,
+  ReportFormat,
+  ScenarioTrend,
+} from "@/types/api";
 
 const DIMENSION_LABELS: Record<EffectivenessDimension, string> = {
   direction: "Направления",
@@ -80,6 +93,20 @@ function formatPeriod(value: string | null): string {
 export default function DashboardPage() {
   const [dimension, setDimension] =
     useState<EffectivenessDimension>("direction");
+  const [reportFormat, setReportFormat] = useState<ReportFormat>("pdf");
+  const reportExport = useMutation({
+    mutationFn: () => downloadDashboardReport(reportFormat),
+    onSuccess: ({ blob, filename }) => {
+      const url = URL.createObjectURL(blob);
+      const anchor = document.createElement("a");
+      anchor.href = url;
+      anchor.download = filename;
+      document.body.appendChild(anchor);
+      anchor.click();
+      anchor.remove();
+      URL.revokeObjectURL(url);
+    },
+  });
   const summary = useQuery({
     queryKey: ["dashboard-summary"],
     queryFn: getDashboardSummary,
@@ -136,11 +163,47 @@ export default function DashboardPage() {
         title="Аналитика запросов"
         description="Что сотрудники поручают ИИ-агентам, где возникают проблемы и какие сценарии стоит развивать."
         action={
-          <Button asChild>
-            <Link href="/imports">Импортировать данные</Link>
-          </Button>
+          <div className="report-page-actions">
+            <div className="report-export-control">
+              <Select
+                value={reportFormat}
+                onValueChange={(value) =>
+                  setReportFormat(value as ReportFormat)
+                }
+              >
+                <SelectTrigger aria-label="Формат отчёта">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="pdf">PDF</SelectItem>
+                  <SelectItem value="md">Markdown (.md)</SelectItem>
+                  <SelectItem value="csv">CSV</SelectItem>
+                  <SelectItem value="json">JSON</SelectItem>
+                </SelectContent>
+              </Select>
+              <Button
+                variant="outline"
+                disabled={reportExport.isPending}
+                onClick={() => reportExport.mutate()}
+              >
+                <Download size={16} aria-hidden="true" />
+                {reportExport.isPending
+                  ? "Формируем…"
+                  : "Сохранить отчёт"}
+              </Button>
+            </div>
+            <Button asChild>
+              <Link href="/imports">Импортировать данные</Link>
+            </Button>
+          </div>
         }
       />
+
+      {reportExport.isError ? (
+        <p className="report-export-error" role="alert">
+          Не удалось сохранить отчёт: {errorMessage(reportExport.error)}
+        </p>
+      ) : null}
 
       {summary.isPending ? (
         <div className="overview-metrics" aria-label="Загрузка показателей">

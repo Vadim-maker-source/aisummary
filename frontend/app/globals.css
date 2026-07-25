@@ -463,6 +463,26 @@ label:has(input:focus-visible) {
   line-height: 1.55;
 }
 
+.report-page-actions,
+.report-export-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.report-export-control .shad-select-trigger {
+  width: 154px;
+}
+
+.report-export-error {
+  margin: -16px 0 22px;
+  padding: 11px 13px;
+  color: #8d3434;
+  background: #fff1f0;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
 .error-state {
   color: #812e2e;
   background: #fff8f7;
@@ -3099,6 +3119,18 @@ body {
 
   .page-frame {
     padding: 28px 20px 48px;
+  }
+
+  .report-page-actions {
+    width: 100%;
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .report-export-control,
+  .report-export-control .shad-select-trigger,
+  .report-page-actions > .shad-button {
+    width: 100%;
   }
 
   .page-header h1 {
