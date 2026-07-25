@@ -18,6 +18,11 @@ class Settings(BaseSettings):
     llm_api_key: str | None = None
     llm_model: str | None = None
     llm_timeout_seconds: int = Field(default=20, ge=1, le=120)
+    embedding_base_url: str | None = None
+    embedding_api_key: str | None = None
+    embedding_model: str = "Qwen/Qwen3-Embedding-0.6B"
+    embedding_timeout_seconds: int = Field(default=60, ge=1, le=300)
+    embedding_batch_size: int = Field(default=96, ge=1, le=256)
     cors_origins: str = "http://localhost:3000"
     worker_poll_seconds: float = Field(default=1.0, gt=0, le=60)
     worker_batch_size: int = Field(default=20, ge=1, le=100)

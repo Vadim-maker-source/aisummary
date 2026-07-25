@@ -73,6 +73,7 @@ npm run dev
 ```powershell
 python scripts\generate_project_dataset.py
 python scripts\validate_project_dataset.py
+python scripts\audit_database_quality.py --write
 ```
 
 Совместимая короткая команда генерации:
@@ -83,6 +84,10 @@ python data\generate_datasets.py
 
 Demo содержит штатные запросы, бизнес-поля и 12 edge cases строго выше
 поддерживаемой границы 100 000 prompt-токенов.
+
+Scenario discovery использует семантические embeddings
+`Qwen/Qwen3-Embedding-0.6B` через настроенный OpenAI-совместимый endpoint.
+При недоступности embeddings автоматически включается offline TF-IDF fallback.
 
 Для большого файла используйте CSV или JSONL: оба формата читаются построчно.
 

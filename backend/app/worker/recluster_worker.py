@@ -76,6 +76,10 @@ async def process_run(run_id: UUID) -> None:
                 "event_id": str(analysis.event_id),
                 "effective_query": analysis.effective_user_query,
                 "category": analysis.category,
+                "classification_confidence": float(
+                    analysis.classification_confidence
+                ),
+                "query_problem_reasons": analysis.query_problem_reasons,
             }
             for analysis in rows
         ]

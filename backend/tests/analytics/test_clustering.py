@@ -2,12 +2,23 @@
 
 from __future__ import annotations
 
+import numpy as np
 import pytest
 
+from app.analytics import embedding_client
 from app.analytics.public import discover_scenarios
-from app.analytics.schemas import Category, ScenarioInputRecord
+from app.analytics.schemas import (
+    Category,
+    QueryProblemReason,
+    ScenarioInputRecord,
+)
 
 pytestmark = pytest.mark.asyncio
+
+
+@pytest.fixture(autouse=True)
+def disable_real_embeddings(monkeypatch):
+    monkeypatch.setattr(embedding_client, "is_configured", lambda: False)
 
 CALENDAR = [
     "Найди общий свободный слот для встречи команды",
@@ -116,3 +127,117 @@ async def test_empty_input():
     assert result.scenarios == []
     assert result.unclustered_event_ids == []
     assert result.algorithm_version == "tfidf-agg-v1"
+
+
+async def test_semantic_clustering_can_bridge_category_errors(monkeypatch):
+    records = [
+        ScenarioInputRecord(
+            event_id="mail-1",
+            effective_query="Сделай сводку почты",
+            category=Category.summarization,
+        ),
+        ScenarioInputRecord(
+            event_id="mail-2",
+            effective_query="Подведи итоги писем",
+            category=Category.summarization,
+        ),
+        ScenarioInputRecord(
+            event_id="mail-3",
+            effective_query="Кратко перескажи входящие",
+            category=Category.reporting_export,
+        ),
+        ScenarioInputRecord(
+            event_id="meet-1",
+            effective_query="Найди слот для встречи",
+            category=Category.calendar_planning,
+        ),
+        ScenarioInputRecord(
+            event_id="meet-2",
+            effective_query="Подбери время в календаре",
+            category=Category.calendar_planning,
+        ),
+        ScenarioInputRecord(
+            event_id="meet-3",
+            effective_query="Когда команда свободна",
+            category=Category.calendar_planning,
+        ),
+    ]
+    vectors = np.asarray(
+        [
+            [1.0, 0.00],
+            [0.99, 0.01],
+            [0.98, 0.02],
+            [0.00, 1.0],
+            [0.01, 0.99],
+            [0.02, 0.98],
+        ]
+    )
+    monkeypatch.setattr(embedding_client, "is_configured", lambda: True)
+
+    async def fake_embeddings(_texts):
+        return vectors
+
+    monkeypatch.setattr(embedding_client, "embed_texts", fake_embeddings)
+    result = await discover_scenarios(records)
+
+    assert result.algorithm_version == "qwen-embedding-agg-v2"
+    assert len(result.scenarios) == 2
+    scenario_members = [
+        set(scenario.member_event_ids)
+        for scenario in result.scenarios
+    ]
+    assert {"mail-1", "mail-2", "mail-3"} in scenario_members
+    assert {"meet-1", "meet-2", "meet-3"} in scenario_members
+    mail = next(
+        scenario
+        for scenario in result.scenarios
+        if "mail-1" in scenario.member_event_ids
+    )
+    assert mail.category == Category.summarization
+
+
+async def test_problematic_requests_are_not_used_for_discovery(monkeypatch):
+    records = [
+        ScenarioInputRecord(
+            event_id=f"good-{index}",
+            effective_query=f"Сделай сводку писем, вариант {index}",
+            category=Category.summarization,
+        )
+        for index in range(3)
+    ]
+    records.append(
+        ScenarioInputRecord(
+            event_id="ambiguous",
+            effective_query="Сделай это",
+            category=Category.summarization,
+            classification_confidence=0.9,
+            query_problem_reasons=[QueryProblemReason.ambiguous],
+        )
+    )
+    monkeypatch.setattr(embedding_client, "is_configured", lambda: True)
+
+    async def fake_embeddings(texts):
+        assert len(texts) == 3
+        return np.asarray(
+            [[1.0, 0.0], [0.99, 0.01], [0.98, 0.02]]
+        )
+
+    monkeypatch.setattr(embedding_client, "embed_texts", fake_embeddings)
+    result = await discover_scenarios(records)
+
+    assert len(result.scenarios) == 1
+    assert "ambiguous" not in result.scenarios[0].member_event_ids
+    assert "ambiguous" in result.unclustered_event_ids
+
+
+async def test_embedding_failure_falls_back_to_tfidf(monkeypatch):
+    monkeypatch.setattr(embedding_client, "is_configured", lambda: True)
+
+    async def fail_embeddings(_texts):
+        raise embedding_client.EmbeddingError("temporary failure")
+
+    monkeypatch.setattr(embedding_client, "embed_texts", fail_embeddings)
+    result = await discover_scenarios(_records())
+
+    assert result.algorithm_version == "tfidf-agg-v1"
+    assert len(result.scenarios) == 2

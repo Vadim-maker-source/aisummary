@@ -7,8 +7,9 @@ Pydantic model.
 
 from __future__ import annotations
 
+import asyncio
 from collections import OrderedDict
-from typing import Iterable, List
+from typing import Iterable, List, Optional
 
 from . import classifier, clustering, extraction, problems, scenario_assignment, summarizer
 from .categories import automation_for
@@ -24,7 +25,8 @@ from .schemas import (
 )
 
 CLASSIFIER_VERSION = "v1"
-ALGORITHM_VERSION = "tfidf-agg-v1"
+TFIDF_ALGORITHM_VERSION = "tfidf-agg-v1"
+SEMANTIC_ALGORITHM_VERSION = "qwen-embedding-agg-v2"
 
 
 def _dedupe_warnings(warnings: Iterable[AnalyticsWarning]) -> List[AnalyticsWarning]:
@@ -107,15 +109,73 @@ async def discover_scenarios(
     # Fixed input order for reproducibility (role file section 9.2).
     ordered = sorted(records, key=lambda record: str(record.event_id))
 
-    # Exclude category=other; group the rest by category, preserving order.
+    # Exclude requests that cannot form a reliable durable use case.
+    eligible = [
+        record
+        for record in ordered
+        if clustering.eligible_for_scenario_discovery(record)
+    ]
+    excluded_ids = [
+        record.event_id
+        for record in ordered
+        if record.category != Category.other
+        and record not in eligible
+    ]
+
+    semantic_clusters: Optional[List[clustering.ClusterResult]] = None
+    semantic_unclustered: List[str] = []
+    if clustering.embedding_client.is_configured() and eligible:
+        try:
+            semantic_clusters, semantic_unclustered = (
+                await clustering.cluster_semantically(eligible)
+            )
+        except clustering.embedding_client.EmbeddingError:
+            semantic_clusters = None
+
+    if semantic_clusters is not None:
+        semaphore = asyncio.Semaphore(4)
+
+        async def build_semantic_scenario(
+            cluster: clustering.ClusterResult,
+        ) -> DiscoveredScenario:
+            category = cluster.category or Category.other
+            async with semaphore:
+                meta = await summarizer.summarize_cluster(
+                    category,
+                    cluster.representative_queries,
+                )
+            return DiscoveredScenario(
+                category=category,
+                name=meta.name,
+                summary=meta.summary,
+                representative_queries=cluster.representative_queries,
+                member_event_ids=cluster.member_event_ids,
+                common_problems=meta.common_problems,
+                automation_potential=meta.automation_potential,
+                suggested_action=meta.suggested_action,
+            )
+
+        scenarios = list(
+            await asyncio.gather(
+                *(
+                    build_semantic_scenario(cluster)
+                    for cluster in semantic_clusters
+                )
+            )
+        )
+        return ScenarioDiscoveryResult(
+            scenarios=scenarios,
+            unclustered_event_ids=excluded_ids + semantic_unclustered,
+            algorithm_version=SEMANTIC_ALGORITHM_VERSION,
+        )
+
+    # Offline fallback: group by category and use char-ngram TF-IDF.
     by_category: "OrderedDict[Category, List[ScenarioInputRecord]]" = OrderedDict()
-    for record in ordered:
-        if record.category == Category.other:
-            continue
+    for record in eligible:
         by_category.setdefault(record.category, []).append(record)
 
     scenarios: List[DiscoveredScenario] = []
-    unclustered: List[str] = []
+    unclustered: List[str] = list(excluded_ids)
 
     # Deterministic category processing order.
     for category in sorted(by_category, key=lambda c: c.value):
@@ -140,5 +200,5 @@ async def discover_scenarios(
     return ScenarioDiscoveryResult(
         scenarios=scenarios,
         unclustered_event_ids=unclustered,
-        algorithm_version=ALGORITHM_VERSION,
+        algorithm_version=TFIDF_ALGORITHM_VERSION,
     )
