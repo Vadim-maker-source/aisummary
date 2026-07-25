@@ -16,7 +16,7 @@ API documentation: `http://localhost:8000/docs`.
 
 `POST /api/v1/imports` accepts `multipart/form-data`:
 
-- `file`: `.jsonl` (recommended for large datasets), `.json` or `.txt`;
+- `file`: `.csv` or `.jsonl` for large datasets, `.json` or `.txt`;
 - `agent_id`: optional identifier used when a raw request has no `agent_id`.
 
 Two input shapes are supported.
@@ -62,8 +62,9 @@ Raw OpenAI-compatible request:
 ```
 
 For raw requests the importer generates a stable `external_id`, applies the
-form field `agent_id` and wraps the payload into `request`. JSONL is processed
-line by line and can contain one object per line. The upload limit is 512 MB.
+form field `agent_id` and wraps the payload into `request`. JSONL and CSV are
+processed row by row. CSV accepts flat columns such as `user_query`, `team`,
+`agent_answer` and `execution_status`. The upload limit is 512 MB.
 
 ## 100k context handling
 

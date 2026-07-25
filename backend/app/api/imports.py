@@ -21,7 +21,7 @@ from app.services.imports import create_import_job, process_import_file
 
 router = APIRouter(prefix="/imports", tags=["imports"])
 
-SUPPORTED_IMPORT_SUFFIXES = {".json", ".jsonl", ".txt"}
+SUPPORTED_IMPORT_SUFFIXES = {".json", ".jsonl", ".txt", ".csv"}
 MAX_IMPORT_BYTES = 512 * 1024 * 1024
 UPLOAD_CHUNK_BYTES = 1024 * 1024
 
@@ -42,7 +42,7 @@ async def upload_import(
     if suffix not in SUPPORTED_IMPORT_SUFFIXES:
         raise HTTPException(
             status_code=415,
-            detail="Only .json, .jsonl and .txt files are supported",
+            detail="Only .json, .jsonl, .txt and .csv files are supported",
         )
     agent_id = agent_id.strip()
     if not agent_id:
