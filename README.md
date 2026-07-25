@@ -89,6 +89,10 @@ Scenario discovery использует семантические embeddings
 `Qwen/Qwen3-Embedding-0.6B` через настроенный OpenAI-совместимый endpoint.
 При недоступности embeddings автоматически включается offline TF-IDF fallback.
 
+Production-профиль также поднимает закрытый Ollama endpoint для локальной LLM.
+По умолчанию используется `qwen3:30b-a3b-instruct-2507-q4_K_M`; порт Ollama
+доступен только контейнерам Compose и не публикуется на хосте.
+
 Для большого файла используйте CSV или JSONL: оба формата читаются построчно.
 
 CSV может содержать плоские колонки:

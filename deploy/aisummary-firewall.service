@@ -1,0 +1,12 @@
+[Unit]
+Description=AI Summary iptables policy
+Requires=docker.service
+After=network-online.target docker.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/aisummary-firewall
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

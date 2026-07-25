@@ -1,4 +1,37 @@
 services:
+  ollama:
+    image: ollama/ollama:latest
+    restart: unless-stopped
+    environment:
+      OLLAMA_HOST: 0.0.0.0:11434
+      OLLAMA_CONTEXT_LENGTH: ${OLLAMA_CONTEXT_LENGTH:-32768}
+      OLLAMA_KEEP_ALIVE: ${OLLAMA_KEEP_ALIVE:-30m}
+      OLLAMA_NO_CLOUD: "1"
+    volumes:
+      - ollama_data:/root/.ollama
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+    profiles:
+      - full
+
+  ollama-pull:
+    image: ollama/ollama:latest
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+    command:
+      [
+        "pull",
+        "${LOCAL_LLM_MODEL:-qwen3:30b-a3b-instruct-2507-q4_K_M}",
+      ]
+    depends_on:
+      ollama:
+        condition: service_healthy
+    profiles:
+      - full
+
   postgres:
     image: postgres:16-alpine
     restart: unless-stopped
@@ -111,4 +144,5 @@ services:
       - full
 
 volumes:
+  ollama_data:
   postgres_data:
