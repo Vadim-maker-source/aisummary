@@ -12,7 +12,7 @@
 - устойчивый fallback без внешней модели;
 - группировка TF-IDF + agglomerative clustering;
 - Next.js CTO-дашборд;
-- импорт `.json`, `.jsonl`, `.txt`;
+- импорт `.csv`, `.json`, `.jsonl`, `.txt`;
 - генератор по всем 35 сценариям из кейса;
 - отдельный профиль запросов со средним целевым контекстом 100k токенов.
 - отдельная категория нерабочих и общих вопросов;
@@ -80,7 +80,20 @@ python data\generate_datasets.py --profile quick
 python data\generate_datasets.py --profile compliant
 ```
 
-Для большого файла используйте JSONL-импорт: он читается построчно.
+Для большого файла используйте CSV или JSONL: оба формата читаются построчно.
+
+CSV может содержать плоские колонки:
+
+```csv
+external_id,agent_id,user_query,team,direction,agent_answer,execution_status
+request-001,mail-agent,Сделай сводку писем,Продажи,Коммерция,Готово,success
+```
+
+Поддерживаются разделители `,`, `;` и табуляция, UTF-8 с BOM, а также колонки
+`request` или `messages` с JSON. Для текста запроса можно использовать
+`user_query`, `query`, `question`, `prompt`, `text`, `content` или русские
+заголовки `Запрос`/`Вопрос`. Для ответа поддерживаются `agent_answer`,
+`answer`, `response` и `Ответ`.
 
 Контекст до 100 000 prompt-токенов включительно считается штатным. Если
 провайдер передал `usage.prompt_tokens`, backend использует это точное значение.
