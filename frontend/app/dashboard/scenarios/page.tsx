@@ -18,8 +18,16 @@ import {
 import { getScenarios } from "@/lib/api";
 import { CATEGORIES, CATEGORY_LABELS } from "@/lib/constants";
 import type { Category } from "@/types/api";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 const PAGE_SIZE = 20;
+const ALL_FILTER = "__all__";
 
 export default function ScenariosPage() {
   return (
@@ -101,19 +109,26 @@ function ScenariosContent() {
       <section className="filter-bar" aria-label="Фильтры сценариев">
         <label>
           <span>Категория</span>
-          <select
-            value={category}
-            onChange={(event) =>
-              changeCategory(event.target.value as Category | "")
+          <Select
+            value={category || ALL_FILTER}
+            onValueChange={(value) =>
+              changeCategory(
+                value === ALL_FILTER ? "" : (value as Category),
+              )
             }
           >
-            <option value="">Все категории</option>
-            {CATEGORIES.map((item) => (
-              <option value={item} key={item}>
-                {CATEGORY_LABELS[item]}
-              </option>
-            ))}
-          </select>
+            <SelectTrigger aria-label="Категория">
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value={ALL_FILTER}>Все категории</SelectItem>
+              {CATEGORIES.map((item) => (
+                <SelectItem value={item} key={item}>
+                  {CATEGORY_LABELS[item]}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
         </label>
         {category ? (
           <button

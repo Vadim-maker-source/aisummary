@@ -25,8 +25,16 @@ import {
   STATUS_LABELS,
 } from "@/lib/constants";
 import type { AnalysisStatus, Category } from "@/types/api";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 const PAGE_SIZE = 20;
+const ALL_FILTER = "__all__";
 
 export default function RequestsPage() {
   return (
@@ -124,67 +132,99 @@ function RequestsContent() {
       <section className="filter-bar requests-filters" aria-label="Фильтры запросов">
         <label>
           <span>Категория</span>
-          <select
-            value={category}
-            onChange={(event) =>
-              updateParams({ category: event.target.value || null }, true)
-            }
-          >
-            <option value="">Все категории</option>
-            {CATEGORIES.map((item) => (
-              <option value={item} key={item}>
-                {CATEGORY_LABELS[item]}
-              </option>
-            ))}
-          </select>
-        </label>
-        <label>
-          <span>Сценарий</span>
-          <select
-            value={scenarioId}
-            onChange={(event) =>
-              updateParams({ scenario_id: event.target.value || null }, true)
-            }
-          >
-            <option value="">Все сценарии</option>
-            {scenarios.data?.items.map((item) => (
-              <option value={item.id} key={item.id}>
-                {item.name}
-              </option>
-            ))}
-          </select>
-        </label>
-        <label>
-          <span>Статус анализа</span>
-          <select
-            value={status}
-            onChange={(event) =>
-              updateParams({ analysis_status: event.target.value || null }, true)
-            }
-          >
-            <option value="">Все статусы</option>
-            {Object.entries(STATUS_LABELS).map(([value, label]) => (
-              <option value={value} key={value}>
-                {label}
-              </option>
-            ))}
-          </select>
-        </label>
-        <label>
-          <span>Формулировка</span>
-          <select
-            value={hasProblem}
-            onChange={(event) =>
+          <Select
+            value={category || ALL_FILTER}
+            onValueChange={(value) =>
               updateParams(
-                { has_query_problem: event.target.value || null },
+                { category: value === ALL_FILTER ? null : value },
                 true,
               )
             }
           >
-            <option value="">Все запросы</option>
-            <option value="true">Есть точки риска</option>
-            <option value="false">Без точек риска</option>
-          </select>
+            <SelectTrigger aria-label="Категория">
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value={ALL_FILTER}>Все категории</SelectItem>
+              {CATEGORIES.map((item) => (
+                <SelectItem value={item} key={item}>
+                  {CATEGORY_LABELS[item]}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </label>
+        <label>
+          <span>Сценарий</span>
+          <Select
+            value={scenarioId || ALL_FILTER}
+            onValueChange={(value) =>
+              updateParams(
+                { scenario_id: value === ALL_FILTER ? null : value },
+                true,
+              )
+            }
+          >
+            <SelectTrigger aria-label="Сценарий">
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value={ALL_FILTER}>Все сценарии</SelectItem>
+              {scenarios.data?.items.map((item) => (
+                <SelectItem value={item.id} key={item.id}>
+                  {item.name}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </label>
+        <label>
+          <span>Статус анализа</span>
+          <Select
+            value={status || ALL_FILTER}
+            onValueChange={(value) =>
+              updateParams(
+                { analysis_status: value === ALL_FILTER ? null : value },
+                true,
+              )
+            }
+          >
+            <SelectTrigger aria-label="Статус анализа">
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value={ALL_FILTER}>Все статусы</SelectItem>
+              {Object.entries(STATUS_LABELS).map(([value, label]) => (
+                <SelectItem value={value} key={value}>
+                  {label}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </label>
+        <label>
+          <span>Формулировка</span>
+          <Select
+            value={hasProblem || ALL_FILTER}
+            onValueChange={(value) =>
+              updateParams(
+                {
+                  has_query_problem:
+                    value === ALL_FILTER ? null : value,
+                },
+                true,
+              )
+            }
+          >
+            <SelectTrigger aria-label="Формулировка">
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value={ALL_FILTER}>Все запросы</SelectItem>
+              <SelectItem value="true">Есть точки риска</SelectItem>
+              <SelectItem value="false">Без точек риска</SelectItem>
+            </SelectContent>
+          </Select>
         </label>
         {hasActiveFilters ? (
           <button
