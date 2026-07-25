@@ -67,6 +67,10 @@ class AgentEvent(Base):
             "rating IS NULL OR (rating >= 1 AND rating <= 5)",
             name="ck_rating",
         ),
+        CheckConstraint(
+            "estimated_minutes_saved IS NULL OR estimated_minutes_saved >= 0",
+            name="ck_minutes_saved",
+        ),
         Index("ix_events_analysis_status", "analysis_status"),
         Index("ix_events_occurred_at", "occurred_at"),
         Index("ix_events_import_id", "import_id"),
@@ -100,6 +104,10 @@ class AgentEvent(Base):
     )
     latency_ms: Mapped[int | None] = mapped_column(Integer, nullable=True)
     rating: Mapped[Decimal | None] = mapped_column(Numeric(2, 1), nullable=True)
+    task_completed: Mapped[bool | None] = mapped_column(Boolean, nullable=True)
+    estimated_minutes_saved: Mapped[int | None] = mapped_column(
+        Integer, nullable=True
+    )
     prompt_tokens: Mapped[int | None] = mapped_column(Integer, nullable=True)
     completion_tokens: Mapped[int | None] = mapped_column(Integer, nullable=True)
     total_tokens: Mapped[int | None] = mapped_column(Integer, nullable=True)

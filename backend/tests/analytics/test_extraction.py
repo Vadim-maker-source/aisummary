@@ -14,6 +14,10 @@ from app.analytics.schemas import (
     Message,
     QueryProblemReason,
 )
+from app.core.context_limits import (
+    MAX_SUPPORTED_CONTEXT_TOKENS,
+    MAX_UNMETERED_CONTEXT_CHARS,
+)
 
 
 def _inp(messages, prompt_tokens=None):
@@ -38,6 +42,19 @@ def test_extraction_from_user_query_tag():
     result = extract_effective_query(_inp([Message(role="user", content=content)]))
     assert result.effective_query == "Какая интеграция используется и для чего?"
     assert "документ" not in result.effective_query  # никакого текста из <context>
+
+
+def test_extraction_removes_context_block_without_user_query_tag():
+    content = (
+        f"<context>{'Документ. ' * 35_000}</context>"
+        "Сделай краткую сводку и перечисли решения."
+    )
+
+    result = extract_effective_query(_inp([Message(role="user", content=content)]))
+
+    assert result.effective_query == "Сделай краткую сводку и перечисли решения."
+    assert AnalyticsWarning.query_truncated not in result.warnings
+    assert QueryProblemReason.oversized_context not in result.problems
 
 
 def test_extraction_chooses_last_user_message():
@@ -112,8 +129,8 @@ def test_no_truncation_at_boundary():
     assert AnalyticsWarning.query_truncated not in result.warnings
 
 
-def test_oversized_context_by_length():
-    content = "п" * 20001
+def test_oversized_context_by_unmetered_length():
+    content = "п" * (MAX_UNMETERED_CONTEXT_CHARS + 1)
     result = extract_effective_query(_inp([Message(role="user", content=content)]))
     assert QueryProblemReason.oversized_context in result.problems
 
@@ -122,8 +139,8 @@ def test_oversized_context_counts_system_tool_and_history_messages():
     result = extract_effective_query(
         _inp(
             [
-                Message(role="system", content="с" * 9000),
-                Message(role="tool", content="д" * 12000),
+                Message(role="system", content="с" * 200_000),
+                Message(role="tool", content="д" * 200_001),
                 Message(role="user", content="Короткий вопрос"),
             ]
         )
@@ -134,9 +151,57 @@ def test_oversized_context_counts_system_tool_and_history_messages():
 
 def test_oversized_context_by_prompt_tokens():
     result = extract_effective_query(
-        _inp([Message(role="user", content="короткий запрос")], prompt_tokens=50001)
+        _inp(
+            [Message(role="user", content="короткий запрос")],
+            prompt_tokens=MAX_SUPPORTED_CONTEXT_TOKENS + 1,
+        )
     )
     assert QueryProblemReason.oversized_context in result.problems
+
+
+def test_exactly_100k_prompt_tokens_is_supported():
+    result = extract_effective_query(
+        _inp(
+            [Message(role="user", content="Сделай краткую сводку")],
+            prompt_tokens=MAX_SUPPORTED_CONTEXT_TOKENS,
+        )
+    )
+
+    assert QueryProblemReason.oversized_context not in result.problems
+
+
+def test_exact_token_usage_is_authoritative_over_character_fallback():
+    result = extract_effective_query(
+        _inp(
+            [
+                Message(
+                    role="user",
+                    content="п" * (MAX_UNMETERED_CONTEXT_CHARS + 1),
+                )
+            ],
+            prompt_tokens=MAX_SUPPORTED_CONTEXT_TOKENS,
+        )
+    )
+
+    assert QueryProblemReason.oversized_context not in result.problems
+
+
+def test_compliant_100k_profile_shape_is_supported_and_extracts_query():
+    context = "Корпоративный документ. " * 13_000
+    content = (
+        f"<context>\n{context}\n</context>\n"
+        "<user_query>Найди ответственного за вендора</user_query>"
+    )
+    result = extract_effective_query(
+        _inp(
+            [Message(role="user", content=content)],
+            prompt_tokens=MAX_SUPPORTED_CONTEXT_TOKENS,
+        )
+    )
+
+    assert result.effective_query == "Найди ответственного за вендора"
+    assert len(result.classifier_text) < CLASSIFIER_MAX_CHARS
+    assert QueryProblemReason.oversized_context not in result.problems
 
 
 def test_not_oversized_for_normal_input():

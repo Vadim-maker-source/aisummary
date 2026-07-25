@@ -40,3 +40,40 @@ async def test_missing_user_message_is_unclassified():
     assert "no_user_message" in result["warnings"]
     assert "unclassified" in result["query_problem_reasons"]
 
+
+async def test_exactly_100k_tokens_is_not_reported_as_oversized():
+    result = await analyze_event(
+        {
+            "event_id": "11111111-1111-4111-8111-111111111111",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": (
+                        f"<context>{'Документ. ' * 30_000}</context>"
+                        "Сделай краткую сводку"
+                    ),
+                }
+            ],
+            "model": None,
+            "prompt_tokens": 100_000,
+        },
+        [],
+    )
+
+    assert result["effective_query"] == "Сделай краткую сводку"
+    assert "oversized_context" not in result["query_problem_reasons"]
+
+
+async def test_more_than_100k_tokens_is_reported_as_oversized():
+    result = await analyze_event(
+        {
+            "event_id": "11111111-1111-4111-8111-111111111111",
+            "messages": [{"role": "user", "content": "Сделай краткую сводку"}],
+            "model": None,
+            "prompt_tokens": 100_001,
+        },
+        [],
+    )
+
+    assert "oversized_context" in result["query_problem_reasons"]
+

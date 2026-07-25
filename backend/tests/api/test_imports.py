@@ -85,6 +85,52 @@ def test_iter_jsonl_keeps_processing_after_invalid_line(tmp_path: Path):
     assert rows[2][1]["messages"][0]["content"] == "two"
 
 
+def test_iter_jsonl_streams_event_with_100k_context(tmp_path: Path):
+    path = tmp_path / "events-100k.jsonl"
+    context = "Контекст. " * 31_000
+    event = {
+        "external_id": "context-100k",
+        "agent_id": "test-agent",
+        "request": {
+            "messages": [
+                {
+                    "role": "user",
+                    "content": (
+                        f"<context>{context}</context>"
+                        "<user_query>Собери отчёт по тендерам</user_query>"
+                    ),
+                }
+            ]
+        },
+        "response": {
+            "content": "Готово",
+            "usage": {
+                "prompt_tokens": 100_000,
+                "completion_tokens": 100,
+                "total_tokens": 100_100,
+            },
+        },
+    }
+    path.write_text(
+        json.dumps(event, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+
+    rows = list(iter_import_rows(path.name, path))
+    normalized = normalize_import_row(
+        rows[0][1],
+        filename=path.name,
+        row_number=rows[0][0],
+        default_agent_id="imported-agent",
+    )
+    validated = EventCreate.model_validate(normalized)
+
+    assert len(rows) == 1
+    assert validated.response is not None
+    assert validated.response.usage is not None
+    assert validated.response.usage.prompt_tokens == 100_000
+
+
 def test_rejects_unknown_extension():
     try:
         parse_import_rows("events.csv", b"data")

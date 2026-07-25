@@ -69,9 +69,9 @@ TOPICS = [
     Topic("tomorrow_meetings", "calendar_planning", "показать список встреч на следующий день для подготовки", 23, "stable", "Корпоративные сервисы", "Персональная продуктивность"),
     Topic("email_to_project_ticket", "task_management", "создать и актуализировать тикеты Project на основе входящих писем", 26, "growing", "Проектный бизнес", "Управление проектами"),
     Topic("isup_project_status_monitoring", "monitoring_automation", "настроить мониторинг, периодически контролировать статусы проектов в ИСУП и сообщать о важных переходах", 24, "growing", "Проектный бизнес", "Управление проектами"),
-    Topic("control_chitchat", "other", "обсудить нерабочую тему без бизнес-задачи", 10, "stable", "Не указано", "Не указано", False),
-    Topic("control_vague", "other", "сделать что-нибудь полезное без контекста и критериев результата", 10, "stable", "Не указано", "Не указано", False),
-    Topic("control_multi_intent", "other", "одновременно найти клиента, написать письмо, создать встречу и выгрузить отчёт", 10, "stable", "Не указано", "Не указано", False),
+    Topic("control_chitchat", "non_work_general", "пообщаться о космосе, фильмах и других нерабочих темах", 10, "stable", "", "", False),
+    Topic("control_vague", "other", "сделать что-нибудь полезное без контекста и критериев результата", 10, "stable", "", "", False),
+    Topic("control_multi_intent", "other", "одновременно найти клиента, написать письмо, создать встречу и выгрузить отчёт", 10, "stable", "", "", False),
 ]
 
 PREFIXES = [
@@ -144,6 +144,10 @@ def event_for(topic: Topic, topic_index: int, variant: int, target_tokens: int, 
         "execution_status": "error" if failed else ("success" if answered else "unknown"),
         "latency_ms": 1800 + index % 17 * 220 if answered else None,
         "rating": 2 if failed else (4 + index % 2 if answered else None),
+        "task_completed": (not failed) if answered else None,
+        "estimated_minutes_saved": (
+            0 if failed else 12 + index % 7 * 6
+        ) if answered else None,
     }
 
 
@@ -189,7 +193,7 @@ def write_quick() -> dict:
 
 def write_compliant(output: Path) -> dict:
     output.parent.mkdir(parents=True, exist_ok=True)
-    generated = pairs(100_000, False)
+    generated = pairs(100_000, True)
     count = 0
     with output.open("w", encoding="utf-8", newline="\n") as stream:
         for event, _truth in generated:

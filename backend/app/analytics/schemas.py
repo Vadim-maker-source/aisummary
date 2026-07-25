@@ -32,6 +32,7 @@ class Category(str, Enum):
     monitoring_automation = "monitoring_automation"
     calendar_planning = "calendar_planning"
     knowledge_explanation = "knowledge_explanation"
+    non_work_general = "non_work_general"
     other = "other"
 
 
@@ -82,7 +83,7 @@ class AnalysisInput(BaseModel):
     event_id: str
     messages: List[Message] = Field(default_factory=list)
     model: Optional[str] = None
-    prompt_tokens: Optional[int] = None
+    prompt_tokens: Optional[int] = Field(default=None, ge=0)
 
 
 class KnownScenario(BaseModel):

@@ -21,6 +21,9 @@ class DashboardSummary(BaseModel):
     timestamped_count: int
     dimensioned_count: int
     synthetic_requests: int
+    value_observation_count: int
+    completed_task_count: int
+    estimated_hours_saved: float
 
 
 class CategoryItem(BaseModel):
@@ -31,6 +34,21 @@ class CategoryItem(BaseModel):
 
 class CategoryListResponse(BaseModel):
     items: list[CategoryItem]
+
+
+class CategorySummaryItem(BaseModel):
+    category: Category
+    request_count: int
+    percentage: float
+    purpose: str
+    summary: str
+    top_scenarios: list[str]
+    representative_queries: list[str]
+    top_problems: list[str]
+
+
+class CategorySummaryResponse(BaseModel):
+    items: list[CategorySummaryItem]
 
 
 class ScenarioListItem(BaseModel):
@@ -107,6 +125,9 @@ class EffectivenessItem(BaseModel):
     average_rating: float | None
     average_latency_ms: float | None
     unique_users: int | None
+    task_completion_rate: float | None
+    value_evidence_coverage: float
+    estimated_hours_saved: float
 
 
 class EffectivenessResponse(BaseModel):
@@ -116,7 +137,28 @@ class EffectivenessResponse(BaseModel):
     items: list[EffectivenessItem]
 
 
+class DecisionRecommendation(BaseModel):
+    kind: Literal["automation", "agent", "training"]
+    priority: Literal["high", "medium", "low"]
+    title: str
+    evidence: str
+    action: str
+    scope: str
+    affected_requests: int
+    examples: list[str]
+
+
+class DecisionSupportResponse(BaseModel):
+    items: list[DecisionRecommendation]
+    data_limitations: list[str]
+
+
 class AnalysisRunAccepted(BaseModel):
     run_id: UUID
     status: str
+
+
+class ReprocessAccepted(BaseModel):
+    queued_events: int
+    status: str = "pending"
 

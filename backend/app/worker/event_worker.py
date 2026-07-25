@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import asyncio
 from uuid import UUID
 
 from sqlalchemy import delete, select
@@ -141,9 +142,17 @@ async def process_event(event_id: UUID) -> None:
                 await session.commit()
 
 
-async def process_event_batch(batch_size: int) -> int:
+async def process_event_batch(
+    batch_size: int,
+    concurrency: int = 4,
+) -> int:
     event_ids = await claim_pending_event_ids(batch_size)
-    for event_id in event_ids:
-        await process_event(event_id)
+    semaphore = asyncio.Semaphore(max(1, concurrency))
+
+    async def bounded_process(event_id: UUID) -> None:
+        async with semaphore:
+            await process_event(event_id)
+
+    await asyncio.gather(*(bounded_process(event_id) for event_id in event_ids))
     return len(event_ids)
 

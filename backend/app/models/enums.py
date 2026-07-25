@@ -12,6 +12,7 @@ class Category(StrEnum):
     MONITORING_AUTOMATION = "monitoring_automation"
     CALENDAR_PLANNING = "calendar_planning"
     KNOWLEDGE_EXPLANATION = "knowledge_explanation"
+    NON_WORK_GENERAL = "non_work_general"
     OTHER = "other"
 
 

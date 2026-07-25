@@ -73,6 +73,8 @@ class EventCreate(BaseModel):
     execution_status: ExecutionStatus = ExecutionStatus.UNKNOWN
     latency_ms: int | None = Field(default=None, ge=0)
     rating: Decimal | None = Field(default=None, ge=1, le=5)
+    task_completed: bool | None = None
+    estimated_minutes_saved: int | None = Field(default=None, ge=0)
 
     @field_validator("external_id", "agent_id")
     @classmethod
@@ -135,6 +137,8 @@ class EventDetail(EventListItem):
     execution_status: ExecutionStatus
     latency_ms: int | None
     rating: float | None
+    task_completed: bool | None
+    estimated_minutes_saved: int | None
     prompt_tokens: int | None
     completion_tokens: int | None
     total_tokens: int | None

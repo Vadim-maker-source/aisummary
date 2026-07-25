@@ -29,6 +29,8 @@ _EVENT_METADATA_KEYS = {
     "execution_status",
     "latency_ms",
     "rating",
+    "task_completed",
+    "estimated_minutes_saved",
 }
 
 

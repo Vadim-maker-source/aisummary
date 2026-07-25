@@ -101,6 +101,19 @@ CATEGORY_KEYWORDS: Dict[Category, List[str]] = {
         "coolfeedback",
     ],
     Category.knowledge_explanation: ["объясни", "расскажи", "почему", "что такое"],
+    Category.non_work_general: [
+        "поболта",
+        "пообща",
+        "анекдот",
+        "шутк",
+        "гороскоп",
+        "развлеч",
+        "космос",
+        "фильм",
+        "сериал",
+        "игр",
+        "рецепт",
+    ],
 }
 
 # Category -> automation potential (00_SHARED_CONTRACT.md / role file section 6.6)
@@ -115,6 +128,7 @@ _AUTOMATION_POTENTIAL: Dict[Category, AutomationPotential] = {
     Category.data_analysis: AutomationPotential.medium,
     Category.code_assistance: AutomationPotential.medium,
     Category.knowledge_explanation: AutomationPotential.low,
+    Category.non_work_general: AutomationPotential.low,
     Category.other: AutomationPotential.low,
 }
 

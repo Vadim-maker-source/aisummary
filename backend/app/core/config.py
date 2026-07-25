@@ -21,6 +21,7 @@ class Settings(BaseSettings):
     cors_origins: str = "http://localhost:3000"
     worker_poll_seconds: float = Field(default=1.0, gt=0, le=60)
     worker_batch_size: int = Field(default=20, ge=1, le=100)
+    worker_concurrency: int = Field(default=4, ge=1, le=20)
 
     @property
     def cors_origin_list(self) -> list[str]:

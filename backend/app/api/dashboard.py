@@ -7,8 +7,10 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.core.database import get_db_session
 from app.models.enums import Category
 from app.schemas.dashboard import (
+    CategorySummaryResponse,
     CategoryListResponse,
     DashboardSummary,
+    DecisionSupportResponse,
     EffectivenessResponse,
     ProblemListResponse,
     ScenarioListResponse,
@@ -38,6 +40,20 @@ async def categories(
     session: AsyncSession = Depends(get_db_session),
 ) -> CategoryListResponse:
     return await dashboard_service.get_categories(session)
+
+
+@router.get("/category-summaries", response_model=CategorySummaryResponse)
+async def category_summaries(
+    session: AsyncSession = Depends(get_db_session),
+) -> CategorySummaryResponse:
+    return await dashboard_service.get_category_summaries(session)
+
+
+@router.get("/decision-support", response_model=DecisionSupportResponse)
+async def decision_support(
+    session: AsyncSession = Depends(get_db_session),
+) -> DecisionSupportResponse:
+    return await dashboard_service.get_decision_support(session)
 
 
 @router.get("/scenarios", response_model=ScenarioListResponse)

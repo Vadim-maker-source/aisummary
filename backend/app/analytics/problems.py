@@ -1,8 +1,9 @@
 """Assemble the ordered, de-duplicated list of query problem reasons.
 
-Deterministic reasons (role file section 7):
-- ``oversized_context``          -> content > 20000 chars or prompt_tokens > 50000
-                                    (detected during extraction and passed in)
+Deterministic reasons:
+- ``oversized_context``          -> prompt_tokens > 100000, or more than
+                                    400000 context characters when exact usage
+                                    is unavailable (detected during extraction)
 - ``low_classification_confidence`` -> confidence < 0.65
 - ``unclassified``               -> category == other
 

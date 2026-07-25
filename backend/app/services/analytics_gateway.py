@@ -5,6 +5,14 @@ import re
 from collections.abc import Sequence
 from typing import Any
 
+from app.core.context_limits import context_exceeds_supported_limit
+
+
+_CONTEXT_RE = re.compile(
+    r"<context\b[^>]*>.*?</context>",
+    flags=re.IGNORECASE | re.DOTALL,
+)
+
 
 def _normalize_query(messages: Sequence[dict[str, Any]]) -> tuple[str, list[str]]:
     warnings: list[str] = []
@@ -21,7 +29,11 @@ def _normalize_query(messages: Sequence[dict[str, Any]]) -> tuple[str, list[str]
         content,
         flags=re.IGNORECASE | re.DOTALL,
     )
-    query = matches[-1] if matches else content
+    if matches:
+        query = matches[-1]
+    else:
+        without_context = _CONTEXT_RE.sub(" ", content)
+        query = without_context if without_context.strip() else content
     query = re.sub(r"\s+", " ", query).strip()
     if len(query) > 8000:
         query = f"{query[:4000]} {query[-4000:]}"
@@ -40,6 +52,16 @@ def _fallback_category(query: str) -> tuple[str, float, str]:
         "data_analysis": ["анализ данных", "таблиц", "sql", "метрик"],
         "text_generation": ["напиши", "сформулируй", "письмо", "отзыв"],
         "knowledge_explanation": ["объясни", "расскажи", "почему", "что такое"],
+        "non_work_general": [
+            "поболта",
+            "пообща",
+            "анекдот",
+            "шутк",
+            "космос",
+            "фильм",
+            "сериал",
+            "рецепт",
+        ],
     }
     lowered = query.lower()
     scores = {
@@ -61,7 +83,7 @@ def _fallback_category(query: str) -> tuple[str, float, str]:
         "reporting_export",
     }:
         potential = "high"
-    elif category == "knowledge_explanation":
+    elif category in {"knowledge_explanation", "non_work_general"}:
         potential = "low"
     else:
         potential = "medium"
@@ -101,7 +123,15 @@ async def analyze_event(
     query, warnings = _normalize_query(data.get("messages", []))
     category, confidence, potential = _fallback_category(query)
     problems: list[str] = []
-    if data.get("prompt_tokens") and int(data["prompt_tokens"]) > 50000:
+    total_context_chars = sum(
+        len(str(message.get("content", "")))
+        for message in data.get("messages", [])
+    )
+    prompt_tokens = data.get("prompt_tokens")
+    if context_exceeds_supported_limit(
+        total_context_chars=total_context_chars,
+        prompt_tokens=int(prompt_tokens) if prompt_tokens is not None else None,
+    ):
         problems.append("oversized_context")
     if confidence < 0.65:
         problems.append("low_classification_confidence")

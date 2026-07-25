@@ -174,6 +174,38 @@ async def get_summary_counts(
         )
         or 0
     )
+    value_observation_count = int(
+        (
+            await session.scalar(
+                select(func.count(AgentEvent.id)).where(
+                    *conditions,
+                    AgentEvent.task_completed.is_not(None),
+                )
+            )
+        )
+        or 0
+    )
+    completed_task_count = int(
+        (
+            await session.scalar(
+                select(func.count(AgentEvent.id)).where(
+                    *conditions,
+                    AgentEvent.task_completed.is_(True),
+                )
+            )
+        )
+        or 0
+    )
+    estimated_minutes_saved = int(
+        (
+            await session.scalar(
+                select(func.sum(AgentEvent.estimated_minutes_saved)).where(
+                    *conditions
+                )
+            )
+        )
+        or 0
+    )
     return {
         "total_requests": total,
         "analyzed_requests": analyzed,
@@ -191,6 +223,9 @@ async def get_summary_counts(
         "timestamped_count": timestamped_count,
         "dimensioned_count": dimensioned_count,
         "synthetic_requests": synthetic_requests,
+        "value_observation_count": value_observation_count,
+        "completed_task_count": completed_task_count,
+        "estimated_hours_saved": round(estimated_minutes_saved / 60, 1),
     }
 
 
@@ -361,6 +396,10 @@ async def get_effectiveness_rows(session: AsyncSession) -> list[tuple]:
                     AgentEvent.latency_ms,
                     EventAnalysis.id,
                     EventAnalysis.query_problem_reasons,
+                    AgentEvent.task_completed,
+                    AgentEvent.estimated_minutes_saved,
+                    EventAnalysis.category,
+                    EventAnalysis.effective_user_query,
                 )
                 .select_from(AgentEvent)
                 .outerjoin(
@@ -370,4 +409,8 @@ async def get_effectiveness_rows(session: AsyncSession) -> list[tuple]:
             )
         ).all()
     )
+
+
+async def get_decision_rows(session: AsyncSession) -> list[tuple]:
+    return await get_effectiveness_rows(session)
 

@@ -5569,80 +5569,80 @@
   },
   {
     "external_id": "krok-control_chitchat-000",
-    "query": "Помоги обсудить нерабочую тему без бизнес-задачи. Укажи источник каждого результата.",
-    "category": "other",
+    "query": "Помоги пообщаться о космосе, фильмах и других нерабочих темах. Укажи источник каждого результата.",
+    "category": "non_work_general",
     "scenario_label": "control_chitchat",
     "supplied_topic": false,
     "target_prompt_tokens": 1500
   },
   {
     "external_id": "krok-control_chitchat-001",
-    "query": "Нужно обсудить нерабочую тему без бизнес-задачи. Сделай результат кратким и структурированным.",
-    "category": "other",
+    "query": "Нужно пообщаться о космосе, фильмах и других нерабочих темах. Сделай результат кратким и структурированным.",
+    "category": "non_work_general",
     "scenario_label": "control_chitchat",
     "supplied_topic": false,
     "target_prompt_tokens": 1500
   },
   {
     "external_id": "krok-control_chitchat-002",
-    "query": "Пожалуйста, помоги обсудить нерабочую тему без бизнес-задачи. Если данных не хватает, перечисли, что нужно уточнить.",
-    "category": "other",
+    "query": "Пожалуйста, помоги пообщаться о космосе, фильмах и других нерабочих темах. Если данных не хватает, перечисли, что нужно уточнить.",
+    "category": "non_work_general",
     "scenario_label": "control_chitchat",
     "supplied_topic": false,
     "target_prompt_tokens": 1500
   },
   {
     "external_id": "krok-control_chitchat-003",
-    "query": "Хочу обсудить нерабочую тему без бизнес-задачи. Сохрани деловой стиль и выдели следующие действия.",
-    "category": "other",
+    "query": "Хочу пообщаться о космосе, фильмах и других нерабочих темах. Сохрани деловой стиль и выдели следующие действия.",
+    "category": "non_work_general",
     "scenario_label": "control_chitchat",
     "supplied_topic": false,
     "target_prompt_tokens": 1500
   },
   {
     "external_id": "krok-control_chitchat-004",
-    "query": "Требуется обсудить нерабочую тему без бизнес-задачи. Не придумывай отсутствующие сведения.",
-    "category": "other",
+    "query": "Требуется пообщаться о космосе, фильмах и других нерабочих темах. Не придумывай отсутствующие сведения.",
+    "category": "non_work_general",
     "scenario_label": "control_chitchat",
     "supplied_topic": false,
     "target_prompt_tokens": 1500
   },
   {
     "external_id": "krok-control_chitchat-005",
-    "query": "Сможешь обсудить нерабочую тему без бизнес-задачи. Укажи источник каждого результата.",
-    "category": "other",
+    "query": "Сможешь пообщаться о космосе, фильмах и других нерабочих темах. Укажи источник каждого результата.",
+    "category": "non_work_general",
     "scenario_label": "control_chitchat",
     "supplied_topic": false,
     "target_prompt_tokens": 1500
   },
   {
     "external_id": "krok-control_chitchat-006",
-    "query": "Прошу обсудить нерабочую тему без бизнес-задачи. Сделай результат кратким и структурированным.",
-    "category": "other",
+    "query": "Прошу пообщаться о космосе, фильмах и других нерабочих темах. Сделай результат кратким и структурированным.",
+    "category": "non_work_general",
     "scenario_label": "control_chitchat",
     "supplied_topic": false,
     "target_prompt_tokens": 1500
   },
   {
     "external_id": "krok-control_chitchat-007",
-    "query": "Необходимо обсудить нерабочую тему без бизнес-задачи. Если данных не хватает, перечисли, что нужно уточнить.",
-    "category": "other",
+    "query": "Необходимо пообщаться о космосе, фильмах и других нерабочих темах. Если данных не хватает, перечисли, что нужно уточнить.",
+    "category": "non_work_general",
     "scenario_label": "control_chitchat",
     "supplied_topic": false,
     "target_prompt_tokens": 1500
   },
   {
     "external_id": "krok-control_chitchat-008",
-    "query": "Помоги обсудить нерабочую тему без бизнес-задачи. Сохрани деловой стиль и выдели следующие действия.",
-    "category": "other",
+    "query": "Помоги пообщаться о космосе, фильмах и других нерабочих темах. Сохрани деловой стиль и выдели следующие действия.",
+    "category": "non_work_general",
     "scenario_label": "control_chitchat",
     "supplied_topic": false,
     "target_prompt_tokens": 1500
   },
   {
     "external_id": "krok-control_chitchat-009",
-    "query": "Нужно обсудить нерабочую тему без бизнес-задачи. Не придумывай отсутствующие сведения.",
-    "category": "other",
+    "query": "Нужно пообщаться о космосе, фильмах и других нерабочих темах. Не придумывай отсутствующие сведения.",
+    "category": "non_work_general",
     "scenario_label": "control_chitchat",
     "supplied_topic": false,
     "target_prompt_tokens": 1500

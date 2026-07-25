@@ -15,6 +15,11 @@
 - импорт `.json`, `.jsonl`, `.txt`;
 - генератор по всем 35 сценариям из кейса;
 - отдельный профиль запросов со средним целевым контекстом 100k токенов.
+- отдельная категория нерабочих и общих вопросов;
+- саммари по категориям и сценариям;
+- рекомендации для CTO: автоматизация, развитие агентов и обучение команд;
+- доказательные метрики пользы через `task_completed` и
+  `estimated_minutes_saved`.
 
 ## Быстрый запуск через Docker
 
@@ -76,6 +81,13 @@ python data\generate_datasets.py --profile compliant
 
 Для большого файла используйте JSONL-импорт: он читается построчно.
 
+Контекст до 100 000 prompt-токенов включительно считается штатным. Если
+провайдер передал `usage.prompt_tokens`, backend использует это точное значение.
+Без `usage` применяется консервативный запас до 400 000 символов. Большой
+`<context>` не отправляется классификатору: система извлекает содержимое
+последнего `<user_query>`, а если такого тега нет — удаляет блоки `<context>` и
+анализирует оставшуюся инструкцию.
+
 ## Формат события
 
 ```json
@@ -103,13 +115,29 @@ python data\generate_datasets.py --profile compliant
   },
   "execution_status": "success",
   "latency_ms": 2400,
-  "rating": 5
+  "rating": 5,
+  "task_completed": true,
+  "estimated_minutes_saved": 35
 }
 ```
 
-`team`, `direction`, `user_id`, ответ, статус, latency и rating необязательны.
+`team`, `direction`, `user_id`, ответ, статус, latency, rating,
+`task_completed` и `estimated_minutes_saved` необязательны.
 Если их нет, дашборд честно показывает, что соответствующая аналитика
 недоступна.
+
+После изменения классификатора существующие события можно безопасно поставить
+на повторный анализ:
+
+```powershell
+Invoke-RestMethod -Method Post http://localhost:8000/api/v1/analysis/reprocess
+```
+
+После обработки worker пересоберите сценарии:
+
+```powershell
+Invoke-RestMethod -Method Post http://localhost:8000/api/v1/analysis/recluster
+```
 
 ## Проверка
 

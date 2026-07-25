@@ -22,7 +22,8 @@ async def run() -> None:
     while True:
         try:
             processed_events = await process_event_batch(
-                settings.worker_batch_size
+                settings.worker_batch_size,
+                settings.worker_concurrency,
             )
             processed_runs = await process_next_run()
             if processed_events or processed_runs:

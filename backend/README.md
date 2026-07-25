@@ -65,3 +65,12 @@ For raw requests the importer generates a stable `external_id`, applies the
 form field `agent_id` and wraps the payload into `request`. JSONL is processed
 line by line and can contain one object per line. The upload limit is 512 MB.
 
+## 100k context handling
+
+Prompts up to and including 100,000 tokens are supported and are not marked as
+oversized. Provider-reported `usage.prompt_tokens` is authoritative. If usage
+is unavailable, the backend uses a conservative 400,000-character fallback.
+For classification, the backend extracts the last `<user_query>` block. If it
+is absent, `<context>` blocks are removed and the remaining instruction is
+classified, so a 100k document is not copied into the LLM classification call.
+
